@@ -177,3 +177,21 @@ img.sign.tiny { width: 44px; height: 44px; margin: 0; flex: none; display: inlin
 .confetti i { position: absolute; top: -12px; width: 9px; height: 14px; border-radius: 2px; animation: fall 2.4s ease-in forwards; }
 @keyframes fall { to { transform: translateY(105vh) rotate(720deg); } }
 @media (prefers-reduced-motion: reduce) { .confetti, .feedback { animation: none; } .confetti { display: none; } }
+
+/* language picker */
+.langbtn { font: inherit; font-size: .85rem; color: var(--ink); cursor: pointer; font-weight: 700; border-color: var(--green-2); }
+.langdlg { border: none; border-radius: var(--radius); padding: 20px; width: min(420px, 92vw); background: var(--card); color: var(--ink); box-shadow: 0 20px 60px rgb(0 0 0 / .35); }
+.langdlg::backdrop { background: rgb(0 0 0 / .45); }
+.langdlg h2 { font-size: 1rem; text-align: center; color: var(--muted); }
+.langdlg [data-close] { display: block; margin: 14px auto 0; }
+.langlist { display: grid; gap: 10px; }
+.langlist.row4 { grid-template-columns: repeat(3, 1fr); }
+.langopt {
+  font: inherit; font-size: 1.15rem; font-weight: 600; padding: 12px; min-height: 52px; border-radius: 12px; cursor: pointer;
+  background: var(--bg); color: var(--ink); border: 2px solid var(--line);
+}
+.langopt:hover { border-color: var(--green-2); }
+.langopt.on { border-color: var(--green-2); background: color-mix(in srgb, var(--green-2) 14%, var(--bg)); }
+.langstrip p { margin: 0 0 10px; text-align: center; color: var(--muted); font-size: .9rem; }
+.langstrip .langopt { font-size: 1rem; padding: 10px 6px; }
+@media (max-width: 420px) { .brand-state { display: none; } .topstats { gap: 4px; } .pill { padding: 2px 8px; } }

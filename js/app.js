@@ -48,6 +48,7 @@ function updateChrome() {
   const p = S.progress;
   const st = store.streak(p);
   topstats.innerHTML = `
+    <button class="pill langbtn" data-lang-open aria-label="${esc(LANG_LABEL)}" title="${esc(LANG_LABEL)}">🌐 ${esc(S.lang.toUpperCase())}</button>
     <span class="pill" title="${esc(t('stat.streak'))}">🔥 ${st}</span>
     <span class="pill" title="${esc(t('stat.level'))}">⭐ ${esc(t('stat.lv'))} ${store.level(p.xp)}</span>`;
   const route = location.hash.split('/')[1] || '';
@@ -55,6 +56,40 @@ function updateChrome() {
   tabbar.innerHTML = tabs.map(([r, icon, k]) =>
     `<a href="#/${r}" class="${route === r ? 'on' : ''}"><span aria-hidden="true">${icon}</span><small>${esc(t(k))}</small></a>`).join('');
 }
+
+// ---------- language picker ----------
+
+// Shown in every language at once, so anyone can recognise it whatever the app is set to.
+const LANG_LABEL = 'Language · Idioma · اللغة · 语言 · Язык · Lugha';
+
+function langButtons() {
+  return S.state.languages.map(l =>
+    `<button class="langopt ${l.code === S.lang ? 'on' : ''}" data-lang="${l.code}" lang="${l.code}" dir="${l.rtl ? 'rtl' : 'ltr'}">${esc(l.name)}</button>`).join('');
+}
+
+function openLangPicker() {
+  const dlg = document.createElement('dialog');
+  dlg.className = 'langdlg';
+  dlg.innerHTML = `<h2>🌐 ${esc(LANG_LABEL)}</h2><div class="langlist">${langButtons()}</div>
+    <button class="btn" data-close>✕</button>`;
+  document.body.appendChild(dlg);
+  dlg.addEventListener('close', () => dlg.remove());
+  dlg.addEventListener('click', e => { if (e.target === dlg || e.target.closest('[data-close]')) dlg.close(); });
+  dlg.showModal();
+}
+
+async function setLanguage(code) {
+  store.setPref('lang', code);
+  await loadLanguage(code);
+  document.querySelector('dialog.langdlg')?.close();
+  route();
+}
+
+document.addEventListener('click', e => {
+  if (e.target.closest('[data-lang-open]')) return openLangPicker();
+  const opt = e.target.closest('[data-lang]');
+  if (opt) setLanguage(opt.dataset.lang);
+});
 
 // ---------- boot ----------
 
@@ -105,7 +140,9 @@ function viewHome() {
   const expect = Math.round(acc * S.state.exam.questions);
   const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.matchMedia('(display-mode: standalone)').matches;
 
+  const chooseLang = !store.getPref('lang', '') && !Object.keys(p.facts).length;
   render(`
+    ${chooseLang ? `<section class="card langstrip"><p>🌐 ${esc(LANG_LABEL)}</p><div class="langlist row4">${langButtons()}</div></section>` : ''}
     <section class="hero card">
       <div class="ring" style="--p:${pass}" role="img" aria-label="${esc(t('home.passChance'))} ${pct(pass)}">
         <div><b>${pct(pass)}</b><small>${esc(t('home.passChance'))}</small></div>
@@ -551,7 +588,7 @@ function viewMore() {
       <p class="small muted">${esc(t('more.stats', { xp: p.xp, n: Object.keys(p.facts).length, exams: p.exams.length }))}</p>
       <button class="btn danger" id="reset">${esc(t('more.reset'))}</button>
     </section>`);
-  $('#lang').addEventListener('change', async e => { store.setPref('lang', e.target.value); await loadLanguage(e.target.value); viewMore(); });
+  $('#lang').addEventListener('change', e => setLanguage(e.target.value));
   $('#reset').addEventListener('click', () => {
     if (confirm(t('more.resetConfirm'))) { store.reset(S.stateId); S.progress = store.load(S.stateId); viewMore(); }
   });

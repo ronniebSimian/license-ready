@@ -18,7 +18,7 @@
     { "code": "en", "name": "English" },
     { "code": "es", "name": "Español" },
     { "code": "ar", "name": "العربية", "rtl": true },
-    { "code": "zh", "name": "中文（简体）" },
+    { "code": "zh", "name": "中文" },
     { "code": "ru", "name": "Русский" },
     { "code": "sw", "name": "Kiswahili" }
   ]
