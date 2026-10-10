@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Permit Trainer — Idaho</title>
+  <meta name="description" content="Free, open-source study app for the Idaho Class D driver's knowledge test. Spaced repetition, sign sprints and realistic mock exams. Works offline.">
+  <meta name="theme-color" content="#0b6b3a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta property="og:title" content="Permit Trainer — Idaho">
+  <meta property="og:description" content="Learn the Idaho driver's test the way memory actually works. Free and open source.">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="Home">
+      <svg viewBox="0 0 32 32" class="brand-mark" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="6" fill="#0b6b3a"/><path d="M16 6 L16 26" stroke="#ffd23f" stroke-width="3" stroke-dasharray="4 3"/></svg>
+      <span class="brand-text">Permit Trainer</span>
+      <span class="brand-state" id="brand-state"></span>
+    </a>
+    <div class="topstats" id="topstats"></div>
+  </header>
+  <main id="app" tabindex="-1"><p class="loading">Loading…</p></main>
+  <nav class="tabbar" id="tabbar"></nav>
+  <noscript>This app needs JavaScript turned on.</noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
