@@ -1,5 +1,5 @@
 // Offline support. tools/build.mjs rewrites VERSION and ASSETS whenever content changes.
-const VERSION = 'dd6b809fb0';
+const VERSION = 'b0d7729173';
 const ASSETS = ["./",
   "css/app.css",
   "favicon.ico",
