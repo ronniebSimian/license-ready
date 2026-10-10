@@ -30,6 +30,22 @@ const save = () => store.save(S.stateId, S.progress);
 const handbookLink = page => `${S.state.handbook.url}#page=${page + (S.state.handbook.pageOffset || 0)}`;
 const signSrc = code => `states/${S.stateId}/signs/${code}.svg`;
 const $ = sel => app.querySelector(sel);
+// Running screens remember fact ids and item positions rather than text, so a language
+// switch can look the same question up again (translations line up item-for-item).
+const factOf = id => S.byId.get(id);
+const choiceOrder = item => item.choices ? srs.shuffle(item.choices.map((c, i) => i)) : null;
+// The answer picked but not yet committed, so a redraw can keep it.
+function pendingAnswer() {
+  const b = app.querySelector('.choice.picked');
+  if (b) return b.dataset.v;
+  return $('.numin')?.value.trim() || null;
+}
+// Redraw a question that was already answered: inputs locked, right/wrong marked.
+function lockAnswered(item, given) {
+  app.querySelectorAll('.choice, .numin').forEach(b => b.disabled = true);
+  const inp = $('.numin'); if (inp && given != null) inp.value = given;
+  markChoices(item, given);
+}
 
 async function getJSON(url) {
   const r = await fetch(url);
@@ -82,7 +98,12 @@ async function setLanguage(code) {
   store.setPref('lang', code);
   await loadLanguage(code);
   document.querySelector('dialog.langdlg')?.close();
-  route();
+  // A running study round, sprint or exam redraws the same question in the new language;
+  // every other screen just re-renders. Either way the reader keeps their place on the page.
+  const y = window.scrollY;
+  if (S.relang) { if (S.cleanup) { S.cleanup(); S.cleanup = null; } S.relang(); }
+  else route();
+  window.scrollTo(0, y);
 }
 
 document.addEventListener('click', e => {
@@ -122,6 +143,7 @@ async function loadLanguage(code) {
 
 function route() {
   if (S.cleanup) { S.cleanup(); S.cleanup = null; }
+  S.relang = null;
   const [, r, arg] = location.hash.split('/');
   ({ study: viewStudy, sprint: viewSprint, exam: viewExam, topics: viewTopics, topic: viewTopic, more: viewMore }[r] || viewHome)(arg);
 }
@@ -199,7 +221,7 @@ function questionHTML(fact, item, opts = {}) {
       <input class="numin" inputmode="decimal" enterkeyhint="done" aria-label="${esc(t('q.typeNumber'))}" placeholder="${esc(t('q.typeNumber'))}">
       <span class="unit">${esc(item.unit || '')}</span></form>`;
   } else {
-    const order = srs.shuffle(item.choices.map((c, i) => i));
+    const order = opts.order || choiceOrder(item);
     body = `<div class="choices">${order.map((i, k) =>
       `<button class="choice" data-v="${i}"><span class="key">${'ABCD'[k]}</span><span>${esc(item.choices[i])}</span></button>`).join('')}</div>`;
   }
@@ -219,7 +241,7 @@ function questionHTML(fact, item, opts = {}) {
     </article>`;
 }
 
-function wireQuestion(item, onCommit, { confidence = false, instant = false } = {}) {
+function wireQuestion(item, onCommit, { confidence = false, instant = false, given: restore = null } = {}) {
   let given = null;
   const commitBox = $('.commit');
   const choose = v => {
@@ -251,6 +273,10 @@ function wireQuestion(item, onCommit, { confidence = false, instant = false } = 
     form.addEventListener('submit', e => { e.preventDefault(); if (given !== null) (confidence ? null : finish('go')); });
   }
   commitBox.querySelectorAll('button').forEach(b => b.addEventListener('click', () => finish(b.dataset.c)));
+  if (restore !== null) {
+    if (form) { form.querySelector('input').value = restore; given = restore; commitBox.hidden = false; }
+    else choose(restore);
+  }
   // Keyboard: 1-4 / A-D pick, T/F for true-false.
   const onKey = e => {
     if (e.target.tagName === 'INPUT') return;
@@ -290,18 +316,26 @@ function viewStudy(topic) {
   const retries = new Map();
   const tally = { n: 0, right: 0, xp: 0, surprise: 0 };
   let lastType = null, total = queue.length;
+  let cur = null;   // { id, ii, order, done, total, result? }
 
   const next = () => {
     if (!queue.length) return finish();
-    const fact = queue.shift();
+    const fact = factOf(queue.shift().id);
     const item = srs.pickItem(fact, S.progress, lastType);
     lastType = item.type;
-    const done = total - queue.length - 1;
-    render(`
-      <div class="progress"><i style="width:${done / total * 100}%"></i></div>
+    cur = { id: fact.id, ii: fact.items.indexOf(item), order: choiceOrder(item), done: total - queue.length - 1, total };
+    showQuestion();
+  };
+
+  const page = (fact, item) => render(`
+      <div class="progress"><i style="width:${cur.done / cur.total * 100}%"></i></div>
       ${topic ? `<p class="muted small center">${esc(t('study.focus', { topic: topicName(topic) }))}</p>` : ''}
-      ${questionHTML(fact, item, { confidence: true })}
+      ${questionHTML(fact, item, { confidence: true, order: cur.order })}
       <div id="fb"></div>`);
+
+  const showQuestion = (given = null) => {
+    const fact = factOf(cur.id), item = fact.items[cur.ii];
+    page(fact, item);
     const off = wireQuestion(item, (right, given, sure) => {
       off();
       const outcome = right ? (sure ? 'sure-right' : 'guess-right') : (sure ? 'sure-wrong' : 'guess-wrong');
@@ -317,30 +351,46 @@ function viewStudy(topic) {
         queue.splice(Math.min(queue.length, outcome === 'guess-right' ? queue.length : 3), 0, fact);
         total++;
       }
+      cur.result = { outcome, given, xp, right };
       markChoices(item, given);
-      const head = {
-        'sure-right': ['good', t('fb.sureRight')],
-        'guess-right': ['meh', t('fb.guessRight')],
-        'guess-wrong': ['bad', t('fb.guessWrong')],
-        'sure-wrong': ['surprise', t('fb.sureWrong')],
-      }[outcome];
-      $('#fb').innerHTML = `
-        <section class="card feedback ${head[0]}">
-          <h3>${esc(head[1])} <span class="xp">+${xp} XP</span></h3>
-          ${right ? '' : `<p class="answer">${esc(t('fb.answer'))} <b>${esc(answerText(item))}</b></p>`}
-          ${explainHTML(fact)}
-          <button class="btn primary big" id="cont">${esc(t('q.continue'))}</button>
-        </section>`;
-      updateChrome();
-      const cont = $('#cont');
-      cont.focus({ preventScroll: true });
-      cont.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      cont.addEventListener('click', next);
-    }, { confidence: true });
+      showFeedback(fact, item);
+    }, { confidence: true, given });
     S.cleanup = off;
   };
 
+  const showFeedback = (fact, item) => {
+    const { outcome, xp, right } = cur.result;
+    const head = {
+      'sure-right': ['good', t('fb.sureRight')],
+      'guess-right': ['meh', t('fb.guessRight')],
+      'guess-wrong': ['bad', t('fb.guessWrong')],
+      'sure-wrong': ['surprise', t('fb.sureWrong')],
+    }[outcome];
+    $('#fb').innerHTML = `
+      <section class="card feedback ${head[0]}">
+        <h3>${esc(head[1])} <span class="xp">+${xp} XP</span></h3>
+        ${right ? '' : `<p class="answer">${esc(t('fb.answer'))} <b>${esc(answerText(item))}</b></p>`}
+        ${explainHTML(fact)}
+        <button class="btn primary big" id="cont">${esc(t('q.continue'))}</button>
+      </section>`;
+    updateChrome();
+    const cont = $('#cont');
+    cont.focus({ preventScroll: true });
+    cont.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    cont.addEventListener('click', next);
+  };
+
+  S.relang = () => {
+    if (!cur) return;
+    if (!cur.result) return showQuestion(pendingAnswer());
+    const fact = factOf(cur.id), item = fact.items[cur.ii];
+    page(fact, item);
+    lockAnswered(item, cur.result.given);
+    showFeedback(fact, item);
+  };
+
   const finish = () => {
+    S.relang = finish;
     const after = srs.readiness(S.progress, S.facts, S.state.exam).pass;
     const newly = S.facts.filter(f => (S.progress.facts[f.id]?.b || 0) >= srs.MASTERED_BOX && !masteredBefore.has(f.id)).length;
     const delta = Math.round((after - before) * 100);
@@ -394,7 +444,7 @@ function viewSprint() {
 
 function runSprint(signFacts) {
   const SECONDS = 60;
-  let score = 0, combo = 0, deck = srs.shuffle(signFacts), missed = [];
+  let score = 0, combo = 0, deck = srs.shuffle(signFacts), missed = [], cur = null;
   const end = Date.now() + SECONDS * 1000;
   let timer;
   const tick = () => {
@@ -413,7 +463,11 @@ function runSprint(signFacts) {
     S.progress.best.sprint = best;
     store.tick(S.progress, score * 2);
     save();
-    const uniq = [...new Map(missed.map(f => [f.id, f])).values()];
+    S.relang = () => results(best, isBest);
+    results(best, isBest);
+  };
+  const results = (best, isBest) => {
+    const uniq = [...new Set(missed)].map(factOf);
     render(`
       <section class="card center">
         <div class="big-emoji">${isBest ? '🏆' : '⏱️'}</div>
@@ -427,21 +481,29 @@ function runSprint(signFacts) {
   };
   const show = () => {
     if (!deck.length) deck = srs.shuffle(signFacts);
-    const fact = deck.pop();
-    const item = fact.items.find(i => i.type === 'sign');
+    const next = deck.pop();
+    const ii = next.items.findIndex(i => i.type === 'sign');
+    cur = { id: next.id, ii, order: choiceOrder(next.items[ii]), answered: false };
+    draw();
+  };
+  const draw = () => {
+    const fact = factOf(cur.id), item = fact.items[cur.ii];
     render(`
       <div class="sprintbar"><div class="timer"><i></i></div><span><b id="tleft">${SECONDS}</b>s</span><span>✔ ${score}</span>${combo >= 3 ? `<span class="combo">🔥×${combo}</span>` : ''}</div>
-      ${questionHTML(fact, item)}`, false);
+      ${questionHTML(fact, item, { order: cur.order })}`, false);
     tick();
     S.cleanup && S.cleanup();
+    if (cur.answered) return lockAnswered(item, null);
     S.cleanup = wireQuestion(item, right => {
+      cur.answered = true;
       markChoices(item, null);
       if (right) { score++; combo++; }
-      else { combo = 0; missed.push(fact); srs.grade(S.progress, fact, 'guess-wrong'); }
+      else { combo = 0; missed.push(fact.id); srs.grade(S.progress, fact, 'guess-wrong'); }
       setTimeout(() => { if (!stopped && Date.now() < end) show(); }, right ? 250 : 1100);
     }, { instant: true });
   };
   let stopped = false;
+  S.relang = () => { if (!stopped) draw(); };
   show();
   timer = setInterval(tick, 200);
   // Leaving the page mid-sprint stops the clock (route() only knows about the key handler).
@@ -467,32 +529,38 @@ function viewExam() {
 
 function runExam() {
   const ex = S.state.exam;
-  const qs = srs.buildExam(S.facts, ex.questions);
+  const qs = srs.buildExam(S.facts, ex.questions)
+    .map(({ fact, item }) => ({ id: fact.id, ii: fact.items.indexOf(item), order: choiceOrder(item) }));
   const answers = [];
   let i = 0;
-  const show = () => {
-    const { fact, item } = qs[i];
-    const misses = answers.filter(a => !a.right).length;
+  const show = (pending = null) => {
+    const q = qs[i], fact = factOf(q.id), item = fact.items[q.ii];
     render(`
       <div class="progress"><i style="width:${i / qs.length * 100}%"></i></div>
       <p class="muted small center">${esc(t('exam.q', { i: i + 1, n: qs.length }))}</p>
-      ${questionHTML(fact, item, { goLabel: i + 1 < qs.length ? t('q.next') : t('exam.finish') })}`);
-    void misses;
+      ${questionHTML(fact, item, { order: q.order, goLabel: i + 1 < qs.length ? t('q.next') : t('exam.finish') })}`);
     S.cleanup = wireQuestion(item, (right, given) => {
       S.cleanup(); S.cleanup = null;
-      answers.push({ fact, item, right, given });
+      answers.push({ id: q.id, ii: q.ii, right, given });
       i++;
       i < qs.length ? show() : finish();
-    });
+    }, { given: pending });
   };
   const finish = () => {
     const wrong = answers.filter(a => !a.right);
-    const score = answers.length - wrong.length;
     const pass = wrong.length <= ex.maxMisses;
-    for (const a of wrong) srs.grade(S.progress, a.fact, 'guess-wrong');
-    S.progress.exams.push({ date: store.today(), score, of: answers.length, pass });
+    for (const a of wrong) srs.grade(S.progress, factOf(a.id), 'guess-wrong');
+    S.progress.exams.push({ date: store.today(), score: answers.length - wrong.length, of: answers.length, pass });
     store.tick(S.progress, 50 + (pass ? 100 : 0));
     save();
+    S.relang = results;
+    results();
+    if (pass) confetti();
+  };
+  const results = () => {
+    const wrong = answers.filter(a => !a.right).map(a => ({ ...a, fact: factOf(a.id), item: factOf(a.id).items[a.ii] }));
+    const score = answers.length - wrong.length;
+    const pass = wrong.length <= ex.maxMisses;
     render(`
       <section class="card center ${pass ? 'passed' : ''}">
         <div class="big-emoji">${pass ? '🎉' : '💪'}</div>
@@ -509,8 +577,8 @@ function runExam() {
           <p class="okc">✔ ${esc(answerText(a.item))}</p>
           ${explainHTML(a.fact)}
         </section>`).join('') : ''}`);
-    if (pass) confetti();
   };
+  S.relang = () => show(pendingAnswer());
   show();
 }
 
