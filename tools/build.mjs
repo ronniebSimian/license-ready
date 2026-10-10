@@ -58,7 +58,8 @@ for (const st of readdirSync(join(root, 'states'))) {
 }
 
 // ---- service worker precache ----
-const skip = /^(\.git|tools|pipeline|node_modules|README|LICENSE|CONTENT|CNAME|\.)/;
+// Only files that are published: keep in step with .gitignore.
+const skip = /^(\.git|tools|pipeline|notes|work|node_modules|README|LICENSE|CONTENT|CNAME|\.)/;
 const assets = [];
 (function walk(d) {
   for (const n of readdirSync(join(root, d))) {
