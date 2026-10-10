@@ -1453,7 +1453,7 @@
    },
    {
     "type": "scenario",
-    "q": "At dusk you pass a DEER XING sign. What should you do?",
+    "q": "At dusk you pass a DEER XING (crossing) sign. What should you do?",
     "choices": [
      "Watch for animals crossing the road",
      "Speed up to leave the area",
@@ -1956,7 +1956,7 @@
    },
    {
     "type": "tf",
-    "q": "When a HAWK beacon is installed, side streets with stop signs no longer have to stop.",
+    "q": "When a HAWK (High-Intensity Activated crossWalk) beacon is installed, side streets with stop signs no longer have to stop.",
     "answer": false
    }
   ]
@@ -1992,13 +1992,13 @@
   "id": "sig-hawk-dark-yellow",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "A HAWK beacon is dark until a pedestrian pushes the button. It then flashes yellow (slow down), then shows solid yellow (prepare to stop).",
+  "fact": "A HAWK (High-Intensity Activated crossWalk) beacon is dark until a pedestrian pushes the button. It then flashes yellow (slow down), then shows solid yellow (prepare to stop).",
   "why": "The warning lights give drivers time to slow before the red.",
   "weight": 2,
   "items": [
    {
     "type": "mc",
-    "q": "What does it mean when a HAWK beacon is dark (not lit)?",
+    "q": "What does it mean when a HAWK (High-Intensity Activated crossWalk) beacon is dark (not lit)?",
     "choices": [
      "Drive normally, but watch for pedestrians",
      "Stop and wait",
@@ -2009,7 +2009,7 @@
    },
    {
     "type": "mc",
-    "q": "After a pedestrian pushes the button, what does a HAWK beacon show first?",
+    "q": "After a pedestrian pushes the button, what does a HAWK (High-Intensity Activated crossWalk) beacon show first?",
     "choices": [
      "Flashing yellow",
      "Solid red",
@@ -2024,13 +2024,13 @@
   "id": "sig-hawk-red",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "When a HAWK beacon shows two solid red lights, stop completely at the stop line. When the red lights flash back and forth, stop, yield to pedestrians in the crosswalk, and go when it is clear.",
+  "fact": "When a HAWK (High-Intensity Activated crossWalk) beacon shows two solid red lights, stop completely at the stop line. When the red lights flash back and forth, stop, yield to pedestrians in the crosswalk, and go when it is clear.",
   "why": "Solid red is the time for people to cross; alternating flashing red lets drivers go once the crosswalk is empty.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "At a HAWK beacon, the two red lights are flashing back and forth. The crosswalk is now empty. What should you do?",
+    "q": "At a HAWK (High-Intensity Activated crossWalk) beacon, the two red lights are flashing back and forth. The crosswalk is now empty. What should you do?",
     "choices": [
      "Stop, then proceed since the crosswalk is clear",
      "Stay stopped until the beacon goes dark",
@@ -2041,7 +2041,7 @@
    },
    {
     "type": "tf",
-    "q": "You must stop completely when a HAWK beacon shows steady red lights.",
+    "q": "You must stop completely when a HAWK (High-Intensity Activated crossWalk) beacon shows steady red lights.",
     "answer": true
    }
   ]
@@ -2361,7 +2361,7 @@
   "items": [
    {
     "type": "mc",
-    "q": "What does a large X with the letters RR painted on the road mean?",
+    "q": "What does a large X with the letters RR (railroad) painted on the road mean?",
     "choices": [
      "A railroad crossing is ahead",
      "A road crossing is ahead",
@@ -2377,7 +2377,7 @@
    },
    {
     "type": "scenario",
-    "q": "You see a big X and RR painted on the road ahead, but you do not see or hear a train. What should you do?",
+    "q": "You see a big X and RR (railroad) painted on the road ahead, but you do not see or hear a train. What should you do?",
     "choices": [
      "Slow down, look both ways, and listen for a train",
      "Keep your speed because no train is in sight",
@@ -2522,7 +2522,7 @@
   "id": "law-interchange-stop-lines",
   "topic": "signals-markings",
   "page": 64,
-  "fact": "At single point (SPUI) and diverging diamond (DDI) interchanges, stop at the stop lines and follow the signs, signals, islands, and pavement markings. A DDI briefly moves traffic to the left side of the road.",
+  "fact": "At single point (SPUI) and diverging diamond (DDI) interchanges, stop at the stop lines and follow the signs, signals, islands, and pavement markings. A DDI (diverging diamond interchange) briefly moves traffic to the left side of the road.",
   "why": "Stopping past the line puts you in the path of cross-traffic, pedestrians, or bicyclists.",
   "weight": 1,
   "items": [
@@ -8391,13 +8391,13 @@
   "id": "cnd-abs-pulse-normal",
   "topic": "emergencies",
   "page": 116,
-  "fact": "During hard braking with ABS, a pump motor noise and a pulsing brake pedal are normal. Keep your foot on the pedal. ABS lets you keep steering but does not shorten stopping distance.",
+  "fact": "During hard braking with ABS (anti-lock braking system), a pump motor noise and a pulsing brake pedal are normal. Keep your foot on the pedal. ABS lets you keep steering but does not shorten stopping distance.",
   "why": "Drivers who are surprised by the noise may lift their foot, which makes the stop longer.",
   "weight": 2,
   "items": [
    {
     "type": "scenario",
-    "q": "You brake hard in an emergency and feel the brake pedal pulsing with a buzzing noise. Your car has ABS. What should you do?",
+    "q": "You brake hard in an emergency and feel the brake pedal pulsing with a buzzing noise. Your car has ABS (anti-lock braking system). What should you do?",
     "choices": [
      "Keep steady pressure on the pedal",
      "Take your foot off the brake",
@@ -8418,13 +8418,13 @@
   "topic": "emergencies",
   "page": 116,
   "fact": "In an emergency stop with anti-lock brakes (ABS), press the brake pedal firmly and keep steady pressure. Do not pump the brakes.",
-  "why": "ABS pumps the brakes for you faster than you can, and pumping yourself makes it work worse and increases stopping distance.",
-  "hook": "ABS: press hard and hold.",
+  "why": "ABS (anti-lock braking system) pumps the brakes for you faster than you can, and pumping yourself makes it work worse and increases stopping distance.",
+  "hook": "ABS (anti-lock braking system): press hard and hold.",
   "weight": 3,
   "items": [
    {
     "type": "mc",
-    "q": "How should you brake in an emergency if your car has ABS?",
+    "q": "How should you brake in an emergency if your car has ABS (anti-lock braking system)?",
     "choices": [
      "Press firmly and hold steady pressure",
      "Pump the brake pedal quickly",
@@ -8536,13 +8536,13 @@
   "id": "cnd-non-abs-quick-stop",
   "topic": "emergencies",
   "page": 117,
-  "fact": "Without ABS, brake as hard as you can without locking the wheels. If the wheels lock and the car skids, quickly ease off the brake, then press again, repeating until you stop.",
+  "fact": "Without ABS (anti-lock braking system), brake as hard as you can without locking the wheels. If the wheels lock and the car skids, quickly ease off the brake, then press again, repeating until you stop.",
   "why": "Locked wheels slide and cannot steer, so releasing lets them roll and grip again.",
   "weight": 2,
   "items": [
    {
     "type": "scenario",
-    "q": "Your car does not have ABS. During a hard stop, you feel the wheels lock and the car start to skid. What should you do?",
+    "q": "Your car does not have ABS (anti-lock braking system). During a hard stop, you feel the wheels lock and the car start to skid. What should you do?",
     "choices": [
      "Quickly let up on the brake, then press again",
      "Hold the brake down harder",
@@ -8553,7 +8553,7 @@
    },
    {
     "type": "mc",
-    "q": "Without ABS, how hard should you press the brake in a quick stop?",
+    "q": "Without ABS (anti-lock braking system), how hard should you press the brake in a quick stop?",
     "choices": [
      "As hard as you can without locking the wheels",
      "As hard as possible, even if the wheels lock",
@@ -8874,7 +8874,7 @@
   "id": "alc-als-notice",
   "topic": "alcohol",
   "page": 125,
-  "fact": "If you are arrested for DUI and fail an evidentiary test, the officer gives you a Notice of Suspension. This is an Administrative License Suspension (ALS), and you have 7 days from the notice date to request a hearing.",
+  "fact": "If you are arrested for DUI (driving under the influence) and fail an evidentiary test, the officer gives you a Notice of Suspension. This is an Administrative License Suspension (ALS), and you have 7 days from the notice date to request a hearing.",
   "why": "The quick deadline keeps the process moving while still giving you a fair chance to challenge it.",
   "weight": 3,
   "items": [
@@ -8886,11 +8886,11 @@
    },
    {
     "type": "mc",
-    "q": "What does an officer give you right away when you fail an evidentiary alcohol test after a DUI arrest?",
+    "q": "What does an officer give you right away when you fail an evidentiary alcohol test after a DUI (driving under the influence) arrest?",
     "choices": [
      "A Notice of Suspension",
      "A restricted driving permit",
-     "A GDL warning letter",
+     "A GDL (Graduated Driver's License) warning letter",
      "A reinstatement form"
     ],
     "answer": 0
@@ -8901,24 +8901,24 @@
   "id": "alc-als-effective",
   "topic": "alcohol",
   "page": 126,
-  "fact": "The ALS Notice of Suspension takes effect 30 days after the day you receive it.",
+  "fact": "The ALS (administrative license suspension) Notice of Suspension takes effect 30 days after the day you receive it.",
   "why": "The waiting period gives time to request a hearing before the suspension starts.",
   "weight": 2,
   "items": [
    {
     "type": "num",
-    "q": "How many days after you receive it does an ALS Notice of Suspension take effect?",
+    "q": "How many days after you receive it does an ALS (administrative license suspension) Notice of Suspension take effect?",
     "answer": 30,
     "unit": "days"
    },
    {
     "type": "tf",
-    "q": "An ALS Notice of Suspension takes effect 30 days after the day you receive it.",
+    "q": "An ALS (administrative license suspension) Notice of Suspension takes effect 30 days after the day you receive it.",
     "answer": true
    },
    {
     "type": "mc",
-    "q": "When does an ALS Notice of Suspension take effect?",
+    "q": "When does an ALS (administrative license suspension) Notice of Suspension take effect?",
     "choices": [
      "30 days after you receive it",
      "The day you receive it",
@@ -8939,22 +8939,22 @@
   "items": [
    {
     "type": "num",
-    "q": "How many days is the ALS suspension for a first failed evidentiary test?",
+    "q": "How many days is the ALS (administrative license suspension) suspension for a first failed evidentiary test?",
     "answer": 90,
     "unit": "days"
    },
    {
     "type": "num",
-    "q": "During a first-failure ALS, for how many days do you have absolutely no driving privileges?",
+    "q": "During a first-failure ALS (administrative license suspension), for how many days do you have absolutely no driving privileges?",
     "answer": 30,
     "unit": "days"
    },
    {
     "type": "mc",
-    "q": "After a first-failure ALS ends, what must be on any vehicle you drive for 1 year?",
+    "q": "After a first-failure ALS (administrative license suspension) ends, what must be on any vehicle you drive for 1 year?",
     "choices": [
      "An ignition interlock device",
-     "A GPS tracker",
+     "A GPS (Global Positioning System) tracker",
      "A speed limiter",
      "A dash camera"
     ],
@@ -8972,13 +8972,13 @@
   "items": [
    {
     "type": "num",
-    "q": "A second failed test within how many years brings a 1-year absolute ALS suspension?",
+    "q": "A second failed test within how many years brings a 1-year absolute ALS (administrative license suspension) suspension?",
     "answer": 5,
     "unit": "years"
    },
    {
     "type": "mc",
-    "q": "What is the ALS penalty for a second failed evidentiary test within 5 years?",
+    "q": "What is the ALS (administrative license suspension) penalty for a second failed evidentiary test within 5 years?",
     "choices": [
      "1-year suspension with no driving at all",
      "90-day suspension",
@@ -8993,13 +8993,13 @@
   "id": "alc-als-separate",
   "topic": "alcohol",
   "page": 126,
-  "fact": "An ALS is a civil penalty that is separate from the criminal DUI case. You must follow the ALS rules and also go to court for the DUI charge.",
+  "fact": "An ALS (administrative license suspension) is a civil penalty that is separate from the criminal DUI (driving under the influence) case. You must follow the ALS rules and also go to court for the DUI charge.",
   "why": "The license penalty and the criminal case are two different processes, so one does not replace the other.",
   "weight": 2,
   "items": [
    {
     "type": "tf",
-    "q": "If you receive an Administrative License Suspension, you no longer have to appear in court for the DUI charge.",
+    "q": "If you receive an Administrative License Suspension, you no longer have to appear in court for the DUI (driving under the influence) charge.",
     "answer": false
    },
    {
@@ -9019,7 +9019,7 @@
   "id": "alc-implied-consent",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Under Idaho's implied consent law, anyone who drives or is in physical control of a vehicle has agreed to take a BAC or drug test if suspected of DUI. Refusing brings a license suspension and a $250 civil penalty.",
+  "fact": "Under Idaho's implied consent law, anyone who drives or is in physical control of a vehicle has agreed to take a BAC (blood alcohol concentration) or drug test if suspected of DUI (driving under the influence). Refusing brings a license suspension and a $250 civil penalty.",
   "why": "By choosing to drive, you accept testing so that impaired drivers can be found and stopped.",
   "weight": 3,
   "items": [
@@ -9031,14 +9031,14 @@
    },
    {
     "type": "tf",
-    "q": "In Idaho, you can refuse a BAC test with no penalty if you have not been drinking.",
+    "q": "In Idaho, you can refuse a BAC (blood alcohol concentration) test with no penalty if you have not been drinking.",
     "answer": false
    },
    {
     "type": "mc",
     "q": "What does 'implied consent' mean in Idaho?",
     "choices": [
-     "By driving, you have agreed to a BAC or drug test",
+     "By driving, you have agreed to an alcohol or drug test",
      "You must agree in writing before any test",
      "Only passengers can be tested",
      "Officers need a court order for every test"
@@ -9063,7 +9063,7 @@
    },
    {
     "type": "scenario",
-    "q": "An officer suspects you of DUI and asks you to take a breath test. You refuse for the first time, and the court upholds the officer. What happens to your license?",
+    "q": "An officer suspects you of DUI (driving under the influence) and asks you to take a breath test. You refuse for the first time, and the court upholds the officer. What happens to your license?",
     "choices": [
      "Suspended 1 year with no driving at all",
      "Suspended 30 days",
@@ -9109,7 +9109,7 @@
   "id": "alc-refusal-second",
   "topic": "alcohol",
   "page": 127,
-  "fact": "A second test refusal within 10 years brings a 2-year absolute suspension. This is in addition to any court penalty for a DUI conviction.",
+  "fact": "A second test refusal within 10 years brings a 2-year absolute suspension. This is in addition to any court penalty for a DUI (driving under the influence) conviction.",
   "why": "Repeated refusals show a driver trying to avoid responsibility, so the penalty doubles.",
   "weight": 3,
   "items": [
@@ -9168,26 +9168,26 @@
   "id": "alc-crash-risk-bac",
   "topic": "alcohol",
   "page": 128,
-  "fact": "Crash risk rises fast with alcohol. Slightly above .05 BAC the risk doubles, at .10 it is 6 times as great, and at .15 it is 25 times as great.",
+  "fact": "Crash risk rises fast with alcohol. Slightly above .05 BAC (blood alcohol concentration) the risk doubles, at .10 it is 6 times as great, and at .15 it is 25 times as great.",
   "why": "Alcohol harms driving ability long before a person looks drunk.",
   "hook": "Risk climbs: .05 = 2x, .10 = 6x, .15 = 25x.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "At a BAC of .10, how many times greater is your risk of causing a crash?",
+    "q": "At a BAC (blood alcohol concentration) of .10, how many times greater is your risk of causing a crash?",
     "answer": 6,
     "unit": "times"
    },
    {
     "type": "num",
-    "q": "At a BAC of .15, how many times greater is your risk of causing a crash?",
+    "q": "At a BAC (blood alcohol concentration) of .15, how many times greater is your risk of causing a crash?",
     "answer": 25,
     "unit": "times"
    },
    {
     "type": "mc",
-    "q": "At slightly above .05 BAC, what happens to your risk of causing a crash?",
+    "q": "At slightly above .05 BAC (blood alcohol concentration), what happens to your risk of causing a crash?",
     "choices": [
      "It doubles",
      "It stays the same",
@@ -9326,7 +9326,7 @@
    },
    {
     "type": "scenario",
-    "q": "You need to carry an opened bottle of wine in an SUV with no trunk. Where must it go?",
+    "q": "You need to carry an opened bottle of wine in an SUV (sport utility vehicle) with no trunk. Where must it go?",
     "choices": [
      "Behind the last upright seat",
      "In the glove box",
@@ -9393,25 +9393,25 @@
   "id": "alc-dui-21-and-commercial",
   "topic": "alcohol",
   "page": 131,
-  "fact": "A driver 21 or older is under the influence at a BAC of .08 or more. A commercial vehicle driver is under the influence at .04 or more.",
+  "fact": "A driver 21 or older is under the influence at a BAC (blood alcohol concentration) of .08 or more. A commercial vehicle driver is under the influence at .04 or more.",
   "why": "Commercial vehicles are large and heavy, so their drivers are held to a stricter limit.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "What BAC makes a driver age 21 or older legally under the influence in Idaho?",
+    "q": "What BAC (blood alcohol concentration) makes a driver age 21 or older legally under the influence in Idaho?",
     "answer": 0.08,
     "unit": "BAC"
    },
    {
     "type": "num",
-    "q": "What BAC makes a commercial vehicle driver legally under the influence in Idaho?",
+    "q": "What BAC (blood alcohol concentration) makes a commercial vehicle driver legally under the influence in Idaho?",
     "answer": 0.04,
     "unit": "BAC"
    },
    {
     "type": "mc",
-    "q": "What is the BAC limit for a 25-year-old driving a regular car in Idaho?",
+    "q": "What is the BAC (blood alcohol concentration) limit for a 25-year-old driving a regular car in Idaho?",
     "choices": [
      ".08",
      ".02",
@@ -9426,24 +9426,24 @@
   "id": "alc-dui-below-08",
   "topic": "alcohol",
   "page": 131,
-  "fact": "Even with a BAC below .08, you can still be convicted of driving under the influence of other intoxicating substances. A BAC of .20 or more brings even stiffer penalties.",
+  "fact": "Even with a BAC (blood alcohol concentration) below .08, you can still be convicted of driving under the influence of other intoxicating substances. A BAC of .20 or more brings even stiffer penalties.",
   "why": "The law targets impaired driving, not just a number on a test.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "At or above what BAC do even stiffer DUI penalties apply in Idaho?",
+    "q": "At or above what BAC (blood alcohol concentration) do even stiffer DUI (driving under the influence) penalties apply in Idaho?",
     "answer": 0.2,
     "unit": "BAC"
    },
    {
     "type": "tf",
-    "q": "If your BAC is under .08, you cannot be convicted of driving under the influence in Idaho.",
+    "q": "If your BAC (blood alcohol concentration) is under .08, you cannot be convicted of driving under the influence in Idaho.",
     "answer": false
    },
    {
     "type": "scenario",
-    "q": "You are 30, took a drug that impairs you, and your BAC is .03. Can you be convicted of DUI?",
+    "q": "You are 30, took a drug that impairs you, and your BAC (blood alcohol concentration) is .03. Can you be convicted of DUI (driving under the influence)?",
     "choices": [
      "Yes, for driving under the influence of other substances",
      "No, because your BAC is under .08",
@@ -9458,20 +9458,20 @@
   "id": "alc-dui-under-21",
   "topic": "alcohol",
   "page": 131,
-  "fact": "In Idaho, a driver under 21 is driving under the influence with a BAC of .02 or more.",
+  "fact": "In Idaho, a driver under 21 is driving under the influence with a BAC (blood alcohol concentration) of .02 or more.",
   "why": "It is illegal for people under 21 to drink, so the limit is set very low.",
   "hook": "Under 21: .02. Commercial: .04. 21 and over: .08.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "What BAC makes a driver under 21 legally under the influence in Idaho?",
+    "q": "What BAC (blood alcohol concentration) makes a driver under 21 legally under the influence in Idaho?",
     "answer": 0.02,
     "unit": "BAC"
    },
    {
     "type": "scenario",
-    "q": "You are 19 and have a BAC of .03. Are you legally under the influence in Idaho?",
+    "q": "You are 19 and have a BAC (blood alcohol concentration) of .03. Are you legally under the influence in Idaho?",
     "choices": [
      "Yes, the limit under 21 is .02",
      "No, the limit is .08 for everyone",
@@ -9486,31 +9486,31 @@
   "id": "alc-dui-first-conviction",
   "topic": "alcohol",
   "page": 132,
-  "fact": "A first DUI conviction can bring up to 6 months in jail, up to a $1,000 fine, and a license suspension of 90 to 180 days (1 year if under 21), with no driving at all for the first 30 days.",
-  "why": "Even one DUI puts lives at risk, so the penalties are serious from the start.",
+  "fact": "A first DUI (driving under the influence) conviction can bring up to 6 months in jail, up to a $1,000 fine, and a license suspension of 90 to 180 days (1 year if under 21), with no driving at all for the first 30 days.",
+  "why": "Even one DUI (driving under the influence) puts lives at risk, so the penalties are serious from the start.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "What is the maximum fine in dollars for a first DUI conviction in Idaho?",
+    "q": "What is the maximum fine in dollars for a first DUI (driving under the influence) conviction in Idaho?",
     "answer": 1000,
     "unit": "dollars"
    },
    {
     "type": "num",
-    "q": "What is the minimum license suspension in days for a first DUI conviction (age 21 or older)?",
+    "q": "What is the minimum license suspension in days for a first DUI (driving under the influence) conviction (age 21 or older)?",
     "answer": 90,
     "unit": "days"
    },
    {
     "type": "num",
-    "q": "For a driver under 21, how many years is the license suspension for a first DUI conviction?",
+    "q": "For a driver under 21, how many years is the license suspension for a first DUI (driving under the influence) conviction?",
     "answer": 1,
     "unit": "years"
    },
    {
     "type": "mc",
-    "q": "During a first DUI conviction suspension, when do you have absolutely no driving privileges?",
+    "q": "During a first DUI (driving under the influence) conviction suspension, when do you have absolutely no driving privileges?",
     "choices": [
      "The first 30 days",
      "The last 30 days",
@@ -9525,25 +9525,25 @@
   "id": "alc-dui-second-conviction",
   "topic": "alcohol",
   "page": 132,
-  "fact": "A second DUI within 10 years brings mandatory jail, up to a $2,000 fine, and a 1-year license suspension (2 years if under 21).",
-  "why": "Repeat DUI shows a continuing danger, so penalties increase sharply.",
+  "fact": "A second DUI (driving under the influence) within 10 years brings mandatory jail, up to a $2,000 fine, and a 1-year license suspension (2 years if under 21).",
+  "why": "Repeat DUI (driving under the influence) shows a continuing danger, so penalties increase sharply.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "For a driver under 21, how many years is the license suspension for a second DUI within 10 years?",
+    "q": "For a driver under 21, how many years is the license suspension for a second DUI (driving under the influence) within 10 years?",
     "answer": 2,
     "unit": "years"
    },
    {
     "type": "num",
-    "q": "What is the maximum fine in dollars for a second DUI within 10 years?",
+    "q": "What is the maximum fine in dollars for a second DUI (driving under the influence) within 10 years?",
     "answer": 2000,
     "unit": "dollars"
    },
    {
     "type": "mc",
-    "q": "For a driver 21 or older, how long is the license suspension for a second DUI within 10 years?",
+    "q": "For a driver 21 or older, how long is the license suspension for a second DUI (driving under the influence) within 10 years?",
     "choices": [
      "1 year",
      "90 days",
@@ -9558,13 +9558,13 @@
   "id": "alc-dui-third-felony",
   "topic": "alcohol",
   "page": 132,
-  "fact": "Three or more DUI convictions within 10 years is a felony. For a driver 21 or older, penalties include mandatory jail, up to a $5,000 fine, and a license suspension of 1 to 5 years. Drivers under 21 face up to a $2,000 fine and a suspension of at least 1 year or until age 21, whichever is longer.",
+  "fact": "Three or more DUI (driving under the influence) convictions within 10 years is a felony. For a driver 21 or older, penalties include mandatory jail, up to a $5,000 fine, and a license suspension of 1 to 5 years. Drivers under 21 face up to a $2,000 fine and a suspension of at least 1 year or until age 21, whichever is longer.",
   "why": "Drivers who keep driving impaired are treated as serious criminals because of the danger they pose.",
   "weight": 3,
   "items": [
    {
     "type": "mc",
-    "q": "What type of crime is a third DUI conviction within 10 years in Idaho?",
+    "q": "What type of crime is a third DUI (driving under the influence) conviction within 10 years in Idaho?",
     "choices": [
      "A felony",
      "A minor infraction",
@@ -9575,7 +9575,7 @@
    },
    {
     "type": "num",
-    "q": "What is the maximum fine in dollars for a third DUI within 10 years for a driver 21 or older?",
+    "q": "What is the maximum fine in dollars for a third DUI (driving under the influence) within 10 years for a driver 21 or older?",
     "answer": 5000,
     "unit": "dollars"
    },
@@ -9591,7 +9591,7 @@
   "id": "lic-carry-license",
   "topic": "licensing",
   "page": 13,
-  "fact": "You must have your driver's license with you whenever you drive. Misusing or damaging a license, permit, or ID card on purpose is a misdemeanor.",
+  "fact": "You must have your driver's license with you whenever you drive. Misusing or damaging a license, permit, or ID (identification) card on purpose is a misdemeanor.",
   "why": "Police need to confirm quickly that the person driving is allowed to drive.",
   "weight": 2,
   "items": [
@@ -9607,7 +9607,7 @@
      "Your driver's license",
      "Your birth certificate",
      "Your Social Security card",
-     "Your school ID card"
+     "Your school ID (identification) card"
     ],
     "answer": 0
    }
@@ -9901,26 +9901,26 @@
   "id": "lic-gdl-50-hours",
   "topic": "licensing",
   "page": 19,
-  "fact": "During the GDL supervised period you must drive at least 50 hours with supervision, and at least 10 of those hours must be at night.",
+  "fact": "During the GDL (Graduated Driver's License) supervised period you must drive at least 50 hours with supervision, and at least 10 of those hours must be at night.",
   "why": "Lots of practice, including in the dark, prepares you for conditions you will face alone.",
   "hook": "50 total, 10 at night.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "How many total hours of supervised driving must you log during the GDL period?",
+    "q": "How many total hours of supervised driving must you log during the GDL (Graduated Driver's License) period?",
     "answer": 50,
     "unit": "hours"
    },
    {
     "type": "num",
-    "q": "Of the required supervised GDL hours, how many must be at night?",
+    "q": "Of the required supervised GDL (Graduated Driver's License) hours, how many must be at night?",
     "answer": 10,
     "unit": "hours"
    },
    {
     "type": "mc",
-    "q": "Which meets Idaho's GDL supervised driving requirement?",
+    "q": "Which meets Idaho's GDL (Graduated Driver's License) supervised driving requirement?",
     "choices": [
      "50 hours total, 10 of them at night",
      "40 hours total, 10 of them at night",
@@ -9941,7 +9941,7 @@
   "items": [
    {
     "type": "num",
-    "q": "How many months long, at minimum, is the GDL supervised instruction period?",
+    "q": "How many months long, at minimum, is the GDL (Graduated Driver's License) supervised instruction period?",
     "answer": 6,
     "unit": "months"
    },
@@ -9962,19 +9962,19 @@
   "id": "lic-gdl-supervisor-21",
   "topic": "licensing",
   "page": 19,
-  "fact": "During the GDL supervised period, a licensed driver at least 21 must sit in the front seat next to you, and no one else may sit in the front seat.",
+  "fact": "During the GDL (Graduated Driver's License) supervised period, a licensed driver at least 21 must sit in the front seat next to you, and no one else may sit in the front seat.",
   "why": "The supervising adult needs a clear view and easy reach to help you, without other front-seat distractions.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "During the GDL supervised instruction period, how old must your supervising licensed driver be, at minimum?",
+    "q": "During the GDL (Graduated Driver's License) supervised instruction period, how old must your supervising licensed driver be, at minimum?",
     "answer": 21,
     "unit": "years"
    },
    {
     "type": "scenario",
-    "q": "You are in your GDL supervised period. Your 22-year-old licensed sister is supervising you, and your younger cousin wants to sit up front too. What is the rule?",
+    "q": "You are in your GDL (Graduated Driver's License) supervised period. Your 22-year-old licensed sister is supervising you, and your younger cousin wants to sit up front too. What is the rule?",
     "choices": [
      "Only your sister may sit in the front seat",
      "Your cousin may sit up front if wearing a seat belt",
@@ -9985,7 +9985,7 @@
    },
    {
     "type": "tf",
-    "q": "During the GDL supervised period, your supervising driver must be licensed and at least 21 years old.",
+    "q": "During the GDL (Graduated Driver's License) supervised period, your supervising driver must be licensed and at least 21 years old.",
     "answer": true
    }
   ]
@@ -9994,13 +9994,13 @@
   "id": "lic-gdl-violation-restart",
   "topic": "licensing",
   "page": 19,
-  "fact": "If you are convicted of a traffic violation during the GDL supervised period, your permit is canceled. You must get a new permit, and the 6-month period starts over.",
+  "fact": "If you are convicted of a traffic violation during the GDL (Graduated Driver's License) supervised period, your permit is canceled. You must get a new permit, and the 6-month period starts over.",
   "why": "The supervised period must be violation-free to show you are ready to drive safely.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "Four months into your GDL supervised period, you are convicted of speeding. What happens?",
+    "q": "Four months into your GDL (Graduated Driver's License) supervised period, you are convicted of speeding. What happens?",
     "choices": [
      "Your permit is canceled and the 6 months start over with a new permit",
      "You must add 2 more months to your current permit",
@@ -10011,7 +10011,7 @@
    },
    {
     "type": "tf",
-    "q": "A traffic conviction during the GDL supervised period only adds a fine; the time you already drove still counts.",
+    "q": "A traffic conviction during the GDL (Graduated Driver's License) supervised period only adds a fine; the time you already drove still counts.",
     "answer": false
    }
   ]
@@ -10047,19 +10047,19 @@
   "id": "lic-address-change-30",
   "topic": "licensing",
   "page": 29,
-  "fact": "You must tell ITD within 30 days after your address changes.",
+  "fact": "You must tell ITD (Idaho Transportation Department) within 30 days after your address changes.",
   "why": "Officials need to reach you with important notices about your license.",
   "weight": 1,
   "items": [
    {
     "type": "num",
-    "q": "Within how many days must you notify ITD after your address changes?",
+    "q": "Within how many days must you notify ITD (Idaho Transportation Department) after your address changes?",
     "answer": 30,
     "unit": "days"
    },
    {
     "type": "mc",
-    "q": "You moved to a new home. How soon must you tell ITD?",
+    "q": "You moved to a new home. How soon must you tell ITD (Idaho Transportation Department)?",
     "choices": [
      "Within 30 days",
      "Within 10 days",
@@ -10389,7 +10389,7 @@
    },
    {
     "type": "tf",
-    "q": "Under the Driver License Compact, only serious offenses like DUI are reported to your home state, not minor moving violations.",
+    "q": "Under the Driver License Compact, only serious offenses like DUI (driving under the influence) are reported to your home state, not minor moving violations.",
     "answer": false
    }
   ]
@@ -10669,7 +10669,7 @@
   "id": "alc-reasons-suspension",
   "topic": "licensing",
   "page": 124,
-  "fact": "Your license can be suspended or revoked for things like DUI, reckless driving, fleeing a police officer, leaving the scene of a crash, refusing or failing an evidentiary test, and not carrying vehicle insurance.",
+  "fact": "Your license can be suspended or revoked for things like DUI (driving under the influence), reckless driving, fleeing a police officer, leaving the scene of a crash, refusing or failing an evidentiary test, and not carrying vehicle insurance.",
   "why": "These actions put other people in serious danger or avoid responsibility for harm.",
   "weight": 2,
   "items": [
@@ -10721,18 +10721,18 @@
   "id": "alc-gdl-absolute",
   "topic": "licensing",
   "page": 125,
-  "fact": "GDL penalty suspensions are absolute: no driving of any kind is allowed. They are added on top of any permit cancellation or other suspension from a court or the department.",
+  "fact": "GDL (Graduated Driver's License) penalty suspensions are absolute: no driving of any kind is allowed. They are added on top of any permit cancellation or other suspension from a court or the department.",
   "why": "The penalty is meant to fully stop a young driver from driving for the whole period.",
   "weight": 2,
   "items": [
    {
     "type": "tf",
-    "q": "During a GDL penalty suspension, you may not drive at all, not even to school or work.",
+    "q": "During a GDL (Graduated Driver's License) penalty suspension, you may not drive at all, not even to school or work.",
     "answer": true
    },
    {
     "type": "mc",
-    "q": "During a GDL penalty suspension, what driving is allowed?",
+    "q": "During a GDL (Graduated Driver's License) penalty suspension, what driving is allowed?",
     "choices": [
      "No driving of any kind",
      "Driving to school only",
@@ -10753,13 +10753,13 @@
   "items": [
    {
     "type": "num",
-    "q": "GDL penalties apply to all drivers under what age?",
+    "q": "GDL (Graduated Driver's License) penalties apply to all drivers under what age?",
     "answer": 17,
     "unit": "years"
    },
    {
     "type": "mc",
-    "q": "You are 16 and convicted of your first moving violation. What GDL penalty applies?",
+    "q": "You are 16 and convicted of your first moving violation. What GDL (Graduated Driver's License) penalty applies?",
     "choices": [
      "A warning letter",
      "A 30-day suspension",
@@ -10780,13 +10780,13 @@
   "items": [
    {
     "type": "num",
-    "q": "How many days is the GDL suspension for a second moving violation conviction for a driver under 17?",
+    "q": "How many days is the GDL (Graduated Driver's License) suspension for a second moving violation conviction for a driver under 17?",
     "answer": 30,
     "unit": "days"
    },
    {
     "type": "scenario",
-    "q": "You are 16 and just got your second moving violation conviction. What is the GDL penalty?",
+    "q": "You are 16 and just got your second moving violation conviction. What is the GDL (Graduated Driver's License) penalty?",
     "choices": [
      "30-day suspension",
      "Warning letter",
@@ -10807,7 +10807,7 @@
   "items": [
    {
     "type": "num",
-    "q": "How many days is the GDL suspension for a third moving violation conviction for a driver under 17?",
+    "q": "How many days is the GDL (Graduated Driver's License) suspension for a third moving violation conviction for a driver under 17?",
     "answer": 60,
     "unit": "days"
    },
@@ -10818,7 +10818,7 @@
    },
    {
     "type": "scenario",
-    "q": "You are 16 and were just convicted of your third moving violation. What GDL penalty applies?",
+    "q": "You are 16 and were just convicted of your third moving violation. What GDL (Graduated Driver's License) penalty applies?",
     "choices": [
      "60-day suspension",
      "30-day suspension",
@@ -10833,7 +10833,7 @@
   "id": "alc-restricted-permit",
   "topic": "licensing",
   "page": 127,
-  "fact": "If your license is suspended, you may qualify for a restricted permit to drive to places like work or medical treatment. If the department suspended you, apply to ITD in Boise; if a court suspended you, apply to that court.",
+  "fact": "If your license is suspended, you may qualify for a restricted permit to drive to places like work or medical treatment. If the department suspended you, apply to ITD (Idaho Transportation Department) in Boise; if a court suspended you, apply to that court.",
   "why": "A restricted permit lets people meet basic needs while still limiting their driving.",
   "weight": 1,
   "items": [
@@ -10842,7 +10842,7 @@
     "q": "A court suspended your license after a conviction. Where do you ask for restricted driving privileges?",
     "choices": [
      "The court that convicted you",
-     "Any county DMV office",
+     "Any county DMV (Division of Motor Vehicles) office",
      "Your insurance company",
      "The officer who cited you"
     ],
@@ -10892,13 +10892,13 @@
   "id": "alc-reinstatement-sr22",
   "topic": "licensing",
   "page": 128,
-  "fact": "To get your license back after a suspension for serious offenses like DUI or reckless driving, you must pay a reinstatement fee and show proof of financial responsibility (an SR-22 insurance certificate) for 3 years.",
+  "fact": "To get your license back after a suspension for serious offenses like DUI (driving under the influence) or reckless driving, you must pay a reinstatement fee and show proof of financial responsibility (an SR-22 insurance certificate) for 3 years.",
   "why": "Drivers who committed serious offenses must prove they are insured in case they cause harm again.",
   "weight": 2,
   "items": [
    {
     "type": "num",
-    "q": "For how many years must you show proof of financial responsibility after a DUI or reckless driving suspension?",
+    "q": "For how many years must you show proof of financial responsibility after a DUI (driving under the influence) or reckless driving suspension?",
     "answer": 3,
     "unit": "years"
    },
@@ -11331,7 +11331,7 @@
   "id": "lic-equip-studded-tires",
   "topic": "equipment",
   "page": 42,
-  "fact": "Studded snow tires may be used only from October 1 to April 30. ITD sometimes changes these dates because of the weather.",
+  "fact": "Studded snow tires may be used only from October 1 to April 30. ITD (Idaho Transportation Department) sometimes changes these dates because of the weather.",
   "why": "Studs help on ice but damage dry pavement, so they are limited to the snowy months.",
   "weight": 2,
   "items": [

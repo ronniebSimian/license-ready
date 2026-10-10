@@ -1956,7 +1956,7 @@
    },
    {
     "type": "tf",
-    "q": "Cuando se instala una baliza HAWK, las calles laterales con letrero de alto ya no tienen que detenerse.",
+    "q": "Cuando se instala una baliza HAWK (cruce peatonal activado de alta intensidad), las calles laterales con letrero de alto ya no tienen que detenerse.",
     "answer": false
    }
   ]
@@ -1992,13 +1992,13 @@
   "id": "sig-hawk-dark-yellow",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "Una baliza HAWK está apagada hasta que un peatón oprime el botón. Luego parpadea en amarillo (disminuya la velocidad) y después muestra amarillo fijo (prepárese para detenerse).",
+  "fact": "Una baliza HAWK (cruce peatonal activado de alta intensidad) está apagada hasta que un peatón oprime el botón. Luego parpadea en amarillo (disminuya la velocidad) y después muestra amarillo fijo (prepárese para detenerse).",
   "why": "Las luces de advertencia dan tiempo a los conductores para disminuir la velocidad antes de la luz roja.",
   "weight": 2,
   "items": [
    {
     "type": "mc",
-    "q": "¿Qué significa que una baliza HAWK esté apagada (sin luz)?",
+    "q": "¿Qué significa que una baliza HAWK (cruce peatonal activado de alta intensidad) esté apagada (sin luz)?",
     "choices": [
      "Conduzca normalmente, pero esté atento a los peatones",
      "Deténgase y espere",
@@ -2009,7 +2009,7 @@
    },
    {
     "type": "mc",
-    "q": "Después de que un peatón oprime el botón, ¿qué muestra primero una baliza HAWK?",
+    "q": "Después de que un peatón oprime el botón, ¿qué muestra primero una baliza HAWK (cruce peatonal activado de alta intensidad)?",
     "choices": [
      "Amarillo intermitente",
      "Rojo fijo",
@@ -2024,13 +2024,13 @@
   "id": "sig-hawk-red",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "Cuando una baliza HAWK muestra dos luces rojas fijas, deténgase por completo en la línea de alto. Cuando las luces rojas parpadean alternadamente, deténgase, ceda el paso a los peatones en el cruce peatonal y avance cuando esté libre.",
+  "fact": "Cuando una baliza HAWK (cruce peatonal activado de alta intensidad) muestra dos luces rojas fijas, deténgase por completo en la línea de alto. Cuando las luces rojas parpadean alternadamente, deténgase, ceda el paso a los peatones en el cruce peatonal y avance cuando esté libre.",
   "why": "La luz roja fija es el tiempo para que las personas crucen; la roja intermitente alternada permite a los conductores avanzar cuando el cruce peatonal está vacío.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "En una baliza HAWK, las dos luces rojas parpadean alternadamente. El cruce peatonal ya está vacío. ¿Qué debe hacer?",
+    "q": "En una baliza HAWK (cruce peatonal activado de alta intensidad), las dos luces rojas parpadean alternadamente. El cruce peatonal ya está vacío. ¿Qué debe hacer?",
     "choices": [
      "Detenerse y luego avanzar, ya que el cruce peatonal está libre",
      "Quedarse detenido hasta que la baliza se apague",
@@ -2041,7 +2041,7 @@
    },
    {
     "type": "tf",
-    "q": "Debe detenerse por completo cuando una baliza HAWK muestra luces rojas fijas.",
+    "q": "Debe detenerse por completo cuando una baliza HAWK (cruce peatonal activado de alta intensidad) muestra luces rojas fijas.",
     "answer": true
    }
   ]
@@ -2354,14 +2354,14 @@
   "id": "law-rr-advance-warnings",
   "topic": "signals-markings",
   "page": 61,
-  "fact": "Antes de muchos cruces de ferrocarril, el pavimento está marcado con una X grande y las letras RR. La mayoría de los cruces también tienen una señal blanca en forma de X llamada cruz de San Andrés (crossbuck).",
+  "fact": "Antes de muchos cruces de ferrocarril, el pavimento está marcado con una X grande y las letras RR (ferrocarril, en inglés \"railroad\"). La mayoría de los cruces también tienen una señal blanca en forma de X llamada cruz de San Andrés (crossbuck).",
   "why": "Estas marcas le avisan con anticipación para que tenga tiempo de mirar, escuchar y disminuir la velocidad por si viene un tren.",
   "hook": "X y RR en la calle = cruce de ferrocarril más adelante.",
   "weight": 2,
   "items": [
    {
     "type": "mc",
-    "q": "¿Qué significa una X grande con las letras RR pintada en la calle?",
+    "q": "¿Qué significa una X grande con las letras RR (ferrocarril, en inglés \"railroad\") pintada en la calle?",
     "choices": [
      "Hay un cruce de ferrocarril más adelante",
      "Hay un cruce de calles más adelante",
@@ -2377,7 +2377,7 @@
    },
    {
     "type": "scenario",
-    "q": "Ve una X grande y RR pintadas en la calle más adelante, pero no ve ni oye un tren. ¿Qué debe hacer?",
+    "q": "Ve una X grande y RR (ferrocarril, en inglés \"railroad\") pintadas en la calle más adelante, pero no ve ni oye un tren. ¿Qué debe hacer?",
     "choices": [
      "Disminuir la velocidad, mirar a ambos lados y escuchar si viene un tren",
      "Mantener su velocidad porque no se ve ningún tren",
@@ -8391,13 +8391,13 @@
   "id": "cnd-abs-pulse-normal",
   "topic": "emergencies",
   "page": 116,
-  "fact": "Al frenar fuerte con ABS, es normal oír el ruido de un motor de bomba y sentir que el pedal del freno vibra o pulsa. Mantenga el pie en el pedal. El ABS le permite seguir controlando la dirección, pero no acorta la distancia para detenerse.",
+  "fact": "Al frenar fuerte con ABS (sistema de frenos antibloqueo), es normal oír el ruido de un motor de bomba y sentir que el pedal del freno vibra o pulsa. Mantenga el pie en el pedal. El ABS le permite seguir controlando la dirección, pero no acorta la distancia para detenerse.",
   "why": "Los conductores que se sorprenden por el ruido pueden levantar el pie, y eso alarga la distancia para detenerse.",
   "weight": 2,
   "items": [
    {
     "type": "scenario",
-    "q": "Frena fuerte en una emergencia y siente que el pedal del freno pulsa con un zumbido. Su carro tiene ABS. ¿Qué debe hacer?",
+    "q": "Frena fuerte en una emergencia y siente que el pedal del freno pulsa con un zumbido. Su carro tiene ABS (sistema de frenos antibloqueo). ¿Qué debe hacer?",
     "choices": [
      "Mantener una presión constante en el pedal",
      "Quitar el pie del freno",
@@ -8418,13 +8418,13 @@
   "topic": "emergencies",
   "page": 116,
   "fact": "En una parada de emergencia con frenos antibloqueo (ABS), pise el pedal del freno con firmeza y mantenga una presión constante. No bombee los frenos.",
-  "why": "El ABS bombea los frenos por usted más rápido de lo que usted puede, y si usted los bombea, el sistema funciona peor y aumenta la distancia para detenerse.",
-  "hook": "ABS: pise fuerte y sostenga.",
+  "why": "El ABS (sistema de frenos antibloqueo) bombea los frenos por usted más rápido de lo que usted puede, y si usted los bombea, el sistema funciona peor y aumenta la distancia para detenerse.",
+  "hook": "ABS (sistema de frenos antibloqueo): pise fuerte y sostenga.",
   "weight": 3,
   "items": [
    {
     "type": "mc",
-    "q": "¿Cómo debe frenar en una emergencia si su carro tiene ABS?",
+    "q": "¿Cómo debe frenar en una emergencia si su carro tiene ABS (sistema de frenos antibloqueo)?",
     "choices": [
      "Pisar con firmeza y mantener una presión constante",
      "Bombear el pedal del freno rápido",
@@ -8536,13 +8536,13 @@
   "id": "cnd-non-abs-quick-stop",
   "topic": "emergencies",
   "page": 117,
-  "fact": "Sin ABS, frene lo más fuerte que pueda sin que se bloqueen las llantas. Si las llantas se bloquean y el carro derrapa, suelte rápido un poco el freno y vuelva a pisar, repitiendo hasta detenerse.",
+  "fact": "Sin ABS (sistema de frenos antibloqueo), frene lo más fuerte que pueda sin que se bloqueen las llantas. Si las llantas se bloquean y el carro derrapa, suelte rápido un poco el freno y vuelva a pisar, repitiendo hasta detenerse.",
   "why": "Las llantas bloqueadas se deslizan y no se pueden dirigir; al soltar el freno vuelven a girar y a agarrar el camino.",
   "weight": 2,
   "items": [
    {
     "type": "scenario",
-    "q": "Su carro no tiene ABS. Al frenar fuerte, siente que las llantas se bloquean y el carro empieza a derrapar. ¿Qué debe hacer?",
+    "q": "Su carro no tiene ABS (sistema de frenos antibloqueo). Al frenar fuerte, siente que las llantas se bloquean y el carro empieza a derrapar. ¿Qué debe hacer?",
     "choices": [
      "Soltar rápido el freno y luego volver a pisar",
      "Pisar el freno aún más fuerte",
@@ -8553,7 +8553,7 @@
    },
    {
     "type": "mc",
-    "q": "Sin ABS, ¿qué tan fuerte debe pisar el freno en una parada rápida?",
+    "q": "Sin ABS (sistema de frenos antibloqueo), ¿qué tan fuerte debe pisar el freno en una parada rápida?",
     "choices": [
      "Lo más fuerte que pueda sin bloquear las llantas",
      "Lo más fuerte posible, aunque se bloqueen las llantas",
@@ -8886,11 +8886,11 @@
    },
    {
     "type": "mc",
-    "q": "¿Qué le da un agente de inmediato cuando no pasa una prueba de evidencia de alcohol después de un arresto por DUI?",
+    "q": "¿Qué le da un agente de inmediato cuando no pasa una prueba de evidencia de alcohol después de un arresto por DUI (manejar bajo los efectos del alcohol o drogas)?",
     "choices": [
      "Un Aviso de Suspensión",
      "Un permiso de manejo restringido",
-     "Una carta de advertencia de GDL",
+     "Una carta de advertencia de GDL (licencia de manejo por etapas)",
      "Un formulario de restablecimiento"
     ],
     "answer": 0
@@ -8901,24 +8901,24 @@
   "id": "alc-als-effective",
   "topic": "alcohol",
   "page": 126,
-  "fact": "El Aviso de Suspensión de ALS entra en vigor 30 días después del día en que lo recibe.",
+  "fact": "El Aviso de Suspensión de ALS (suspensión administrativa de la licencia) entra en vigor 30 días después del día en que lo recibe.",
   "why": "El tiempo de espera da tiempo para pedir una audiencia antes de que empiece la suspensión.",
   "weight": 2,
   "items": [
    {
     "type": "num",
-    "q": "¿Cuántos días después de recibirlo entra en vigor un Aviso de Suspensión de ALS?",
+    "q": "¿Cuántos días después de recibirlo entra en vigor un Aviso de Suspensión de ALS (suspensión administrativa de la licencia)?",
     "answer": 30,
     "unit": "días"
    },
    {
     "type": "tf",
-    "q": "Un Aviso de Suspensión de ALS entra en vigor 30 días después del día en que lo recibe.",
+    "q": "Un Aviso de Suspensión de ALS (suspensión administrativa de la licencia) entra en vigor 30 días después del día en que lo recibe.",
     "answer": true
    },
    {
     "type": "mc",
-    "q": "¿Cuándo entra en vigor un Aviso de Suspensión de ALS?",
+    "q": "¿Cuándo entra en vigor un Aviso de Suspensión de ALS (suspensión administrativa de la licencia)?",
     "choices": [
      "30 días después de recibirlo",
      "El mismo día en que lo recibe",
@@ -8939,22 +8939,22 @@
   "items": [
    {
     "type": "num",
-    "q": "¿De cuántos días es la suspensión ALS la primera vez que no pasa una prueba de evidencia?",
+    "q": "¿De cuántos días es la suspensión ALS (suspensión administrativa de la licencia) la primera vez que no pasa una prueba de evidencia?",
     "answer": 90,
     "unit": "días"
    },
    {
     "type": "num",
-    "q": "Durante una ALS por primera vez, ¿por cuántos días no tiene absolutamente ningún privilegio de manejo?",
+    "q": "Durante una ALS (suspensión administrativa de la licencia) por primera vez, ¿por cuántos días no tiene absolutamente ningún privilegio de manejo?",
     "answer": 30,
     "unit": "días"
    },
    {
     "type": "mc",
-    "q": "Después de que termina una ALS por primera vez, ¿qué debe tener cualquier vehículo que maneje durante 1 año?",
+    "q": "Después de que termina una ALS (suspensión administrativa de la licencia) por primera vez, ¿qué debe tener cualquier vehículo que maneje durante 1 año?",
     "choices": [
      "Un dispositivo de bloqueo de encendido (ignition interlock)",
-     "Un rastreador GPS",
+     "Un rastreador GPS (sistema de posicionamiento global)",
      "Un limitador de velocidad",
      "Una cámara en el tablero"
     ],
@@ -8972,13 +8972,13 @@
   "items": [
    {
     "type": "num",
-    "q": "No pasar la prueba por segunda vez dentro de ¿cuántos años trae una suspensión ALS absoluta de 1 año?",
+    "q": "No pasar la prueba por segunda vez dentro de ¿cuántos años trae una suspensión ALS (suspensión administrativa de la licencia) absoluta de 1 año?",
     "answer": 5,
     "unit": "años"
    },
    {
     "type": "mc",
-    "q": "¿Cuál es el castigo ALS por no pasar una prueba de evidencia por segunda vez en 5 años?",
+    "q": "¿Cuál es el castigo ALS (suspensión administrativa de la licencia) por no pasar una prueba de evidencia por segunda vez en 5 años?",
     "choices": [
      "Suspensión de 1 año sin poder manejar nada",
      "Suspensión de 90 días",
@@ -8993,13 +8993,13 @@
   "id": "alc-als-separate",
   "topic": "alcohol",
   "page": 126,
-  "fact": "La ALS es un castigo civil, separado del caso penal por DUI. Debe cumplir las reglas de la ALS y también presentarse en la corte por el cargo de DUI.",
+  "fact": "La ALS (suspensión administrativa de la licencia) es un castigo civil, separado del caso penal por DUI (manejar bajo los efectos del alcohol o drogas). Debe cumplir las reglas de la ALS y también presentarse en la corte por el cargo de DUI.",
   "why": "El castigo a la licencia y el caso penal son dos procesos diferentes, así que uno no reemplaza al otro.",
   "weight": 2,
   "items": [
    {
     "type": "tf",
-    "q": "Si recibe una Suspensión Administrativa de la Licencia, ya no tiene que presentarse en la corte por el cargo de DUI.",
+    "q": "Si recibe una Suspensión Administrativa de la Licencia, ya no tiene que presentarse en la corte por el cargo de DUI (manejar bajo los efectos del alcohol o drogas).",
     "answer": false
    },
    {
@@ -9031,14 +9031,14 @@
    },
    {
     "type": "tf",
-    "q": "En Idaho, puede negarse a una prueba de BAC sin ningún castigo si no ha tomado alcohol.",
+    "q": "En Idaho, puede negarse a una prueba de BAC (nivel de alcohol en la sangre) sin ningún castigo si no ha tomado alcohol.",
     "answer": false
    },
    {
     "type": "mc",
     "q": "¿Qué significa \"consentimiento implícito\" (implied consent) en Idaho?",
     "choices": [
-     "Al manejar, ya aceptó hacerse una prueba de BAC o de drogas",
+     "Al manejar, ya aceptó hacerse una prueba de alcohol o de drogas",
      "Debe aceptar por escrito antes de cualquier prueba",
      "Solo se puede hacer la prueba a los pasajeros",
      "Los agentes necesitan una orden de la corte para cada prueba"
@@ -9109,7 +9109,7 @@
   "id": "alc-refusal-second",
   "topic": "alcohol",
   "page": 127,
-  "fact": "Negarse a la prueba por segunda vez en 10 años trae una suspensión absoluta de 2 años. Esto es además de cualquier castigo de la corte por una condena de DUI.",
+  "fact": "Negarse a la prueba por segunda vez en 10 años trae una suspensión absoluta de 2 años. Esto es además de cualquier castigo de la corte por una condena de DUI (manejar bajo los efectos del alcohol o drogas).",
   "why": "Negarse varias veces muestra que el conductor trata de evitar su responsabilidad, así que el castigo se duplica.",
   "weight": 3,
   "items": [
@@ -9175,19 +9175,19 @@
   "items": [
    {
     "type": "num",
-    "q": "Con un BAC de .10, ¿cuántas veces mayor es su riesgo de causar un choque?",
+    "q": "Con un BAC (nivel de alcohol en la sangre) de .10, ¿cuántas veces mayor es su riesgo de causar un choque?",
     "answer": 6,
     "unit": "veces"
    },
    {
     "type": "num",
-    "q": "Con un BAC de .15, ¿cuántas veces mayor es su riesgo de causar un choque?",
+    "q": "Con un BAC (nivel de alcohol en la sangre) de .15, ¿cuántas veces mayor es su riesgo de causar un choque?",
     "answer": 25,
     "unit": "veces"
    },
    {
     "type": "mc",
-    "q": "Con un BAC un poco mayor a .05, ¿qué pasa con su riesgo de causar un choque?",
+    "q": "Con un BAC (nivel de alcohol en la sangre) un poco mayor a .05, ¿qué pasa con su riesgo de causar un choque?",
     "choices": [
      "Se duplica",
      "Sigue igual",
@@ -9326,7 +9326,7 @@
    },
    {
     "type": "scenario",
-    "q": "Necesita llevar una botella de vino abierta en una camioneta SUV sin cajuela. ¿Dónde debe ir?",
+    "q": "Necesita llevar una botella de vino abierta en una camioneta SUV (vehículo utilitario deportivo) sin cajuela. ¿Dónde debe ir?",
     "choices": [
      "Detrás del último asiento en posición vertical",
      "En la guantera",
@@ -9399,19 +9399,19 @@
   "items": [
    {
     "type": "num",
-    "q": "¿Con qué BAC un conductor de 21 años o más está legalmente bajo los efectos del alcohol en Idaho?",
+    "q": "¿Con qué BAC (nivel de alcohol en la sangre) un conductor de 21 años o más está legalmente bajo los efectos del alcohol en Idaho?",
     "answer": 0.08,
     "unit": "BAC"
    },
    {
     "type": "num",
-    "q": "¿Con qué BAC un conductor de vehículo comercial está legalmente bajo los efectos del alcohol en Idaho?",
+    "q": "¿Con qué BAC (nivel de alcohol en la sangre) un conductor de vehículo comercial está legalmente bajo los efectos del alcohol en Idaho?",
     "answer": 0.04,
     "unit": "BAC"
    },
    {
     "type": "mc",
-    "q": "¿Cuál es el límite de BAC para una persona de 25 años que maneja un carro normal en Idaho?",
+    "q": "¿Cuál es el límite de BAC (nivel de alcohol en la sangre) para una persona de 25 años que maneja un carro normal en Idaho?",
     "choices": [
      ".08",
      ".02",
@@ -9426,27 +9426,27 @@
   "id": "alc-dui-below-08",
   "topic": "alcohol",
   "page": 131,
-  "fact": "Aunque su BAC esté por debajo de .08, todavía lo pueden condenar por manejar bajo los efectos de otras sustancias intoxicantes. Un BAC de .20 o más trae castigos aún más duros.",
+  "fact": "Aunque su BAC (nivel de alcohol en la sangre) esté por debajo de .08, todavía lo pueden condenar por manejar bajo los efectos de otras sustancias intoxicantes. Un BAC de .20 o más trae castigos aún más duros.",
   "why": "La ley castiga el manejo con las capacidades afectadas, no solo un número en una prueba.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "¿A partir de qué BAC se aplican castigos de DUI aún más duros en Idaho?",
+    "q": "¿A partir de qué BAC (nivel de alcohol en la sangre) se aplican castigos de DUI (manejar bajo los efectos del alcohol o drogas) aún más duros en Idaho?",
     "answer": 0.2,
     "unit": "BAC"
    },
    {
     "type": "tf",
-    "q": "Si su BAC es menor de .08, no lo pueden condenar por manejar bajo los efectos en Idaho.",
+    "q": "Si su BAC (nivel de alcohol en la sangre) es menor de .08, no lo pueden condenar por manejar bajo los efectos en Idaho.",
     "answer": false
    },
    {
     "type": "scenario",
-    "q": "Tiene 30 años, tomó una droga que lo afecta y su BAC es .03. ¿Lo pueden condenar por DUI?",
+    "q": "Tiene 30 años, tomó una droga que lo afecta y su BAC (nivel de alcohol en la sangre) es .03. ¿Lo pueden condenar por DUI (manejar bajo los efectos del alcohol o drogas)?",
     "choices": [
      "Sí, por manejar bajo los efectos de otras sustancias",
-     "No, porque su BAC es menor de .08",
+     "No, porque su BAC (nivel de alcohol en la sangre) es menor de .08",
      "No, porque es mayor de 21",
      "Solo si choca"
     ],
@@ -9458,20 +9458,20 @@
   "id": "alc-dui-under-21",
   "topic": "alcohol",
   "page": 131,
-  "fact": "En Idaho, un conductor menor de 21 años está manejando bajo los efectos del alcohol con un BAC de .02 o más.",
+  "fact": "En Idaho, un conductor menor de 21 años está manejando bajo los efectos del alcohol con un BAC (nivel de alcohol en la sangre) de .02 o más.",
   "why": "Es ilegal que las personas menores de 21 tomen alcohol, así que el límite es muy bajo.",
   "hook": "Menores de 21: .02. Comercial: .04. 21 o más: .08.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "¿Con qué BAC un conductor menor de 21 años está legalmente bajo los efectos del alcohol en Idaho?",
+    "q": "¿Con qué BAC (nivel de alcohol en la sangre) un conductor menor de 21 años está legalmente bajo los efectos del alcohol en Idaho?",
     "answer": 0.02,
     "unit": "BAC"
    },
    {
     "type": "scenario",
-    "q": "Tiene 19 años y un BAC de .03. ¿Está legalmente bajo los efectos del alcohol en Idaho?",
+    "q": "Tiene 19 años y un BAC (nivel de alcohol en la sangre) de .03. ¿Está legalmente bajo los efectos del alcohol en Idaho?",
     "choices": [
      "Sí, el límite para menores de 21 es .02",
      "No, el límite es .08 para todos",
@@ -9486,13 +9486,13 @@
   "id": "alc-dui-first-conviction",
   "topic": "alcohol",
   "page": 132,
-  "fact": "Una primera condena por DUI puede traer hasta 6 meses de cárcel, una multa de hasta $1,000 y una suspensión de la licencia de 90 a 180 días (1 año si es menor de 21), sin poder manejar nada durante los primeros 30 días.",
-  "why": "Aunque sea un solo DUI, pone vidas en riesgo, así que los castigos son serios desde el principio.",
+  "fact": "Una primera condena por DUI (manejar bajo los efectos del alcohol o drogas) puede traer hasta 6 meses de cárcel, una multa de hasta $1,000 y una suspensión de la licencia de 90 a 180 días (1 año si es menor de 21), sin poder manejar nada durante los primeros 30 días.",
+  "why": "Aunque sea un solo DUI (manejar bajo los efectos del alcohol o drogas), pone vidas en riesgo, así que los castigos son serios desde el principio.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "¿Cuál es la multa máxima en dólares por una primera condena por DUI en Idaho?",
+    "q": "¿Cuál es la multa máxima en dólares por una primera condena por DUI (manejar bajo los efectos del alcohol o drogas) en Idaho?",
     "answer": 1000,
     "unit": "dólares"
    },
@@ -9504,13 +9504,13 @@
    },
    {
     "type": "num",
-    "q": "Para un conductor menor de 21, ¿de cuántos años es la suspensión de la licencia por una primera condena por DUI?",
+    "q": "Para un conductor menor de 21, ¿de cuántos años es la suspensión de la licencia por una primera condena por DUI (manejar bajo los efectos del alcohol o drogas)?",
     "answer": 1,
     "unit": "años"
    },
    {
     "type": "mc",
-    "q": "Durante la suspensión por una primera condena por DUI, ¿cuándo no tiene absolutamente ningún privilegio de manejo?",
+    "q": "Durante la suspensión por una primera condena por DUI (manejar bajo los efectos del alcohol o drogas), ¿cuándo no tiene absolutamente ningún privilegio de manejo?",
     "choices": [
      "Los primeros 30 días",
      "Los últimos 30 días",
@@ -9525,25 +9525,25 @@
   "id": "alc-dui-second-conviction",
   "topic": "alcohol",
   "page": 132,
-  "fact": "Un segundo DUI en 10 años trae cárcel obligatoria, una multa de hasta $2,000 y una suspensión de la licencia de 1 año (2 años si es menor de 21).",
-  "why": "Repetir un DUI muestra un peligro continuo, así que los castigos aumentan mucho.",
+  "fact": "Un segundo DUI (manejar bajo los efectos del alcohol o drogas) en 10 años trae cárcel obligatoria, una multa de hasta $2,000 y una suspensión de la licencia de 1 año (2 años si es menor de 21).",
+  "why": "Repetir un DUI (manejar bajo los efectos del alcohol o drogas) muestra un peligro continuo, así que los castigos aumentan mucho.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Para un conductor menor de 21, ¿de cuántos años es la suspensión de la licencia por un segundo DUI en 10 años?",
+    "q": "Para un conductor menor de 21, ¿de cuántos años es la suspensión de la licencia por un segundo DUI (manejar bajo los efectos del alcohol o drogas) en 10 años?",
     "answer": 2,
     "unit": "años"
    },
    {
     "type": "num",
-    "q": "¿Cuál es la multa máxima en dólares por un segundo DUI en 10 años?",
+    "q": "¿Cuál es la multa máxima en dólares por un segundo DUI (manejar bajo los efectos del alcohol o drogas) en 10 años?",
     "answer": 2000,
     "unit": "dólares"
    },
    {
     "type": "mc",
-    "q": "Para un conductor de 21 años o más, ¿cuánto dura la suspensión de la licencia por un segundo DUI en 10 años?",
+    "q": "Para un conductor de 21 años o más, ¿cuánto dura la suspensión de la licencia por un segundo DUI (manejar bajo los efectos del alcohol o drogas) en 10 años?",
     "choices": [
      "1 año",
      "90 días",
@@ -9558,13 +9558,13 @@
   "id": "alc-dui-third-felony",
   "topic": "alcohol",
   "page": 132,
-  "fact": "Tres o más condenas por DUI en 10 años son un delito grave (felony). Para un conductor de 21 años o más, los castigos incluyen cárcel obligatoria, una multa de hasta $5,000 y una suspensión de la licencia de 1 a 5 años. Los conductores menores de 21 enfrentan una multa de hasta $2,000 y una suspensión de por lo menos 1 año o hasta cumplir 21, lo que sea más largo.",
+  "fact": "Tres o más condenas por DUI (manejar bajo los efectos del alcohol o drogas) en 10 años son un delito grave (felony). Para un conductor de 21 años o más, los castigos incluyen cárcel obligatoria, una multa de hasta $5,000 y una suspensión de la licencia de 1 a 5 años. Los conductores menores de 21 enfrentan una multa de hasta $2,000 y una suspensión de por lo menos 1 año o hasta cumplir 21, lo que sea más largo.",
   "why": "Los conductores que siguen manejando intoxicados son tratados como delincuentes graves por el peligro que representan.",
   "weight": 3,
   "items": [
    {
     "type": "mc",
-    "q": "¿Qué tipo de delito es una tercera condena por DUI en 10 años en Idaho?",
+    "q": "¿Qué tipo de delito es una tercera condena por DUI (manejar bajo los efectos del alcohol o drogas) en 10 años en Idaho?",
     "choices": [
      "Un delito grave (felony)",
      "Una infracción menor",
@@ -9575,13 +9575,13 @@
    },
    {
     "type": "num",
-    "q": "¿Cuál es la multa máxima en dólares por un tercer DUI en 10 años para un conductor de 21 años o más?",
+    "q": "¿Cuál es la multa máxima en dólares por un tercer DUI (manejar bajo los efectos del alcohol o drogas) en 10 años para un conductor de 21 años o más?",
     "answer": 5000,
     "unit": "dólares"
    },
    {
     "type": "num",
-    "q": "¿Cuál es la suspensión de licencia más larga, en años, por tres o más DUI en 10 años (21 años o más)?",
+    "q": "¿Cuál es la suspensión de licencia más larga, en años, por tres o más DUI (manejar bajo los efectos del alcohol o drogas) en 10 años (21 años o más)?",
     "answer": 5,
     "unit": "años"
    }
@@ -9908,19 +9908,19 @@
   "items": [
    {
     "type": "num",
-    "q": "¿Cuántas horas en total de manejo supervisado debe registrar durante el periodo de GDL?",
+    "q": "¿Cuántas horas en total de manejo supervisado debe registrar durante el periodo de GDL (licencia de manejo por etapas)?",
     "answer": 50,
     "unit": "horas"
    },
    {
     "type": "num",
-    "q": "De las horas de manejo supervisado obligatorias de GDL, ¿cuántas deben ser de noche?",
+    "q": "De las horas de manejo supervisado obligatorias de GDL (licencia de manejo por etapas), ¿cuántas deben ser de noche?",
     "answer": 10,
     "unit": "horas"
    },
    {
     "type": "mc",
-    "q": "¿Qué cumple con el requisito de manejo supervisado de GDL de Idaho?",
+    "q": "¿Qué cumple con el requisito de manejo supervisado de GDL (licencia de manejo por etapas) de Idaho?",
     "choices": [
      "50 horas en total, 10 de ellas de noche",
      "40 horas en total, 10 de ellas de noche",
@@ -9941,7 +9941,7 @@
   "items": [
    {
     "type": "num",
-    "q": "¿Cuántos meses dura, como mínimo, el periodo de instrucción supervisada de GDL?",
+    "q": "¿Cuántos meses dura, como mínimo, el periodo de instrucción supervisada de GDL (licencia de manejo por etapas)?",
     "answer": 6,
     "unit": "meses"
    },
@@ -9962,19 +9962,19 @@
   "id": "lic-gdl-supervisor-21",
   "topic": "licensing",
   "page": 19,
-  "fact": "Durante el periodo supervisado de GDL, un conductor con licencia de por lo menos 21 años debe ir sentado a su lado en el asiento delantero, y nadie más puede ir en el asiento delantero.",
+  "fact": "Durante el periodo supervisado de GDL (licencia de manejo por etapas), un conductor con licencia de por lo menos 21 años debe ir sentado a su lado en el asiento delantero, y nadie más puede ir en el asiento delantero.",
   "why": "El adulto que supervisa necesita ver bien y poder alcanzarlo fácilmente para ayudarle, sin otras distracciones en el asiento delantero.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Durante el periodo de instrucción supervisada de GDL, ¿qué edad mínima debe tener el conductor con licencia que lo supervisa?",
+    "q": "Durante el periodo de instrucción supervisada de GDL (licencia de manejo por etapas), ¿qué edad mínima debe tener el conductor con licencia que lo supervisa?",
     "answer": 21,
     "unit": "años"
    },
    {
     "type": "scenario",
-    "q": "Está en su periodo supervisado de GDL. Su hermana de 22 años con licencia lo supervisa, y su primo más joven también quiere ir adelante. ¿Cuál es la regla?",
+    "q": "Está en su periodo supervisado de GDL (licencia de manejo por etapas). Su hermana de 22 años con licencia lo supervisa, y su primo más joven también quiere ir adelante. ¿Cuál es la regla?",
     "choices": [
      "Solo su hermana puede ir en el asiento delantero",
      "Su primo puede ir adelante si usa el cinturón de seguridad",
@@ -9985,7 +9985,7 @@
    },
    {
     "type": "tf",
-    "q": "Durante el periodo supervisado de GDL, el conductor que lo supervisa debe tener licencia y por lo menos 21 años.",
+    "q": "Durante el periodo supervisado de GDL (licencia de manejo por etapas), el conductor que lo supervisa debe tener licencia y por lo menos 21 años.",
     "answer": true
    }
   ]
@@ -9994,13 +9994,13 @@
   "id": "lic-gdl-violation-restart",
   "topic": "licensing",
   "page": 19,
-  "fact": "Si lo condenan por una infracción de tránsito durante el periodo supervisado de GDL, su permiso se cancela. Debe obtener un permiso nuevo, y el periodo de 6 meses empieza de nuevo.",
+  "fact": "Si lo condenan por una infracción de tránsito durante el periodo supervisado de GDL (licencia de manejo por etapas), su permiso se cancela. Debe obtener un permiso nuevo, y el periodo de 6 meses empieza de nuevo.",
   "why": "El periodo supervisado debe ser sin infracciones para demostrar que está listo para manejar con seguridad.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "A los cuatro meses de su periodo supervisado de GDL, lo condenan por exceso de velocidad. ¿Qué pasa?",
+    "q": "A los cuatro meses de su periodo supervisado de GDL (licencia de manejo por etapas), lo condenan por exceso de velocidad. ¿Qué pasa?",
     "choices": [
      "Su permiso se cancela y los 6 meses empiezan de nuevo con un permiso nuevo",
      "Debe agregar 2 meses más a su permiso actual",
@@ -10011,7 +10011,7 @@
    },
    {
     "type": "tf",
-    "q": "Una condena de tránsito durante el periodo supervisado de GDL solo agrega una multa; el tiempo que ya manejó sigue contando.",
+    "q": "Una condena de tránsito durante el periodo supervisado de GDL (licencia de manejo por etapas) solo agrega una multa; el tiempo que ya manejó sigue contando.",
     "answer": false
    }
   ]
@@ -10047,19 +10047,19 @@
   "id": "lic-address-change-30",
   "topic": "licensing",
   "page": 29,
-  "fact": "Debe avisarle a ITD dentro de los 30 días después de que cambie su dirección.",
+  "fact": "Debe avisarle a ITD (Departamento de Transporte de Idaho) dentro de los 30 días después de que cambie su dirección.",
   "why": "Las autoridades necesitan poder enviarle avisos importantes sobre su licencia.",
   "weight": 1,
   "items": [
    {
     "type": "num",
-    "q": "¿Dentro de cuántos días debe avisarle a ITD después de que cambie su dirección?",
+    "q": "¿Dentro de cuántos días debe avisarle a ITD (Departamento de Transporte de Idaho) después de que cambie su dirección?",
     "answer": 30,
     "unit": "días"
    },
    {
     "type": "mc",
-    "q": "Se mudó a una casa nueva. ¿En cuánto tiempo debe avisarle a ITD?",
+    "q": "Se mudó a una casa nueva. ¿En cuánto tiempo debe avisarle a ITD (Departamento de Transporte de Idaho)?",
     "choices": [
      "Dentro de 30 días",
      "Dentro de 10 días",
@@ -10389,7 +10389,7 @@
    },
    {
     "type": "tf",
-    "q": "Según el Acuerdo de Licencias de Manejo, solo las faltas graves como el DUI se reportan a su estado, no las infracciones de tránsito menores.",
+    "q": "Según el Acuerdo de Licencias de Manejo, solo las faltas graves como el DUI (manejar bajo los efectos del alcohol o drogas) se reportan a su estado, no las infracciones de tránsito menores.",
     "answer": false
    }
   ]
@@ -10450,13 +10450,13 @@
   "id": "alc-ddc-points",
   "topic": "licensing",
   "page": 123,
-  "fact": "Terminar un Curso de Manejo Defensivo (Defensive Driving Course) aprobado por ITD quita hasta 3 puntos. Los puntos se pueden quitar de esta forma solo una vez cada 3 años, y los puntos ya deben estar en su historial antes de terminar el curso.",
+  "fact": "Terminar un Curso de Manejo Defensivo (Defensive Driving Course) aprobado por ITD (Departamento de Transporte de Idaho) quita hasta 3 puntos. Los puntos se pueden quitar de esta forma solo una vez cada 3 años, y los puntos ya deben estar en su historial antes de terminar el curso.",
   "why": "El curso premia a los conductores que se esfuerzan por mejorar, pero tiene límites para que no se use una y otra vez.",
   "weight": 2,
   "items": [
    {
     "type": "num",
-    "q": "¿Cuál es el máximo de puntos que puede quitar un Curso de Manejo Defensivo aprobado por ITD?",
+    "q": "¿Cuál es el máximo de puntos que puede quitar un Curso de Manejo Defensivo aprobado por ITD (Departamento de Transporte de Idaho)?",
     "answer": 3,
     "unit": "puntos"
    },
@@ -10669,7 +10669,7 @@
   "id": "alc-reasons-suspension",
   "topic": "licensing",
   "page": 124,
-  "fact": "Su licencia puede ser suspendida o revocada por cosas como DUI, manejo imprudente, huir de un agente de policía, irse del lugar de un choque, negarse a una prueba de evidencia o no pasarla, y no tener seguro del vehículo.",
+  "fact": "Su licencia puede ser suspendida o revocada por cosas como DUI (manejar bajo los efectos del alcohol o drogas), manejo imprudente, huir de un agente de policía, irse del lugar de un choque, negarse a una prueba de evidencia o no pasarla, y no tener seguro del vehículo.",
   "why": "Estas acciones ponen a otras personas en grave peligro o evitan la responsabilidad por un daño.",
   "weight": 2,
   "items": [
@@ -10721,18 +10721,18 @@
   "id": "alc-gdl-absolute",
   "topic": "licensing",
   "page": 125,
-  "fact": "Las suspensiones por castigo de GDL son absolutas: no se permite manejar de ninguna forma. Se suman a cualquier cancelación de permiso u otra suspensión de una corte o del departamento.",
+  "fact": "Las suspensiones por castigo de GDL (licencia de manejo por etapas) son absolutas: no se permite manejar de ninguna forma. Se suman a cualquier cancelación de permiso u otra suspensión de una corte o del departamento.",
   "why": "El castigo busca que un conductor joven deje de manejar por completo durante todo el periodo.",
   "weight": 2,
   "items": [
    {
     "type": "tf",
-    "q": "Durante una suspensión por castigo de GDL, no puede manejar para nada, ni siquiera a la escuela o al trabajo.",
+    "q": "Durante una suspensión por castigo de GDL (licencia de manejo por etapas), no puede manejar para nada, ni siquiera a la escuela o al trabajo.",
     "answer": true
    },
    {
     "type": "mc",
-    "q": "Durante una suspensión por castigo de GDL, ¿qué manejo está permitido?",
+    "q": "Durante una suspensión por castigo de GDL (licencia de manejo por etapas), ¿qué manejo está permitido?",
     "choices": [
      "Ningún tipo de manejo",
      "Solo manejar a la escuela",
@@ -10753,13 +10753,13 @@
   "items": [
    {
     "type": "num",
-    "q": "¿Los castigos de GDL se aplican a todos los conductores menores de qué edad?",
+    "q": "¿Los castigos de GDL (licencia de manejo por etapas) se aplican a todos los conductores menores de qué edad?",
     "answer": 17,
     "unit": "años"
    },
    {
     "type": "mc",
-    "q": "Tiene 16 años y lo condenan por su primera infracción en movimiento. ¿Qué castigo de GDL se aplica?",
+    "q": "Tiene 16 años y lo condenan por su primera infracción en movimiento. ¿Qué castigo de GDL (licencia de manejo por etapas) se aplica?",
     "choices": [
      "Una carta de advertencia",
      "Una suspensión de 30 días",
@@ -10780,13 +10780,13 @@
   "items": [
    {
     "type": "num",
-    "q": "¿De cuántos días es la suspensión de GDL por una segunda condena por infracción en movimiento para un conductor menor de 17?",
+    "q": "¿De cuántos días es la suspensión de GDL (licencia de manejo por etapas) por una segunda condena por infracción en movimiento para un conductor menor de 17?",
     "answer": 30,
     "unit": "días"
    },
    {
     "type": "scenario",
-    "q": "Tiene 16 años y acaba de recibir su segunda condena por infracción en movimiento. ¿Cuál es el castigo de GDL?",
+    "q": "Tiene 16 años y acaba de recibir su segunda condena por infracción en movimiento. ¿Cuál es el castigo de GDL (licencia de manejo por etapas)?",
     "choices": [
      "Suspensión de 30 días",
      "Carta de advertencia",
@@ -10807,7 +10807,7 @@
   "items": [
    {
     "type": "num",
-    "q": "¿De cuántos días es la suspensión de GDL por una tercera condena por infracción en movimiento para un conductor menor de 17?",
+    "q": "¿De cuántos días es la suspensión de GDL (licencia de manejo por etapas) por una tercera condena por infracción en movimiento para un conductor menor de 17?",
     "answer": 60,
     "unit": "días"
    },
@@ -10818,7 +10818,7 @@
    },
    {
     "type": "scenario",
-    "q": "Tiene 16 años y acaban de condenarlo por su tercera infracción en movimiento. ¿Qué castigo de GDL se aplica?",
+    "q": "Tiene 16 años y acaban de condenarlo por su tercera infracción en movimiento. ¿Qué castigo de GDL (licencia de manejo por etapas) se aplica?",
     "choices": [
      "Suspensión de 60 días",
      "Suspensión de 30 días",
@@ -10833,7 +10833,7 @@
   "id": "alc-restricted-permit",
   "topic": "licensing",
   "page": 127,
-  "fact": "Si su licencia está suspendida, puede calificar para un permiso restringido para manejar a lugares como el trabajo o un tratamiento médico. Si lo suspendió el departamento, solicítelo a ITD en Boise; si lo suspendió una corte, solicítelo a esa corte.",
+  "fact": "Si su licencia está suspendida, puede calificar para un permiso restringido para manejar a lugares como el trabajo o un tratamiento médico. Si lo suspendió el departamento, solicítelo a ITD (Departamento de Transporte de Idaho) en Boise; si lo suspendió una corte, solicítelo a esa corte.",
   "why": "Un permiso restringido permite a las personas cubrir sus necesidades básicas y a la vez limita su manejo.",
   "weight": 1,
   "items": [
@@ -10842,7 +10842,7 @@
     "q": "Una corte suspendió su licencia después de una condena. ¿Dónde pide privilegios de manejo restringidos?",
     "choices": [
      "A la corte que lo condenó",
-     "A cualquier oficina del DMV del condado",
+     "A cualquier oficina del DMV (División de Vehículos Motorizados) del condado",
      "A su compañía de seguros",
      "Al agente que lo multó"
     ],
@@ -10892,13 +10892,13 @@
   "id": "alc-reinstatement-sr22",
   "topic": "licensing",
   "page": 128,
-  "fact": "Para recuperar su licencia después de una suspensión por faltas graves como DUI o manejo imprudente, debe pagar una cuota de restablecimiento y mostrar prueba de responsabilidad financiera (un certificado de seguro SR-22) por 3 años.",
+  "fact": "Para recuperar su licencia después de una suspensión por faltas graves como DUI (manejar bajo los efectos del alcohol o drogas) o manejo imprudente, debe pagar una cuota de restablecimiento y mostrar prueba de responsabilidad financiera (un certificado de seguro SR-22) por 3 años.",
   "why": "Los conductores que cometieron faltas graves deben demostrar que tienen seguro por si vuelven a causar daño.",
   "weight": 2,
   "items": [
    {
     "type": "num",
-    "q": "¿Por cuántos años debe mostrar prueba de responsabilidad financiera después de una suspensión por DUI o manejo imprudente?",
+    "q": "¿Por cuántos años debe mostrar prueba de responsabilidad financiera después de una suspensión por DUI (manejar bajo los efectos del alcohol o drogas) o manejo imprudente?",
     "answer": 3,
     "unit": "años"
    },
@@ -11331,7 +11331,7 @@
   "id": "lic-equip-studded-tires",
   "topic": "equipment",
   "page": 42,
-  "fact": "Las llantas de nieve con clavos solo se pueden usar del 1 de octubre al 30 de abril. ITD a veces cambia estas fechas por el clima.",
+  "fact": "Las llantas de nieve con clavos solo se pueden usar del 1 de octubre al 30 de abril. ITD (Departamento de Transporte de Idaho) a veces cambia estas fechas por el clima.",
   "why": "Los clavos ayudan en el hielo pero dañan el pavimento seco, así que se limitan a los meses de nieve.",
   "weight": 2,
   "items": [

@@ -45,4 +45,8 @@ freeway, safe-driving, sharing, conditions, emergencies, alcohol
    designation, address change paperwork). Do cover anything rule-like: ages, permit/GDL limits, deadlines, penalties, numbers.
 5. Plain language, ~8th-grade reading level, no idioms or slang — this will be machine-translated into 5 languages.
 6. One rule per fact. Split compound rules.
+6b. Explain every acronym the first time it appears in each text field (fact, why, hook, question, choice), using the
+   handbook's own expansion: "DUI (driving under the influence)", "BAC (blood alcohol concentration)". Learners may be
+   new to the US. Don't expand English sign text (STOP, ROAD CLOSED) or units (mph). Never expand an acronym only in the
+   correct choice — that makes it the longest option and gives the answer away. (tools/expand-acronyms.py can do a first pass.)
 7. When done, reply with: count of facts, count by topic, and any handbook passages you found ambiguous or contradictory.

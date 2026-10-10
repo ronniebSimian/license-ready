@@ -1956,7 +1956,7 @@
    },
    {
     "type": "tf",
-    "q": "Taa ya HAWK inapowekwa, barabara za pembeni zenye alama za kusimama hazilazimiki tena kusimama.",
+    "q": "Taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) inapowekwa, barabara za pembeni zenye alama za kusimama hazilazimiki tena kusimama.",
     "answer": false
    }
   ]
@@ -1992,13 +1992,13 @@
   "id": "sig-hawk-dark-yellow",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "Taa ya HAWK huwa imezimika hadi mtembea kwa miguu abonyeze kitufe. Kisha inawaka na kuzima rangi ya njano (punguza mwendo), kisha inaonyesha njano iliyotulia (jiandae kusimama).",
+  "fact": "Taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) huwa imezimika hadi mtembea kwa miguu abonyeze kitufe. Kisha inawaka na kuzima rangi ya njano (punguza mwendo), kisha inaonyesha njano iliyotulia (jiandae kusimama).",
   "why": "Taa za onyo zinawapa madereva muda wa kupunguza mwendo kabla ya nyekundu.",
   "weight": 2,
   "items": [
    {
     "type": "mc",
-    "q": "Inamaanisha nini taa ya HAWK ikiwa imezimika (haiwaki)?",
+    "q": "Inamaanisha nini taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) ikiwa imezimika (haiwaki)?",
     "choices": [
      "Endesha kawaida, lakini angalia watembea kwa miguu",
      "Simama na usubiri",
@@ -2009,7 +2009,7 @@
    },
    {
     "type": "mc",
-    "q": "Baada ya mtembea kwa miguu kubonyeza kitufe, taa ya HAWK inaonyesha nini kwanza?",
+    "q": "Baada ya mtembea kwa miguu kubonyeza kitufe, taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) inaonyesha nini kwanza?",
     "choices": [
      "Njano inayowaka na kuzima",
      "Nyekundu iliyotulia",
@@ -2024,13 +2024,13 @@
   "id": "sig-hawk-red",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "Taa ya HAWK inapoonyesha taa mbili nyekundu zilizotulia, simama kabisa kwenye mstari wa kusimama. Taa nyekundu zinapowaka na kuzima kwa kupokezana, simama, wapishe watembea kwa miguu walio kwenye kivuko, na uende njia ikiwa wazi.",
+  "fact": "Taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) inapoonyesha taa mbili nyekundu zilizotulia, simama kabisa kwenye mstari wa kusimama. Taa nyekundu zinapowaka na kuzima kwa kupokezana, simama, wapishe watembea kwa miguu walio kwenye kivuko, na uende njia ikiwa wazi.",
   "why": "Nyekundu iliyotulia ni muda wa watu kuvuka; nyekundu inayowaka kwa kupokezana inaruhusu madereva kwenda mara kivuko kikiwa tupu.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "Kwenye taa ya HAWK, taa mbili nyekundu zinawaka na kuzima kwa kupokezana. Kivuko sasa kiko tupu. Unapaswa kufanya nini?",
+    "q": "Kwenye taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe), taa mbili nyekundu zinawaka na kuzima kwa kupokezana. Kivuko sasa kiko tupu. Unapaswa kufanya nini?",
     "choices": [
      "Simama, kisha uendelee kwa kuwa kivuko kiko wazi",
      "Endelea kusimama hadi taa izimike",
@@ -2041,7 +2041,7 @@
    },
    {
     "type": "tf",
-    "q": "Lazima usimame kabisa taa ya HAWK inapoonyesha taa nyekundu zilizotulia.",
+    "q": "Lazima usimame kabisa taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) inapoonyesha taa nyekundu zilizotulia.",
     "answer": true
    }
   ]
@@ -2354,14 +2354,14 @@
   "id": "law-rr-advance-warnings",
   "topic": "signals-markings",
   "page": 61,
-  "fact": "Kabla ya vivuko vingi vya reli, barabara imechorwa X kubwa na herufi RR. Vivuko vingi pia vina alama nyeupe yenye umbo la X (crossbuck).",
+  "fact": "Kabla ya vivuko vingi vya reli, barabara imechorwa X kubwa na herufi RR (railroad, yaani reli). Vivuko vingi pia vina alama nyeupe yenye umbo la X (crossbuck).",
   "why": "Michoro hii inakuonya mapema ili upate muda wa kuangalia, kusikiliza, na kupunguza mwendo kwa ajili ya treni inayoweza kuja.",
   "hook": "X na RR barabarani = kivuko cha reli mbele.",
   "weight": 2,
   "items": [
    {
     "type": "mc",
-    "q": "X kubwa yenye herufi RR iliyochorwa barabarani inamaanisha nini?",
+    "q": "X kubwa yenye herufi RR (railroad, yaani reli) iliyochorwa barabarani inamaanisha nini?",
     "choices": [
      "Kivuko cha reli kiko mbele",
      "Makutano ya barabara yako mbele",
@@ -2377,7 +2377,7 @@
    },
    {
     "type": "scenario",
-    "q": "Unaona X kubwa na RR zimechorwa barabarani mbele, lakini huoni wala husikii treni. Unapaswa kufanya nini?",
+    "q": "Unaona X kubwa na RR (railroad, yaani reli) zimechorwa barabarani mbele, lakini huoni wala husikii treni. Unapaswa kufanya nini?",
     "choices": [
      "Punguza mwendo, angalia pande zote mbili, na usikilize treni",
      "Endelea na mwendo wako kwa sababu hakuna treni inayoonekana",
@@ -8397,7 +8397,7 @@
   "items": [
    {
     "type": "scenario",
-    "q": "Unafunga breki kwa nguvu wakati wa dharura na unahisi kanyagio la breki likidunda pamoja na sauti ya kuvuma. Gari lako lina ABS. Unapaswa kufanya nini?",
+    "q": "Unafunga breki kwa nguvu wakati wa dharura na unahisi kanyagio la breki likidunda pamoja na sauti ya kuvuma. Gari lako lina ABS (mfumo wa breki zisizofunga magurudumu). Unapaswa kufanya nini?",
     "choices": [
      "Endelea kukandamiza kanyagio kwa nguvu isiyobadilika",
      "Ondoa mguu wako kwenye breki",
@@ -8408,7 +8408,7 @@
    },
    {
     "type": "tf",
-    "q": "Breki za ABS hufanya gari lako lisimame kwa umbali mfupi zaidi.",
+    "q": "Breki za ABS (mfumo wa breki zisizofunga magurudumu) hufanya gari lako lisimame kwa umbali mfupi zaidi.",
     "answer": false
    }
   ]
@@ -8417,14 +8417,14 @@
   "id": "cnd-abs-steady-pressure",
   "topic": "emergencies",
   "page": 116,
-  "fact": "Unaposimama kwa dharura ukiwa na breki za ABS, kanyaga kanyagio la breki kwa nguvu na udumishe nguvu isiyobadilika. Usikanyage na kuachia breki mara kwa mara (pumping).",
-  "why": "ABS hukanyaga na kuachia breki kwa niaba yako haraka kuliko unavyoweza, na ukifanya hivyo mwenyewe inafanya kazi vibaya zaidi na kuongeza umbali wa kusimama.",
-  "hook": "ABS: kanyaga kwa nguvu na ushikilie.",
+  "fact": "Unaposimama kwa dharura ukiwa na breki za ABS (mfumo wa breki zisizofunga magurudumu), kanyaga kanyagio la breki kwa nguvu na udumishe nguvu isiyobadilika. Usikanyage na kuachia breki mara kwa mara (pumping).",
+  "why": "ABS (mfumo wa breki zisizofunga magurudumu) hukanyaga na kuachia breki kwa niaba yako haraka kuliko unavyoweza, na ukifanya hivyo mwenyewe inafanya kazi vibaya zaidi na kuongeza umbali wa kusimama.",
+  "hook": "ABS (mfumo wa breki zisizofunga magurudumu): kanyaga kwa nguvu na ushikilie.",
   "weight": 3,
   "items": [
    {
     "type": "mc",
-    "q": "Unapaswa kufunga breki vipi wakati wa dharura ikiwa gari lako lina ABS?",
+    "q": "Unapaswa kufunga breki vipi wakati wa dharura ikiwa gari lako lina ABS (mfumo wa breki zisizofunga magurudumu)?",
     "choices": [
      "Kanyaga kwa nguvu na ushikilie nguvu isiyobadilika",
      "Kanyaga na kuachia kanyagio la breki haraka haraka",
@@ -8435,7 +8435,7 @@
    },
    {
     "type": "tf",
-    "q": "Ukiwa na breki za ABS, unapaswa kudumisha nguvu isiyobadilika kwenye kanyagio la breki unaposimama kwa nguvu.",
+    "q": "Ukiwa na breki za ABS (mfumo wa breki zisizofunga magurudumu), unapaswa kudumisha nguvu isiyobadilika kwenye kanyagio la breki unaposimama kwa nguvu.",
     "answer": true
    }
   ]
@@ -8536,13 +8536,13 @@
   "id": "cnd-non-abs-quick-stop",
   "topic": "emergencies",
   "page": 117,
-  "fact": "Bila ABS, funga breki kwa nguvu kadiri unavyoweza bila kufunga (kukwamisha) magurudumu. Ikiwa magurudumu yanakwama na gari linateleza, achia breki kidogo haraka, kisha ukanyage tena, ukirudia hadi usimame.",
+  "fact": "Bila ABS (mfumo wa breki zisizofunga magurudumu), funga breki kwa nguvu kadiri unavyoweza bila kufunga (kukwamisha) magurudumu. Ikiwa magurudumu yanakwama na gari linateleza, achia breki kidogo haraka, kisha ukanyage tena, ukirudia hadi usimame.",
   "why": "Magurudumu yaliyokwama huteleza na hayawezi kugeuzwa, kwa hivyo kuachia kunayaruhusu kuzunguka na kushika tena.",
   "weight": 2,
   "items": [
    {
     "type": "scenario",
-    "q": "Gari lako halina ABS. Unaposimama kwa nguvu, unahisi magurudumu yakikwama na gari likianza kuteleza. Unapaswa kufanya nini?",
+    "q": "Gari lako halina ABS (mfumo wa breki zisizofunga magurudumu). Unaposimama kwa nguvu, unahisi magurudumu yakikwama na gari likianza kuteleza. Unapaswa kufanya nini?",
     "choices": [
      "Achia breki kidogo haraka, kisha ukanyage tena",
      "Kanyaga breki kwa nguvu zaidi",
@@ -8553,7 +8553,7 @@
    },
    {
     "type": "mc",
-    "q": "Bila ABS, unapaswa kukanyaga breki kwa nguvu kiasi gani unaposimama haraka?",
+    "q": "Bila ABS (mfumo wa breki zisizofunga magurudumu), unapaswa kukanyaga breki kwa nguvu kiasi gani unaposimama haraka?",
     "choices": [
      "Kwa nguvu kadiri unavyoweza bila kukwamisha magurudumu",
      "Kwa nguvu zote, hata kama magurudumu yanakwama",
@@ -8886,11 +8886,11 @@
    },
    {
     "type": "mc",
-    "q": "Afisa anakupa nini mara moja unaposhindwa kipimo cha ushahidi cha pombe baada ya kukamatwa kwa DUI?",
+    "q": "Afisa anakupa nini mara moja unaposhindwa kipimo cha ushahidi cha pombe baada ya kukamatwa kwa DUI (kuendesha ukiwa umelewa)?",
     "choices": [
      "Notisi ya Kusimamishwa (Notice of Suspension)",
      "Kibali cha kuendesha chenye masharti",
-     "Barua ya onyo ya GDL",
+     "Barua ya onyo ya GDL (Leseni ya Udereva ya Hatua kwa Hatua)",
      "Fomu ya kurejesha leseni"
     ],
     "answer": 0
@@ -8901,24 +8901,24 @@
   "id": "alc-als-effective",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Notisi ya Kusimamishwa ya ALS inaanza kutumika siku 30 baada ya siku unayoipokea.",
+  "fact": "Notisi ya Kusimamishwa ya ALS (Kusimamishwa kwa Leseni kwa Utawala) inaanza kutumika siku 30 baada ya siku unayoipokea.",
   "why": "Kipindi cha kusubiri kinatoa muda wa kuomba usikilizwaji kabla ya kusimamishwa kuanza.",
   "weight": 2,
   "items": [
    {
     "type": "num",
-    "q": "Notisi ya Kusimamishwa ya ALS inaanza kutumika siku ngapi baada ya kuipokea?",
+    "q": "Notisi ya Kusimamishwa ya ALS (Kusimamishwa kwa Leseni kwa Utawala) inaanza kutumika siku ngapi baada ya kuipokea?",
     "answer": 30,
     "unit": "siku"
    },
    {
     "type": "tf",
-    "q": "Notisi ya Kusimamishwa ya ALS inaanza kutumika siku 30 baada ya siku unayoipokea.",
+    "q": "Notisi ya Kusimamishwa ya ALS (Kusimamishwa kwa Leseni kwa Utawala) inaanza kutumika siku 30 baada ya siku unayoipokea.",
     "answer": true
    },
    {
     "type": "mc",
-    "q": "Notisi ya Kusimamishwa ya ALS inaanza kutumika lini?",
+    "q": "Notisi ya Kusimamishwa ya ALS (Kusimamishwa kwa Leseni kwa Utawala) inaanza kutumika lini?",
     "choices": [
      "Siku 30 baada ya kuipokea",
      "Siku unayoipokea",
@@ -8939,22 +8939,22 @@
   "items": [
    {
     "type": "num",
-    "q": "Kusimamishwa kwa ALS kwa kushindwa kipimo cha ushahidi mara ya kwanza ni kwa siku ngapi?",
+    "q": "Kusimamishwa kwa ALS (Kusimamishwa kwa Leseni kwa Utawala) kwa kushindwa kipimo cha ushahidi mara ya kwanza ni kwa siku ngapi?",
     "answer": 90,
     "unit": "siku"
    },
    {
     "type": "num",
-    "q": "Wakati wa ALS ya kushindwa mara ya kwanza, kwa siku ngapi huna haki yoyote kabisa ya kuendesha?",
+    "q": "Wakati wa ALS (Kusimamishwa kwa Leseni kwa Utawala) ya kushindwa mara ya kwanza, kwa siku ngapi huna haki yoyote kabisa ya kuendesha?",
     "answer": 30,
     "unit": "siku"
    },
    {
     "type": "mc",
-    "q": "Baada ya ALS ya kushindwa mara ya kwanza kuisha, ni nini lazima kiwe kwenye gari lolote unaloendesha kwa mwaka 1?",
+    "q": "Baada ya ALS (Kusimamishwa kwa Leseni kwa Utawala) ya kushindwa mara ya kwanza kuisha, ni nini lazima kiwe kwenye gari lolote unaloendesha kwa mwaka 1?",
     "choices": [
      "Kifaa cha kuzuia kuwasha gari (ignition interlock)",
-     "Kifaa cha kufuatilia GPS",
+     "Kifaa cha kufuatilia GPS (mfumo wa kutambua mahali kwa satelaiti)",
      "Kifaa cha kudhibiti kasi",
      "Kamera ya dashibodi"
     ],
@@ -8972,13 +8972,13 @@
   "items": [
    {
     "type": "num",
-    "q": "Kushindwa kipimo mara ya pili ndani ya miaka mingapi huleta kusimamishwa kamili kwa ALS kwa mwaka 1?",
+    "q": "Kushindwa kipimo mara ya pili ndani ya miaka mingapi huleta kusimamishwa kamili kwa ALS (Kusimamishwa kwa Leseni kwa Utawala) kwa mwaka 1?",
     "answer": 5,
     "unit": "miaka"
    },
    {
     "type": "mc",
-    "q": "Adhabu ya ALS kwa kushindwa kipimo cha ushahidi mara ya pili ndani ya miaka 5 ni ipi?",
+    "q": "Adhabu ya ALS (Kusimamishwa kwa Leseni kwa Utawala) kwa kushindwa kipimo cha ushahidi mara ya pili ndani ya miaka 5 ni ipi?",
     "choices": [
      "Kusimamishwa kwa mwaka 1 bila kuendesha kabisa",
      "Kusimamishwa kwa siku 90",
@@ -8993,13 +8993,13 @@
   "id": "alc-als-separate",
   "topic": "alcohol",
   "page": 126,
-  "fact": "ALS ni adhabu ya kiraia iliyo tofauti na kesi ya jinai ya DUI. Lazima ufuate sheria za ALS na pia uende mahakamani kwa shtaka la DUI.",
+  "fact": "ALS (Kusimamishwa kwa Leseni kwa Utawala) ni adhabu ya kiraia iliyo tofauti na kesi ya jinai ya DUI (kuendesha ukiwa umelewa). Lazima ufuate sheria za ALS na pia uende mahakamani kwa shtaka la DUI.",
   "why": "Adhabu ya leseni na kesi ya jinai ni michakato miwili tofauti, kwa hivyo mmoja haubadilishi mwingine.",
   "weight": 2,
   "items": [
    {
     "type": "tf",
-    "q": "Ukipokea Kusimamishwa kwa Leseni kwa Utawala (ALS), huhitaji tena kufika mahakamani kwa shtaka la DUI.",
+    "q": "Ukipokea Kusimamishwa kwa Leseni kwa Utawala (ALS), huhitaji tena kufika mahakamani kwa shtaka la DUI (kuendesha ukiwa umelewa).",
     "answer": false
    },
    {
@@ -9019,7 +9019,7 @@
   "id": "alc-implied-consent",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Chini ya sheria ya Idaho ya ridhaa inayodhaniwa (implied consent), mtu yeyote anayeendesha au aliye na udhibiti wa kimwili wa gari amekubali kufanyiwa kipimo cha BAC (kiwango cha pombe kwenye damu) au cha dawa za kulevya akishukiwa kwa DUI. Kukataa huleta kusimamishwa kwa leseni na adhabu ya kiraia ya $250.",
+  "fact": "Chini ya sheria ya Idaho ya ridhaa inayodhaniwa (implied consent), mtu yeyote anayeendesha au aliye na udhibiti wa kimwili wa gari amekubali kufanyiwa kipimo cha BAC (kiwango cha pombe kwenye damu) au cha dawa za kulevya akishukiwa kwa DUI (kuendesha ukiwa umelewa). Kukataa huleta kusimamishwa kwa leseni na adhabu ya kiraia ya $250.",
   "why": "Kwa kuchagua kuendesha, unakubali kupimwa ili madereva walio chini ya ushawishi waweze kugunduliwa na kuzuiwa.",
   "weight": 3,
   "items": [
@@ -9031,14 +9031,14 @@
    },
    {
     "type": "tf",
-    "q": "Huko Idaho, unaweza kukataa kipimo cha BAC bila adhabu ikiwa hujakunywa pombe.",
+    "q": "Huko Idaho, unaweza kukataa kipimo cha BAC (kiwango cha pombe kwenye damu) bila adhabu ikiwa hujakunywa pombe.",
     "answer": false
    },
    {
     "type": "mc",
     "q": "'Ridhaa inayodhaniwa' (implied consent) inamaanisha nini huko Idaho?",
     "choices": [
-     "Kwa kuendesha, umekubali kipimo cha BAC au cha dawa za kulevya",
+     "Kwa kuendesha, umekubali kipimo cha pombe au cha dawa za kulevya",
      "Lazima ukubali kwa maandishi kabla ya kipimo chochote",
      "Abiria tu ndio wanaoweza kupimwa",
      "Maafisa wanahitaji amri ya mahakama kwa kila kipimo"
@@ -9063,7 +9063,7 @@
    },
    {
     "type": "scenario",
-    "q": "Afisa anakushuku kwa DUI na anakuomba ufanye kipimo cha pumzi. Unakataa kwa mara ya kwanza, na mahakama inaunga mkono uamuzi wa afisa. Nini kinatokea kwa leseni yako?",
+    "q": "Afisa anakushuku kwa DUI (kuendesha ukiwa umelewa) na anakuomba ufanye kipimo cha pumzi. Unakataa kwa mara ya kwanza, na mahakama inaunga mkono uamuzi wa afisa. Nini kinatokea kwa leseni yako?",
     "choices": [
      "Inasimamishwa mwaka 1 bila kuendesha kabisa",
      "Inasimamishwa siku 30",
@@ -9109,7 +9109,7 @@
   "id": "alc-refusal-second",
   "topic": "alcohol",
   "page": 127,
-  "fact": "Kukataa kipimo mara ya pili ndani ya miaka 10 huleta kusimamishwa kamili kwa miaka 2. Hii ni pamoja na adhabu yoyote ya mahakama kwa kutiwa hatiani kwa DUI.",
+  "fact": "Kukataa kipimo mara ya pili ndani ya miaka 10 huleta kusimamishwa kamili kwa miaka 2. Hii ni pamoja na adhabu yoyote ya mahakama kwa kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa).",
   "why": "Kukataa mara kwa mara kunaonyesha dereva anayejaribu kukwepa wajibu, kwa hivyo adhabu inaongezeka mara mbili.",
   "weight": 3,
   "items": [
@@ -9168,26 +9168,26 @@
   "id": "alc-crash-risk-bac",
   "topic": "alcohol",
   "page": 128,
-  "fact": "Hatari ya ajali huongezeka haraka kwa pombe. Kidogo juu ya BAC ya .05 hatari huongezeka mara mbili, kwa .10 ni mara 6 zaidi, na kwa .15 ni mara 25 zaidi.",
+  "fact": "Hatari ya ajali huongezeka haraka kwa pombe. Kidogo juu ya BAC (kiwango cha pombe kwenye damu) ya .05 hatari huongezeka mara mbili, kwa .10 ni mara 6 zaidi, na kwa .15 ni mara 25 zaidi.",
   "why": "Pombe hudhuru uwezo wa kuendesha muda mrefu kabla mtu hajaonekana amelewa.",
   "hook": "Hatari inapanda: .05 = mara 2, .10 = mara 6, .15 = mara 25.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Kwa BAC ya .10, hatari yako ya kusababisha ajali ni kubwa mara ngapi?",
+    "q": "Kwa BAC (kiwango cha pombe kwenye damu) ya .10, hatari yako ya kusababisha ajali ni kubwa mara ngapi?",
     "answer": 6,
     "unit": "mara"
    },
    {
     "type": "num",
-    "q": "Kwa BAC ya .15, hatari yako ya kusababisha ajali ni kubwa mara ngapi?",
+    "q": "Kwa BAC (kiwango cha pombe kwenye damu) ya .15, hatari yako ya kusababisha ajali ni kubwa mara ngapi?",
     "answer": 25,
     "unit": "mara"
    },
    {
     "type": "mc",
-    "q": "Kidogo juu ya BAC ya .05, nini hutokea kwa hatari yako ya kusababisha ajali?",
+    "q": "Kidogo juu ya BAC (kiwango cha pombe kwenye damu) ya .05, nini hutokea kwa hatari yako ya kusababisha ajali?",
     "choices": [
      "Huongezeka mara mbili",
      "Hubaki ileile",
@@ -9326,7 +9326,7 @@
    },
    {
     "type": "scenario",
-    "q": "Unahitaji kubeba chupa ya mvinyo iliyofunguliwa ndani ya SUV isiyo na buti. Lazima iwekwe wapi?",
+    "q": "Unahitaji kubeba chupa ya mvinyo iliyofunguliwa ndani ya SUV (gari kubwa la matumizi mbalimbali) isiyo na buti. Lazima iwekwe wapi?",
     "choices": [
      "Nyuma ya kiti cha mwisho kilichosimama",
      "Ndani ya kisanduku cha glovu",
@@ -9399,19 +9399,19 @@
   "items": [
    {
     "type": "num",
-    "q": "Ni BAC gani inamfanya dereva mwenye umri wa miaka 21 au zaidi kuwa chini ya ushawishi kisheria huko Idaho?",
+    "q": "Ni BAC (kiwango cha pombe kwenye damu) gani inamfanya dereva mwenye umri wa miaka 21 au zaidi kuwa chini ya ushawishi kisheria huko Idaho?",
     "answer": 0.08,
     "unit": "BAC"
    },
    {
     "type": "num",
-    "q": "Ni BAC gani inamfanya dereva wa gari la kibiashara kuwa chini ya ushawishi kisheria huko Idaho?",
+    "q": "Ni BAC (kiwango cha pombe kwenye damu) gani inamfanya dereva wa gari la kibiashara kuwa chini ya ushawishi kisheria huko Idaho?",
     "answer": 0.04,
     "unit": "BAC"
    },
    {
     "type": "mc",
-    "q": "Kikomo cha BAC kwa mtu mwenye miaka 25 anayeendesha gari la kawaida huko Idaho ni kipi?",
+    "q": "Kikomo cha BAC (kiwango cha pombe kwenye damu) kwa mtu mwenye miaka 25 anayeendesha gari la kawaida huko Idaho ni kipi?",
     "choices": [
      ".08",
      ".02",
@@ -9426,24 +9426,24 @@
   "id": "alc-dui-below-08",
   "topic": "alcohol",
   "page": 131,
-  "fact": "Hata ukiwa na BAC chini ya .08, bado unaweza kutiwa hatiani kwa kuendesha ukiwa chini ya ushawishi wa vitu vingine vinavyolevya. BAC ya .20 au zaidi huleta adhabu kali zaidi.",
+  "fact": "Hata ukiwa na BAC (kiwango cha pombe kwenye damu) chini ya .08, bado unaweza kutiwa hatiani kwa kuendesha ukiwa chini ya ushawishi wa vitu vingine vinavyolevya. BAC ya .20 au zaidi huleta adhabu kali zaidi.",
   "why": "Sheria inalenga uendeshaji ulioathirika, si nambari tu kwenye kipimo.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Kuanzia BAC gani au zaidi adhabu kali zaidi za DUI hutumika huko Idaho?",
+    "q": "Kuanzia BAC (kiwango cha pombe kwenye damu) gani au zaidi adhabu kali zaidi za DUI (kuendesha ukiwa umelewa) hutumika huko Idaho?",
     "answer": 0.2,
     "unit": "BAC"
    },
    {
     "type": "tf",
-    "q": "Ikiwa BAC yako iko chini ya .08, huwezi kutiwa hatiani kwa kuendesha ukiwa chini ya ushawishi huko Idaho.",
+    "q": "Ikiwa BAC (kiwango cha pombe kwenye damu) yako iko chini ya .08, huwezi kutiwa hatiani kwa kuendesha ukiwa chini ya ushawishi huko Idaho.",
     "answer": false
    },
    {
     "type": "scenario",
-    "q": "Una miaka 30, ulitumia dawa inayokuathiri, na BAC yako ni .03. Unaweza kutiwa hatiani kwa DUI?",
+    "q": "Una miaka 30, ulitumia dawa inayokuathiri, na BAC (kiwango cha pombe kwenye damu) yako ni .03. Unaweza kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa)?",
     "choices": [
      "Ndiyo, kwa kuendesha ukiwa chini ya ushawishi wa vitu vingine",
      "Hapana, kwa sababu BAC yako iko chini ya .08",
@@ -9458,20 +9458,20 @@
   "id": "alc-dui-under-21",
   "topic": "alcohol",
   "page": 131,
-  "fact": "Huko Idaho, dereva mwenye umri chini ya miaka 21 anaendesha akiwa chini ya ushawishi akiwa na BAC ya .02 au zaidi.",
+  "fact": "Huko Idaho, dereva mwenye umri chini ya miaka 21 anaendesha akiwa chini ya ushawishi akiwa na BAC (kiwango cha pombe kwenye damu) ya .02 au zaidi.",
   "why": "Ni kinyume cha sheria kwa watu walio chini ya miaka 21 kunywa pombe, kwa hivyo kikomo kimewekwa chini sana.",
   "hook": "Chini ya 21: .02. Kibiashara: .04. 21 na zaidi: .08.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Ni BAC gani inamfanya dereva aliye chini ya miaka 21 kuwa chini ya ushawishi kisheria huko Idaho?",
+    "q": "Ni BAC (kiwango cha pombe kwenye damu) gani inamfanya dereva aliye chini ya miaka 21 kuwa chini ya ushawishi kisheria huko Idaho?",
     "answer": 0.02,
     "unit": "BAC"
    },
    {
     "type": "scenario",
-    "q": "Una miaka 19 na BAC yako ni .03. Je, uko chini ya ushawishi kisheria huko Idaho?",
+    "q": "Una miaka 19 na BAC (kiwango cha pombe kwenye damu) yako ni .03. Je, uko chini ya ushawishi kisheria huko Idaho?",
     "choices": [
      "Ndiyo, kikomo kwa walio chini ya 21 ni .02",
      "Hapana, kikomo ni .08 kwa kila mtu",
@@ -9486,31 +9486,31 @@
   "id": "alc-dui-first-conviction",
   "topic": "alcohol",
   "page": 132,
-  "fact": "Kutiwa hatiani kwa DUI mara ya kwanza kunaweza kuleta hadi miezi 6 jela, faini ya hadi $1,000, na kusimamishwa kwa leseni kwa siku 90 hadi 180 (mwaka 1 ikiwa uko chini ya miaka 21), bila kuendesha kabisa kwa siku 30 za kwanza.",
-  "why": "Hata DUI moja inahatarisha maisha, kwa hivyo adhabu ni kali tangu mwanzo.",
+  "fact": "Kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa) mara ya kwanza kunaweza kuleta hadi miezi 6 jela, faini ya hadi $1,000, na kusimamishwa kwa leseni kwa siku 90 hadi 180 (mwaka 1 ikiwa uko chini ya miaka 21), bila kuendesha kabisa kwa siku 30 za kwanza.",
+  "why": "Hata DUI (kuendesha ukiwa umelewa) moja inahatarisha maisha, kwa hivyo adhabu ni kali tangu mwanzo.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Faini ya juu kabisa kwa dola kwa kutiwa hatiani kwa DUI mara ya kwanza huko Idaho ni kiasi gani?",
+    "q": "Faini ya juu kabisa kwa dola kwa kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa) mara ya kwanza huko Idaho ni kiasi gani?",
     "answer": 1000,
     "unit": "dola"
    },
    {
     "type": "num",
-    "q": "Kusimamishwa kwa leseni kwa chini kabisa kwa siku kwa kutiwa hatiani kwa DUI mara ya kwanza (umri wa miaka 21 au zaidi) ni siku ngapi?",
+    "q": "Kusimamishwa kwa leseni kwa chini kabisa kwa siku kwa kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa) mara ya kwanza (umri wa miaka 21 au zaidi) ni siku ngapi?",
     "answer": 90,
     "unit": "siku"
    },
    {
     "type": "num",
-    "q": "Kwa dereva aliye chini ya miaka 21, kusimamishwa kwa leseni kwa kutiwa hatiani kwa DUI mara ya kwanza ni kwa miaka mingapi?",
+    "q": "Kwa dereva aliye chini ya miaka 21, kusimamishwa kwa leseni kwa kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa) mara ya kwanza ni kwa miaka mingapi?",
     "answer": 1,
     "unit": "miaka"
    },
    {
     "type": "mc",
-    "q": "Wakati wa kusimamishwa kwa sababu ya kutiwa hatiani kwa DUI mara ya kwanza, ni lini huna haki yoyote kabisa ya kuendesha?",
+    "q": "Wakati wa kusimamishwa kwa sababu ya kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa) mara ya kwanza, ni lini huna haki yoyote kabisa ya kuendesha?",
     "choices": [
      "Siku 30 za kwanza",
      "Siku 30 za mwisho",
@@ -9525,25 +9525,25 @@
   "id": "alc-dui-second-conviction",
   "topic": "alcohol",
   "page": 132,
-  "fact": "DUI ya pili ndani ya miaka 10 huleta kifungo cha lazima jela, faini ya hadi $2,000, na kusimamishwa kwa leseni kwa mwaka 1 (miaka 2 ikiwa uko chini ya miaka 21).",
-  "why": "Kurudia DUI kunaonyesha hatari inayoendelea, kwa hivyo adhabu huongezeka sana.",
+  "fact": "DUI (kuendesha ukiwa umelewa) ya pili ndani ya miaka 10 huleta kifungo cha lazima jela, faini ya hadi $2,000, na kusimamishwa kwa leseni kwa mwaka 1 (miaka 2 ikiwa uko chini ya miaka 21).",
+  "why": "Kurudia DUI (kuendesha ukiwa umelewa) kunaonyesha hatari inayoendelea, kwa hivyo adhabu huongezeka sana.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Kwa dereva aliye chini ya miaka 21, kusimamishwa kwa leseni kwa DUI ya pili ndani ya miaka 10 ni kwa miaka mingapi?",
+    "q": "Kwa dereva aliye chini ya miaka 21, kusimamishwa kwa leseni kwa DUI (kuendesha ukiwa umelewa) ya pili ndani ya miaka 10 ni kwa miaka mingapi?",
     "answer": 2,
     "unit": "miaka"
    },
    {
     "type": "num",
-    "q": "Faini ya juu kabisa kwa dola kwa DUI ya pili ndani ya miaka 10 ni kiasi gani?",
+    "q": "Faini ya juu kabisa kwa dola kwa DUI (kuendesha ukiwa umelewa) ya pili ndani ya miaka 10 ni kiasi gani?",
     "answer": 2000,
     "unit": "dola"
    },
    {
     "type": "mc",
-    "q": "Kwa dereva mwenye miaka 21 au zaidi, kusimamishwa kwa leseni kwa DUI ya pili ndani ya miaka 10 ni kwa muda gani?",
+    "q": "Kwa dereva mwenye miaka 21 au zaidi, kusimamishwa kwa leseni kwa DUI (kuendesha ukiwa umelewa) ya pili ndani ya miaka 10 ni kwa muda gani?",
     "choices": [
      "Mwaka 1",
      "Siku 90",
@@ -9558,13 +9558,13 @@
   "id": "alc-dui-third-felony",
   "topic": "alcohol",
   "page": 132,
-  "fact": "Kutiwa hatiani kwa DUI mara tatu au zaidi ndani ya miaka 10 ni kosa kubwa la jinai (felony). Kwa dereva mwenye miaka 21 au zaidi, adhabu ni pamoja na kifungo cha lazima jela, faini ya hadi $5,000, na kusimamishwa kwa leseni kwa mwaka 1 hadi miaka 5. Madereva walio chini ya miaka 21 wanakabiliwa na faini ya hadi $2,000 na kusimamishwa kwa angalau mwaka 1 au hadi wafikishe miaka 21, kipi kitakachokuwa kirefu zaidi.",
+  "fact": "Kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa) mara tatu au zaidi ndani ya miaka 10 ni kosa kubwa la jinai (felony). Kwa dereva mwenye miaka 21 au zaidi, adhabu ni pamoja na kifungo cha lazima jela, faini ya hadi $5,000, na kusimamishwa kwa leseni kwa mwaka 1 hadi miaka 5. Madereva walio chini ya miaka 21 wanakabiliwa na faini ya hadi $2,000 na kusimamishwa kwa angalau mwaka 1 au hadi wafikishe miaka 21, kipi kitakachokuwa kirefu zaidi.",
   "why": "Madereva wanaoendelea kuendesha wakiwa wameathirika wanachukuliwa kama wahalifu wakubwa kwa sababu ya hatari wanayosababisha.",
   "weight": 3,
   "items": [
    {
     "type": "mc",
-    "q": "Kutiwa hatiani kwa DUI mara ya tatu ndani ya miaka 10 huko Idaho ni kosa la aina gani?",
+    "q": "Kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa) mara ya tatu ndani ya miaka 10 huko Idaho ni kosa la aina gani?",
     "choices": [
      "Kosa kubwa la jinai (felony)",
      "Kosa dogo (infraction)",
@@ -9575,13 +9575,13 @@
    },
    {
     "type": "num",
-    "q": "Faini ya juu kabisa kwa dola kwa DUI ya tatu ndani ya miaka 10 kwa dereva mwenye miaka 21 au zaidi ni kiasi gani?",
+    "q": "Faini ya juu kabisa kwa dola kwa DUI (kuendesha ukiwa umelewa) ya tatu ndani ya miaka 10 kwa dereva mwenye miaka 21 au zaidi ni kiasi gani?",
     "answer": 5000,
     "unit": "dola"
    },
    {
     "type": "num",
-    "q": "Kusimamishwa kwa leseni kwa muda mrefu kabisa, kwa miaka, kwa DUI tatu au zaidi ndani ya miaka 10 (umri wa miaka 21 au zaidi) ni miaka mingapi?",
+    "q": "Kusimamishwa kwa leseni kwa muda mrefu kabisa, kwa miaka, kwa DUI (kuendesha ukiwa umelewa) tatu au zaidi ndani ya miaka 10 (umri wa miaka 21 au zaidi) ni miaka mingapi?",
     "answer": 5,
     "unit": "miaka"
    }
@@ -9901,26 +9901,26 @@
   "id": "lic-gdl-50-hours",
   "topic": "licensing",
   "page": 19,
-  "fact": "Wakati wa kipindi cha usimamizi cha GDL lazima uendeshe angalau saa 50 chini ya usimamizi, na angalau saa 10 kati ya hizo lazima ziwe usiku.",
+  "fact": "Wakati wa kipindi cha usimamizi cha GDL (Leseni ya Udereva ya Hatua kwa Hatua) lazima uendeshe angalau saa 50 chini ya usimamizi, na angalau saa 10 kati ya hizo lazima ziwe usiku.",
   "why": "Mazoezi mengi, ikiwa ni pamoja na gizani, yanakuandaa kwa hali utakazokabiliana nazo peke yako.",
   "hook": "Jumla 50, usiku 10.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Lazima urekodi jumla ya saa ngapi za kuendesha chini ya usimamizi wakati wa kipindi cha GDL?",
+    "q": "Lazima urekodi jumla ya saa ngapi za kuendesha chini ya usimamizi wakati wa kipindi cha GDL (Leseni ya Udereva ya Hatua kwa Hatua)?",
     "answer": 50,
     "unit": "saa"
    },
    {
     "type": "num",
-    "q": "Kati ya saa zinazohitajika za GDL za kuendesha chini ya usimamizi, ngapi lazima ziwe usiku?",
+    "q": "Kati ya saa zinazohitajika za GDL (Leseni ya Udereva ya Hatua kwa Hatua) za kuendesha chini ya usimamizi, ngapi lazima ziwe usiku?",
     "answer": 10,
     "unit": "saa"
    },
    {
     "type": "mc",
-    "q": "Ni kipi kinatimiza sharti la Idaho la GDL la kuendesha chini ya usimamizi?",
+    "q": "Ni kipi kinatimiza sharti la Idaho la GDL (Leseni ya Udereva ya Hatua kwa Hatua) la kuendesha chini ya usimamizi?",
     "choices": [
      "Jumla ya saa 50, 10 kati yake usiku",
      "Jumla ya saa 40, 10 kati yake usiku",
@@ -9941,7 +9941,7 @@
   "items": [
    {
     "type": "num",
-    "q": "Kipindi cha mafunzo chini ya usimamizi cha GDL ni cha angalau miezi mingapi?",
+    "q": "Kipindi cha mafunzo chini ya usimamizi cha GDL (Leseni ya Udereva ya Hatua kwa Hatua) ni cha angalau miezi mingapi?",
     "answer": 6,
     "unit": "miezi"
    },
@@ -9962,19 +9962,19 @@
   "id": "lic-gdl-supervisor-21",
   "topic": "licensing",
   "page": 19,
-  "fact": "Wakati wa kipindi cha usimamizi cha GDL, dereva mwenye leseni mwenye umri wa angalau miaka 21 lazima aketi kiti cha mbele kando yako, na hakuna mtu mwingine anayeweza kuketi kiti cha mbele.",
+  "fact": "Wakati wa kipindi cha usimamizi cha GDL (Leseni ya Udereva ya Hatua kwa Hatua), dereva mwenye leseni mwenye umri wa angalau miaka 21 lazima aketi kiti cha mbele kando yako, na hakuna mtu mwingine anayeweza kuketi kiti cha mbele.",
   "why": "Mtu mzima anayesimamia anahitaji kuona vizuri na kufikia kwa urahisi ili akusaidie, bila visumbufu vingine vya kiti cha mbele.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Wakati wa kipindi cha mafunzo chini ya usimamizi cha GDL, dereva mwenye leseni anayekusimamia lazima awe na umri wa angalau miaka mingapi?",
+    "q": "Wakati wa kipindi cha mafunzo chini ya usimamizi cha GDL (Leseni ya Udereva ya Hatua kwa Hatua), dereva mwenye leseni anayekusimamia lazima awe na umri wa angalau miaka mingapi?",
     "answer": 21,
     "unit": "miaka"
    },
    {
     "type": "scenario",
-    "q": "Uko katika kipindi chako cha usimamizi cha GDL. Dada yako mwenye miaka 22 mwenye leseni anakusimamia, na binamu yako mdogo anataka kuketi mbele pia. Sheria ni ipi?",
+    "q": "Uko katika kipindi chako cha usimamizi cha GDL (Leseni ya Udereva ya Hatua kwa Hatua). Dada yako mwenye miaka 22 mwenye leseni anakusimamia, na binamu yako mdogo anataka kuketi mbele pia. Sheria ni ipi?",
     "choices": [
      "Dada yako tu ndiye anayeweza kuketi kiti cha mbele",
      "Binamu yako anaweza kuketi mbele akifunga mkanda wa usalama",
@@ -9985,7 +9985,7 @@
    },
    {
     "type": "tf",
-    "q": "Wakati wa kipindi cha usimamizi cha GDL, dereva anayekusimamia lazima awe na leseni na umri wa angalau miaka 21.",
+    "q": "Wakati wa kipindi cha usimamizi cha GDL (Leseni ya Udereva ya Hatua kwa Hatua), dereva anayekusimamia lazima awe na leseni na umri wa angalau miaka 21.",
     "answer": true
    }
   ]
@@ -9994,13 +9994,13 @@
   "id": "lic-gdl-violation-restart",
   "topic": "licensing",
   "page": 19,
-  "fact": "Ukitiwa hatiani kwa kosa la trafiki wakati wa kipindi cha usimamizi cha GDL, kibali chako kinafutwa. Lazima upate kibali kipya, na kipindi cha miezi 6 kinaanza upya.",
+  "fact": "Ukitiwa hatiani kwa kosa la trafiki wakati wa kipindi cha usimamizi cha GDL (Leseni ya Udereva ya Hatua kwa Hatua), kibali chako kinafutwa. Lazima upate kibali kipya, na kipindi cha miezi 6 kinaanza upya.",
   "why": "Kipindi cha usimamizi lazima kiwe bila makosa ili kuonyesha uko tayari kuendesha kwa usalama.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "Miezi minne ndani ya kipindi chako cha usimamizi cha GDL, unatiwa hatiani kwa kuendesha kwa kasi kupita kiasi. Nini kinatokea?",
+    "q": "Miezi minne ndani ya kipindi chako cha usimamizi cha GDL (Leseni ya Udereva ya Hatua kwa Hatua), unatiwa hatiani kwa kuendesha kwa kasi kupita kiasi. Nini kinatokea?",
     "choices": [
      "Kibali chako kinafutwa na miezi 6 inaanza upya kwa kibali kipya",
      "Lazima uongeze miezi 2 zaidi kwenye kibali chako cha sasa",
@@ -10011,7 +10011,7 @@
    },
    {
     "type": "tf",
-    "q": "Kutiwa hatiani kwa kosa la trafiki wakati wa kipindi cha usimamizi cha GDL kunaongeza faini tu; muda uliokwisha endesha bado unahesabiwa.",
+    "q": "Kutiwa hatiani kwa kosa la trafiki wakati wa kipindi cha usimamizi cha GDL (Leseni ya Udereva ya Hatua kwa Hatua) kunaongeza faini tu; muda uliokwisha endesha bado unahesabiwa.",
     "answer": false
    }
   ]
@@ -10047,19 +10047,19 @@
   "id": "lic-address-change-30",
   "topic": "licensing",
   "page": 29,
-  "fact": "Lazima uiarifu ITD ndani ya siku 30 baada ya anwani yako kubadilika.",
+  "fact": "Lazima uiarifu ITD (Idara ya Usafiri ya Idaho) ndani ya siku 30 baada ya anwani yako kubadilika.",
   "why": "Maafisa wanahitaji kukufikia kwa notisi muhimu kuhusu leseni yako.",
   "weight": 1,
   "items": [
    {
     "type": "num",
-    "q": "Lazima uiarifu ITD ndani ya siku ngapi baada ya anwani yako kubadilika?",
+    "q": "Lazima uiarifu ITD (Idara ya Usafiri ya Idaho) ndani ya siku ngapi baada ya anwani yako kubadilika?",
     "answer": 30,
     "unit": "siku"
    },
    {
     "type": "mc",
-    "q": "Umehamia nyumba mpya. Lazima uiarifu ITD baada ya muda gani?",
+    "q": "Umehamia nyumba mpya. Lazima uiarifu ITD (Idara ya Usafiri ya Idaho) baada ya muda gani?",
     "choices": [
      "Ndani ya siku 30",
      "Ndani ya siku 10",
@@ -10389,7 +10389,7 @@
    },
    {
     "type": "tf",
-    "q": "Chini ya Mkataba wa Leseni za Udereva, makosa makubwa kama DUI tu ndiyo huripotiwa kwa jimbo lako la nyumbani, si makosa madogo ya uendeshaji.",
+    "q": "Chini ya Mkataba wa Leseni za Udereva, makosa makubwa kama DUI (kuendesha ukiwa umelewa) tu ndiyo huripotiwa kwa jimbo lako la nyumbani, si makosa madogo ya uendeshaji.",
     "answer": false
    }
   ]
@@ -10450,13 +10450,13 @@
   "id": "alc-ddc-points",
   "topic": "licensing",
   "page": 123,
-  "fact": "Kumaliza Kozi ya Uendeshaji wa Kujihami (Defensive Driving Course) iliyoidhinishwa na ITD huondoa hadi pointi 3. Pointi zinaweza kuondolewa kwa njia hii mara moja tu kila miaka 3, na pointi lazima ziwe tayari kwenye rekodi yako kabla ya kumaliza kozi.",
+  "fact": "Kumaliza Kozi ya Uendeshaji wa Kujihami (Defensive Driving Course) iliyoidhinishwa na ITD (Idara ya Usafiri ya Idaho) huondoa hadi pointi 3. Pointi zinaweza kuondolewa kwa njia hii mara moja tu kila miaka 3, na pointi lazima ziwe tayari kwenye rekodi yako kabla ya kumaliza kozi.",
   "why": "Kozi inawazawadia madereva wanaojitahidi kujiboresha, lakini imewekewa kikomo ili isitumike tena na tena.",
   "weight": 2,
   "items": [
    {
     "type": "num",
-    "q": "Kozi ya Uendeshaji wa Kujihami iliyoidhinishwa na ITD inaweza kuondoa pointi ngapi zaidi?",
+    "q": "Kozi ya Uendeshaji wa Kujihami iliyoidhinishwa na ITD (Idara ya Usafiri ya Idaho) inaweza kuondoa pointi ngapi zaidi?",
     "answer": 3,
     "unit": "pointi"
    },
@@ -10669,7 +10669,7 @@
   "id": "alc-reasons-suspension",
   "topic": "licensing",
   "page": 124,
-  "fact": "Leseni yako inaweza kusimamishwa au kunyang'anywa kwa mambo kama DUI, uendeshaji wa kizembe na hatari (reckless driving), kumkimbia afisa wa polisi, kuondoka eneo la ajali, kukataa au kushindwa kipimo cha ushahidi, na kutokuwa na bima ya gari.",
+  "fact": "Leseni yako inaweza kusimamishwa au kunyang'anywa kwa mambo kama DUI (kuendesha ukiwa umelewa), uendeshaji wa kizembe na hatari (reckless driving), kumkimbia afisa wa polisi, kuondoka eneo la ajali, kukataa au kushindwa kipimo cha ushahidi, na kutokuwa na bima ya gari.",
   "why": "Matendo haya yanawaweka watu wengine katika hatari kubwa au yanakwepa wajibu wa madhara.",
   "weight": 2,
   "items": [
@@ -10721,18 +10721,18 @@
   "id": "alc-gdl-absolute",
   "topic": "licensing",
   "page": 125,
-  "fact": "Kusimamishwa kwa adhabu za GDL ni kamili: hakuna uendeshaji wa aina yoyote unaoruhusiwa. Huongezwa juu ya kufutwa kwa kibali chochote au kusimamishwa kwingine kutoka mahakamani au idara.",
+  "fact": "Kusimamishwa kwa adhabu za GDL (Leseni ya Udereva ya Hatua kwa Hatua) ni kamili: hakuna uendeshaji wa aina yoyote unaoruhusiwa. Huongezwa juu ya kufutwa kwa kibali chochote au kusimamishwa kwingine kutoka mahakamani au idara.",
   "why": "Adhabu inakusudiwa kumzuia kabisa dereva kijana kuendesha kwa kipindi chote.",
   "weight": 2,
   "items": [
    {
     "type": "tf",
-    "q": "Wakati wa kusimamishwa kwa adhabu ya GDL, huwezi kuendesha kabisa, hata kwenda shuleni au kazini.",
+    "q": "Wakati wa kusimamishwa kwa adhabu ya GDL (Leseni ya Udereva ya Hatua kwa Hatua), huwezi kuendesha kabisa, hata kwenda shuleni au kazini.",
     "answer": true
    },
    {
     "type": "mc",
-    "q": "Wakati wa kusimamishwa kwa adhabu ya GDL, ni uendeshaji gani unaoruhusiwa?",
+    "q": "Wakati wa kusimamishwa kwa adhabu ya GDL (Leseni ya Udereva ya Hatua kwa Hatua), ni uendeshaji gani unaoruhusiwa?",
     "choices": [
      "Hakuna uendeshaji wa aina yoyote",
      "Kuendesha kwenda shuleni tu",
@@ -10753,13 +10753,13 @@
   "items": [
    {
     "type": "num",
-    "q": "Adhabu za GDL zinawahusu madereva wote walio chini ya umri gani?",
+    "q": "Adhabu za GDL (Leseni ya Udereva ya Hatua kwa Hatua) zinawahusu madereva wote walio chini ya umri gani?",
     "answer": 17,
     "unit": "miaka"
    },
    {
     "type": "mc",
-    "q": "Una miaka 16 na umetiwa hatiani kwa kosa lako la kwanza la uendeshaji. Ni adhabu gani ya GDL inatumika?",
+    "q": "Una miaka 16 na umetiwa hatiani kwa kosa lako la kwanza la uendeshaji. Ni adhabu gani ya GDL (Leseni ya Udereva ya Hatua kwa Hatua) inatumika?",
     "choices": [
      "Barua ya onyo",
      "Kusimamishwa kwa siku 30",
@@ -10780,13 +10780,13 @@
   "items": [
    {
     "type": "num",
-    "q": "Kusimamishwa kwa GDL kwa kutiwa hatiani kwa kosa la pili la uendeshaji kwa dereva aliye chini ya miaka 17 ni kwa siku ngapi?",
+    "q": "Kusimamishwa kwa GDL (Leseni ya Udereva ya Hatua kwa Hatua) kwa kutiwa hatiani kwa kosa la pili la uendeshaji kwa dereva aliye chini ya miaka 17 ni kwa siku ngapi?",
     "answer": 30,
     "unit": "siku"
    },
    {
     "type": "scenario",
-    "q": "Una miaka 16 na umetiwa hatiani sasa hivi kwa kosa lako la pili la uendeshaji. Adhabu ya GDL ni ipi?",
+    "q": "Una miaka 16 na umetiwa hatiani sasa hivi kwa kosa lako la pili la uendeshaji. Adhabu ya GDL (Leseni ya Udereva ya Hatua kwa Hatua) ni ipi?",
     "choices": [
      "Kusimamishwa kwa siku 30",
      "Barua ya onyo",
@@ -10807,7 +10807,7 @@
   "items": [
    {
     "type": "num",
-    "q": "Kusimamishwa kwa GDL kwa kutiwa hatiani kwa kosa la tatu la uendeshaji kwa dereva aliye chini ya miaka 17 ni kwa siku ngapi?",
+    "q": "Kusimamishwa kwa GDL (Leseni ya Udereva ya Hatua kwa Hatua) kwa kutiwa hatiani kwa kosa la tatu la uendeshaji kwa dereva aliye chini ya miaka 17 ni kwa siku ngapi?",
     "answer": 60,
     "unit": "siku"
    },
@@ -10818,7 +10818,7 @@
    },
    {
     "type": "scenario",
-    "q": "Una miaka 16 na umetiwa hatiani sasa hivi kwa kosa lako la tatu la uendeshaji. Ni adhabu gani ya GDL inatumika?",
+    "q": "Una miaka 16 na umetiwa hatiani sasa hivi kwa kosa lako la tatu la uendeshaji. Ni adhabu gani ya GDL (Leseni ya Udereva ya Hatua kwa Hatua) inatumika?",
     "choices": [
      "Kusimamishwa kwa siku 60",
      "Kusimamishwa kwa siku 30",
@@ -10833,7 +10833,7 @@
   "id": "alc-restricted-permit",
   "topic": "licensing",
   "page": 127,
-  "fact": "Ikiwa leseni yako imesimamishwa, unaweza kustahili kibali chenye masharti cha kuendesha kwenda sehemu kama kazini au kwenye matibabu. Ikiwa idara ndiyo iliyokusimamisha, omba kwa ITD huko Boise; ikiwa mahakama ndiyo iliyokusimamisha, omba kwa mahakama hiyo.",
+  "fact": "Ikiwa leseni yako imesimamishwa, unaweza kustahili kibali chenye masharti cha kuendesha kwenda sehemu kama kazini au kwenye matibabu. Ikiwa idara ndiyo iliyokusimamisha, omba kwa ITD (Idara ya Usafiri ya Idaho) huko Boise; ikiwa mahakama ndiyo iliyokusimamisha, omba kwa mahakama hiyo.",
   "why": "Kibali chenye masharti kinawawezesha watu kukidhi mahitaji ya msingi huku bado uendeshaji wao ukiwa na kikomo.",
   "weight": 1,
   "items": [
@@ -10842,7 +10842,7 @@
     "q": "Mahakama ilisimamisha leseni yako baada ya kutiwa hatiani. Unaomba haki za kuendesha zenye masharti wapi?",
     "choices": [
      "Kwa mahakama iliyokutia hatiani",
-     "Ofisi yoyote ya DMV ya kaunti",
+     "Ofisi yoyote ya DMV (Kitengo cha Magari) ya kaunti",
      "Kampuni yako ya bima",
      "Kwa afisa aliyekupa tiketi"
     ],
@@ -10892,13 +10892,13 @@
   "id": "alc-reinstatement-sr22",
   "topic": "licensing",
   "page": 128,
-  "fact": "Ili kurejeshewa leseni yako baada ya kusimamishwa kwa makosa makubwa kama DUI au uendeshaji wa kizembe na hatari, lazima ulipe ada ya kurejesha leseni na uonyeshe uthibitisho wa uwajibikaji wa kifedha (cheti cha bima cha SR-22) kwa miaka 3.",
+  "fact": "Ili kurejeshewa leseni yako baada ya kusimamishwa kwa makosa makubwa kama DUI (kuendesha ukiwa umelewa) au uendeshaji wa kizembe na hatari, lazima ulipe ada ya kurejesha leseni na uonyeshe uthibitisho wa uwajibikaji wa kifedha (cheti cha bima cha SR-22) kwa miaka 3.",
   "why": "Madereva waliofanya makosa makubwa lazima wathibitishe kwamba wana bima endapo watasababisha madhara tena.",
   "weight": 2,
   "items": [
    {
     "type": "num",
-    "q": "Lazima uonyeshe uthibitisho wa uwajibikaji wa kifedha kwa miaka mingapi baada ya kusimamishwa kwa DUI au uendeshaji wa kizembe na hatari?",
+    "q": "Lazima uonyeshe uthibitisho wa uwajibikaji wa kifedha kwa miaka mingapi baada ya kusimamishwa kwa DUI (kuendesha ukiwa umelewa) au uendeshaji wa kizembe na hatari?",
     "answer": 3,
     "unit": "miaka"
    },
@@ -11331,7 +11331,7 @@
   "id": "lic-equip-studded-tires",
   "topic": "equipment",
   "page": 42,
-  "fact": "Matairi ya theluji yenye vipini vya chuma (studded) yanaweza kutumika tu kuanzia Oktoba 1 hadi Aprili 30. ITD wakati mwingine hubadilisha tarehe hizi kwa sababu ya hali ya hewa.",
+  "fact": "Matairi ya theluji yenye vipini vya chuma (studded) yanaweza kutumika tu kuanzia Oktoba 1 hadi Aprili 30. ITD (Idara ya Usafiri ya Idaho) wakati mwingine hubadilisha tarehe hizi kwa sababu ya hali ya hewa.",
   "why": "Vipini husaidia kwenye barafu lakini huharibu lami kavu, kwa hivyo vinaruhusiwa tu katika miezi ya theluji.",
   "weight": 2,
   "items": [
