@@ -1,7 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <rect width="512" height="512" fill="#0b6b3a"/>
   <g transform="translate(51 51) scale(.8)">
-  <path d="M176 448 L232 64 L280 64 L336 448 Z" fill="#1d2a22" opacity=".55"/>
-  <g fill="#ffd23f"><rect x="244" y="96" width="24" height="56" rx="6"/><rect x="244" y="200" width="24" height="64" rx="6"/><rect x="244" y="316" width="24" height="76" rx="6"/></g>
-  <g transform="translate(330 300)"><circle r="96" fill="#fff"/><path d="M-44 4 L-12 36 L48 -32" fill="none" stroke="#0b6b3a" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+  <!-- steering wheel -->
+  <g transform="translate(256 300)">
+    <circle r="150" fill="none" stroke="#fff" stroke-width="42"/>
+    <circle r="44" fill="#fff"/>
+    <path d="M-130 -18 Q0 -58 130 -18" fill="none" stroke="#fff" stroke-width="36" stroke-linecap="round"/>
+    <path d="M0 40 L0 140" stroke="#fff" stroke-width="40" stroke-linecap="round"/>
+  </g>
+  <!-- graduation cap, tilted on top of the wheel -->
+  <g transform="translate(262 128) rotate(-10)">
+    <path d="M-70 18 L-70 62 Q0 92 70 62 L70 18 Z" fill="#111" stroke="#ffd23f" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M0 -52 L160 6 L0 64 L-160 6 Z" fill="#111" stroke="#ffd23f" stroke-width="12" stroke-linejoin="round"/>
+    <circle cx="0" cy="6" r="11" fill="#ffd23f"/>
+    <path d="M0 6 L118 30 L118 104" fill="none" stroke="#ffd23f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M106 96 L130 96 L136 140 L100 140 Z" fill="#ffd23f"/>
+  </g>
+</g>
 </svg>
