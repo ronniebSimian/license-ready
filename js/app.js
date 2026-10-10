@@ -543,7 +543,7 @@ function viewMore() {
       <p>${esc(t('more.aboutText'))}</p>
       <p>${esc(t('more.privacy'))}</p>
       <p><a href="${esc(S.state.handbook.url)}" target="_blank" rel="noopener">📘 ${esc(S.state.handbook.title)} (${esc(S.state.handbook.edition)})</a></p>
-      <p><a href="https://github.com/ronniebSimian/permit-trainer" target="_blank" rel="noopener">💻 ${esc(t('more.source'))}</a></p>
+      <p><a href="https://github.com/ronniebSimian/license-ready" target="_blank" rel="noopener">💻 ${esc(t('more.source'))}</a></p>
       <p class="small muted">${esc(t('disclaimer', { agency: S.state.agency }))}</p>
     </section>
     <section class="card">

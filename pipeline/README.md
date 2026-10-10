@@ -1,4 +1,4 @@
-# Build Permit Trainer for your state
+# Build License Ready for your state
 
 The app is state-agnostic. A state is just a folder in `states/` with a config file, a facts file per language,
 and sign images. Idaho took one afternoon with Claude Code. Here's the recipe.

@@ -1,11 +1,11 @@
-# Permit Trainer
+# License Ready
 
 **A free, open-source study app for the driver's license knowledge test — built the way memory actually works.**
 
 Starting with Idaho (Class D), in English, Español, العربية, 中文, Русский and Kiswahili.
 Works on phones and desktops, installs to the home screen, and runs offline.
 
-**Use it:** https://ronniebsimian.github.io/permit-trainer/
+**Use it:** https://ronniebsimian.github.io/license-ready/
 
 ## Why it's different
 

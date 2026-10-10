@@ -1,5 +1,5 @@
 // Offline support. tools/build.mjs rewrites VERSION and ASSETS whenever content changes.
-const VERSION = '388e5ed524';
+const VERSION = '9007a7c1fa';
 const ASSETS = ["./",
   "css/app.css",
   "favicon.ico",
@@ -20,6 +20,8 @@ const ASSETS = ["./",
   "js/srs.js",
   "js/store.js",
   "manifest.webmanifest",
+  "notes/handbook-conflicts.md",
+  "notes/itd-email.md",
   "states/idaho/facts.ar.json",
   "states/idaho/facts.en.json",
   "states/idaho/facts.es.json",
@@ -67,7 +69,7 @@ const ASSETS = ["./",
   "states/idaho/signs/W7-1.svg",
   "states/idaho/signs/W8-5.svg",
   "states/idaho/state.json"];
-const CACHE = `permit-trainer-${VERSION}`;
+const CACHE = `license-ready-${VERSION}`;
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
@@ -75,7 +77,7 @@ self.addEventListener('install', e => {
 
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys()
-    .then(keys => Promise.all(keys.filter(k => k.startsWith('permit-trainer-') && k !== CACHE).map(k => caches.delete(k))))
+    .then(keys => Promise.all(keys.filter(k => k.startsWith('license-ready-') && k !== CACHE).map(k => caches.delete(k))))
     .then(() => self.clients.claim()));
 });
 

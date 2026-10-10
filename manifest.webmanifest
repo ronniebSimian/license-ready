@@ -1,6 +1,6 @@
 {
-  "name": "Permit Trainer — Idaho",
-  "short_name": "Permit Trainer",
+  "name": "License Ready Idaho",
+  "short_name": "License Ready",
   "description": "Free study app for the Idaho driver's knowledge test. Works offline.",
   "start_url": "./",
   "scope": "./",

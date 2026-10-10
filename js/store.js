@@ -1,10 +1,12 @@
 // Progress lives only in this browser (localStorage). No accounts, nothing sent anywhere.
 
-const KEY = s => `permit-trainer:${s}`;
+const KEY = s => `license-ready:${s}`;
+// The app was called Permit Trainer before 10 Oct 2026; same origin, so carry old progress over.
+const OLD = s => `permit-trainer:${s}`;
 
 export function load(stateId) {
   try {
-    const p = JSON.parse(localStorage.getItem(KEY(stateId)));
+    const p = JSON.parse(localStorage.getItem(KEY(stateId)) ?? localStorage.getItem(OLD(stateId)));
     if (p && p.facts) return Object.assign(blank(), p);
   } catch { /* corrupted or missing: start fresh */ }
   return blank();
@@ -16,6 +18,7 @@ export function save(stateId, p) {
 
 export function reset(stateId) {
   localStorage.removeItem(KEY(stateId));
+  localStorage.removeItem(OLD(stateId));
 }
 
 function blank() {
@@ -57,5 +60,5 @@ export function levelProgress(xp) {
   return (xp - lo) / (hi - lo);
 }
 
-export function getPref(k, dflt) { return localStorage.getItem(`permit-trainer:pref:${k}`) ?? dflt; }
-export function setPref(k, v) { localStorage.setItem(`permit-trainer:pref:${k}`, v); }
+export function getPref(k, dflt) { return localStorage.getItem(`license-ready:pref:${k}`) ?? localStorage.getItem(`permit-trainer:pref:${k}`) ?? dflt; }
+export function setPref(k, v) { localStorage.setItem(`license-ready:pref:${k}`, v); }
