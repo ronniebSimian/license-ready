@@ -8939,7 +8939,7 @@
   "items": [
    {
     "type": "num",
-    "q": "How many days is the ALS (administrative license suspension) suspension for a first failed evidentiary test?",
+    "q": "How many days is the ALS (administrative license suspension) for a first failed evidentiary test?",
     "answer": 90,
     "unit": "days"
    },
@@ -8972,7 +8972,7 @@
   "items": [
    {
     "type": "num",
-    "q": "A second failed test within how many years brings a 1-year absolute ALS (administrative license suspension) suspension?",
+    "q": "A second failed test within how many years brings a 1-year absolute ALS (administrative license suspension)?",
     "answer": 5,
     "unit": "years"
    },
