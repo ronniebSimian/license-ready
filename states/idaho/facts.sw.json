@@ -404,10 +404,10 @@
     "type": "scenario",
     "q": "Alama ya \"SPEED LIMIT\" (Kikomo cha mwendo) inasema 50, lakini mvua kubwa inafanya iwe vigumu kuona. Kipi ni kweli?",
     "choices": [
-     "50 ni mwendo wa juu kabisa kwa hali bora; huenda ukahitaji kwenda polepole zaidi",
-     "Lazima uendeshe 50 kamili",
+     "50 ni mwendo wa juu kabisa; huenda ukahitaji kwenda polepole zaidi",
+     "Lazima uendeshe 50 kamili muda wote",
      "Unaweza kuendesha 55 ili uende sawa na magari mengine",
-     "Kikomo hakitumiki tena wakati wa mvua"
+     "Kikomo cha mwendo hakitumiki tena wakati wa mvua"
     ],
     "answer": 0
    },
@@ -869,8 +869,8 @@
   "id": "sig-t-intersection",
   "topic": "signs",
   "page": 49,
-  "fact": "Alama ya tahadhari yenye umbo la T inamaanisha barabara inaishia mbele kwenye makutano ya T, na utalazimika kugeuka kulia au kushoto. Kuwa tayari kusimama na kuwapisha madereva wanaotoka pande zile nyingine mbili.",
-  "why": "Barabara haiendelei moja kwa moja, kwa hiyo lazima uwe tayari kusimama na kugeuka.",
+  "fact": "Alama ya tahadhari yenye umbo la T inamaanisha barabara inaishia mbele kwenye makutano ya T, na utalazimika kugeuka kulia au kushoto. Lazima usimame na uwapishe madereva wanaotoka pande zile nyingine mbili.",
+  "why": "Magari kwenye barabara unayoikuta yanaendelea kwenda, kwa hiyo lazima usubiri nafasi salama kabla ya kugeuka.",
   "weight": 3,
   "sign": "W2-4",
   "signDesc": "Almasi ya njano yenye ishara nyeusi ya T",
@@ -1377,7 +1377,7 @@
     "q": "Alama hii inamaanisha nini?",
     "choices": [
      "Kivuko cha reli mbele; kuwa tayari kusimama",
-     "Makutano ya barabara mbele",
+     "Barabara inayokatiza mbele",
      "Usiingie",
      "Kizunguko mbele"
     ],
@@ -1641,9 +1641,9 @@
     "q": "Unaona alama ya \"MAY USE FULL LANE\" (Zinaweza kutumia njia nzima) na mwendesha baiskeli akiendesha katikati ya njia yako. Unapaswa kufanya nini?",
     "choices": [
      "Baki nyuma na upite tu ikiwa ni salama kubadilisha njia",
-     "Piga honi ili mwendesha baiskeli asogee kulia",
-     "Jipenyeze kupita ukiwa kwenye njia ile ile",
-     "Endesha kwenye bega la barabara ili upite"
+     "Piga honi ili mwendesha baiskeli asogee upande wa kulia",
+     "Jipenyeze kumpita mwendesha baiskeli bila kutoka kwenye njia yako",
+     "Endesha kwenye bega la barabara ili umzunguke mwendesha baiskeli"
     ],
     "answer": 0
    }
@@ -1889,6 +1889,7 @@
   "page": 56,
   "fact": "Mshale wa njano unaowaka na kuzima unamaanisha unaweza kugeuka, lakini lazima kwanza uwapishe magari yanayokuja na watembea kwa miguu walio kwenye vivuko.",
   "why": "Kugeuka kunaruhusiwa lakini hakulindwi, kwa hiyo magari yanayokuja bado yana haki ya njia.",
+  "example": "Uko kwenye njia ya kugeuka kushoto na mshale unawaka na kuzima kwa rangi ya njano. Magari yanakuja kuelekea kwako, na mtu anatembea kwenye kivuko ambacho ungekikatiza unapogeuka. Subiri. Geuka tu baada ya magari yanayokuja kupita na mtu huyo kumaliza kuvuka.",
   "weight": 3,
   "items": [
    {
@@ -1956,7 +1957,7 @@
    },
    {
     "type": "tf",
-    "q": "Taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) inapowekwa, barabara za pembeni zenye alama za kusimama hazilazimiki tena kusimama.",
+    "q": "Taa ya watembea kwa miguu ya HAWK inapowekwa, barabara za pembeni zenye alama za kusimama hazilazimiki tena kusimama.",
     "answer": false
    }
   ]
@@ -1992,13 +1993,13 @@
   "id": "sig-hawk-dark-yellow",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "Taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) huwa imezimika hadi mtembea kwa miguu abonyeze kitufe. Kisha inawaka na kuzima rangi ya njano (punguza mwendo), kisha inaonyesha njano iliyotulia (jiandae kusimama).",
+  "fact": "Taa ya watembea kwa miguu ya HAWK huwa imezimika hadi mtembea kwa miguu abonyeze kitufe. Kisha inawaka na kuzima rangi ya njano (punguza mwendo), kisha inaonyesha njano iliyotulia (jiandae kusimama).",
   "why": "Taa za onyo zinawapa madereva muda wa kupunguza mwendo kabla ya nyekundu.",
   "weight": 2,
   "items": [
    {
     "type": "mc",
-    "q": "Inamaanisha nini taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) ikiwa imezimika (haiwaki)?",
+    "q": "Inamaanisha nini taa ya watembea kwa miguu ya HAWK ikiwa imezimika (haiwaki)?",
     "choices": [
      "Endesha kawaida, lakini angalia watembea kwa miguu",
      "Simama na usubiri",
@@ -2009,7 +2010,7 @@
    },
    {
     "type": "mc",
-    "q": "Baada ya mtembea kwa miguu kubonyeza kitufe, taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) inaonyesha nini kwanza?",
+    "q": "Baada ya mtembea kwa miguu kubonyeza kitufe, taa ya watembea kwa miguu ya HAWK inaonyesha nini kwanza?",
     "choices": [
      "Njano inayowaka na kuzima",
      "Nyekundu iliyotulia",
@@ -2024,13 +2025,14 @@
   "id": "sig-hawk-red",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "Taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) inapoonyesha taa mbili nyekundu zilizotulia, simama kabisa kwenye mstari wa kusimama. Taa nyekundu zinapowaka na kuzima kwa kupokezana, simama, wapishe watembea kwa miguu walio kwenye kivuko, na uende njia ikiwa wazi.",
+  "fact": "Taa ya watembea kwa miguu ya HAWK inapoonyesha taa mbili nyekundu zilizotulia, simama kabisa kwenye mstari wa kusimama. Taa nyekundu zinapowaka na kuzima kwa kupokezana, simama, wapishe watembea kwa miguu walio kwenye kivuko, na uende njia ikiwa wazi.",
   "why": "Nyekundu iliyotulia ni muda wa watu kuvuka; nyekundu inayowaka kwa kupokezana inaruhusu madereva kwenda mara kivuko kikiwa tupu.",
+  "example": "Unaendesha kuelekea kivuko chenye taa ya watembea kwa miguu ya HAWK. Mtu anabonyeza kitufe, taa zinawaka na kuzima rangi ya njano, kisha zinakuwa njano iliyotulia, kisha taa mbili nyekundu zilizotulia zinawaka. Unasimama kwenye mstari wa kusimama wakati mtu huyo anavuka. Taa nyekundu zinapoanza kuwaka na kuzima kwa kupokezana, simama, na uende mara kivuko kikiwa tupu.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "Kwenye taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe), taa mbili nyekundu zinawaka na kuzima kwa kupokezana. Kivuko sasa kiko tupu. Unapaswa kufanya nini?",
+    "q": "Kwenye taa ya watembea kwa miguu ya HAWK, taa mbili nyekundu zinawaka na kuzima kwa kupokezana. Kivuko sasa kiko tupu. Unapaswa kufanya nini?",
     "choices": [
      "Simama, kisha uendelee kwa kuwa kivuko kiko wazi",
      "Endelea kusimama hadi taa izimike",
@@ -2041,7 +2043,7 @@
    },
    {
     "type": "tf",
-    "q": "Lazima usimame kabisa taa ya HAWK (High-Intensity Activated crossWalk, taa ya kivuko cha watembea kwa miguu inayowashwa kwa kitufe) inapoonyesha taa nyekundu zilizotulia.",
+    "q": "Lazima usimame kabisa taa ya watembea kwa miguu ya HAWK inapoonyesha taa nyekundu zilizotulia.",
     "answer": true
    }
   ]
@@ -2052,6 +2054,7 @@
   "page": 58,
   "fact": "Njia ya katikati ya pamoja ya kugeuka imewekwa alama pande zote mbili kwa mstari wa njano ulionyooka na mstari wa njano wa vipande. Ni kwa ajili ya kugeuka kushoto tu (au kugeuka U mahali panaporuhusiwa) kutoka upande wowote. Usiendeshe ndani yake kama njia ya kusafiria.",
   "why": "Madereva kutoka pande zote mbili wanatumia njia ile ile, kwa hiyo kusafiri ndani yake kunahatarisha kugongana uso kwa uso.",
+  "example": "Unaendesha kwenye barabara yenye njia ya katikati ambayo ina mstari wa njano ulionyooka na mstari wa njano wa vipande kila upande. Unataka kugeuka kushoto kuingia eneo la maegesho la duka lililo mbele. Hamia kwenye njia ya katikati, subiri hapo hadi kuwe na nafasi kati ya magari yanayokuja, kisha ugeuke. Usiendeshe kwenye njia hiyo ili kwenda mbele zaidi barabarani, kwa sababu madereva kutoka upande mwingine pia wanaitumia kugeuka.",
   "weight": 3,
   "items": [
    {
@@ -2132,6 +2135,7 @@
   "fact": "Mstari wa njano ulionyooka na mstari wa njano wa vipande vinapokuwa kando kwa kando, ni madereva walio upande wa mstari wa vipande tu wanaoweza kuvuka ili kupita.",
   "why": "Mstari ulio karibu nawe zaidi ndio unakuambia kama unaweza kupita.",
   "hook": "Soma mstari ulio karibu nawe: vipande = unaweza kupita, ulionyooka = hakuna kupita.",
+  "example": "Uko nyuma ya lori linaloenda polepole kwenye barabara ya njia mbili. Katikati kuna mstari wa njano ulionyooka kando ya mstari wa njano wa vipande. Ikiwa mstari wa vipande ndio ulio karibu zaidi na njia yako, unaweza kupita ikiwa ni salama. Ikiwa mstari ulionyooka ndio ulio karibu nawe zaidi, baki nyuma ya lori.",
   "weight": 3,
   "items": [
    {
@@ -2236,7 +2240,7 @@
   "topic": "signals-markings",
   "page": 59,
   "fact": "Mistari myeupe iliyonyooka ya ukingoni inaonyesha ukingo wa barabara ulipo. Inakusaidia kubaki barabarani usiku au katika hali mbaya ya hewa.",
-  "why": "Inapokuwa vigumu kuona, mstari wa ukingoni unakuongoza.",
+  "why": "Gizani, kwenye mvua, au theluji, ukingo wa lami ni vigumu kuuona, na kutoka nje ya barabara bila kujua kunaweza kusababisha ajali.",
   "weight": 1,
   "items": [
    {
@@ -2364,7 +2368,7 @@
     "q": "X kubwa yenye herufi RR (railroad, yaani reli) iliyochorwa barabarani inamaanisha nini?",
     "choices": [
      "Kivuko cha reli kiko mbele",
-     "Makutano ya barabara yako mbele",
+     "Kivuko cha shule kiko mbele",
      "Usiingie njia hii",
      "Eneo la kupumzika liko mbele"
     ],
@@ -2521,8 +2525,8 @@
  {
   "id": "law-interchange-stop-lines",
   "topic": "signals-markings",
-  "page": 64,
-  "fact": "Kwenye makutano ya barabara kuu ya nukta moja (SPUI) na ya almasi inayoachana (DDI), simama kwenye mistari ya kusimama na ufuate alama, taa, visiwa, na michoro ya barabarani. DDI inahamisha magari kwa muda mfupi kwenda upande wa kushoto wa barabara.",
+  "page": 65,
+  "fact": "Kwenye makutano ya barabara kuu ya mjini ya nukta moja (single point urban interchange, SPUI) au makutano ya almasi inayoachana (diverging diamond interchange, DDI), simama kwenye mistari ya kusimama na ufuate alama, taa, visiwa vilivyoinuliwa, na michoro ya barabarani. DDI inahamisha magari kwa muda mfupi kwenda upande wa kushoto wa barabara.",
   "why": "Kusimama baada ya mstari kunakuweka kwenye njia ya magari yanayokatiza, watembea kwa miguu, au waendesha baiskeli.",
   "weight": 1,
   "items": [
@@ -2706,6 +2710,7 @@
   "page": 100,
   "fact": "Mstari wa vipande wa njia ya baiskeli unamaanisha kuungana kunaruhusiwa. Unapogeuka kulia, unaweza kuingia kwenye njia ya baiskeli mahali mstari ulipo wa vipande, baada ya kuangalia waendesha baiskeli.",
   "why": "Kusogea kunazuia waendesha baiskeli wasije upande wako wa kulia unapogeuka.",
+  "example": "Unataka kugeuka kulia kwenye makutano, na njia ya baiskeli iko kando ya upande wa kulia wa njia yako. Mahali mstari wa njia ya baiskeli unapokuwa wa vipande, angalia kioo chako na uangalie juu ya bega lako kutafuta waendesha baiskeli. Ikiwa hakuna mwendesha baiskeli, hamia kwenye njia ya baiskeli na ugeuke kutoka hapo. Ikiwa mwendesha baiskeli tayari yuko hapo, mwache aende kwanza.",
   "weight": 2,
   "items": [
    {
@@ -2885,7 +2890,7 @@
     "type": "scenario",
     "q": "Unatoka kwenye jengo la maegesho kuingia barabarani. Njia ya watembea kwa miguu inakatiza mahali pa kutokea. Lazima ufanye nini?",
     "choices": [
-     "Simama kabla ya njia ya watembea kwa miguu na uwapishe watembea kwa miguu na magari",
+     "Simama kabla ya njia ya watembea kwa miguu, kisha upishe",
      "Simama tu kwenye ukingo wa barabara",
      "Endesha polepole kuingia barabarani bila kusimama",
      "Piga honi na utoke"
@@ -2911,7 +2916,7 @@
     "type": "scenario",
     "q": "Uko katikati ya makutano unaposikia king'ora na kuona taa zinazowaka na kuzima nyuma yako. Unapaswa kufanya nini?",
     "choices": [
-     "Endelea kuvuka makutano, kisha sogea kulia na usimame",
+     "Ondoka kwenye makutano, kisha sogea kulia na usimame",
      "Simama katikati ya makutano",
      "Sogea upande wa kushoto na usimame",
      "Ongeza mwendo ili ukae mbele yake"
@@ -2959,7 +2964,7 @@
     "type": "scenario",
     "q": "Kwenye barabara ya njia mbili, kulungu amesimama kwenye njia yako. Hakuna magari yanayokuja. Unaweza kutumia njia ya kushoto kwa muda mfupi ili kumzunguka?",
     "choices": [
-     "Ndiyo, kuingia njia ya kushoto kwa muda mfupi ili kuepuka mnyama kunaruhusiwa",
+     "Ndiyo, ili kumkwepa mnyama",
      "Hapana, lazima ukae kulia daima",
      "Tu kama utapiga honi kwanza",
      "Tu kwa mwendo wa chini ya maili 15 kwa saa"
@@ -3032,6 +3037,7 @@
   "fact": "Magari mawili yakifika kwenye kusimama kwa pande nne kwa wakati mmoja, gari lililo kushoto linapisha gari lililo kulia.",
   "why": "Sheria rahisi ya kuamua inazuia madereva wote wawili kwenda kwa wakati mmoja.",
   "hook": "Mmefika pamoja? Wa kulia huenda kwanza.",
+  "example": "Unasimama kwenye kusimama kwa pande nne wakati uleule gari lililo kwenye barabara inayokatiza upande wako wa kulia linasimama. Kwa sababu mlifika pamoja, wewe ndiye gari lililo kushoto, kwa hivyo unaliacha gari hilo liende kwanza. Kama ungesimama kabla yake, ungeenda kwanza.",
   "weight": 3,
   "items": [
    {
@@ -3067,8 +3073,9 @@
   "id": "law-t-intersection",
   "topic": "right-of-way",
   "page": 75,
-  "fact": "Kwenye makutano ya T yasiyodhibitiwa ambapo barabara yako inaishia na lazima ugeuke kushoto au kulia, lazima usimame au uwapishe madereva wanaotoka pande zote mbili nyingine.",
+  "fact": "Kwenye makutano ya T yasiyo na alama wala taa, ambapo barabara yako inaishia na lazima ugeuke kushoto au kulia, lazima usimame au uwapishe madereva wanaotoka pande zote mbili nyingine.",
   "why": "Barabara inayoendelea inaendelea, kwa hiyo magari yake yanatarajia kuendelea kwenda.",
+  "example": "Barabara yako inaishia kwenye makutano ya T yasiyo na alama wala taa, kwa hivyo lazima ugeuke kushoto au kulia. Magari kwenye barabara inayokatiza yanaweza kuendelea moja kwa moja. Unasimama au unapunguza mwendo na kuacha magari yanayotoka kushoto na kulia yapite kwanza, kisha unageuka.",
   "weight": 3,
   "items": [
    {
@@ -3084,7 +3091,7 @@
    },
    {
     "type": "tf",
-    "q": "Kwenye makutano ya T yasiyodhibitiwa, dereva aliye kwenye barabara inayoishia lazima apishe magari kutoka pande zote mbili za barabara inayoendelea.",
+    "q": "Kwenye makutano ya T yasiyo na alama wala taa, dereva aliye kwenye barabara inayoishia lazima apishe magari kutoka pande zote mbili za barabara inayoendelea.",
     "answer": true
    }
   ]
@@ -3136,7 +3143,7 @@
    },
    {
     "type": "tf",
-    "q": "Kwenye makutano yasiyodhibitiwa, magari mawili yanapofika kwa wakati mmoja, gari lililo kushoto huenda kwanza.",
+    "q": "Kwenye makutano yasiyo na alama wala taa, magari mawili yanapofika kwa wakati mmoja, gari lililo kushoto huenda kwanza.",
     "answer": false
    }
   ]
@@ -3255,7 +3262,7 @@
   "topic": "right-of-way",
   "page": 78,
   "fact": "Usiingie kwenye makutano wakati msafara wa mazishi unapita ndani yake, hata kama taa yako ni ya kijani, isipokuwa unaweza kufanya hivyo bila kukatiza njia yake.",
-  "why": "Msafara unaruhusiwa kubaki pamoja wakati wa kupita makutano.",
+  "why": "Msafara unaendelea kupita makutano kama kundi moja, hata baada ya taa kubadilika, kwa hivyo kukatiza njia yake kunaweza kusababisha ajali.",
   "weight": 2,
   "items": [
    {
@@ -3280,8 +3287,9 @@
   "id": "drv-move-over-lane",
   "topic": "right-of-way",
   "page": 95,
-  "fact": "Kwenye barabara yenye njia mbili au zaidi zinazoenda upande wako, pia hamia njia isiyo kando ya gari la dharura lililosimama, mara tu itakapokuwa salama.",
+  "fact": "Unapopita gari la dharura lililosimama lenye taa zinazowaka na kuzima kwenye barabara yenye njia mbili au zaidi zinazoenda upande wako, lazima pia uhamie njia isiyo kando yake, mara tu itakapokuwa salama.",
   "why": "Njia iliyo tupu inaweka umbali wa usalama kati ya gari lako na wafanyakazi.",
+  "example": "Unaendesha kwenye njia ya kulia ya barabara yenye njia mbili zinazoenda upande wako. Gari la polisi limesimama kwenye bega la kulia likiwa na taa zinazowaka na kuzima. Unapunguza mwendo, na ikiwa ni salama, unahamia njia ya kushoto ili kuwe na njia tupu kati yako na gari la polisi.",
   "weight": 3,
   "items": [
    {
@@ -3333,7 +3341,7 @@
   "topic": "right-of-way",
   "page": 96,
   "fact": "Kama mtembea kwa miguu bado yuko kwenye kivuko taa yako inapokuwa kijani, msubiri amalize kuvuka kabla hujaenda.",
-  "why": "Mtembea kwa miguu ambaye tayari yuko kwenye kivuko anahitaji muda wa kuvuka kwa usalama.",
+  "why": "Mtu ambaye ameshaanza kuvuka hawezi kukuondokea njiani haraka, na taa ya kijani kamwe haifanyi iwe salama kumgonga mtu.",
   "weight": 2,
   "items": [
    {
@@ -3396,7 +3404,7 @@
   "topic": "right-of-way",
   "page": 96,
   "fact": "Madereva lazima wawapishe watembea kwa miguu walio kwenye kivuko kilichochorwa au kisichochorwa kwenye makutano, na wanapoingia barabarani kutoka kichochoro au njia ya kuingilia nyumbani.",
-  "why": "Watembea kwa miguu hawana kinga na wana haki ya kuvuka kwenye vivuko na njia za watembea kwa miguu.",
+  "why": "Watu wanaotembea kwa miguu hawana kinga yoyote katika ajali, na madereva wanaotoka kichochoro au njia ya kuingilia nyumbani mara nyingi hawawaoni hadi wakiwa karibu sana.",
   "weight": 3,
   "items": [
    {
@@ -3404,9 +3412,9 @@
     "q": "Ni lini dereva lazima ampishe mtembea kwa miguu?",
     "choices": [
      "Mtembea kwa miguu anapokuwa kwenye kivuko kwenye makutano",
-     "Tu kunapokuwa na kivuko kilichochorwa",
-     "Tu afisa wa polisi anapokuwepo",
-     "Tu kwenye taa nyekundu"
+     "Tu kivuko kinapokuwa na mistari iliyochorwa",
+     "Tu afisa wa polisi anapoongoza magari",
+     "Tu taa yako mwenyewe ikiwa nyekundu"
     ],
     "answer": 0
    },
@@ -3446,6 +3454,7 @@
   "fact": "Kizunguko ni cha mwelekeo mmoja. Daima unageuka kulia kuingia na kusafiri kinyume na mzunguko wa saa, hata kama unaenda kushoto au kugeuka U.",
   "why": "Kila mtu kwenda upande mmoja kunaondoa ajali za uso kwa uso na za kugeuka kushoto.",
   "hook": "Kizunguko: ingia kulia, zunguka, toka kulia.",
+  "example": "Unafika kwenye kizunguko na unataka kwenda kushoto. Unapunguza mwendo, unaacha magari ambayo tayari yako ndani ya kizunguko yanayotoka upande wako wa kushoto yapite, kisha unageuka kulia kuingia. Unaendesha kuzunguka kinyume na mzunguko wa saa na unawasha ishara ya kugeuka kulia unapokaribia njia yako ya kutokea.",
   "weight": 3,
   "items": [
    {
@@ -3509,6 +3518,7 @@
   "page": 63,
   "fact": "Kwenye makutano ya \"thru-turn\" (kupita kisha kugeuka), kugeuka kushoto moja kwa moja hakuruhusiwi. Pita moja kwa moja, geuka U kwenye taa inayofuata, rudi, kisha geuka kulia.",
   "why": "Kuondoa kugeuka kushoto moja kwa moja kunafanya magari yaendelee kwenda na kuepuka ajali za kugeuka kushoto.",
+  "example": "Unataka kugeuka kushoto kwenye makutano ya \"thru-turn\", lakini kugeuka kushoto hakuruhusiwi hapo. Unapita moja kwa moja kwenye makutano na kufuata michoro ya njia ili kugeuka U kwenye taa ya trafiki inayofuata. Kisha unaendesha kurudi kuelekea makutano na kugeuka kulia kuingia barabara uliyotaka.",
   "weight": 1,
   "items": [
    {
@@ -3516,9 +3526,9 @@
     "q": "Unataka kwenda kushoto kwenye makutano ya \"thru-turn\". Unapaswa kufanya nini?",
     "choices": [
      "Pita moja kwa moja, geuka U kwenye taa inayofuata, rudi kisha geuka kulia",
-     "Geuka kushoto ukiwa kwenye njia ya kulia",
-     "Geuka kushoto taa ikiwa njano",
-     "Geuka kulia, kisha geuka U kwenye kitenganishi cha katikati"
+     "Geuka kushoto kutoka njia ya kushoto mshale unapogeuka kijani",
+     "Subiri ndani ya makutano na ugeuke kushoto taa ikiwa njano",
+     "Geuka kulia, kisha geuka U mara moja kwenye kitenganishi cha katikati"
     ],
     "answer": 0
    },
@@ -3533,7 +3543,7 @@
   "id": "law-basic-rule-too-slow",
   "topic": "speed-turns",
   "page": 68,
-  "fact": "Kuendesha polepole mno kwa hali iliyopo na kuzuia mtiririko salama wa magari pia ni kuvunja sheria ya msingi, hata kama uko chini ya kikomo cha mwendo.",
+  "fact": "Kuendesha polepole mno kwa hali iliyopo na kuzuia mtiririko salama wa magari pia ni kuvunja sheria ya msingi ya mwendo ya Idaho (daima endesha kwa mwendo salama kwa hali iliyopo), hata kama uko chini ya kikomo cha mwendo.",
   "why": "Madereva wanaoenda polepole sana huwafanya wengine kubreki ghafla au kupita mahali hatari.",
   "weight": 3,
   "items": [
@@ -3559,8 +3569,9 @@
   "id": "law-basic-speed-rule",
   "topic": "speed-turns",
   "page": 68,
-  "fact": "Sheria ya msingi ya Idaho inasema lazima daima uendeshe kwa mwendo unaofaa na wa busara kwa hali iliyopo, kama hali ya hewa, uso wa barabara, wingi wa magari, na uwezo wa kuona.",
+  "fact": "Sheria ya msingi ya Idaho inasema lazima daima uendeshe kwa mwendo unaofaa na wa busara (wa akili na salama) kwa hali iliyopo, kama hali ya hewa, uso wa barabara, wingi wa magari, na uwezo wa kuona.",
   "why": "Kikomo cha mwendo ni kiwango cha juu kabisa unachoweza kwenda katika hali nzuri; barafu, mvua, au msongamano mkubwa vinaweza kufanya mwendo huo usiwe salama.",
+  "example": "Kikomo cha mwendo kilichowekwa ndicho mwendo wa juu kabisa unaoruhusiwa, lakini usiku huu barabara ina barafu na theluji inafanya iwe vigumu kuona. Chini ya sheria ya msingi, lazima upunguze mwendo hadi kiwango salama kwa hali hii, hata kama ni chini ya kikomo. Kuendesha kwa kikomo hapa kunaweza kuwa kuvunja sheria.",
   "weight": 3,
   "items": [
    {
@@ -3752,7 +3763,7 @@
     "type": "mc",
     "q": "Nini kinaweza kutokea ukivunja kikomo cha mwendo katika eneo la kazi lenye alama?",
     "choices": [
-     "Unaweza kupata adhabu iliyoongezwa isiyobadilika",
+     "Unaweza kupata faini kubwa zaidi isiyobadilika",
      "Hakuna ziada kama hakuna wafanyakazi",
      "Onyo tu",
      "Gari lako linavutwa"
@@ -3841,6 +3852,7 @@
   "page": 72,
   "fact": "Kama unapanga kugeuka mara tu baada ya makutano, ashiria tu baada ya kuwa umepita makutano.",
   "why": "Kuashiria mapema kunaweza kuwafanya madereva wadhani unageuka kwenye makutano yenyewe.",
+  "example": "Unataka kugeuka kulia kuingia kwenye njia ya kuingilia duka iliyo mara tu baada ya barabara inayokatiza. Ukiashiria kabla ya barabara inayokatiza, madereva wanaweza kudhani unageuka kuingia barabara hiyo. Kwa hivyo unapita makutano kwanza, kisha unawasha ishara yako.",
   "weight": 2,
   "items": [
    {
@@ -3859,9 +3871,9 @@
     "q": "Kwa nini usubiri kuashiria unapogeuka mara tu baada ya makutano?",
     "choices": [
      "Ili madereva wengine wasidhani unageuka kwenye makutano",
-     "Ili kuokoa nguvu ya betri",
-     "Kwa sababu ishara hazihitajiki kwa njia za kuingilia nyumbani",
-     "Ili uweze kugeuka haraka zaidi"
+     "Ili kuokoa nguvu ya betri ya gari lako",
+     "Kwa sababu ishara hazihitajiki kabisa kwa njia za kuingilia nyumbani",
+     "Ili madereva walio nyuma yako wapate nafasi ya kukupita kwanza"
     ],
     "answer": 0
    }
@@ -3899,6 +3911,7 @@
   "page": 73,
   "fact": "Njia mbili zinapoweza kugeuka kushoto, njia ya kushoto lazima igeuke kushoto, huku njia ya kulia ikiweza kugeuka kushoto au kwenda moja kwa moja. Baki kwenye njia yako hadi umalize kugeuka.",
   "why": "Kubaki kwenye njia yako wakati wote wa kugeuka kunakuzuia kugonga gari linalogeuka kando yako.",
+  "example": "Kwenye taa ya trafiki, njia ya kushoto upande wako inaweza kugeuka kushoto tu, na njia iliyo kando yake inaweza kugeuka kushoto au kwenda moja kwa moja. Uko kwenye njia hiyo ya kulia na unageuka kushoto huku gari lingine likigeuka kushoto kando yako. Unabaki kwenye njia yako wakati wote wa kugeuka ili usiingie kwenye njia ya gari hilo.",
   "weight": 2,
   "items": [
    {
@@ -3914,7 +3927,7 @@
    },
    {
     "type": "tf",
-    "q": "Magari yaliyo kwenye njia ya kushoto yanaweza kwenda moja kwa moja badala ya kugeuka kushoto.",
+    "q": "Njia mbili zinapoweza kugeuka kushoto, magari yaliyo kwenye njia ya kushoto yanaweza kwenda moja kwa moja badala ya kugeuka kushoto.",
     "answer": false
    }
   ]
@@ -3925,6 +3938,7 @@
   "page": 73,
   "fact": "Unapogeuka kushoto kutoka barabara ya mwelekeo mmoja kuingia barabara nyingine ya mwelekeo mmoja, unaweza kugeuka kwenye taa nyekundu iliyotulia baada ya kusimama na kupisha magari yanayokatiza, isipokuwa alama inakataza.",
   "why": "Kama kugeuka kulia kwenye nyekundu, kugeuka huku hakukatizi njia yoyote ya magari yanayokuja.",
+  "example": "Umesimama kwenye taa nyekundu kwenye barabara ya mwelekeo mmoja. Barabara inayokatiza pia ni ya mwelekeo mmoja, na magari yake yanaelekea upande wako wa kushoto. Baada ya kusimama kabisa, unayapisha magari yanayokatiza kwanza, kisha unaweza kugeuka kushoto, isipokuwa alama inasema huruhusiwi.",
   "weight": 3,
   "items": [
    {
@@ -4058,7 +4072,7 @@
     "type": "scenario",
     "q": "Umepita mahali pako pa kugeuka na uko karibu na kilele cha mlima. Madereva wanaokuja kupita kilele wangeweza kukuona tu kutoka takriban futi 200. Unaweza kugeuka U hapa?",
     "choices": [
-     "Hapana, madereva lazima waweze kukuona ndani ya futi 500",
+     "Hapana, hairuhusiwi hapa",
      "Ndiyo, ukiashiria kwanza",
      "Ndiyo, kama hakuna magari yanayoonekana sasa hivi",
      "Ndiyo, ukigeuka haraka"
@@ -4101,7 +4115,7 @@
  {
   "id": "law-u-turn-where-not",
   "topic": "speed-turns",
-  "page": 74,
+  "page": 73,
   "fact": "Kugeuka U hakuruhusiwi mahali penye alama za Hakuna Kugeuka U, katika eneo la kutopita, au mahali penye mistari iliyonyooka iliyochorwa katikati ya barabara. Simama na upishe magari yote kabla ya kumaliza kugeuka U.",
   "why": "Haya ni maeneo ambapo gari linalogeuka kukatiza barabara ni hatari hasa.",
   "weight": 2,
@@ -4138,9 +4152,9 @@
     "q": "Unasimama nyuma ya gari kwenye taa nyekundu. Unapaswa kuacha nafasi kiasi gani?",
     "choices": [
      "Ya kutosha kuona matairi yake ya nyuma yakigusa ardhi",
-     "Takriban futi moja",
-     "Ya kutosha kuona paa lake tu",
-     "Angalau futi 100"
+     "Takriban futi moja, karibu bampa kwa bampa",
+     "Ya kutosha kuona sehemu ya juu ya paa lake tu",
+     "Angalau futi 100 nyuma yake"
     ],
     "answer": 0
    },
@@ -4169,7 +4183,7 @@
     "type": "scenario",
     "q": "Uko nyuma ya trekta linaloenda polepole kwenye barabara ya njia mbili, mkipanda mlima. Huwezi kuona upande wa pili wa kilele. Unapaswa kufanya nini?",
     "choices": [
-     "Subiri hadi uweze kuona mbali vya kutosha kupita kwa usalama",
+     "Subiri hadi uweze kuona mbali mbele",
      "Pita haraka kabla ya kilele",
      "Pita kama dereva wa trekta anakuashiria upite",
      "Pita ukitumia bega la kulia"
@@ -4202,7 +4216,7 @@
     "type": "scenario",
     "q": "Kwenye barabara ya njia mbili, uko futi 80 kutoka kivuko cha reli nyuma ya gari linaloenda polepole. Unaweza kupita?",
     "choices": [
-     "Hapana, kupita hakuruhusiwi ndani ya futi 100 za kivuko",
+     "Hapana, uko karibu mno na reli",
      "Ndiyo, kama hakuna treni inayokuja",
      "Ndiyo, ukimaliza kabla ya reli",
      "Ndiyo, ukipiga honi kwanza"
@@ -4254,7 +4268,7 @@
     "type": "scenario",
     "q": "Kwenye barabara ya njia mbili, uko futi 60 kutoka daraja jembamba na mlima unazuia kuona upande wa pili. Gari linaloenda polepole liko mbele. Unaweza kupita?",
     "choices": [
-     "Hapana, subiri hadi uvuke daraja na uweze kuona",
+     "Hapana, uko karibu mno na daraja",
      "Ndiyo, ukimaliza kabla ya daraja",
      "Ndiyo, ukipiga honi kwanza",
      "Ndiyo, kama gari linaloenda polepole litasogea kulia"
@@ -4332,6 +4346,7 @@
   "page": 77,
   "fact": "Unaweza kupita upande wa kulia tu wakati gari lililo mbele kwenye barabara ya njia mbili linaashiria kugeuka kushoto, au kwenye barabara ya mwelekeo mmoja au yenye njia nyingi ambayo ina njia mbili au zaidi zinazoenda upande wako. Kamwe usitoke nje ya barabara ili kufanya hivyo.",
   "why": "Madereva hawatarajii kupitwa upande wa kulia, kwa hiyo kunaruhusiwa tu mahali penye njia inayofaa kwa ajili hiyo.",
+  "example": "Uko kwenye barabara ya njia mbili, na gari lililo mbele linaashiria kugeuka kushoto. Ikiwa kuna lami ya kutosha upande wake wa kulia, unaweza kulipita kwa uangalifu upande wa kulia. Huruhusiwi kuendesha kwenye bega la barabara au nje ya barabara ili kufanya hivyo.",
   "weight": 3,
   "items": [
    {
@@ -4339,9 +4354,9 @@
     "q": "Kwenye barabara ya njia mbili ya pande mbili, gari lililo mbele limesimama na linaashiria kugeuka kushoto. Kuna lami yenye upana kamili wa njia upande wake wa kulia. Unaweza kupita upande wa kulia?",
     "choices": [
      "Ndiyo, kama unaweza kufanya hivyo kwa usalama bila kutoka nje ya barabara",
-     "Hapana, kupita upande wa kulia hakuruhusiwi kamwe",
-     "Tu kwa kutumia bega la barabara",
-     "Tu ukipiga honi kwanza"
+     "Hapana, kupita upande wa kulia hakuruhusiwi kamwe hapa",
+     "Tu kwa kuendesha kwenye bega la kulia la barabara",
+     "Tu ukipiga honi na kusubiri kidogo kwanza"
     ],
     "answer": 0
    },
@@ -4350,9 +4365,9 @@
     "q": "Ni lini kupita upande wa kulia kunaruhusiwa?",
     "choices": [
      "Kwenye barabara yenye njia mbili au zaidi zinazoenda upande wako",
-     "Wakati wowote gari lililo mbele linaenda polepole",
-     "Kwenye barabara yoyote ya njia mbili",
-     "Bega la kulia likiwa na lami"
+     "Wakati wowote gari lililo mbele linaenda chini ya kikomo",
+     "Kwenye barabara yoyote ya njia mbili magari yakiwa machache",
+     "Bega la kulia likiwa na lami na pana"
     ],
     "answer": 0
    }
@@ -4446,13 +4461,14 @@
   "id": "law-passing-speed-limits",
   "topic": "passing-following",
   "page": 77,
-  "fact": "Ruhusa ya maili 15 kwa saa ya kupita inatumika tu mahali ambapo kikomo kilichowekwa ni maili 55 kwa saa au zaidi, kamwe si katika maeneo ya kazi, na lazima urudi kwenye njia yako na upunguze mwendo hadi kikomo mara tu unapoweza.",
+  "fact": "Unaweza kwenda hadi maili 15 kwa saa juu ya kikomo wakati wa kupita tu mahali ambapo kikomo kilichowekwa ni maili 55 kwa saa au zaidi, na kamwe si katika maeneo ya kazi. Baada ya kupita, rudi kwenye njia ya kulia na upunguze mwendo hadi kikomo mara tu unapoweza.",
   "why": "Barabara za mwendo wa chini na maeneo ya kazi yana hatari nyingi zaidi karibu na barabara, kwa hiyo mwendo wa ziada hauruhusiwi huko.",
+  "example": "Unaendesha gari kwenye barabara kuu ya njia mbili yenye kikomo cha maili 55 kwa saa, nyuma ya lori linaloenda chini ya kikomo. Wakati unalipita, unaweza kwenda hadi maili 15 kwa saa juu ya kikomo, kisha lazima urudi kwenye njia ya kulia na upunguze mwendo hadi kikomo mara tu unapoweza. Katika eneo la kazi, huruhusiwi kuongeza mwendo ili kupita.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Ruhusa ya mwendo wa kupita inatumika tu mahali ambapo kikomo cha mwendo kilichowekwa ni angalau maili ngapi kwa saa?",
+    "q": "Sheria inayokuruhusu kwenda juu ya kikomo wakati wa kupita inatumika tu mahali ambapo kikomo cha mwendo kilichowekwa ni angalau maili ngapi kwa saa?",
     "answer": 55,
     "unit": "maili kwa saa"
    },
@@ -4469,7 +4485,7 @@
    },
    {
     "type": "tf",
-    "q": "Ruhusa ya mwendo wa kupita inatumika pia katika maeneo ya kazi.",
+    "q": "Katika eneo la kazi, unaweza kwenda juu ya kikomo cha mwendo wakati unapita gari linaloenda polepole.",
     "answer": false
    }
   ]
@@ -4486,8 +4502,8 @@
     "type": "scenario",
     "q": "Gari linaanza kukupita kwenye barabara ya njia mbili. Unapaswa kufanya nini?",
     "choices": [
-     "Endelea na mwendo usiobadilika au punguza mwendo na usogee kulia mwa njia yako",
-     "Ongeza mwendo ili lisiweze kupita",
+     "Dumisha mwendo wako au punguza mwendo, na usogee kulia ndani ya njia yako",
+     "Ongeza mwendo ili lisiweze kukupita",
      "Sogea upande wa kushoto wa njia yako",
      "Breki kwa nguvu mara moja"
     ],
@@ -4791,9 +4807,10 @@
   "id": "law-hill-uphill-curb",
   "topic": "parking",
   "page": 81,
-  "fact": "Unapoegesha ukielekea mlima juu karibu na ukingo wa barabara, geuza magurudumu yako ya mbele kwa nguvu mbali na ukingo ili gurudumu liegemee ukingo.",
+  "fact": "Unapoegesha ukielekea mlima juu karibu na ukingo wa barabara, geuza magurudumu yako ya mbele kwa nguvu mbali na ukingo, ili tairi liegemee ukingo.",
   "why": "Gari likijiviringisha kurudi nyuma, tairi linazuiliwa na ukingo.",
   "hook": "Ukipanda na kuna ukingo: juu na mbali.",
+  "example": "Unaegesha ukielekea mlima juu karibu na ukingo wa barabara. Unageuza magurudumu yako ya mbele kwa nguvu mbali na ukingo, ili tairi la mbele liegemee ukingo. Gari likianza kujiviringisha kurudi nyuma, ukingo unazuia tairi na gari halijiviringishi kuingia kwenye magari.",
   "weight": 3,
   "items": [
    {
@@ -5083,7 +5100,7 @@
   "id": "drv-unattended-traveled",
   "topic": "parking",
   "page": 93,
-  "fact": "Gari lililoachwa bila mtu kwenye sehemu ya barabara kuu inayotumiwa na magari linaweza kuvutwa mara moja, wakati wowote.",
+  "fact": "Gari lililoachwa bila mtu kwenye njia ya magari ya barabara kuu (sehemu ambapo magari yanaendesha) linaweza kuvutwa mara moja, wakati wowote.",
   "why": "Gari lililosimama kwenye njia ya magari ni hatari kubwa kwa madereva wengine.",
   "weight": 2,
   "items": [
@@ -5094,7 +5111,7 @@
    },
    {
     "type": "mc",
-    "q": "Nini kinaweza kutokea kwa gari lililoachwa bila mtu kwenye sehemu ya barabara kuu inayotumiwa na magari?",
+    "q": "Nini kinaweza kutokea kwa gari lililoachwa bila mtu kwenye njia ya magari ya barabara kuu?",
     "choices": [
      "Linaweza kuvutwa mara moja",
      "Linaweza kukaa kwa saa 24",
@@ -5219,7 +5236,7 @@
   "id": "law-freeway-travel-plan",
   "topic": "freeway",
   "page": 83,
-  "fact": "Kabla ya safari ndefu kwenye barabara kuu ya mwendo kasi, panga safari yako ukiwa na vituo vya chakula, kupumzika, na mafuta, na umwambie mtu njia yako na wakati unaotarajia kufika. Kwa safari fupi, ijue njia yako na namba za milango ya kuingia na kutoka.",
+  "fact": "Kabla ya safari ndefu kwenye barabara kuu ya mwendo kasi, panga safari yako ukiwa na vituo vya chakula, kupumzika, na mafuta, na umwambie mtu njia yako, utakuwa mbali kwa muda gani, na lini akutarajie kurudi. Kwa safari fupi, ijue njia yako na namba za milango ya kuingia na kutoka.",
   "why": "Kupanga mapema kunazuia maamuzi ya dakika ya mwisho na kunasaidia watu kukupata jambo likienda vibaya.",
   "weight": 1,
   "items": [
@@ -5247,6 +5264,7 @@
   "page": 84,
   "fact": "Unapoingia kwenye barabara kuu ya mwendo kasi, ashiria, angalia juu ya bega lako la kushoto kutafuta nafasi, na uwapishe magari ambayo tayari yako kwenye barabara kuu.",
   "why": "Magari ya barabara kuu yanaenda kwa kasi na yana haki ya njia; lazima ujipenyeze ndani yake.",
+  "example": "Unaendesha kwenye njia ya kuingilia kuelekea barabara kuu ya mwendo kasi na kuwasha ishara yako. Unaangalia juu ya bega lako la kushoto kutafuta nafasi kati ya magari inayotosha gari lako, na unaongeza mwendo ulingane na magari ya barabara kuu. Magari ambayo tayari yako kwenye barabara kuu yanaenda kwanza, kwa hivyo unaingia kwenye nafasi badala ya kuyalazimisha yakupishe.",
   "weight": 3,
   "items": [
    {
@@ -5413,8 +5431,9 @@
   "id": "law-freeway-deceleration-lane",
   "topic": "freeway",
   "page": 86,
-  "fact": "Unapotoka kwenye barabara kuu ya mwendo kasi, ashiria na uhamie kwenye njia ya kupunguza mwendo, kisha upunguze mwendo hapo, si kwenye njia kuu za barabara kuu. Kama mwendo wa kutokea umewekwa, rekebisha mwendo wako ulingane nao ukiwa kwenye njia ya kutokea.",
+  "fact": "Unapotoka kwenye barabara kuu ya mwendo kasi, ashiria na uhamie kwenye njia ya kupunguza mwendo (njia iliyo kando ya njia ya kutokea ambapo unapunguza mwendo), kisha upunguze mwendo hapo, si kwenye njia kuu za barabara kuu. Kama mwendo wa kutokea umewekwa, rekebisha mwendo wako ulingane nao ukiwa kwenye njia ya kutokea.",
   "why": "Kupunguza mwendo kwenye njia ya kupunguza mwendo kunakuwezesha kupunguza kasi bila kupunguza mwendo wa magari yaliyo nyuma yako.",
+  "example": "Njia yako ya kutokea inakaribia upande wa kulia. Unaashiria na kuhamia kwenye njia ya kupunguza mwendo kabla ya kukanyaga breki, ili magari yaliyo nyuma yako kwenye barabara kuu yasilazimike kupunguza mwendo. Alama kwenye njia ya kutokea ikionyesha mwendo wa kutokea, unapunguza mwendo hadi kiwango hicho.",
   "weight": 2,
   "items": [
    {
@@ -5964,7 +5983,7 @@
   "id": "drv-ipde",
   "topic": "safe-driving",
   "page": 90,
-  "fact": "Hatua za uendeshaji wa kujihami: tambua hatari, tabiri kinachoweza kutokea (tarajia mabaya zaidi), amua utakachofanya mapema, na tekeleza kwa ulaini.",
+  "fact": "Hatua za uendeshaji wa kujihami: tambua hatari, tabiri kinachoweza kutokea (tarajia mabaya zaidi), amua utakachofanya mapema, na tekeleza (timiza) uamuzi wako kwa ulaini.",
   "why": "Kufanya uamuzi mapema ni salama zaidi kuliko kuitikia sekunde ya mwisho.",
   "hook": "Tambua, Tabiri, Amua, Tekeleza.",
   "weight": 2,
@@ -6042,10 +6061,10 @@
     "type": "scenario",
     "q": "Unagundua kwamba umekuwa ukiendesha nyuma kidogo na pembeni ya gari lingine kwa muda. Unapaswa kufanya nini?",
     "choices": [
-     "Ongeza mwendo au rudi nyuma ili usiwe kwenye eneo lake lisiloonekana",
-     "Baki hapo kwa sababu ni mahali salama",
+     "Ongeza mwendo au punguza mwendo ili utoke kwenye eneo lake lisiloonekana",
+     "Baki hapo kwa sababu ni mahali salama pa kuendesha",
      "Piga honi ili dereva ajue upo",
-     "Lisogelee gari hilo zaidi"
+     "Sogea karibu zaidi na ubavu wa gari hilo"
     ],
     "answer": 0
    },
@@ -6144,7 +6163,7 @@
   "id": "drv-texting-illegal",
   "topic": "safe-driving",
   "page": 92,
-  "fact": "Huko Idaho, kusoma, kuandika, au kutuma ujumbe mfupi (SMS) wakati wa kuendesha ni kinyume cha sheria na ni kosa dogo (infraction). Matumizi bila kushika kifaa (hands-free) bila kutumia mkono wowote hayahusiki na sheria hii.",
+  "fact": "Huko Idaho, kusoma, kuandika, au kutuma ujumbe mfupi (SMS) wakati wa kuendesha ni kinyume cha sheria. Ni kosa dogo (infraction, kosa linaloadhibiwa kwa faini). Sheria hii haihusu vifaa vya bila kushika (hands-free) unavyovitumia bila kutumia mkono wowote.",
   "why": "Kutuma ujumbe kunaondoa macho, mikono, na akili yako kwenye uendeshaji.",
   "weight": 3,
   "items": [
@@ -6181,8 +6200,8 @@
   "id": "drv-texting-penalty",
   "topic": "safe-driving",
   "page": 92,
-  "fact": "Kutiwa hatiani kwa kutuma ujumbe mfupi wakati wa kuendesha huleta faini lakini hakuna pointi kwenye rekodi yako ya udereva. Huhesabiwa kama kosa la uendeshaji (moving violation) tu unapoendesha gari la kibiashara.",
-  "why": "Sheria inaweka adhabu kuwa faini kwa madereva wa kawaida, na adhabu kali zaidi kwa madereva wa kibiashara.",
+  "fact": "Ukitiwa hatiani (ukipatikana na hatia) kwa kutuma ujumbe mfupi wakati wa kuendesha, unalipa faini, lakini hakuna pointi zinazoongezwa kwenye rekodi yako ya udereva. Huhesabiwa kama kosa la uendeshaji (moving violation) tu ikiwa ulikuwa unaendesha gari la kibiashara.",
+  "why": "Madereva wa kibiashara huendesha magari makubwa kazini, kwa hivyo sheria inachukulia kutuma kwao ujumbe kwa uzito zaidi.",
   "weight": 2,
   "items": [
    {
@@ -6233,7 +6252,7 @@
   "id": "drv-highway-hypnosis",
   "topic": "safe-driving",
   "page": 93,
-  "fact": "Usingizi wa barabara kuu (highway hypnosis) ni usingizi unaosababishwa na hali ya kurudiarudia na sauti ya kudumu ya upepo na matairi. Uzuie kwa kusogeza macho yako mara kwa mara kwenye vitu vya karibu na vya mbali, kushoto na kulia.",
+  "fact": "Usingizi wa barabara kuu (highway hypnosis) ni usingizi unaosababishwa na safari ndefu inayochosha na sauti ya kudumu ya upepo na matairi. Uzuie kwa kusogeza macho yako mara kwa mara kwenye vitu vya karibu na vya mbali, kushoto na kulia.",
   "why": "Kusogeza macho kunaiweka akili yako hai kwenye sehemu ndefu za barabara zinazochosha.",
   "weight": 2,
   "items": [
@@ -6241,7 +6260,7 @@
     "type": "mc",
     "q": "Usingizi wa barabara kuu (highway hypnosis) ni nini?",
     "choices": [
-     "Usingizi unaosababishwa na hali ya kurudiarudia na kelele za barabara",
+     "Usingizi kutokana na safari ndefu inayochosha",
      "Kizunguzungu kutokana na kuendesha kwenye kona",
      "Upofu kutokana na mwanga mkali wa taa za mbele",
      "Hasira dhidi ya madereva wanaoendesha polepole"
@@ -6265,14 +6284,14 @@
   "id": "drv-texting-six-times",
   "topic": "safe-driving",
   "page": 93,
-  "fact": "Kutuma ujumbe mfupi wakati wa kuendesha ni hatari mara sita zaidi kuliko kuendesha ukiwa umelewa au chini ya ushawishi. Ikiwa lazima utumie simu, egesha gari mahali salama kwanza.",
+  "fact": "Kutuma ujumbe mfupi wakati wa kuendesha ni hatari mara sita zaidi kuliko kuendesha ukiwa umeathiriwa (na pombe au dawa za kulevya). Ikiwa lazima utumie simu, egesha gari mahali salama kwanza.",
   "why": "Kutuma ujumbe kunaondoa macho na umakini wako barabarani kwa muda mrefu.",
   "hook": "Ujumbe = hatari mara 6 zaidi ya kulewa.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Kutuma ujumbe mfupi wakati wa kuendesha ni hatari mara ngapi zaidi kuliko kuendesha ukiwa umelewa?",
+    "q": "Kutuma ujumbe mfupi wakati wa kuendesha ni hatari mara ngapi zaidi kuliko kuendesha ukiwa umeathiriwa (na pombe au dawa za kulevya)?",
     "answer": 6,
     "unit": "mara"
    },
@@ -6371,7 +6390,7 @@
   "id": "alc-ticket-signature",
   "topic": "safe-driving",
   "page": 133,
-  "fact": "Kusaini tiketi ya kosa la trafiki si kukiri kosa, lakini kukataa kuisaini kunaweza kusababisha ukamatwe. Unaweza kupinga tiketi hiyo mahakamani.",
+  "fact": "Kusaini tiketi ya kosa la trafiki hakumaanishi unakiri kuwa una hatia, lakini kukataa kuisaini kunaweza kusababisha ukamatwe. Ikiwa hukubaliani na tiketi, unaweza kueleza upande wako mahakamani.",
   "why": "Sahihi yako inaonyesha tu kwamba umepokea tiketi; mahakama ndiyo huamua kama una hatia.",
   "weight": 2,
   "items": [
@@ -6523,6 +6542,7 @@
   "page": 70,
   "fact": "Huhitaji kusimama kwa basi la shule linaloenda upande wa pili kwenye barabara kuu yenye njia nne au zaidi, zenye njia mbili kila upande.",
   "why": "Kwenye barabara yenye njia mbili kila upande, uko mbali na upande wa barabara ambapo watoto hupanda na kushuka basi.",
+  "example": "Uko kwenye barabara kuu yenye njia mbili zinazoenda upande wako na njia mbili zinazoenda upande mwingine. Basi la shule upande wa pili linasimama huku taa zake nyekundu zikiwaka na kuzima. Huhitaji kusimama, lakini endesha kwa uangalifu. Kama basi lingekuwa upande wako wa barabara, ungelazimika kusimama.",
   "weight": 3,
   "items": [
    {
@@ -6555,6 +6575,7 @@
   "page": 70,
   "fact": "Lazima usimame kwa basi la shule ambalo taa zake nyekundu zinawaka na kuzima au kibao chake cha kusimama (stop arm) kimetolewa nje. Baki umesimama hadi taa zizime, na watoto wote wawe wametoka barabarani na mbali na basi. Kamwe usipite basi la shule lililosimama linalopakia au kushusha watoto.",
   "why": "Watoto wanaweza kukimbia kuvuka barabara bila kuangalia, mara nyingi mbele ya basi ambapo ni vigumu kuwaona.",
+  "example": "Uko kwenye barabara ya njia mbili, na basi la shule linalokuja kuelekea kwako linasimama huku taa zake nyekundu zikiwaka na kuzima. Ingawa basi liko kwenye njia nyingine, lazima nawe usimame. Baki umesimama hadi taa nyekundu ziache kuwaka na watoto wote wawe wametoka barabarani na mbali na basi.",
   "weight": 3,
   "items": [
    {
@@ -6683,10 +6704,10 @@
     "type": "scenario",
     "q": "Mwendesha baiskeli anaendesha katikati ya njia nyembamba ambapo gari haliwezi kupita kwa usalama. Unapaswa kufanya nini?",
     "choices": [
-     "Baki nyuma kwa subira na usifuate kwa karibu sana",
-     "Piga honi ili ahamie kulia",
-     "Pita kwa kubanana naye",
-     "Mfuate kwa karibu sana kuonyesha unataka kupita"
+     "Baki nyuma na usifuate kwa karibu sana",
+     "Piga honi ili mwendesha baiskeli ahamie kulia",
+     "Jipenyeze kumpita ukiwa kwenye njia ile ile",
+     "Mfuate kwa karibu nyuma yake kuonyesha unataka kupita"
     ],
     "answer": 0
    }
@@ -6699,6 +6720,7 @@
   "fact": "Unapompita mwendesha baiskeli, hamia kwenye njia ya kushoto ikiwa unaweza. Ikiwa huwezi, acha nafasi ya angalau futi 3. Kasi kubwa zaidi inahitaji nafasi zaidi.",
   "why": "Waendesha baiskeli wanaweza kuhitaji nafasi ya kuepuka takataka au kukwepa ghafla, na wana kinga ndogo sana.",
   "hook": "Futi 3 angalau kwa baiskeli.",
+  "example": "Uko kwenye barabara yenye njia mbili zinazoenda upande wako, na mwendesha baiskeli anaendesha karibu na ukingo wa kulia. Ikiwa unaweza, hamia kwenye njia ya kushoto ili upite. Ikiwa huwezi kubadilisha njia, acha angalau futi 3 kati ya gari lako na mwendesha baiskeli, hata kama lazima usubiri nafasi kati ya magari. Kwa kasi kubwa zaidi, acha nafasi zaidi.",
   "weight": 3,
   "items": [
    {
@@ -6742,10 +6764,10 @@
     "type": "mc",
     "q": "Mwendesha baiskeli wa Idaho lazima afanye nini kabla ya kwenda moja kwa moja kupita taa nyekundu?",
     "choices": [
-     "Asimame na ayapishe magari yaliyo ndani au karibu na makutano",
+     "Asimame, kisha ayapishe magari yaliyo karibu",
      "Asubiri taa igeuke kijani",
      "Apunguze mwendo tu; hahitaji kusimama",
-     "Apige kengele"
+     "Apige kengele na aendelee"
     ],
     "answer": 0
    }
@@ -6782,7 +6804,8 @@
   "topic": "sharing",
   "page": 98,
   "fact": "Huko Idaho, waendesha baiskeli hawalazimiki kusimama kabisa kwenye alama za \"STOP\" (Simama), lakini lazima wayapishe magari yaliyo ndani au karibu na makutano kisha waendelee kwa tahadhari.",
-  "why": "Sheria ya Idaho inaichukulia alama ya \"STOP\" (Simama) kama alama ya kupisha kwa waendesha baiskeli, kwa hivyo usishangae mwendesha baiskeli akipita bila kusimama.",
+  "why": "Sheria ya Idaho inaichukulia alama ya \"STOP\" (Simama) kama alama ya \"YIELD\" (Pisha) kwa waendesha baiskeli, kwa hivyo usishangae mwendesha baiskeli akipita bila kusimama kabisa.",
+  "example": "Unaendesha kuelekea makutano yenye alama za \"STOP\" (Simama), na bado uko mbali. Mwendesha baiskeli anafika kwenye alama ya \"STOP\" (Simama) hapo, anapunguza mwendo, haoni gari lolote ndani au karibu na makutano, na anapita bila kusimama kabisa. Huko Idaho hili ni halali. Kama ungekuwa tayari kwenye makutano, mwendesha baiskeli angelazimika kukupisha kwanza.",
   "weight": 2,
   "items": [
    {
@@ -6794,7 +6817,7 @@
     "type": "mc",
     "q": "Mwendesha baiskeli wa Idaho lazima afanye nini kwenye alama ya \"STOP\" (Simama)?",
     "choices": [
-     "Ayapishe magari yaliyo kwenye au karibu na makutano, kisha aendelee kwa tahadhari",
+     "Ayapishe magari yaliyo karibu, kisha aendelee kwa tahadhari",
      "Asimame kabisa na asubiri sekunde 3",
      "Ashuke na kuisukuma baiskeli kuvuka",
      "Hakuna; baiskeli zinaweza kupuuza alama za STOP"
@@ -6815,10 +6838,10 @@
     "type": "scenario",
     "q": "Unakaribia kwa nyuma mtu anayepanda farasi kwenye barabara ya kijijini. Unapaswa kufanya nini?",
     "choices": [
-     "Punguza mwendo na upite ukiacha nafasi kubwa, bila kupiga honi",
+     "Punguza mwendo, acha nafasi kubwa, na usipige honi",
      "Piga honi ili mpanda farasi ajue upo",
-     "Pita haraka ili umalize",
-     "Mulika taa zako na upite karibu"
+     "Pita haraka ili ukae karibu na farasi kwa muda mfupi",
+     "Mulika taa zako na upite karibu na farasi"
     ],
     "answer": 0
    },
@@ -6861,16 +6884,17 @@
   "page": 99,
   "fact": "Ikiwa mwendesha baiskeli yuko mbele yako unapopanga kugeuka kulia, punguza mwendo na ubaki nyuma yake hadi apite mahali unapogeukia. Usijaribu kumtangulia.",
   "why": "Kugeuka mbele ya mwendesha baiskeli husababisha ajali ya aina ya \"right hook\" (kugeuka kulia na kumkata).",
+  "example": "Unapanga kugeuka kulia kwenye kona inayofuata. Mwendesha baiskeli anaendesha mbele yako upande wa kulia wa barabara, akienda upande uleule. Usiongeze mwendo ili kumpita mwendesha baiskeli na kugeuka mbele yake. Punguza mwendo, baki nyuma, na ugeuke baada ya mwendesha baiskeli kupita kona.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
     "q": "Unapanga kugeuka kulia kwenye kona inayofuata, na mwendesha baiskeli anaendesha mbele yako kidogo upande wa kulia. Unapaswa kufanya nini?",
     "choices": [
-     "Punguza mwendo na ubaki nyuma ya mwendesha baiskeli hadi apite kona",
+     "Punguza mwendo na ubaki nyuma ya mwendesha baiskeli",
      "Ongeza mwendo na ugeuke mbele ya mwendesha baiskeli",
-     "Piga honi na ugeuke",
-     "Geuka haraka wakati mwendesha baiskeli bado yuko kando yako"
+     "Piga honi na ugeuke kabla mwendesha baiskeli hajafika hapo",
+     "Geuka wakati mwendesha baiskeli bado yuko kando yako"
     ],
     "answer": 0
    },
@@ -6945,6 +6969,7 @@
   "page": 101,
   "fact": "Baada ya kuegesha sambamba na ukingo, fungua mlango wa dereva kwa mkono ulio mbali (mkono wa kulia). Hii inageuza mwili wako ili uangalie kwenye kioo na juu ya bega lako kuona waendesha baiskeli.",
   "why": "Kitabu cha mwongozo kinasema tabia hii husaidia kuzuia aina ya ajali inayotokea mara nyingi zaidi inayohusisha waendesha baiskeli: mlango unaofunguliwa mbele ya mwendesha baiskeli anayepita.",
+  "example": "Unaegesha sambamba na ukingo wa barabara na unataka kutoka. Fungua mlango wa dereva kwa mkono wako wa kulia. Kunyoosha mkono kuvuka mwili wako kunakugeuza kuelekea kioo cha pembeni, kwa hivyo unaangalia nyuma juu ya bega lako kutafuta mwendesha baiskeli kabla mlango haujafunguka.",
   "weight": 2,
   "items": [
    {
@@ -7132,7 +7157,7 @@
   "id": "drv-snowplow",
   "topic": "sharing",
   "page": 105,
-  "fact": "Kuwa mwangalifu zaidi karibu na magari ya kuondoa theluji (snowplows). Kifaa chake hurusha theluji juu na nje ya barabara, jambo linaloweza kusababisha hali kama ya dhoruba ya theluji kwa madereva wanaofuata kwa karibu sana.",
+  "fact": "Kuwa mwangalifu zaidi karibu na magari ya kuondoa theluji (snowplows). Kifaa chake hurusha theluji juu na nje ya barabara, jambo linaloweza kutengeneza wingu zito la theluji linalozuia madereva wanaofuata kwa karibu sana wasione.",
   "why": "Kufuata kwa karibu kunakuweka ndani ya wingu la theluji ambapo huwezi kuona.",
   "weight": 2,
   "items": [
@@ -7194,7 +7219,7 @@
     "type": "scenario",
     "q": "Unafuata lori kubwa na huwezi kuona barabara iliyo mbele yake. Unapaswa kufanya nini?",
     "choices": [
-     "Rudi nyuma ili uweze kuona sehemu kubwa zaidi ya barabara",
+     "Acha nafasi zaidi ili uweze kuona mbele",
      "Sogea karibu ili lori likuzuie upepo",
      "Pita mara moja",
      "Endesha kwenye ukingo wa barabara ili uone mbele"
@@ -7239,8 +7264,9 @@
   "id": "drv-truck-passing",
   "topic": "sharing",
   "page": 105,
-  "fact": "Unapopita gari kubwa, dumisha kasi isiyobadilika. Usirudi mbele yake hadi uweze kuona kibanda cha dereva (cab) chake kwenye kioo chako cha kuangalia nyuma.",
+  "fact": "Unapopita gari kubwa, dumisha kasi isiyobadilika. Usirudi mbele yake hadi uweze kuona kibanda cha dereva (cab, sehemu ya mbele anamokaa dereva) chake kwenye kioo chako cha kuangalia nyuma.",
   "why": "Kuingia mbele mapema mno na kupunguza mwendo kunamwacha dereva wa lori bila muda wala nafasi ya kusimama.",
+  "example": "Unapita lori kubwa kwenye barabara kuu. Dumisha kasi isiyobadilika unapolipita. Kabla ya kurudi kwenye njia ya lori, angalia kioo chako cha kuangalia nyuma. Unapoweza kuona sehemu ya mbele ya lori humo, rudi kwenye njia, na usipunguze mwendo mara tu baada ya hapo.",
   "weight": 3,
   "items": [
    {
@@ -7265,13 +7291,13 @@
   "id": "drv-hazmat-rr",
   "topic": "sharing",
   "page": 106,
-  "fact": "Magari yanayobeba vifaa hatari yana vibao vya onyo (placards) na lazima yasimame kwenye vivuko vyote vya reli. Uwe tayari kusimama ikiwa unafuata gari kama hilo.",
+  "fact": "Magari yanayobeba vifaa hatari (vyenye hatari) yana vibao vya onyo (placards), ambavyo ni alama zinazoonyesha kile yanachobeba. Magari haya lazima yasimame kwenye vivuko vyote vya reli, kwa hivyo uwe tayari kusimama ikiwa unafuata gari kama hilo.",
   "why": "Kujua kwamba lazima yasimame kunakuzuia kuyagonga kwa nyuma kwenye kivuko.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "Unafuata lori lenye kibao cha onyo cha vifaa hatari kuelekea kivuko cha reli. Unapaswa kutarajia nini?",
+    "q": "Unafuata lori lenye alama inayoonyesha kwamba linabeba vifaa hatari (vyenye hatari). Linakaribia kivuko cha reli. Unapaswa kutarajia nini?",
     "choices": [
      "Lori litasimama kwenye kivuko",
      "Lori litaongeza mwendo kuvuka reli",
@@ -7282,7 +7308,7 @@
    },
    {
     "type": "tf",
-    "q": "Magari yanayobeba vifaa hatari lazima yasimame kwenye vivuko vyote vya reli.",
+    "q": "Magari yanayobeba vifaa hatari (vyenye hatari) lazima yasimame kwenye vivuko vyote vya reli.",
     "answer": true
    }
   ]
@@ -7291,7 +7317,7 @@
   "id": "drv-pilot-vehicle",
   "topic": "sharing",
   "page": 106,
-  "fact": "Magari ya kuongoza (pilot vehicles) yana taa za rangi ya kahawia-njano (amber) na huonya kuhusu mizigo mikubwa kupita kiasi. Gari kama hilo linapokuja kuelekea kwako, punguza mwendo na usogee kulia kadiri unavyoweza. Ikiwa unalifuata, ongeza umbali wako wa kufuata.",
+  "fact": "Magari ya kuongoza (pilot vehicles) ni magari yenye alama na taa za rangi ya amber (njano-machungwa) yanayowaonya madereva wengine kuhusu mzigo mkubwa sana. Gari kama hilo linapokuja kuelekea kwako, punguza mwendo na usogee kulia kadiri unavyoweza. Ikiwa unalifuata, ongeza umbali wako wa kufuata.",
   "why": "Mzigo mkubwa kupita kiasi unaweza kuchukua nafasi zaidi ya njia yake, hasa kwenye madaraja na kona.",
   "weight": 2,
   "items": [
@@ -7310,7 +7336,7 @@
     "type": "mc",
     "q": "Magari ya kuongoza mizigo mikubwa hutumia taa za rangi gani?",
     "choices": [
-     "Amber (kahawia-njano)",
+     "Njano-machungwa",
      "Nyekundu na bluu",
      "Kijani",
      "Nyeupe tu"
@@ -7325,6 +7351,7 @@
   "page": 106,
   "fact": "Magari makubwa yanaweza kuzunguka kushoto kabla ya kugeuka kulia. Kamwe usijaribu kupenya upande wa kulia wa gari kubwa linalogeuka kulia.",
   "why": "Kupenya upande wa kulia ni sababu ya mara kwa mara ya ajali na magari makubwa.",
+  "example": "Uko nyuma ya lori kubwa kwenye kona. Ishara yake ya kugeuka kulia imewashwa, lakini kwanza linasogea kidogo kushoto, likiacha nafasi wazi upande wake wa kulia. Usiendeshe kuingia kwenye nafasi hiyo. Lori linahitaji nafasi hiyo ili kugeuka, kwa hivyo subiri hadi limalize.",
   "weight": 3,
   "items": [
    {
@@ -7498,11 +7525,11 @@
    },
    {
     "type": "scenario",
-    "q": "Unaendesha kushuka mteremko mrefu na mkali wa mlimani. Unataka kuokoa mafuta. Unapaswa kufanya nini?",
+    "q": "Unaendesha kushuka barabara ndefu na yenye mteremko mkali ya mlimani. Unataka kuokoa mafuta. Unapaswa kufanya nini?",
     "choices": [
      "Baki kwenye gia ya chini na uweke gari kwenye gia",
      "Weka neutral na uache gari literemke lenyewe",
-     "Shikilia klachi chini na ukanyage breki mfululizo",
+     "Shikilia klachi chini na uendelee kukanyaga breki",
      "Ongeza mwendo ili utumie muda mfupi mlimani"
     ],
     "answer": 0
@@ -7570,7 +7597,7 @@
   "id": "cnd-livestock-right-of-way",
   "topic": "conditions",
   "page": 108,
-  "fact": "Huko Idaho, farasi, ng'ombe, kondoo, mbuzi, na mifugo mingine wanaovushwa barabarani chini ya udhibiti wana haki ya kupita kwanza. Kuwa mwangalifu na ushirikiane na watu wanaowavusha.",
+  "fact": "Huko Idaho, farasi, ng'ombe, kondoo, mbuzi, na mifugo mingine ambayo watu wanaivusha barabarani wana haki ya kupita kwanza. Kuwa mwangalifu na ushirikiane na watu wanaowavusha.",
   "why": "Makundi ya mifugo huenda polepole na hayatabiriki, na watu wanaoyavusha wanahitaji madereva wasubiri.",
   "weight": 3,
   "items": [
@@ -7603,7 +7630,7 @@
   "topic": "conditions",
   "page": 108,
   "fact": "Takriban 90% ya maamuzi ya uendeshaji yanategemea kile unachokiona, na uoni wako hupungua usiku. Usiku, endesha kila mara polepole kiasi cha kuweza kusimama ndani ya umbali unaoweza kuona mbele.",
-  "why": "Uoni wako hupungua usiku, na unahitaji muda wa kuitikia kitu chochote kinachotokea kwenye mwanga wa taa zako za mbele.",
+  "why": "Ukiendesha kwa kasi kuliko unavyoweza kuona, mtu au mnyama anaweza kutokea kwenye mwanga wa taa zako za mbele kwa kuchelewa mno usiweze kusimama.",
   "weight": 2,
   "items": [
    {
@@ -7631,6 +7658,7 @@
   "page": 108,
   "fact": "Ukigonga mifugo kwenye eneo la malisho huria (open range) au wanaovushwa chini ya udhibiti, mmiliki wa mnyama hahitajiki kulipia madhara kwako au kwa gari lako. Ikiwa ulikuwa mzembe, unaweza kulazimika kulipia mnyama aliyejeruhiwa au kuuawa.",
   "why": "Kwenye malisho huria wanyama wanaruhusiwa kuwepo, kwa hivyo madereva ndio wenye jukumu la kuwaangalia.",
+  "example": "Unaendesha usiku nje ya mji kwenye eneo la malisho huria (open range), na unamgonga ng'ombe aliyesimama barabarani. Gari lako limeharibika. Mmiliki wa ng'ombe hahitajiki kulipia gari lako. Ikiwa ulikuwa ukiendesha kwa uzembe, huenda ukalazimika kumlipa mmiliki kwa ajili ya ng'ombe.",
   "weight": 2,
   "items": [
    {
@@ -7858,7 +7886,7 @@
   "id": "cnd-twilight-dangerous",
   "topic": "conditions",
   "page": 109,
-  "fact": "Saa za kijivu za jioni (giza likiingia) na alfajiri ndizo nyakati hatari zaidi za siku kuendesha.",
+  "fact": "Saa za kijivu za jioni (mara tu baada ya jua kutua) na alfajiri (kabla tu ya jua kuchomoza) ndizo nyakati hatari zaidi za siku kuendesha.",
   "why": "Katika mwanga hafifu wa kijivu ni vigumu kuona magari mengine, watu, na wanyama.",
   "weight": 2,
   "items": [
@@ -7884,7 +7912,7 @@
   "id": "cnd-bad-weather-pull-off",
   "topic": "conditions",
   "page": 110,
-  "fact": "Ni salama zaidi kutoendesha kwenye ukungu, dhoruba za vumbi, au mvua kubwa. Ikiwa lazima uendeshe, punguza mwendo, na hali ikizidi kuwa mbaya, toka nje ya barabara na usimame badala ya kujikokota polepole.",
+  "fact": "Ni salama zaidi kutoendesha kwenye ukungu, dhoruba za vumbi, au mvua kubwa. Ikiwa lazima uendeshe, punguza mwendo. Hali ikizidi kuwa mbaya, toka nje ya barabara na usimame badala ya kuendelea kuendesha polepole sana.",
   "why": "Gari linaloenda polepole sana katika hali ya kutoona vizuri linaweza kugongwa na madereva wasioweza kuliona.",
   "weight": 2,
   "items": [
@@ -7893,7 +7921,7 @@
     "q": "Unaendesha kwenye ukungu unaoendelea kuwa mzito hadi huwezi kuona karibu chochote. Unapaswa kufanya nini?",
     "choices": [
      "Toka nje ya barabara na usimame",
-     "Jikokote kwenye njia yako kwa maili 5 kwa saa",
+     "Endelea kuendesha kwenye njia yako kwa maili 5 kwa saa",
      "Washa taa za mwanga mkali na uendelee",
      "Fuata taa za nyuma za gari lililo mbele kwa karibu sana"
     ],
@@ -8048,8 +8076,9 @@
   "id": "cnd-hydroplane-response",
   "topic": "conditions",
   "page": 111,
-  "fact": "Ikiwa gari lako linaanza kuelea juu ya maji (hydroplaning), dumisha kasi isiyobadilika kwenye mstari ulionyooka na upunguze mafuta polepole. Usisimame wala usigeuke haraka hadi matairi yashike barabara tena.",
+  "fact": "Ikiwa gari lako linaanza kuelea juu ya maji (hydroplaning, kuteleza juu ya maji yaliyo barabarani), dumisha kasi isiyobadilika kwenye mstari ulionyooka na uondoe mguu wako kwenye kichapuzi polepole. Usisimame wala usigeuke haraka hadi matairi yashike barabara tena.",
   "why": "Kufunga breki au kugeuza usukani ghafla wakati matairi yako juu ya maji kunaweza kusababisha gari kuteleza.",
+  "example": "Unaendesha kwenye mvua kubwa na unahisi gari lako linaanza kuelea juu ya maji. Shika usukani moja kwa moja, dumisha kasi isiyobadilika, na uinue mguu wako kutoka kwenye kichapuzi polepole. Usikanyage breki kwa nguvu wala usigeuke haraka hadi uhisi matairi yanashika barabara tena.",
   "weight": 3,
   "items": [
    {
@@ -8065,7 +8094,7 @@
    },
    {
     "type": "tf",
-    "q": "Ikiwa gari lako linaelea juu ya maji, unapaswa kukanyaga breki kwa nguvu.",
+    "q": "Ikiwa gari lako linaelea juu ya maji, unapaswa kukanyaga breki kwa nguvu mara moja.",
     "answer": false
    }
   ]
@@ -8206,9 +8235,9 @@
     "type": "mc",
     "q": "Kwa nini madaraja hupata barafu mapema kuliko barabara nyingine?",
     "choices": [
-     "Hewa baridi huyafikia kutoka chini na hayapati joto la ardhi",
-     "Yametengenezwa kwa chuma",
-     "Magari ya kuondoa theluji hayayasafishi kamwe",
+     "Yako wazi kwa hewa baridi chini yake",
+     "Yanapitiwa na magari mengi kuliko barabara nyingine",
+     "Magari ya kuondoa theluji hayayasafishi",
      "Yako kivulini kila wakati"
     ],
     "answer": 0
@@ -8576,10 +8605,10 @@
     "type": "scenario",
     "q": "Gari linasimama ghafla mbele yako na unajua huwezi kusimama kwa wakati. Kuna njia iliyo wazi kando yako. Chaguo bora ni lipi?",
     "choices": [
-     "Geuza usukani kuingia njia iliyo wazi, bila kukanyaga breki unapogeuka",
-     "Funga breki kwa nguvu zote huku ukigeuka ghafla",
-     "Funga macho na ujikaze",
-     "Ongeza mwendo na ugonge gari"
+     "Geuza usukani kuingia njia iliyo wazi bila kukanyaga breki",
+     "Kanyaga breki kwa nguvu na ugeuze usukani ghafla",
+     "Baki kwenye njia yako na ujikaze",
+     "Piga honi na uendelee kwenda moja kwa moja"
     ],
     "answer": 0
    },
@@ -8594,8 +8623,8 @@
   "id": "cnd-protect-in-crash",
   "topic": "emergencies",
   "page": 118,
-  "fact": "Ikiwa unakaribia kugongwa kwa nyuma, bonyeza kichwa chako kwenye kiegemeo cha kichwa. Ukigongwa ubavuni, uwe tayari kugeuza usukani. Ukigongwa kwa mbele ukiwa umefunga mkanda wa usalama, linda uso wako kwa mikono yako.",
-  "why": "Kila mkao hupunguza majeraha kutokana na upande wa mgongano.",
+  "fact": "Kinga bora katika ajali yoyote ni mkanda wa usalama uliofungwa kabla safari haijaanza. Ikiwa unakaribia kugongwa kwa nyuma, bonyeza nyuma ya kichwa chako kwenye kiegemeo cha kichwa. Ukigongwa ubavuni, uwe tayari kugeuza usukani. Ukigongwa kwa mbele ukiwa umefunga mkanda wa usalama, linda uso wako kwa mikono yako.",
+  "why": "Kubonyeza kichwa kwenye kiegemeo kunazuia kichwa chako kurushwa nyuma ghafla, kuwa tayari kugeuza usukani kunakusaidia kupata tena udhibiti baada ya kugongwa ubavuni, na mikono yako inaweza kukinga uso wako.",
   "weight": 2,
   "items": [
    {
@@ -8635,10 +8664,10 @@
     "type": "scenario",
     "q": "Gari linakuja kuelekea kwako ndani ya njia yako kwenye barabara yenye njia mbili. Unapaswa kufanya nini?",
     "choices": [
-     "Punguza mwendo, piga honi, na usogee kulia kadiri inavyowezekana",
-     "Kwepa kuingia njia ya kushoto",
+     "Punguza mwendo, piga honi, na usogee kulia",
+     "Kwepa kwenda kushoto kuingia njia nyingine",
      "Simama katikati ya njia yako",
-     "Ongeza mwendo ili upite haraka"
+     "Ongeza mwendo ili ulipite haraka"
     ],
     "answer": 0
    },
@@ -8655,15 +8684,16 @@
   "page": 119,
   "fact": "Ukigonga gari lisilo na mtu au mali nyingine, fanya juhudi za kutosha kumtafuta mmiliki. Ikiwa huwezi, acha ujumbe wenye jina lako, nambari yako ya simu, na kilichotokea.",
   "why": "Mmiliki ana haki ya kujua nani aliharibu mali yake.",
+  "example": "Unarudi nyuma na kugonga gari lililoegeshwa kwenye eneo la maegesho na kulibonyea. Hakuna mtu ndani ya gari. Lazima ufanye juhudi za kweli kumtafuta mmiliki. Ikiwa huwezi kumpata, acha ujumbe kwenye gari unaoeleza kilichotokea, pamoja na jina lako na nambari yako ya simu.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
     "q": "Unarudi nyuma na kugonga gari lililoegeshwa kwenye eneo la maegesho na kulibonyea. Hakuna mtu karibu. Lazima ufanye nini?",
     "choices": [
-     "Jaribu kumtafuta mmiliki, na ikiwa huwezi, acha ujumbe wenye jina lako na nambari yako ya simu",
-     "Ondoka kwa kuwa hakuna aliyeona",
-     "Subiri dakika moja kisha uondoke",
+     "Mtafute mmiliki, au acha ujumbe wenye jina lako na nambari yako ya simu",
+     "Ondoka, kwa sababu hakuna aliyeona ikitokea na bonyeo ni dogo",
+     "Msubiri mmiliki kwa dakika chache, kisha uondoke",
      "Acha ujumbe wenye nambari ya usajili wa gari lako tu"
     ],
     "answer": 0
@@ -8714,9 +8744,9 @@
     "q": "Magurudumu yako ya kulia yanateleza kutoka kwenye lami na kuingia ukingoni mwa barabara. Hakuna vizuizi mbele. Unapaswa kufanya nini?",
     "choices": [
      "Endesha moja kwa moja, punguza mwendo, kisha urudi inapokuwa salama",
-     "Geuza usukani kushoto ghafla mara moja",
-     "Funga breki kwa nguvu mara moja",
-     "Ongeza mwendo ili kupanda kurudi barabarani"
+     "Geuza usukani kushoto ghafla ili urudi mara moja",
+     "Kanyaga breki kwa nguvu mara moja ili usimame kwenye bega la barabara",
+     "Ongeza mwendo ili uweze kupanda kurudi barabarani"
     ],
     "answer": 0
    },
@@ -8766,6 +8796,7 @@
   "fact": "Lazima uripoti ajali kwa polisi ikiwa mtu yeyote amejeruhiwa au ikiwa madhara ya mali ni zaidi ya $1,500.",
   "why": "Ajali mbaya zinahitaji rekodi rasmi kwa sababu za usalama, bima, na kisheria.",
   "hook": "Majeruhi au zaidi ya $1,500 = ripoti.",
+  "example": "Unapata ajali. Hakuna aliyeumia, lakini kurekebisha madhara kutagharimu zaidi ya $1,500. Lazima uripoti ajali kwa polisi. Pia lazima uripoti ajali yoyote ambayo mtu ameumia, hata kama madhara ni madogo sana.",
   "weight": 3,
   "items": [
    {
@@ -8798,6 +8829,7 @@
   "page": 121,
   "fact": "Ukihusika katika ajali, lazima usimame karibu na eneo la ajali kadiri unavyoweza bila kuzuia magari na mbadilishane majina, anwani, nambari za leseni, na taarifa za bima. Kutoa taarifa za uongo kunaweza kuwa kosa la jinai dogo (misdemeanor).",
   "why": "Watu waliohusika wanahitaji taarifa sahihi kwa ajili ya bima na ufuatiliaji wa kisheria.",
+  "example": "Unapata ajali na gari lingine. Unasimama karibu na eneo la ajali kadiri unavyoweza bila kuzuia magari. Wewe na dereva mwingine mnapeana majina, anwani, nambari za leseni za udereva, na taarifa za bima. Ukitoa jina au anwani ya uongo, unaweza kushtakiwa kwa kosa la jinai dogo (misdemeanor).",
   "weight": 3,
   "items": [
    {
@@ -8805,9 +8837,9 @@
     "q": "Ni taarifa gani unapaswa kubadilishana na madereva wengine baada ya ajali?",
     "choices": [
      "Majina, anwani, na taarifa za bima",
-     "Nambari za simu tu",
-     "Nambari za usajili wa magari tu",
-     "Hakuna kitu hadi polisi wafike"
+     "Nambari za simu na anwani za barua pepe tu",
+     "Nambari za usajili na rangi za magari tu",
+     "Hakuna kitu kabisa hadi polisi wafike"
     ],
     "answer": 0
    },
@@ -8822,8 +8854,9 @@
   "id": "cnd-good-samaritan",
   "topic": "emergencies",
   "page": 121,
-  "fact": "Sheria ya Msamaria Mwema (Good Samaritan Law) ya Idaho inakulinda dhidi ya dhima ya kiraia unapomsaidia mtu aliyejeruhiwa kwa nia njema. Usimtoe mtu aliyejeruhiwa kwenye gari lililoharibika isipokuwa una mafunzo ya matibabu au kuna hatari ya papo hapo kama moto.",
+  "fact": "Sheria ya Msamaria Mwema (Good Samaritan Law) ya Idaho inakulinda dhidi ya dhima ya kiraia (kushtakiwa ili ulipe fidia) unapomsaidia mtu aliyejeruhiwa kwa nia njema (ukijaribu kwa dhati kusaidia). Usimtoe mtu aliyejeruhiwa kwenye gari lililoharibika isipokuwa una mafunzo ya matibabu au kuna hatari ya papo hapo kama moto.",
   "why": "Kumsogeza mtu aliyejeruhiwa kwa njia isiyo sahihi kunaweza kufanya majeraha kuwa mabaya zaidi.",
+  "example": "Unasimama kwenye ajali, unaita msaada, na unabaki na dereva aliyejeruhiwa ili kumtuliza. Kwa sababu unajaribu kwa dhati kusaidia, Sheria ya Msamaria Mwema (Good Samaritan Law) ya Idaho inakulinda usishtakiwe ili ulipe fidia. Usimtoe dereva nje ya gari isipokuwa una mafunzo ya matibabu au kuna hatari ya papo hapo, kama moto.",
   "weight": 2,
   "items": [
    {
@@ -8839,7 +8872,7 @@
    },
    {
     "type": "tf",
-    "q": "Sheria ya Msamaria Mwema (Good Samaritan Law) ya Idaho inawalinda watu wanaowasaidia waathiriwa wa ajali kwa nia njema.",
+    "q": "Sheria ya Msamaria Mwema (Good Samaritan Law) ya Idaho inawalinda watu wanaojaribu kwa dhati kuwasaidia waathiriwa wa ajali.",
     "answer": true
    }
   ]
@@ -8848,8 +8881,9 @@
   "id": "cnd-quick-clearance",
   "topic": "emergencies",
   "page": 121,
-  "fact": "Chini ya sheria ya Quick Clearance (Kuondoa Haraka) ya Idaho, ukihusika katika ajali kwenye barabara kuu ya interstate au barabara kuu iliyogawanywa bila kifo wala majeruhi, lazima usogeze gari lako kwa usalama hadi ukingoni mwa barabara, kwenye eneo la katikati (median), au njia ya dharura.",
+  "fact": "Chini ya sheria ya Quick Clearance (Kuondoa Haraka) ya Idaho, ukihusika katika ajali kwenye barabara kuu ya interstate au barabara kuu iliyogawanywa (barabara kuu ambayo pande mbili za magari zimetenganishwa) bila kifo wala majeruhi, lazima usogeze gari lako kwa usalama hadi ukingoni mwa barabara, kwenye eneo la katikati (median, eneo lililo kati ya pande mbili za magari), au njia ya dharura.",
   "why": "Kuondoa magari kwenye njia za magari kunazuia ajali zaidi na msongamano wa magari.",
+  "example": "Unapata ajali ndogo kwenye barabara kuu ya interstate. Hakuna aliyeumia, na gari lako bado linaweza kuendeshwa. Usiliache kwenye njia ya magari wakati unasubiri polisi. Lisogeze kwa uangalifu hadi ukingoni mwa barabara, kwenye eneo la katikati (median), au kwenye njia ya dharura.",
   "weight": 3,
   "items": [
    {
@@ -9629,7 +9663,7 @@
   "topic": "licensing",
   "page": 15,
   "fact": "Kibali cha Mafunzo ya Udereva (Driver Training Permit) kinamruhusu mtu mwenye umri wa angalau miaka 14 1/2 na chini ya miaka 17 kujiunga na programu ya mafunzo ya udereva ya umma au ya binafsi.",
-  "why": "Madereva vijana huanza na mafunzo rasmi kabla ya kufanya mazoezi wenyewe pamoja na mzazi.",
+  "why": "Mafunzo rasmi na mkufunzi huja kwanza, ili madereva vijana wajifunze mambo ya msingi kabla ya kufanya mazoezi na mzazi au mtu mzima mwingine mwenye leseni.",
   "hook": "14 1/2 = umri wa mapema zaidi wa kuanza mafunzo ya udereva.",
   "weight": 3,
   "items": [
@@ -9766,12 +9800,12 @@
    },
    {
     "type": "scenario",
-    "q": "Una miaka 15 na una leseni. Rafiki yako anakuomba uendeshe kurudi nyumbani peke yako saa 10:30 p.m. Ni kipi kweli?",
+    "q": "Una miaka 15 na una leseni. Rafiki yako anakuomba uendeshe kurudi nyumbani peke yako saa 10:30 p.m. Je, unaruhusiwa?",
     "choices": [
-     "Huwezi kuendesha peke yako wakati huo kwa sababu ni baada ya 10:00 p.m.",
-     "Unaweza kuendesha kwa sababu una leseni",
-     "Unaweza kuendesha ikiwa una abiria mmoja tu",
-     "Unaweza kuendesha ikiwa taa za mbele zimewashwa"
+     "Hapana, kwa sababu ni baada ya 10:00 p.m.",
+     "Ndiyo, kwa sababu una leseni",
+     "Ndiyo, ikiwa una abiria mmoja tu",
+     "Ndiyo, ikiwa taa zako za mbele zimewashwa"
     ],
     "answer": 0
    }
@@ -9816,6 +9850,7 @@
   "fact": "Ikiwa uko chini ya miaka 17, kwa miezi 6 ya kwanza baada ya leseni yako kutolewa unaweza kubeba si zaidi ya abiria mmoja aliye chini ya miaka 17, isipokuwa abiria hao ni ndugu zako kwa damu, kuasiliwa, au ndoa.",
   "why": "Abiria vijana ni kisumbufu kikubwa kwa madereva wapya.",
   "hook": "Miezi 6 ya kwanza: rafiki 1 kijana tu; familia haihesabiwi.",
+  "example": "Uko chini ya miaka 17 na ulipata leseni yako chini ya miezi 6 iliyopita. Kikundi cha marafiki wa shuleni, wote chini ya miaka 17, wanataka uwape usafiri. Ni mmoja tu kati yao anayeweza kupanda gari nawe. Kaka yako, dada yako, au binamu yako hahesabiwi katika kikomo hiki.",
   "weight": 3,
   "items": [
    {
@@ -9946,8 +9981,9 @@
   "id": "lic-gdl-6-months",
   "topic": "licensing",
   "page": 19,
-  "fact": "Chini ya programu ya Leseni ya Udereva ya Hatua kwa Hatua (Graduated Driver's License, GDL), dereva aliye chini ya miaka 17 lazima amalize mafunzo ya udereva kisha akamilishe kipindi cha mafunzo chini ya usimamizi cha angalau miezi 6 bila makosa yoyote.",
+  "fact": "Chini ya programu ya Leseni ya Udereva ya Hatua kwa Hatua (Graduated Driver's License, GDL), mtu yeyote aliye chini ya miaka 17 ambaye hajawahi kuwa na leseni ya Idaho lazima amalize mafunzo ya udereva kisha akamilishe kipindi cha mafunzo chini ya usimamizi (mazoezi ya kuendesha ukiwa na dereva mwenye leseni kando yako) cha angalau miezi 6 bila makosa yoyote.",
   "why": "Miezi ya mazoezi chini ya usimamizi hujenga uzoefu kabla hujaendesha peke yako.",
+  "example": "Uko chini ya miaka 17 na umemaliza tu darasa lako la mafunzo ya udereva. Kinachofuata ni kipindi cha usimamizi: kwa angalau miezi 6, unafanya mazoezi ukiwa na dereva mwenye leseni kando yako na hupati kosa lolote la trafiki. Baada ya hapo, unafanya mtihani wa maarifa na mtihani wa ujuzi ili kupata leseni yako.",
   "weight": 3,
   "items": [
    {
@@ -10007,6 +10043,7 @@
   "page": 19,
   "fact": "Ukitiwa hatiani kwa kosa la trafiki wakati wa kipindi cha usimamizi cha GDL (Leseni ya Udereva ya Hatua kwa Hatua), kibali chako kinafutwa. Lazima upate kibali kipya, na kipindi cha miezi 6 kinaanza upya.",
   "why": "Kipindi cha usimamizi lazima kiwe bila makosa ili kuonyesha uko tayari kuendesha kwa usalama.",
+  "example": "Uko katikati ya kipindi chako cha miezi 6 cha kuendesha chini ya usimamizi. Unapewa tiketi ya kuendesha kwa kasi kupita kiasi na unatiwa hatiani. Kibali chako kinafutwa, kwa hivyo lazima upate kibali kipya, na miezi yako 6 inaanza upya. Miezi uliyokwisha kuendesha haihesabiwi.",
   "weight": 3,
   "items": [
    {
@@ -10033,13 +10070,14 @@
   "page": 26,
   "fact": "Ikiwa uko chini ya miaka 18, mzazi au mlezi wa kisheria lazima asaini kukubali jukumu la kisheria kwa uendeshaji wako (ikiwa umeoa au umeolewa, mwenzi wako mwenye umri wa angalau miaka 18 anaweza kusaini). Hadi utakapofikisha miaka 18, aliyesaini anaweza kuondoa ridhaa wakati wowote, na leseni yako itafutwa.",
   "why": "Kwa sababu aliyesaini anawajibika kisheria kwako kama dereva, anabaki na uwezo wa kusitisha jukumu hilo.",
+  "example": "Uko chini ya miaka 18 na unataka leseni. Mama yako anasaini fomu inayosema anakubali jukumu la kisheria kwa uendeshaji wako. Sasa yeye ndiye mtu aliyesaini kukubali jukumu kwako (liability signer). Akiondoa ridhaa yake kabla hujafikisha miaka 18, leseni yako inafutwa.",
   "weight": 2,
   "items": [
    {
     "type": "scenario",
-    "q": "Una miaka 16 na una leseni. Mama yako, aliyesaini kama mwenye jukumu kwako, anaondoa ridhaa yake. Nini kinatokea?",
+    "q": "Una miaka 16 na una leseni. Mama yako alisaini kukubali jukumu la kisheria kwa uendeshaji wako (yeye ndiye liability signer wako). Sasa anaondoa ridhaa yake. Nini kinatokea?",
     "choices": [
-     "Leseni yako ya udereva inafutwa",
+     "Leseni yako inafutwa",
      "Hakuna kinachobadilika hadi ufikishe miaka 18",
      "Lazima urudie mtihani wa maarifa tu",
      "Unaweza kuendelea kuendesha hadi leseni yako iishe muda"
@@ -10048,7 +10086,7 @@
    },
    {
     "type": "num",
-    "q": "Waombaji walio chini ya umri gani wanahitaji mtu wa kusaini jukumu (liability signer) ili kupata leseni ya Idaho?",
+    "q": "Waombaji walio chini ya umri gani wanahitaji mzazi au mlezi asaini na kukubali jukumu la kisheria kwa uendeshaji wao?",
     "answer": 18,
     "unit": "miaka"
    }
@@ -10119,6 +10157,7 @@
   "page": 30,
   "fact": "Usimruhusu mtu asiye na leseni kuendesha gari lako. Akipata ajali, dereva na mmiliki aliyetoa ruhusa wote wanawajibika kwa madhara, majeraha, au kifo.",
   "why": "Mmiliki alichagua kumkabidhi gari mtu asiye na sifa za kuliendesha.",
+  "example": "Rafiki yako hana leseni ya udereva na anaomba kuazima gari lako. Unakubali, na rafiki yako anagonga gari lingine. Wewe na rafiki yako nyote mnawajibika kwa madhara na kwa mtu yeyote aliyeumia.",
   "weight": 2,
   "items": [
    {
@@ -10184,16 +10223,17 @@
   "page": 32,
   "fact": "Ukivaa miwani au lenzi za macho (contacts) kwa uchunguzi wa macho, leseni yako inapata sharti la lenzi, na lazima uzivae kila mara unapoendesha.",
   "why": "Ulifikia kiwango cha uoni ukiwa na lenzi za kusahihisha tu, kwa hivyo unazihitaji ili kuona kwa usalama.",
+  "example": "Unavaa miwani yako kwa uchunguzi wa macho, na unafaulu. Sasa leseni yako ina sharti la lenzi. Kila mara unapoendesha, hata kwa safari fupi, lazima uvae miwani yako au lenzi za macho (contacts), la sivyo unaweza kupewa tiketi.",
   "weight": 2,
   "items": [
    {
     "type": "scenario",
     "q": "Leseni yako ina sharti la lenzi. Umesahau miwani yako na unahitaji kuendesha umbali mfupi. Ni kipi kweli?",
     "choices": [
-     "Unaweza kupewa tiketi na kupoteza haki zako za kuendesha ukiendesha bila miwani",
-     "Safari fupi chini ya maili 5 zinaruhusiwa bila miwani",
+     "Unaweza kupewa tiketi kwa kuendesha bila miwani",
+     "Safari chini ya maili 5 zinaruhusiwa bila miwani",
      "Ni sawa wakati wa saa za mchana",
-     "Ni sawa ikiwa mtu mzima mwenye leseni yuko nawe"
+     "Ni sawa ikiwa mtu mzima mwenye leseni yuko nawe garini"
     ],
     "answer": 0
    },
@@ -10209,7 +10249,7 @@
   "topic": "licensing",
   "page": 32,
   "fact": "Lazima uwe na umri wa angalau miaka 15 ili kufanya mitihani ya maarifa na ya ujuzi kwa ajili ya leseni.",
-  "why": "Idaho inaweka umri wa chini kabla mtu yeyote hajapimwa kwa ajili ya leseni.",
+  "why": "Vijana wadogo zaidi wanaweza kuanza kujifunza katika mafunzo ya udereva, lakini lazima uwe na miaka 15 kabla serikali ya jimbo haijakupima kuona kama uko tayari kuendesha.",
   "weight": 3,
   "items": [
    {
@@ -10353,6 +10393,7 @@
   "page": 37,
   "fact": "Kosa kubwa la uendeshaji kwenye mtihani wa ujuzi, kama kuendesha kwa kasi kupita kiasi, kutotii alama au taa ya trafiki, au kugonga kitu, ni kushindwa moja kwa moja na mtihani unaisha mara moja.",
   "why": "Makosa haya yanaweza kusababisha ajali, majeraha, au kifo, kwa hivyo yanaonyesha bado hauko tayari kuendesha peke yako.",
+  "example": "Wakati wa mtihani wako wa ujuzi, unaendesha kidogo juu ya kikomo cha mwendo. Hilo ni kosa kubwa la uendeshaji, kwa sababu kasi kupita kiasi inaweza kusababisha ajali. Unashindwa mara moja na mkaguzi anamaliza mtihani. Haijalishi ulivyoendesha vizuri kabla ya hapo.",
   "weight": 2,
   "items": [
    {
@@ -10963,7 +11004,7 @@
   "id": "lic-equip-headlights",
   "topic": "equipment",
   "page": 38,
-  "fact": "Magari yanahitaji taa mbili za mbele zenye mwanga mkali na mwanga mdogo. Taa za mwanga mkali lazima zikuwezeshe kuona watu na magari angalau futi 350 mbele; taa za mwanga mdogo lazima ziangaze barabara angalau futi 100 mbele.",
+  "fact": "Magari yanahitaji taa mbili za mbele zenye mwanga mkali na mwanga mdogo, zilizoelekezwa kuangaza barabara bila kuwapofusha madereva wanaokuja. Taa za mwanga mkali lazima zikuwezeshe kuona watu na magari angalau futi 350 mbele; taa za mwanga mdogo lazima ziangaze barabara angalau futi 100 mbele. Taa za mbele hazipaswi kufunikwa kwa kitu ambacho mwanga hauwezi kupenya.",
   "why": "Unahitaji kuona mbele umbali wa kutosha usiku ili kuitikia hatari kwa wakati.",
   "weight": 2,
   "items": [
@@ -11012,7 +11053,7 @@
    },
    {
     "type": "mc",
-    "q": "Nani anawajibika kurekebisha gari linalokosa vifaa muhimu?",
+    "q": "Gari linakosa vifaa ambavyo sheria inavitaka. Nani anawajibika kulirekebisha?",
     "choices": [
      "Mtu anayeliendesha",
      "Kituo cha ukaguzi cha jimbo",

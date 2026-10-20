@@ -404,10 +404,10 @@
     "type": "scenario",
     "q": "La señal \"SPEED LIMIT\" (Límite de velocidad) dice 50, pero una lluvia fuerte hace difícil ver. ¿Qué es cierto?",
     "choices": [
-     "50 es la velocidad máxima en condiciones ideales; puede que deba ir más despacio",
-     "Debe conducir exactamente a 50",
+     "50 es la velocidad máxima; puede que deba ir más despacio",
+     "Debe conducir exactamente a 50 todo el tiempo",
      "Puede conducir a 55 para seguir el ritmo del tráfico",
-     "El límite ya no se aplica cuando llueve"
+     "El límite de velocidad ya no se aplica cuando llueve"
     ],
     "answer": 0
    },
@@ -869,8 +869,8 @@
   "id": "sig-t-intersection",
   "topic": "signs",
   "page": 49,
-  "fact": "Una señal de advertencia en forma de T significa que la calle termina más adelante en una intersección en T, y tendrá que girar a la derecha o a la izquierda. Esté listo para detenerse y ceder el paso a los conductores que vienen de las otras dos direcciones.",
-  "why": "La calle no sigue derecho, así que debe estar listo para detenerse y girar.",
+  "fact": "Una señal de advertencia en forma de T significa que la calle termina más adelante en una intersección en T, y tendrá que girar a la derecha o a la izquierda. Debe detenerse y ceder el paso a los conductores que vienen de las otras dos direcciones.",
+  "why": "El tráfico de la calle a la que llega sigue avanzando, así que debe esperar un espacio seguro antes de girar.",
   "weight": 3,
   "sign": "W2-4",
   "signDesc": "Rombo amarillo con un símbolo negro en forma de T",
@@ -1642,8 +1642,8 @@
     "choices": [
      "Quedarse detrás y rebasar solo cuando sea seguro cambiar de carril",
      "Tocar la bocina para que el ciclista se haga a la derecha",
-     "Pasar apretado en el mismo carril",
-     "Conducir por el acotamiento para rebasar"
+     "Pasar apretado junto al ciclista sin salir de su carril",
+     "Manejar por el acotamiento para rodear al ciclista"
     ],
     "answer": 0
    }
@@ -1889,6 +1889,7 @@
   "page": 56,
   "fact": "Una flecha amarilla intermitente significa que puede girar, pero primero debe ceder el paso al tráfico que viene de frente y a los peatones en los cruces peatonales.",
   "why": "El giro está permitido pero no protegido, así que el tráfico que viene de frente sigue teniendo el derecho de paso.",
+  "example": "Está en el carril para girar a la izquierda y la flecha amarilla está parpadeando. Vienen carros de frente, y una persona está caminando por el cruce peatonal que usted cruzaría al girar. Espere. Gire solo después de que pasen los carros que vienen de frente y la persona termine de cruzar.",
   "weight": 3,
   "items": [
    {
@@ -1956,7 +1957,7 @@
    },
    {
     "type": "tf",
-    "q": "Cuando se instala una baliza HAWK (cruce peatonal activado de alta intensidad), las calles laterales con letrero de alto ya no tienen que detenerse.",
+    "q": "Cuando se instala una baliza peatonal HAWK, las calles laterales con letrero de alto ya no tienen que detenerse.",
     "answer": false
    }
   ]
@@ -1992,13 +1993,13 @@
   "id": "sig-hawk-dark-yellow",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "Una baliza HAWK (cruce peatonal activado de alta intensidad) está apagada hasta que un peatón oprime el botón. Luego parpadea en amarillo (disminuya la velocidad) y después muestra amarillo fijo (prepárese para detenerse).",
+  "fact": "Una baliza peatonal HAWK está apagada hasta que un peatón oprime el botón. Luego parpadea en amarillo (disminuya la velocidad) y después muestra amarillo fijo (prepárese para detenerse).",
   "why": "Las luces de advertencia dan tiempo a los conductores para disminuir la velocidad antes de la luz roja.",
   "weight": 2,
   "items": [
    {
     "type": "mc",
-    "q": "¿Qué significa que una baliza HAWK (cruce peatonal activado de alta intensidad) esté apagada (sin luz)?",
+    "q": "¿Qué significa que una baliza peatonal HAWK esté apagada (sin luz)?",
     "choices": [
      "Conduzca normalmente, pero esté atento a los peatones",
      "Deténgase y espere",
@@ -2009,7 +2010,7 @@
    },
    {
     "type": "mc",
-    "q": "Después de que un peatón oprime el botón, ¿qué muestra primero una baliza HAWK (cruce peatonal activado de alta intensidad)?",
+    "q": "Después de que un peatón oprime el botón, ¿qué muestra primero una baliza peatonal HAWK?",
     "choices": [
      "Amarillo intermitente",
      "Rojo fijo",
@@ -2024,13 +2025,14 @@
   "id": "sig-hawk-red",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "Cuando una baliza HAWK (cruce peatonal activado de alta intensidad) muestra dos luces rojas fijas, deténgase por completo en la línea de alto. Cuando las luces rojas parpadean alternadamente, deténgase, ceda el paso a los peatones en el cruce peatonal y avance cuando esté libre.",
+  "fact": "Cuando una baliza peatonal HAWK muestra dos luces rojas fijas, deténgase por completo en la línea de alto. Cuando las luces rojas parpadean alternadamente, deténgase, ceda el paso a los peatones en el cruce peatonal y avance cuando esté libre.",
   "why": "La luz roja fija es el tiempo para que las personas crucen; la roja intermitente alternada permite a los conductores avanzar cuando el cruce peatonal está vacío.",
+  "example": "Va manejando hacia un cruce peatonal con una baliza peatonal HAWK. Una persona oprime el botón, las luces parpadean en amarillo, luego se ponen en amarillo fijo y después se encienden dos luces rojas fijas. Usted se detiene en la línea de alto mientras la persona cruza. Cuando las luces rojas empiezan a parpadear alternadamente, deténgase y avance cuando el cruce peatonal esté vacío.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "En una baliza HAWK (cruce peatonal activado de alta intensidad), las dos luces rojas parpadean alternadamente. El cruce peatonal ya está vacío. ¿Qué debe hacer?",
+    "q": "En una baliza peatonal HAWK, las dos luces rojas parpadean alternadamente. El cruce peatonal ya está vacío. ¿Qué debe hacer?",
     "choices": [
      "Detenerse y luego avanzar, ya que el cruce peatonal está libre",
      "Quedarse detenido hasta que la baliza se apague",
@@ -2041,7 +2043,7 @@
    },
    {
     "type": "tf",
-    "q": "Debe detenerse por completo cuando una baliza HAWK (cruce peatonal activado de alta intensidad) muestra luces rojas fijas.",
+    "q": "Debe detenerse por completo cuando una baliza peatonal HAWK muestra luces rojas fijas.",
     "answer": true
    }
   ]
@@ -2052,6 +2054,7 @@
   "page": 58,
   "fact": "Un carril central compartido para girar está marcado en ambos lados por una línea amarilla continua y una línea amarilla discontinua. Es solo para girar a la izquierda (o dar vuelta en U donde se permita) desde cualquiera de las dos direcciones. No conduzca por él para viajar.",
   "why": "Los conductores de ambas direcciones usan el mismo carril, así que viajar por él puede causar un choque de frente.",
+  "example": "Va por una calle con un carril central que tiene una línea amarilla continua y una línea amarilla discontinua en cada lado. Quiere girar a la izquierda para entrar al estacionamiento de una tienda más adelante. Pásese al carril central, espere ahí un espacio en el tráfico que viene de frente y luego gire. No maneje por ese carril para avanzar más por la calle, porque los conductores de la otra dirección también lo usan para girar.",
   "weight": 3,
   "items": [
    {
@@ -2132,6 +2135,7 @@
   "fact": "Cuando una línea amarilla continua y una línea amarilla discontinua están una al lado de la otra, solo los conductores del lado de la línea discontinua pueden cruzarla para rebasar.",
   "why": "La línea más cercana a usted le indica si puede rebasar.",
   "hook": "Lea la línea más cercana a usted: discontinua = puede rebasar, continua = no rebase.",
+  "example": "Va detrás de un camión lento en un camino de dos carriles. En el centro hay una línea amarilla continua junto a una línea amarilla discontinua. Si la línea discontinua es la más cercana a su carril, puede rebasar cuando sea seguro. Si la línea continua es la más cercana a usted, quédese detrás del camión.",
   "weight": 3,
   "items": [
    {
@@ -2236,7 +2240,7 @@
   "topic": "signals-markings",
   "page": 59,
   "fact": "Las líneas blancas continuas del borde muestran dónde está la orilla de la carretera. Le ayudan a mantenerse en la carretera de noche o con mal tiempo.",
-  "why": "Cuando es difícil ver, la línea del borde lo guía.",
+  "why": "En la oscuridad, la lluvia o la nieve, es difícil ver el borde del pavimento, y salirse del camino puede causar un choque.",
   "weight": 1,
   "items": [
    {
@@ -2364,7 +2368,7 @@
     "q": "¿Qué significa una X grande con las letras RR (ferrocarril, en inglés \"railroad\") pintada en la calle?",
     "choices": [
      "Hay un cruce de ferrocarril más adelante",
-     "Hay un cruce de calles más adelante",
+     "Hay un cruce escolar más adelante",
      "No entre en este carril",
      "Hay un área de descanso más adelante"
     ],
@@ -2521,8 +2525,8 @@
  {
   "id": "law-interchange-stop-lines",
   "topic": "signals-markings",
-  "page": 64,
-  "fact": "En los intercambios de punto único (SPUI) y de diamante divergente (DDI), deténgase en las líneas de alto y siga las señales, los semáforos, las islas y las marcas en el pavimento. Un DDI pasa el tráfico por poco tiempo al lado izquierdo de la calle.",
+  "page": 65,
+  "fact": "En un intercambio urbano de punto único (single point urban interchange, SPUI) o en un intercambio de diamante divergente (diverging diamond interchange, DDI), deténgase en las líneas de alto y siga las señales, los semáforos, las islas elevadas y las marcas en el pavimento. Un DDI pasa el tráfico por poco tiempo al lado izquierdo de la calle.",
   "why": "Detenerse pasando la línea lo pone en el camino del tráfico que cruza, de los peatones o de los ciclistas.",
   "weight": 1,
   "items": [
@@ -2706,6 +2710,7 @@
   "page": 100,
   "fact": "Una línea discontinua de carril para bicicletas significa que se permite incorporarse. Al girar a la derecha, puede pasarse al carril para bicicletas donde la línea es discontinua, después de revisar si hay ciclistas.",
   "why": "Pasarse evita que los ciclistas se acerquen por su lado derecho mientras usted gira.",
+  "example": "Quiere girar a la derecha en una intersección, y hay un carril para bicicletas a la derecha de su carril. Donde la línea del carril para bicicletas se vuelve discontinua, revise el espejo y mire por encima del hombro para ver si hay ciclistas. Si no hay ningún ciclista, pásese al carril para bicicletas y gire desde ahí. Si ya hay un ciclista ahí, déjelo pasar primero.",
   "weight": 2,
   "items": [
    {
@@ -2885,7 +2890,7 @@
     "type": "scenario",
     "q": "Está saliendo de un estacionamiento techado hacia una calle. Una banqueta cruza la salida. ¿Qué debe hacer?",
     "choices": [
-     "Detenerse antes de la banqueta y ceder el paso a los peatones y al tráfico",
+     "Detenerse antes de la banqueta y luego ceder el paso",
      "Detenerse solo en la orilla de la calle",
      "Salir despacio a la calle sin detenerse",
      "Tocar la bocina y salir"
@@ -2911,7 +2916,7 @@
     "type": "scenario",
     "q": "Está en medio de una intersección cuando oye una sirena y ve luces intermitentes detrás de usted. ¿Qué debe hacer?",
     "choices": [
-     "Terminar de cruzar la intersección y luego orillarse a la derecha y detenerse",
+     "Terminar de cruzar la intersección, y luego orillarse a la derecha y detenerse",
      "Detenerse en medio de la intersección",
      "Orillarse al lado izquierdo y detenerse",
      "Acelerar para mantenerse delante de él"
@@ -2959,7 +2964,7 @@
     "type": "scenario",
     "q": "En un camino de dos carriles, hay un venado parado en su carril. No viene tráfico de frente. ¿Puede usar por un momento el carril izquierdo para rodearlo?",
     "choices": [
-     "Sí, se permite entrar por un momento al carril izquierdo para evitar un animal",
+     "Sí, para evitar al animal",
      "No, siempre debe mantenerse a la derecha",
      "Solo si primero toca la bocina",
      "Solo a velocidades de menos de 15 mph"
@@ -3032,6 +3037,7 @@
   "fact": "Si dos vehículos llegan a un alto de cuatro vías al mismo tiempo, el vehículo de la izquierda cede el paso al vehículo de la derecha.",
   "why": "Una regla simple para el empate evita que los dos conductores avancen a la vez.",
   "hook": "¿Empate? El de la derecha va primero.",
+  "example": "Se detiene en un alto de cuatro vías al mismo tiempo que un carro en la calle que cruza, a su derecha. Como llegaron juntos y usted es el carro de la izquierda, deja que ese carro pase primero. Si usted se hubiera detenido antes, usted pasaría primero.",
   "weight": 3,
   "items": [
    {
@@ -3067,8 +3073,9 @@
   "id": "law-t-intersection",
   "topic": "right-of-way",
   "page": 75,
-  "fact": "En una intersección en T sin control donde su calle termina y debe girar a la izquierda o a la derecha, debe detenerse o ceder el paso a los conductores que vienen de las otras dos direcciones.",
+  "fact": "En una intersección en T sin letreros ni semáforos, donde su calle termina y debe girar a la izquierda o a la derecha, debe detenerse o ceder el paso a los conductores que vienen de las otras dos direcciones.",
   "why": "La calle que sigue continúa, así que su tráfico espera seguir avanzando.",
+  "example": "Su calle termina en una intersección en T sin letreros ni semáforos, así que debe girar a la izquierda o a la derecha. Los carros de la calle que cruza pueden seguir derecho. Usted se detiene o baja la velocidad, deja pasar primero a los carros que vienen tanto de la izquierda como de la derecha, y luego hace su giro.",
   "weight": 3,
   "items": [
    {
@@ -3084,7 +3091,7 @@
    },
    {
     "type": "tf",
-    "q": "En una intersección en T sin control, el conductor de la calle que termina debe ceder el paso al tráfico de ambas direcciones de la calle que sigue.",
+    "q": "En una intersección en T sin letreros ni semáforos, el conductor de la calle que termina debe ceder el paso al tráfico de ambas direcciones de la calle que sigue.",
     "answer": true
    }
   ]
@@ -3136,7 +3143,7 @@
    },
    {
     "type": "tf",
-    "q": "En una intersección sin control, cuando dos autos llegan al mismo tiempo, el auto de la izquierda va primero.",
+    "q": "En una intersección sin letreros ni semáforos, cuando dos autos llegan al mismo tiempo, el auto de la izquierda va primero.",
     "answer": false
    }
   ]
@@ -3255,7 +3262,7 @@
   "topic": "right-of-way",
   "page": 78,
   "fact": "No entre en una intersección mientras un cortejo fúnebre la está cruzando, aunque su luz esté en verde, a menos que pueda hacerlo sin cruzar su camino.",
-  "why": "El cortejo tiene permitido mantenerse unido al cruzar la intersección.",
+  "why": "El cortejo sigue avanzando por la intersección como un solo grupo, incluso después de que cambia la luz, así que cruzarse en su camino podría causar un choque.",
   "weight": 2,
   "items": [
    {
@@ -3280,8 +3287,9 @@
   "id": "drv-move-over-lane",
   "topic": "right-of-way",
   "page": 95,
-  "fact": "En una carretera con dos o más carriles en su dirección, también cámbiese a un carril que no esté junto al vehículo de emergencia detenido, en cuanto sea seguro.",
+  "fact": "Cuando pase junto a un vehículo de emergencia detenido con luces intermitentes en una carretera con dos o más carriles en su dirección, también debe cambiarse a un carril que no esté junto a él, en cuanto sea seguro.",
   "why": "Un carril vacío deja un espacio de protección entre su auto y los trabajadores.",
+  "example": "Va por el carril derecho de una carretera con dos carriles en su dirección. Una patrulla de policía está detenida en el acotamiento derecho con las luces intermitentes encendidas. Baja la velocidad y, si es seguro, se cambia al carril izquierdo para que quede un carril vacío entre usted y la patrulla.",
   "weight": 3,
   "items": [
    {
@@ -3333,7 +3341,7 @@
   "topic": "right-of-way",
   "page": 96,
   "fact": "Si un peatón todavía está en el cruce peatonal cuando su luz cambia a verde, espere a que termine de cruzar antes de avanzar.",
-  "why": "Un peatón que ya está en el cruce peatonal necesita tiempo para cruzar con seguridad.",
+  "why": "Una persona que ya empezó a cruzar no puede quitarse rápido de su camino, y una luz verde nunca hace que sea seguro manejar hacia alguien.",
   "weight": 2,
   "items": [
    {
@@ -3396,7 +3404,7 @@
   "topic": "right-of-way",
   "page": 96,
   "fact": "Los conductores deben ceder el paso a los peatones en un cruce peatonal marcado o no marcado en una intersección, y al entrar a una calle desde un callejón o una entrada de cochera.",
-  "why": "Los peatones no tienen protección y tienen derecho a cruzar en los cruces peatonales y las banquetas.",
+  "why": "Las personas que caminan no tienen protección en un choque, y los conductores que salen de un callejón o de una entrada de cochera muchas veces no las ven hasta muy tarde.",
   "weight": 3,
   "items": [
    {
@@ -3404,9 +3412,9 @@
     "q": "¿Cuándo debe un conductor ceder el paso a un peatón?",
     "choices": [
      "Cuando el peatón está en un cruce peatonal en una intersección",
-     "Solo cuando hay un cruce peatonal pintado",
-     "Solo cuando hay un policía presente",
-     "Solo con luz roja"
+     "Solo cuando el cruce peatonal tiene líneas pintadas",
+     "Solo cuando un policía está dirigiendo el tráfico",
+     "Solo cuando su propia luz está en rojo"
     ],
     "answer": 0
    },
@@ -3446,6 +3454,7 @@
   "fact": "Una glorieta es de un solo sentido. Siempre gire a la derecha para entrar y circule en sentido contrario a las manecillas del reloj, incluso para ir a la izquierda o dar vuelta en U.",
   "why": "Si todos se mueven en la misma dirección, se eliminan los choques de frente y los choques al girar a la izquierda.",
   "hook": "Glorieta: entre a la derecha, dé la vuelta, salga a la derecha.",
+  "example": "Llega a una glorieta y quiere ir a la izquierda. Baja la velocidad, deja pasar a los carros que ya están en el círculo y vienen de su izquierda, y luego gira a la derecha para entrar. Circula en sentido contrario a las manecillas del reloj y pone la direccional derecha al acercarse a su salida.",
   "weight": 3,
   "items": [
    {
@@ -3509,6 +3518,7 @@
   "page": 63,
   "fact": "En una intersección tipo \"thru-turn\", no se permiten los giros directos a la izquierda. Siga derecho, dé vuelta en U en el siguiente semáforo, regrese y gire a la derecha.",
   "why": "Eliminar los giros directos a la izquierda mantiene el tráfico en movimiento y evita choques al girar a la izquierda.",
+  "example": "Quiere girar a la izquierda en una intersección tipo \"thru-turn\", pero ahí no se permiten los giros a la izquierda. Sigue derecho por la intersección y sigue las marcas del carril para dar vuelta en U en el siguiente semáforo. Luego regresa hacia la intersección y gira a la derecha en la calle que quería.",
   "weight": 1,
   "items": [
    {
@@ -3516,9 +3526,9 @@
     "q": "Quiere ir a la izquierda en una intersección tipo \"thru-turn\". ¿Qué debe hacer?",
     "choices": [
      "Seguir derecho, dar vuelta en U en el siguiente semáforo, regresar y girar a la derecha",
-     "Girar a la izquierda desde el carril derecho",
-     "Girar a la izquierda cuando la luz esté en amarillo",
-     "Girar a la derecha y luego dar vuelta en U en el camellón"
+     "Girar a la izquierda desde el carril izquierdo cuando la flecha se pone verde",
+     "Esperar dentro de la intersección y girar a la izquierda con luz amarilla",
+     "Girar a la derecha y luego dar vuelta en U en el camellón de inmediato"
     ],
     "answer": 0
    },
@@ -3533,7 +3543,7 @@
   "id": "law-basic-rule-too-slow",
   "topic": "speed-turns",
   "page": 68,
-  "fact": "Conducir demasiado despacio para las condiciones y bloquear el flujo seguro del tráfico también viola la regla básica, aunque vaya por debajo del límite de velocidad.",
+  "fact": "Conducir demasiado despacio para las condiciones y bloquear el flujo seguro del tráfico también viola la regla básica de velocidad de Idaho (conducir siempre a una velocidad segura para las condiciones), aunque vaya por debajo del límite de velocidad.",
   "why": "Los conductores muy lentos hacen que otros frenen de repente o rebasen en lugares peligrosos.",
   "weight": 3,
   "items": [
@@ -3559,8 +3569,9 @@
   "id": "law-basic-speed-rule",
   "topic": "speed-turns",
   "page": 68,
-  "fact": "La regla básica de Idaho dice que siempre debe conducir a una velocidad razonable y prudente para las condiciones, como el clima, la superficie de la carretera, el tráfico y la visibilidad.",
+  "fact": "La regla básica de Idaho dice que siempre debe conducir a una velocidad razonable y prudente (sensata y segura) para las condiciones, como el clima, la superficie de la carretera, el tráfico y la visibilidad.",
   "why": "El límite de velocidad es lo máximo que puede ir en buenas condiciones; el hielo, la lluvia o el tráfico pesado pueden hacer que esa velocidad sea peligrosa.",
+  "example": "El límite de velocidad indicado es lo máximo que puede ir, pero esta noche la carretera tiene hielo y la nieve hace difícil ver. Según la regla básica, debe bajar a una velocidad segura para estas condiciones, aunque esté por debajo del límite. Manejar al límite aquí podría ser ilegal.",
   "weight": 3,
   "items": [
    {
@@ -3752,7 +3763,7 @@
     "type": "mc",
     "q": "¿Qué puede pasar si excede el límite de velocidad en una zona de obras señalizada?",
     "choices": [
-     "Puede recibir una sanción fija aumentada",
+     "Puede recibir una multa fija más alta",
      "Nada adicional si no hay trabajadores presentes",
      "Solo una advertencia",
      "Le remolcan el auto"
@@ -3841,6 +3852,7 @@
   "page": 72,
   "fact": "Si piensa girar justo después de una intersección, ponga la direccional solo después de haber pasado la intersección.",
   "why": "Ponerla antes podría hacer que los conductores piensen que va a girar en la intersección misma.",
+  "example": "Quiere girar a la derecha para entrar a la entrada de una tienda que está justo después de una calle que cruza. Si pone la direccional antes de esa calle, los conductores pueden pensar que va a girar en esa calle. Por eso, primero pasa la intersección y luego pone la direccional.",
   "weight": 2,
   "items": [
    {
@@ -3859,9 +3871,9 @@
     "q": "¿Por qué esperar para poner la direccional cuando va a girar justo después de una intersección?",
     "choices": [
      "Para que otros conductores no piensen que va a girar en la intersección",
-     "Para ahorrar batería",
-     "Porque no se necesitan direccionales para las entradas de cochera",
-     "Para poder girar más rápido"
+     "Para ahorrar la batería de su carro",
+     "Porque las entradas de cochera no necesitan direccional para nada",
+     "Para que los conductores de atrás tengan la oportunidad de rebasarlo primero"
     ],
     "answer": 0
    }
@@ -3899,6 +3911,7 @@
   "page": 73,
   "fact": "Cuando dos carriles pueden girar a la izquierda, el carril izquierdo debe girar a la izquierda, mientras que el carril derecho puede girar a la izquierda o seguir derecho. Manténgase en su propio carril hasta terminar el giro.",
   "why": "Mantenerse en su carril durante el giro evita que choque con un auto que gira a su lado.",
+  "example": "En un semáforo, el carril izquierdo de su lado solo puede girar a la izquierda, y el carril de al lado puede girar a la izquierda o seguir derecho. Usted está en ese carril derecho y gira a la izquierda mientras otro carro gira a la izquierda a su lado. Se mantiene en su propio carril durante todo el giro para no desviarse hacia ese carro.",
   "weight": 2,
   "items": [
    {
@@ -3914,7 +3927,7 @@
    },
    {
     "type": "tf",
-    "q": "Los vehículos del carril izquierdo pueden seguir derecho en lugar de girar a la izquierda.",
+    "q": "Cuando dos carriles pueden girar a la izquierda, los vehículos del carril izquierdo pueden seguir derecho en lugar de girar a la izquierda.",
     "answer": false
    }
   ]
@@ -3925,6 +3938,7 @@
   "page": 73,
   "fact": "Al girar a la izquierda desde una calle de un solo sentido hacia otra calle de un solo sentido, puede girar con luz roja fija después de detenerse y ceder el paso al tráfico que cruza, a menos que una señal lo prohíba.",
   "why": "Igual que un giro a la derecha con luz roja, este giro no cruza ningún carril de tráfico que viene de frente.",
+  "example": "Está detenido en una luz roja en una calle de un solo sentido. La calle que cruza también es de un solo sentido, y su tráfico va hacia su izquierda. Después de detenerse por completo, deja pasar primero al tráfico que cruza, y luego puede girar a la izquierda, a menos que una señal lo prohíba.",
   "weight": 3,
   "items": [
    {
@@ -4052,13 +4066,13 @@
     "type": "num",
     "q": "Una vuelta en U es ilegal donde los conductores que se acercan no pueden ver su vehículo a una distancia de ¿cuántos pies?",
     "answer": 500,
-    "unit": "pies"
+    "unit": "feet"
    },
    {
     "type": "scenario",
     "q": "Se pasó de su giro y está cerca de la cima de una loma. Los conductores que vienen por la loma solo podrían verlo a unos 200 pies. ¿Puede dar vuelta en U aquí?",
     "choices": [
-     "No, los conductores deben poder verlo a 500 pies",
+     "No, aquí no se permite",
      "Sí, si primero pone la direccional",
      "Sí, si en este momento no se ven autos",
      "Sí, si da la vuelta rápido"
@@ -4101,7 +4115,7 @@
  {
   "id": "law-u-turn-where-not",
   "topic": "speed-turns",
-  "page": 74,
+  "page": 73,
   "fact": "No se permiten las vueltas en U donde hay señales de Prohibido dar vuelta en U, en una zona de no rebasar ni donde hay líneas continuas pintadas en el centro de la calle. Deténgase y ceda el paso a todo el tráfico antes de terminar una vuelta en U.",
   "why": "Estos son lugares donde un auto que da la vuelta atravesando la calle es especialmente peligroso.",
   "weight": 2,
@@ -4138,9 +4152,9 @@
     "q": "Se detiene detrás de un auto en una luz roja. ¿Cuánto espacio debe dejar?",
     "choices": [
      "Suficiente para ver sus llantas traseras tocando el suelo",
-     "Aproximadamente un pie",
-     "Suficiente para ver solo su techo",
-     "Por lo menos 100 pies"
+     "Aproximadamente un pie, casi defensa con defensa",
+     "Lo suficiente para ver solo la parte de arriba de su techo",
+     "Por lo menos 100 pies detrás de él"
     ],
     "answer": 0
    },
@@ -4169,7 +4183,7 @@
     "type": "scenario",
     "q": "Va detrás de un tractor lento en un camino de dos carriles, subiendo una loma. No puede ver más allá de la cima. ¿Qué debe hacer?",
     "choices": [
-     "Esperar hasta poder ver lo suficientemente lejos para rebasar con seguridad",
+     "Esperar hasta poder ver lejos hacia adelante",
      "Rebasar rápido antes de la cima",
      "Rebasar si el tractor le hace señas para pasar",
      "Rebasar por el acotamiento derecho"
@@ -4196,13 +4210,13 @@
     "type": "num",
     "q": "¿A menos de cuántos pies de una intersección está prohibido rebasar (a menos que las señales o marcas lo permitan)?",
     "answer": 100,
-    "unit": "pies"
+    "unit": "feet"
    },
    {
     "type": "scenario",
     "q": "En un camino de dos carriles, está a 80 pies de un cruce de ferrocarril detrás de un auto lento. ¿Puede rebasar?",
     "choices": [
-     "No, no se permite rebasar a menos de 100 pies de un cruce",
+     "No, está demasiado cerca de las vías",
      "Sí, si no viene un tren",
      "Sí, si termina antes de las vías",
      "Sí, si primero toca la bocina"
@@ -4254,7 +4268,7 @@
     "type": "scenario",
     "q": "En un camino de dos carriles, está a 60 pies de un puente angosto y una loma le bloquea la vista del otro lado. Hay un auto lento adelante. ¿Puede rebasar?",
     "choices": [
-     "No, espere hasta pasar el puente y poder ver",
+     "No, está demasiado cerca del puente",
      "Sí, si termina antes del puente",
      "Sí, si primero toca la bocina",
      "Sí, si el auto lento se hace a la derecha"
@@ -4265,7 +4279,7 @@
     "type": "num",
     "q": "¿A menos de cuántos pies de un puente o túnel con la vista bloqueada está prohibido rebasar?",
     "answer": 100,
-    "unit": "pies"
+    "unit": "feet"
    },
    {
     "type": "tf",
@@ -4332,6 +4346,7 @@
   "page": 77,
   "fact": "Solo puede rebasar por la derecha cuando el vehículo de adelante, en un camino de dos carriles, está indicando un giro a la izquierda, o en una calle de un solo sentido o de varios carriles con dos o más carriles en su dirección. Nunca se salga de la carretera para hacerlo.",
   "why": "Los conductores no esperan que los rebasen por la derecha, así que solo se permite donde hay un carril adecuado para ello.",
+  "example": "Va por un camino de dos carriles, y el carro de adelante está indicando un giro a la izquierda. Si hay suficiente camino pavimentado a su derecha, puede rebasarlo por la derecha con cuidado. No puede meterse al acotamiento ni salirse del camino para hacerlo.",
   "weight": 3,
   "items": [
    {
@@ -4339,9 +4354,9 @@
     "q": "En un camino de dos carriles y doble sentido, el auto de adelante está detenido indicando un giro a la izquierda. Hay pavimento del ancho de un carril completo a su derecha. ¿Puede rebasar por la derecha?",
     "choices": [
      "Sí, si puede hacerlo con seguridad sin salirse de la carretera",
-     "No, nunca se permite rebasar por la derecha",
-     "Solo usando el acotamiento",
-     "Solo si primero toca la bocina"
+     "No, aquí nunca se permite rebasar por la derecha",
+     "Solo si se mete al acotamiento derecho",
+     "Solo si primero toca la bocina y espera un momento"
     ],
     "answer": 0
    },
@@ -4350,9 +4365,9 @@
     "q": "¿Cuándo se permite rebasar por la derecha?",
     "choices": [
      "En una calle con dos o más carriles en su dirección",
-     "Siempre que el auto de adelante vaya lento",
-     "En cualquier camino de dos carriles",
-     "Cuando el acotamiento derecho está pavimentado"
+     "Siempre que el auto de adelante vaya por debajo del límite",
+     "En cualquier camino de dos carriles cuando hay poco tráfico",
+     "Cuando el acotamiento derecho está pavimentado y es ancho"
     ],
     "answer": 0
    }
@@ -4446,13 +4461,14 @@
   "id": "law-passing-speed-limits",
   "topic": "passing-following",
   "page": 77,
-  "fact": "La excepción de 15 mph para rebasar solo se aplica donde el límite indicado es de 55 mph o más, nunca en zonas de obras, y debe regresar a su carril y bajar al límite en cuanto pueda.",
+  "fact": "Puede ir hasta 15 mph por encima del límite mientras rebasa solo donde el límite indicado es de 55 mph o más, y nunca en zonas de obras. Después de rebasar, regrese al carril derecho y baje al límite en cuanto pueda.",
   "why": "Las calles de menor velocidad y las zonas de obras tienen más peligros cerca de la carretera, así que ahí no se permite velocidad adicional.",
+  "example": "Maneja un carro en una carretera de dos carriles con límite de 55 mph, detrás de un camión que va por debajo del límite. Mientras lo rebasa, puede ir hasta 15 mph por encima del límite, y luego debe regresar al carril derecho y bajar al límite en cuanto pueda. En una zona de obras, no puede acelerar por encima del límite para rebasar.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "La excepción de velocidad para rebasar solo se aplica donde el límite de velocidad indicado es de por lo menos ¿cuántas mph?",
+    "q": "La regla que le permite ir por encima del límite mientras rebasa solo se aplica donde el límite de velocidad indicado es de por lo menos ¿cuántas mph?",
     "answer": 55,
     "unit": "mph"
    },
@@ -4469,7 +4485,7 @@
    },
    {
     "type": "tf",
-    "q": "La excepción de velocidad para rebasar también se aplica en las zonas de obras.",
+    "q": "En una zona de obras, puede ir por encima del límite de velocidad mientras rebasa a un vehículo lento.",
     "answer": false
    }
   ]
@@ -4486,8 +4502,8 @@
     "type": "scenario",
     "q": "Un auto empieza a rebasarlo en un camino de dos carriles. ¿Qué debe hacer?",
     "choices": [
-     "Mantener una velocidad constante o disminuirla y moverse a la derecha de su carril",
-     "Acelerar para que no pueda rebasar",
+     "Mantener su velocidad o disminuirla, y moverse a la derecha de su carril",
+     "Acelerar para que no pueda rebasarlo",
      "Moverse al lado izquierdo de su carril",
      "Frenar fuerte de inmediato"
     ],
@@ -4794,6 +4810,7 @@
   "fact": "Al estacionarse mirando cuesta arriba junto a una banqueta, gire bien las llantas delanteras lejos de la banqueta, de modo que la llanta quede apoyada contra ella.",
   "why": "Si el auto rueda hacia atrás, la llanta se atora contra la banqueta.",
   "hook": "Cuesta arriba con banqueta: arriba y lejos.",
+  "example": "Se estaciona mirando cuesta arriba junto a una banqueta. Gira bien las llantas delanteras lejos de la banqueta, de modo que la llanta delantera quede apoyada contra ella. Si el carro empieza a rodar hacia atrás, la banqueta detiene la llanta y el carro no rueda hacia el tráfico.",
   "weight": 3,
   "items": [
    {
@@ -5083,7 +5100,7 @@
   "id": "drv-unattended-traveled",
   "topic": "parking",
   "page": 93,
-  "fact": "Un vehículo dejado sin nadie a cargo en la parte de circulación de una carretera puede ser remolcado de inmediato, en cualquier momento.",
+  "fact": "Un vehículo dejado sin nadie a cargo en un carril de tráfico de una carretera (la parte por donde pasan los carros) puede ser remolcado de inmediato, en cualquier momento.",
   "why": "Un auto detenido en un carril de circulación es un peligro grave para los demás conductores.",
   "weight": 2,
   "items": [
@@ -5094,7 +5111,7 @@
    },
    {
     "type": "mc",
-    "q": "¿Qué le puede pasar a un auto dejado sin nadie a cargo en la parte de circulación de una carretera?",
+    "q": "¿Qué le puede pasar a un auto dejado sin nadie a cargo en un carril de tráfico de una carretera?",
     "choices": [
      "Puede ser remolcado de inmediato",
      "Puede quedarse 24 horas",
@@ -5219,7 +5236,7 @@
   "id": "law-freeway-travel-plan",
   "topic": "freeway",
   "page": 83,
-  "fact": "Antes de un viaje largo por autopista, haga un plan de viaje con paradas para comer, descansar y cargar combustible, y dígale a alguien su ruta y a qué hora espera llegar. En viajes cortos, conozca su ruta y los números de sus entradas y salidas.",
+  "fact": "Antes de un viaje largo por autopista, haga un plan de viaje con paradas para comer, descansar y cargar combustible, y dígale a alguien su ruta, cuánto tiempo va a estar fuera y cuándo esperar su regreso. En viajes cortos, conozca su ruta y los números de sus entradas y salidas.",
   "why": "Planear con anticipación evita decisiones de último segundo y ayuda a que lo encuentren si algo sale mal.",
   "weight": 1,
   "items": [
@@ -5247,6 +5264,7 @@
   "page": 84,
   "fact": "Al entrar a una autopista, ponga la direccional, mire por encima de su hombro izquierdo para buscar un espacio, y ceda el paso al tráfico que ya está en la autopista.",
   "why": "El tráfico de la autopista va rápido y tiene el derecho de paso; usted debe acomodarse en él.",
+  "example": "Baja por la rampa hacia la autopista y pone la direccional. Mira por encima de su hombro izquierdo para buscar un espacio en el tráfico lo bastante grande para su carro, y acelera hasta igualar la velocidad del tráfico de la autopista. Los carros que ya están en la autopista van primero, así que usted se acomoda en un espacio en vez de obligarlos a moverse por usted.",
   "weight": 3,
   "items": [
    {
@@ -5413,8 +5431,9 @@
   "id": "law-freeway-deceleration-lane",
   "topic": "freeway",
   "page": 86,
-  "fact": "Al salir de una autopista, ponga la direccional y pásese al carril de desaceleración, y luego disminuya la velocidad ahí, no en los carriles principales de la autopista. Si hay una velocidad de salida indicada, ajuste su velocidad a ella en la rampa.",
+  "fact": "Al salir de una autopista, ponga la direccional y pásese al carril de desaceleración (el carril junto a la salida donde se baja la velocidad), y luego disminuya la velocidad ahí, no en los carriles principales de la autopista. Si hay una velocidad de salida indicada, ajuste su velocidad a ella en la rampa.",
   "why": "Disminuir la velocidad en el carril de desaceleración le permite frenar sin hacer más lento al tráfico detrás de usted.",
+  "example": "Su salida se acerca a la derecha. Pone la direccional y se pasa al carril de desaceleración antes de frenar, para que los carros detrás de usted en la autopista no tengan que bajar la velocidad. Si una señal en la rampa muestra una velocidad de salida, baja a esa velocidad.",
   "weight": 2,
   "items": [
    {
@@ -5964,7 +5983,7 @@
   "id": "drv-ipde",
   "topic": "safe-driving",
   "page": 90,
-  "fact": "Pasos del manejo defensivo: identificar los peligros, predecir lo que podría pasar (suponga lo peor), decidir con anticipación qué hacer y ejecutar con suavidad.",
+  "fact": "Pasos del manejo defensivo: identificar los peligros, predecir lo que podría pasar (suponga lo peor), decidir con anticipación qué hacer y ejecutar (llevar a cabo) su decisión con suavidad.",
   "why": "Tomar una decisión a tiempo es más seguro que reaccionar en el último segundo.",
   "hook": "Identificar, Predecir, Decidir, Ejecutar.",
   "weight": 2,
@@ -6003,7 +6022,7 @@
   "topic": "safe-driving",
   "page": 90,
   "fact": "Revise el tráfico detrás de usted varias veces por minuto. La mayoría de los choques por detrás los causan vehículos que siguen demasiado cerca.",
-  "why": "Saber qué hay detrás de usted le dice si alguien lo sigue muy pegado o se acerca demasiado rápido.",
+  "why": "Saber qué hay detrás de usted le dice si alguien lo sigue muy de cerca o se acerca demasiado rápido.",
   "weight": 2,
   "items": [
    {
@@ -6042,10 +6061,10 @@
     "type": "scenario",
     "q": "Se da cuenta de que lleva un rato manejando justo detrás y al lado de otro carro. ¿Qué debe hacer?",
     "choices": [
-     "Acelerar o quedarse atrás para no estar en su punto ciego",
-     "Quedarse ahí porque es un lugar seguro",
+     "Acelerar o bajar la velocidad para salir de su punto ciego",
+     "Quedarse ahí porque es un lugar seguro para manejar",
      "Tocar el claxon para que el conductor sepa que está ahí",
-     "Acercarse más al carro"
+     "Acercarse más al costado del carro"
     ],
     "answer": 0
    },
@@ -6144,7 +6163,7 @@
   "id": "drv-texting-illegal",
   "topic": "safe-driving",
   "page": 92,
-  "fact": "En Idaho, leer, escribir o enviar mensajes de texto mientras maneja es ilegal y es una infracción. Esta ley no cubre el uso de manos libres sin usar ninguna de las manos.",
+  "fact": "En Idaho, leer, escribir o enviar mensajes de texto mientras maneja es ilegal. Es una infracción (una falta que se castiga con una multa). Esta ley no cubre los dispositivos de manos libres que usa sin ninguna de las manos.",
   "why": "Enviar mensajes de texto quita sus ojos, sus manos y su mente del manejo.",
   "weight": 3,
   "items": [
@@ -6181,8 +6200,8 @@
   "id": "drv-texting-penalty",
   "topic": "safe-driving",
   "page": 92,
-  "fact": "Una condena por enviar mensajes de texto al manejar trae una multa, pero no puntos en su historial de manejo. Cuenta como infracción de tránsito en movimiento solo cuando se maneja un vehículo comercial.",
-  "why": "La ley pone una multa como castigo para los conductores normales, con un trato más estricto para los conductores comerciales.",
+  "fact": "Si lo condenan (lo declaran culpable) por enviar mensajes de texto al manejar, paga una multa, pero no se agregan puntos a su historial de manejo. Cuenta como infracción de tránsito en movimiento solo si manejaba un vehículo comercial.",
+  "why": "Los conductores comerciales manejan vehículos grandes como trabajo, así que la ley castiga con más severidad que ellos envíen mensajes de texto al manejar.",
   "weight": 2,
   "items": [
    {
@@ -6233,7 +6252,7 @@
   "id": "drv-highway-hypnosis",
   "topic": "safe-driving",
   "page": 93,
-  "fact": "La hipnosis de carretera es el sueño causado por la monotonía y el sonido constante del viento y las llantas. Evítela moviendo la vista seguido hacia objetos cercanos y lejanos, a la izquierda y a la derecha.",
+  "fact": "La hipnosis de carretera es el sueño causado por un viaje largo y aburrido y el sonido constante del viento y las llantas. Evítela moviendo la vista seguido hacia objetos cercanos y lejanos, a la izquierda y a la derecha.",
   "why": "Mover los ojos mantiene su cerebro activo en tramos largos y aburridos.",
   "weight": 2,
   "items": [
@@ -6241,7 +6260,7 @@
     "type": "mc",
     "q": "¿Qué es la hipnosis de carretera?",
     "choices": [
-     "Sueño causado por la monotonía y el ruido del camino",
+     "Sueño causado por un viaje largo y aburrido",
      "Mareo por manejar en curvas",
      "Ceguera por el reflejo de las luces delanteras",
      "Enojo con los conductores lentos"
@@ -6265,16 +6284,16 @@
   "id": "drv-texting-six-times",
   "topic": "safe-driving",
   "page": 93,
-  "fact": "Enviar mensajes de texto al manejar es seis veces más peligroso que manejar bajo los efectos del alcohol o drogas. Si tiene que usar el teléfono, primero estaciónese en un lugar seguro.",
+  "fact": "Enviar mensajes de texto al manejar es seis veces más peligroso que manejar con las capacidades afectadas (bajo los efectos del alcohol o drogas). Si tiene que usar el teléfono, primero estaciónese en un lugar seguro.",
   "why": "Los mensajes de texto quitan sus ojos y su atención del camino por mucho tiempo.",
   "hook": "Texto = 6 veces peor que manejar intoxicado.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "¿Cuántas veces más peligroso es enviar mensajes de texto al manejar que manejar bajo los efectos del alcohol o drogas?",
+    "q": "¿Cuántas veces más peligroso es enviar mensajes de texto al manejar que manejar con las capacidades afectadas (bajo los efectos del alcohol o drogas)?",
     "answer": 6,
-    "unit": "veces"
+    "unit": "times"
    },
    {
     "type": "scenario",
@@ -6371,7 +6390,7 @@
   "id": "alc-ticket-signature",
   "topic": "safe-driving",
   "page": 133,
-  "fact": "Firmar una multa de tránsito no es admitir que es culpable, pero negarse a firmarla puede llevar a su arresto. Puede impugnar la multa en la corte.",
+  "fact": "Firmar una multa de tránsito no significa que admite que es culpable, pero negarse a firmarla puede llevar a su arresto. Si no está de acuerdo con la multa, puede explicar su versión en la corte.",
   "why": "Su firma solo muestra que recibió la multa; la corte decide si es culpable.",
   "weight": 2,
   "items": [
@@ -6523,6 +6542,7 @@
   "page": 70,
   "fact": "No tiene que detenerse por un autobús escolar que va en dirección contraria en una carretera de cuatro carriles o más, con dos carriles en cada dirección.",
   "why": "En un camino con dos carriles en cada dirección, usted está lejos del lado del camino donde los niños suben y bajan del autobús.",
+  "example": "Va por una carretera con dos carriles en su dirección y dos carriles en la dirección contraria. Un autobús escolar del otro lado se detiene con las luces rojas intermitentes encendidas. No tiene que detenerse, pero maneje con cuidado. Si el autobús estuviera de su lado de la carretera, tendría que detenerse.",
   "weight": 3,
   "items": [
    {
@@ -6540,7 +6560,7 @@
     "type": "num",
     "q": "¿En una carretera de al menos cuántos carriles en total los conductores que van en dirección contraria no tienen que detenerse por un autobús escolar?",
     "answer": 4,
-    "unit": "carriles"
+    "unit": "lanes"
    },
    {
     "type": "tf",
@@ -6555,6 +6575,7 @@
   "page": 70,
   "fact": "Debe detenerse por un autobús escolar que tenga las luces rojas intermitentes encendidas o el brazo de alto extendido. Quédese detenido hasta que las luces se apaguen y todos los niños estén lejos del camino y del autobús. Nunca rebase un autobús escolar detenido que está subiendo o bajando niños.",
   "why": "Los niños pueden cruzar corriendo sin mirar, muchas veces por enfrente del autobús, donde es difícil verlos.",
+  "example": "Va por un camino de dos carriles, y un autobús escolar que viene hacia usted se detiene con las luces rojas intermitentes encendidas. Aunque el autobús está en el otro carril, usted también debe detenerse. Quédese detenido hasta que las luces rojas dejen de parpadear y todos los niños estén fuera del camino y lejos del autobús.",
   "weight": 3,
   "items": [
    {
@@ -6683,9 +6704,9 @@
     "type": "scenario",
     "q": "Un ciclista va por el centro de un carril angosto donde un carro no puede rebasarlo con seguridad. ¿Qué debe hacer?",
     "choices": [
-     "Quedarse atrás con paciencia y no seguirlo demasiado cerca",
-     "Tocar el claxon para que se mueva a la derecha",
-     "Pasar apretado junto a él",
+     "Quedarse atrás y no seguirlo demasiado cerca",
+     "Tocar el claxon para que el ciclista se mueva a la derecha",
+     "Pasar apretado en el mismo carril",
      "Seguirlo muy pegado para mostrar que quiere rebasar"
     ],
     "answer": 0
@@ -6699,13 +6720,14 @@
   "fact": "Al rebasar a un ciclista, cámbiese al carril izquierdo si puede. Si no puede, deje por lo menos 3 pies de espacio. A mayor velocidad, se necesita más espacio.",
   "why": "Los ciclistas pueden necesitar espacio para esquivar basura o desviarse, y tienen poca protección.",
   "hook": "Mínimo 3 pies para una bicicleta.",
+  "example": "Va por un camino con dos carriles en su dirección, y un ciclista va cerca del borde derecho. Si puede, cámbiese al carril izquierdo para rebasar. Si no puede cambiar de carril, deje por lo menos 3 pies entre su carro y el ciclista, aunque tenga que esperar un espacio en el tráfico. A mayor velocidad, deje todavía más espacio.",
   "weight": 3,
   "items": [
    {
     "type": "num",
     "q": "¿Cuál es el espacio mínimo que debe dejar al rebasar a un ciclista?",
     "answer": 3,
-    "unit": "pies"
+    "unit": "feet"
    },
    {
     "type": "mc",
@@ -6742,10 +6764,10 @@
     "type": "mc",
     "q": "¿Qué debe hacer un ciclista en Idaho antes de seguir derecho con un semáforo en rojo?",
     "choices": [
-     "Detenerse y ceder el paso a los vehículos en la intersección o cerca de ella",
+     "Detenerse y luego ceder el paso a los vehículos cercanos",
      "Esperar a que la luz cambie a verde",
      "Solo bajar la velocidad; no necesita detenerse",
-     "Tocar un timbre"
+     "Tocar un timbre y seguir"
     ],
     "answer": 0
    }
@@ -6782,7 +6804,8 @@
   "topic": "sharing",
   "page": 98,
   "fact": "En Idaho, los ciclistas no tienen que detenerse por completo en los letreros de alto, pero deben ceder el paso a los vehículos que están en la intersección o cerca de ella y luego avanzar con precaución.",
-  "why": "La ley de Idaho trata el letrero de alto como un \"ceda el paso\" para los ciclistas, así que no se sorprenda si un ciclista pasa sin detenerse por completo.",
+  "why": "La ley de Idaho trata el letrero de alto como un letrero de \"ceda el paso\" para los ciclistas, así que no se sorprenda si un ciclista pasa sin detenerse por completo.",
+  "example": "Va manejando hacia una intersección con letreros de alto, todavía lejos. Un ciclista llega a un letrero de alto ahí, baja la velocidad, ve que no hay vehículos en la intersección ni cerca de ella, y pasa sin detenerse por completo. En Idaho esto es legal. Si usted ya estuviera en la intersección, el ciclista tendría que cederle el paso primero.",
   "weight": 2,
   "items": [
    {
@@ -6794,7 +6817,7 @@
     "type": "mc",
     "q": "¿Qué debe hacer un ciclista en Idaho en un letrero de alto?",
     "choices": [
-     "Ceder el paso a los vehículos en la intersección o cerca de ella y luego avanzar con precaución",
+     "Ceder el paso a los vehículos cercanos y luego avanzar con precaución",
      "Detenerse por completo y esperar 3 segundos",
      "Bajarse y cruzar caminando con la bicicleta",
      "Nada; las bicicletas pueden ignorar los letreros de alto"
@@ -6815,10 +6838,10 @@
     "type": "scenario",
     "q": "Va detrás de una persona a caballo en un camino rural. ¿Qué debe hacer?",
     "choices": [
-     "Bajar la velocidad y rebasar dejando mucho espacio, sin tocar el claxon",
+     "Bajar la velocidad, dejar mucho espacio y no tocar el claxon",
      "Tocar el claxon para que el jinete sepa que está ahí",
-     "Rebasar rápido para pasar",
-     "Hacer cambio de luces y rebasar muy cerca"
+     "Rebasar rápido para estar menos tiempo cerca del caballo",
+     "Hacer cambio de luces y rebasar muy cerca del caballo"
     ],
     "answer": 0
    },
@@ -6861,16 +6884,17 @@
   "page": 99,
   "fact": "Si un ciclista va delante de usted cuando piensa dar vuelta a la derecha, baje la velocidad y quédese detrás de él hasta que pase su vuelta. No trate de ganarle.",
   "why": "Dar vuelta cruzándose frente a un ciclista causa un choque de \"gancho derecho\" (right hook).",
+  "example": "Piensa dar vuelta a la derecha en la próxima esquina. Un ciclista va delante de usted por el lado derecho del camino, en la misma dirección. No acelere para rebasar al ciclista y dar vuelta frente a él. Baje la velocidad, quédese detrás y dé vuelta después de que el ciclista haya pasado la esquina.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
     "q": "Piensa dar vuelta a la derecha en la próxima esquina, y un ciclista va justo delante de usted a la derecha. ¿Qué debe hacer?",
     "choices": [
-     "Bajar la velocidad y quedarse detrás del ciclista hasta que pase la esquina",
+     "Bajar la velocidad y quedarse detrás del ciclista",
      "Acelerar y dar vuelta frente al ciclista",
-     "Tocar el claxon y dar vuelta",
-     "Dar vuelta rápido mientras el ciclista todavía está a su lado"
+     "Tocar el claxon y dar vuelta antes de que llegue el ciclista",
+     "Dar vuelta mientras el ciclista todavía está a su lado"
     ],
     "answer": 0
    },
@@ -6945,6 +6969,7 @@
   "page": 101,
   "fact": "Después de estacionarse en paralelo, abra la puerta del conductor con la mano más lejana (la mano derecha). Así su cuerpo gira y usted mira el espejo y por encima del hombro para ver si vienen ciclistas.",
   "why": "El manual dice que este hábito ayuda a evitar el tipo de choque más común con ciclistas: una puerta que se abre frente a un ciclista que pasa.",
+  "example": "Se estaciona en paralelo en una calle y quiere bajarse. Abra la puerta del conductor con la mano derecha. Al cruzar el brazo frente a su cuerpo, usted gira hacia el espejo lateral, así que mira hacia atrás por encima del hombro para ver si viene un ciclista antes de que se abra la puerta.",
   "weight": 2,
   "items": [
    {
@@ -7132,7 +7157,7 @@
   "id": "drv-snowplow",
   "topic": "sharing",
   "page": 105,
-  "fact": "Tenga mucho cuidado cerca de las quitanieves. La pala lanza la nieve hacia arriba y fuera del camino, lo que puede crear condiciones como de tormenta de nieve para los conductores que la siguen demasiado cerca.",
+  "fact": "Tenga mucho cuidado cerca de las quitanieves. La pala lanza la nieve hacia arriba y fuera del camino, lo que puede formar una nube espesa de nieve que tapa la vista de los conductores que la siguen demasiado cerca.",
   "why": "Si la sigue de cerca, queda dentro de una nube de nieve donde no puede ver.",
   "weight": 2,
   "items": [
@@ -7194,7 +7219,7 @@
     "type": "scenario",
     "q": "Va detrás de un camión grande y no puede ver el camino delante de él. ¿Qué debe hacer?",
     "choices": [
-     "Quedarse más atrás para ver más del camino",
+     "Dejar más espacio para poder ver hacia adelante",
      "Acercarse para que el camión le corte el viento",
      "Rebasar de inmediato",
      "Manejar por el acotamiento para ver adelante"
@@ -7239,8 +7264,9 @@
   "id": "drv-truck-passing",
   "topic": "sharing",
   "page": 105,
-  "fact": "Al rebasar un vehículo grande, mantenga una velocidad constante. No se regrese delante de él hasta que pueda ver su cabina en el espejo retrovisor.",
+  "fact": "Al rebasar un vehículo grande, mantenga una velocidad constante. No se regrese delante de él hasta que pueda ver su cabina (la parte delantera donde va el conductor) en el espejo retrovisor.",
   "why": "Si se mete demasiado pronto y baja la velocidad, el conductor del camión no tiene tiempo ni espacio para detenerse.",
+  "example": "Está rebasando un camión grande en la carretera. Mantenga una velocidad constante al pasarlo. Antes de regresar al carril del camión, mire por el espejo retrovisor. Cuando pueda ver ahí la parte delantera del camión, regrese a su carril, y no baje la velocidad justo después.",
   "weight": 3,
   "items": [
    {
@@ -7265,13 +7291,13 @@
   "id": "drv-hazmat-rr",
   "topic": "sharing",
   "page": 106,
-  "fact": "Los vehículos que llevan materiales peligrosos tienen placas de aviso (placards) y deben detenerse en todos los cruces de ferrocarril. Esté listo para detenerse si va detrás de uno.",
+  "fact": "Los vehículos que llevan materiales peligrosos tienen placas de aviso (placards), que son letreros que muestran lo que llevan. Estos vehículos deben detenerse en todos los cruces de ferrocarril, así que esté listo para detenerse si va detrás de uno.",
   "why": "Saber que deben detenerse evita que usted los choque por detrás en un cruce.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "Va detrás de un camión con una placa de materiales peligrosos hacia un cruce de ferrocarril. ¿Qué debe esperar?",
+    "q": "Va detrás de un camión con un letrero que muestra que lleva materiales peligrosos. Se acerca a un cruce de ferrocarril. ¿Qué debe esperar?",
     "choices": [
      "Que el camión se detenga en el cruce",
      "Que el camión acelere sobre las vías",
@@ -7291,7 +7317,7 @@
   "id": "drv-pilot-vehicle",
   "topic": "sharing",
   "page": 106,
-  "fact": "Los vehículos guía (pilot vehicles) tienen luces ámbar y avisan de cargas de gran tamaño. Cuando uno venga hacia usted, baje la velocidad y muévase lo más a la derecha que pueda. Si va detrás de uno, aumente su distancia.",
+  "fact": "Los vehículos guía (pilot vehicles) son vehículos marcados con luces ámbar (amarillo anaranjado) que avisan a otros conductores de una carga muy grande. Cuando uno venga hacia usted, baje la velocidad y muévase lo más a la derecha que pueda. Si va detrás de uno, aumente su distancia de seguimiento.",
   "why": "Una carga de gran tamaño puede ocupar más que su propio carril, sobre todo en puentes y curvas.",
   "weight": 2,
   "items": [
@@ -7325,6 +7351,7 @@
   "page": 106,
   "fact": "Los vehículos grandes pueden abrirse hacia la izquierda antes de dar vuelta a la derecha. Nunca trate de meterse por el lado derecho de un vehículo grande que está dando vuelta a la derecha.",
   "why": "Meterse por la derecha es una causa frecuente de choques con vehículos grandes.",
+  "example": "Va detrás de un camión grande en una esquina. Tiene puesta la direccional derecha, pero primero se mueve un poco a la izquierda y deja un espacio libre a su lado derecho. No se meta en ese espacio. El camión necesita ese lugar para dar la vuelta, así que espere hasta que termine.",
   "weight": 3,
   "items": [
    {
@@ -7498,11 +7525,11 @@
    },
    {
     "type": "scenario",
-    "q": "Va bajando una pendiente de montaña larga y empinada. Quiere ahorrar gasolina. ¿Qué debe hacer?",
+    "q": "Va bajando por un camino de montaña largo y empinado. Quiere ahorrar gasolina. ¿Qué debe hacer?",
     "choices": [
      "Quedarse en una marcha más baja y mantener el carro en cambio",
      "Poner neutral y dejar que el carro ruede",
-     "Mantener el clutch pisado e ir frenando todo el tiempo",
+     "Mantener el clutch pisado y seguir frenando",
      "Acelerar para pasar menos tiempo en la pendiente"
     ],
     "answer": 0
@@ -7570,7 +7597,7 @@
   "id": "cnd-livestock-right-of-way",
   "topic": "conditions",
   "page": 108,
-  "fact": "En Idaho, los caballos, vacas, ovejas, cabras y otro ganado que se está moviendo de manera controlada para cruzar un camino tienen el derecho de paso. Tenga cuidado y coopere con las personas que los mueven.",
+  "fact": "En Idaho, los caballos, vacas, ovejas, cabras y otro ganado que las personas están moviendo para cruzar un camino tienen el derecho de paso. Tenga cuidado y coopere con las personas que los mueven.",
   "why": "Los rebaños son lentos e impredecibles, y las personas que los mueven necesitan que los conductores esperen.",
   "weight": 3,
   "items": [
@@ -7603,7 +7630,7 @@
   "topic": "conditions",
   "page": 108,
   "fact": "Más o menos el 90% de las decisiones al manejar se basan en lo que usted ve, y de noche su vista es menor. De noche, siempre maneje lo bastante despacio para poder detenerse dentro de la distancia que puede ver adelante.",
-  "why": "De noche su vista es menor, y necesita tiempo para reaccionar a cualquier cosa que aparezca en sus luces.",
+  "why": "Si maneja más rápido de lo que puede ver, una persona o un animal puede aparecer en sus luces demasiado tarde para que pueda detenerse.",
   "weight": 2,
   "items": [
    {
@@ -7621,7 +7648,7 @@
     "type": "num",
     "q": "¿Más o menos qué porcentaje de las decisiones al manejar se basan en lo que usted ve?",
     "answer": 90,
-    "unit": "por ciento"
+    "unit": "percent"
    }
   ]
  },
@@ -7631,6 +7658,7 @@
   "page": 108,
   "fact": "Si choca con ganado en campo abierto (open range) o con ganado que se está moviendo de manera controlada, el dueño del animal no tiene que pagar los daños a usted ni a su vehículo. Si usted fue descuidado, puede que tenga que pagar por el animal herido o muerto.",
   "why": "En campo abierto los animales tienen permiso de estar ahí, así que los conductores son responsables de fijarse en ellos.",
+  "example": "Va manejando de noche fuera de la ciudad en campo abierto, y choca con una vaca que está parada en el camino. Su carro sufre daños. El dueño de la vaca no tiene que pagar por su carro. Si usted manejaba de forma descuidada, puede que tenga que pagarle al dueño por la vaca.",
   "weight": 2,
   "items": [
    {
@@ -7858,7 +7886,7 @@
   "id": "cnd-twilight-dangerous",
   "topic": "conditions",
   "page": 109,
-  "fact": "Las horas grises del anochecer y del amanecer son las horas más peligrosas del día para manejar.",
+  "fact": "Las horas grises del anochecer (justo después de la puesta del sol) y del amanecer (justo antes de la salida del sol) son las horas más peligrosas del día para manejar.",
   "why": "Con esa luz gris y débil es difícil ver otros vehículos, personas y animales.",
   "weight": 2,
   "items": [
@@ -7884,7 +7912,7 @@
   "id": "cnd-bad-weather-pull-off",
   "topic": "conditions",
   "page": 110,
-  "fact": "Lo más seguro es no manejar con neblina, tormentas de polvo o lluvia fuerte. Si tiene que hacerlo, baje la velocidad; y si empeora demasiado, salga del camino y deténgase en vez de seguir avanzando muy despacio.",
+  "fact": "Lo más seguro es no manejar con neblina, tormentas de polvo o lluvia fuerte. Si tiene que hacerlo, baje la velocidad. Si empeora demasiado, salga del camino y deténgase en vez de seguir avanzando muy despacio.",
   "why": "Un carro que avanza muy despacio con poca visibilidad puede ser chocado por conductores que no lo ven.",
   "weight": 2,
   "items": [
@@ -7893,7 +7921,7 @@
     "q": "Maneja con una neblina que se hace cada vez más espesa, hasta que casi no puede ver. ¿Qué debe hacer?",
     "choices": [
      "Salir del camino y detenerse",
-     "Avanzar en su carril a 5 mph",
+     "Seguir manejando en su carril a 5 mph",
      "Encender las luces altas y seguir",
      "Seguir muy de cerca las luces traseras del carro de adelante"
     ],
@@ -8048,8 +8076,9 @@
   "id": "cnd-hydroplane-response",
   "topic": "conditions",
   "page": 111,
-  "fact": "Si su carro empieza a hidroplanear (patinar sobre el agua), mantenga una velocidad constante en línea recta y quite el pie del acelerador poco a poco. No se detenga ni dé vuelta bruscamente hasta que las llantas vuelvan a agarrar el camino.",
+  "fact": "Si su carro empieza a hidroplanear (deslizarse sobre el agua que hay en el camino), mantenga una velocidad constante en línea recta y quite el pie del acelerador poco a poco. No se detenga ni dé vuelta bruscamente hasta que las llantas vuelvan a agarrar el camino.",
   "why": "Frenar o girar de repente mientras las llantas están sobre el agua puede hacer que el carro derrape.",
+  "example": "Va manejando con lluvia fuerte y siente que su carro empieza a deslizarse sobre el agua. Mantenga el volante derecho, mantenga una velocidad constante y quite el pie del acelerador poco a poco. No frene fuerte ni gire bruscamente hasta que sienta que las llantas vuelven a agarrar el camino.",
   "weight": 3,
   "items": [
    {
@@ -8065,7 +8094,7 @@
    },
    {
     "type": "tf",
-    "q": "Si su carro hidroplanea, debe frenar de golpe.",
+    "q": "Si su carro hidroplanea, debe frenar fuerte de inmediato.",
     "answer": false
    }
   ]
@@ -8206,9 +8235,9 @@
     "type": "mc",
     "q": "¿Por qué los puentes se congelan antes que otros caminos?",
     "choices": [
-     "El aire frío les llega por debajo y no reciben calor de la tierra",
-     "Están hechos de metal",
-     "Las quitanieves nunca los limpian",
+     "El aire frío les llega por debajo",
+     "Tienen más tráfico que otros caminos",
+     "Las quitanieves no los limpian",
      "Siempre están en la sombra"
     ],
     "answer": 0
@@ -8576,10 +8605,10 @@
     "type": "scenario",
     "q": "Un carro se detiene de repente adelante y usted sabe que no puede detenerse a tiempo. Hay un carril libre a su lado. ¿Cuál es la mejor opción?",
     "choices": [
-     "Girar hacia el carril libre, sin frenar mientras gira",
-     "Frenar lo más fuerte posible mientras gira bruscamente",
-     "Cerrar los ojos y prepararse para el golpe",
-     "Acelerar y chocar con el carro"
+     "Girar hacia el carril libre sin frenar",
+     "Frenar fuerte y girar el volante bruscamente",
+     "Quedarse en su carril y prepararse para el golpe",
+     "Tocar el claxon y seguir derecho"
     ],
     "answer": 0
    },
@@ -8594,8 +8623,8 @@
   "id": "cnd-protect-in-crash",
   "topic": "emergencies",
   "page": 118,
-  "fact": "Si lo van a chocar por detrás, apoye la cabeza contra la cabecera del asiento. Si lo van a chocar de lado, esté listo para girar el volante. Si lo van a chocar de frente y lleva puesto el cinturón de seguridad, protéjase la cara con los brazos y las manos.",
-  "why": "Cada posición reduce las lesiones según la dirección del golpe.",
+  "fact": "La mejor protección en cualquier choque es un cinturón de seguridad abrochado antes de empezar el viaje. Si lo van a chocar por detrás, apoye la parte de atrás de la cabeza contra la cabecera del asiento. Si lo van a chocar de lado, esté listo para girar el volante. Si lo van a chocar de frente y lleva puesto el cinturón de seguridad, protéjase la cara con los brazos y las manos.",
+  "why": "Apoyarse contra la cabecera evita que la cabeza se vaya bruscamente hacia atrás, estar listo para girar el volante le ayuda a recuperar el control después de un golpe de lado, y los brazos pueden proteger su cara.",
   "weight": 2,
   "items": [
    {
@@ -8635,10 +8664,10 @@
     "type": "scenario",
     "q": "En un camino de dos carriles, un carro viene hacia usted en su carril. ¿Qué debe hacer?",
     "choices": [
-     "Bajar la velocidad, tocar el claxon y moverse lo más a la derecha posible",
-     "Desviarse al carril izquierdo",
+     "Bajar la velocidad, tocar el claxon y moverse a la derecha",
+     "Desviarse a la izquierda, al otro carril",
      "Detenerse en medio de su carril",
-     "Acelerar para pasar rápido"
+     "Acelerar para pasarlo rápido"
     ],
     "answer": 0
    },
@@ -8655,15 +8684,16 @@
   "page": 119,
   "fact": "Si choca con un vehículo sin nadie adentro u otra propiedad, haga un esfuerzo razonable para encontrar al dueño. Si no puede, deje una nota con su nombre, su número de teléfono y lo que pasó.",
   "why": "El dueño tiene derecho a saber quién dañó su propiedad.",
+  "example": "Al dar reversa en un estacionamiento, golpea un carro estacionado y lo abolla. No hay nadie en el carro. Debe hacer un esfuerzo real para encontrar al dueño. Si no puede encontrarlo, deje una nota en el carro que diga lo que pasó, con su nombre y número de teléfono.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
     "q": "Al dar reversa en un estacionamiento, golpea un carro estacionado y lo abolla. No hay nadie cerca. ¿Qué debe hacer?",
     "choices": [
-     "Tratar de encontrar al dueño y, si no puede, dejar una nota con su nombre y número de teléfono",
-     "Irse porque nadie lo vio",
-     "Esperar un minuto y luego irse",
+     "Encontrar al dueño o dejar una nota con su nombre y número de teléfono",
+     "Irse, porque nadie lo vio y la abolladura es pequeña",
+     "Esperar unos minutos al dueño y luego irse",
      "Dejar una nota solo con el número de su placa"
     ],
     "answer": 0
@@ -8714,9 +8744,9 @@
     "q": "Sus llantas derechas se salen del pavimento hacia el acotamiento. No hay obstáculos adelante. ¿Qué debe hacer?",
     "choices": [
      "Seguir derecho, bajar la velocidad y luego regresar cuando sea seguro",
-     "Girar el volante bruscamente a la izquierda de inmediato",
-     "Frenar fuerte de inmediato",
-     "Acelerar para subir de nuevo al camino"
+     "Girar el volante bruscamente a la izquierda para regresar de inmediato",
+     "Frenar fuerte de inmediato para detenerse en el acotamiento",
+     "Acelerar para poder subir de nuevo al camino"
     ],
     "answer": 0
    },
@@ -8766,13 +8796,14 @@
   "fact": "Debe reportar un choque a la policía si alguien resulta herido o si los daños a la propiedad son de más de $1,500.",
   "why": "Los choques graves necesitan un registro oficial por razones de seguridad, de seguro y legales.",
   "hook": "Heridos o más de $1,500 = reportar.",
+  "example": "Tiene un choque. Nadie está herido, pero arreglar los daños costará más de $1,500. Debe reportar el choque a la policía. También debe reportar cualquier choque en el que alguien resulte herido, aunque los daños sean muy pequeños.",
   "weight": 3,
   "items": [
    {
     "type": "num",
     "q": "Debe reportar un choque a la policía si los daños a la propiedad son de más de ¿cuántos dólares?",
     "answer": 1500,
-    "unit": "dólares"
+    "unit": "dollars"
    },
    {
     "type": "mc",
@@ -8798,6 +8829,7 @@
   "page": 121,
   "fact": "Si tiene un choque, debe detenerse lo más cerca posible del lugar sin bloquear el tráfico e intercambiar nombres, direcciones, números de licencia e información del seguro. Dar información falsa puede ser un delito menor (misdemeanor).",
   "why": "Las personas involucradas necesitan información correcta para el seguro y los trámites legales.",
+  "example": "Tiene un choque con otro carro. Se detiene lo más cerca posible del choque sin bloquear el tráfico. Usted y el otro conductor se dan sus nombres, direcciones, números de licencia de manejo e información del seguro. Si da un nombre o una dirección falsos, lo pueden acusar de un delito menor (misdemeanor).",
   "weight": 3,
   "items": [
    {
@@ -8805,8 +8837,8 @@
     "q": "¿Qué información debe intercambiar con los otros conductores después de un choque?",
     "choices": [
      "Nombres, direcciones e información del seguro",
-     "Solo números de teléfono",
-     "Solo números de placa",
+     "Solo números de teléfono y correos electrónicos",
+     "Solo números de placa y colores de los carros",
      "Nada hasta que llegue la policía"
     ],
     "answer": 0
@@ -8822,8 +8854,9 @@
   "id": "cnd-good-samaritan",
   "topic": "emergencies",
   "page": 121,
-  "fact": "La ley del Buen Samaritano (Good Samaritan Law) de Idaho lo protege de responsabilidad civil cuando ayuda de buena fe a una persona herida. No saque a una persona herida de un vehículo chocado a menos que tenga entrenamiento médico o haya un peligro inmediato, como un incendio.",
+  "fact": "La ley del Buen Samaritano (Good Samaritan Law) de Idaho lo protege de responsabilidad civil (que lo demanden por daños) cuando ayuda de buena fe (tratando honestamente de ayudar) a una persona herida. No saque a una persona herida de un vehículo chocado a menos que tenga entrenamiento médico o haya un peligro inmediato, como un incendio.",
   "why": "Mover mal a una persona herida puede empeorar sus lesiones.",
+  "example": "Se detiene en un choque, pide ayuda y se queda con un conductor herido para mantenerlo tranquilo. Como está tratando honestamente de ayudar, la ley del Buen Samaritano de Idaho lo protege de que lo demanden por daños. No saque al conductor del carro a menos que tenga entrenamiento médico o haya un peligro inmediato, como un incendio.",
   "weight": 2,
   "items": [
    {
@@ -8839,7 +8872,7 @@
    },
    {
     "type": "tf",
-    "q": "La ley del Buen Samaritano de Idaho protege a las personas que ayudan de buena fe a las víctimas de un choque.",
+    "q": "La ley del Buen Samaritano de Idaho protege a las personas que tratan honestamente de ayudar a las víctimas de un choque.",
     "answer": true
    }
   ]
@@ -8848,8 +8881,9 @@
   "id": "cnd-quick-clearance",
   "topic": "emergencies",
   "page": 121,
-  "fact": "Según la ley de despeje rápido (Quick Clearance) de Idaho, si tiene un choque sin muertos ni heridos en una autopista interestatal o en una carretera dividida principal, debe mover su vehículo con seguridad al acotamiento, a la mediana o al carril de emergencia.",
+  "fact": "Según la ley de despeje rápido (Quick Clearance) de Idaho, si tiene un choque sin muertos ni heridos en una autopista interestatal o en una carretera dividida principal (una carretera donde las dos direcciones del tráfico están separadas), debe mover su vehículo con seguridad al acotamiento, a la mediana (el área entre las dos direcciones del tráfico) o al carril de emergencia.",
   "why": "Sacar los carros de los carriles de tráfico evita más choques y embotellamientos.",
+  "example": "Tiene un choque pequeño en la interestatal. Nadie está herido y su carro todavía se puede manejar. No lo deje en el carril de tráfico mientras espera a la policía. Muévalo con cuidado al acotamiento, a la mediana o a un carril de emergencia.",
   "weight": 3,
   "items": [
    {
@@ -9602,7 +9636,7 @@
   "id": "lic-carry-license",
   "topic": "licensing",
   "page": 13,
-  "fact": "Debe llevar su licencia de manejo con usted siempre que maneje. Usar mal o dañar a propósito una licencia, un permiso o una tarjeta de identificación es un delito menor (misdemeanor).",
+  "fact": "Debe llevar su licencia de manejo con usted siempre que maneje. Usar mal o dañar a propósito una licencia, un permiso o una tarjeta de identificación (ID) es un delito menor (misdemeanor).",
   "why": "La policía necesita confirmar rápido que la persona que maneja tiene permiso para manejar.",
   "weight": 2,
   "items": [
@@ -9629,7 +9663,7 @@
   "topic": "licensing",
   "page": 15,
   "fact": "El Permiso de Entrenamiento de Manejo (Driver Training Permit) permite que una persona de por lo menos 14 1/2 años y menor de 17 tome un programa de entrenamiento de manejo público o privado.",
-  "why": "Los conductores jóvenes empiezan con un entrenamiento formal antes de practicar por su cuenta con un padre.",
+  "why": "Primero viene el entrenamiento formal con un instructor, para que los conductores jóvenes aprendan lo básico antes de practicar con uno de sus padres u otro adulto con licencia.",
   "hook": "14 1/2 = la edad más temprana para empezar el entrenamiento de manejo.",
   "weight": 3,
   "items": [
@@ -9637,7 +9671,7 @@
     "type": "num",
     "q": "¿Cuál es la edad mínima (en años) para obtener un Permiso de Entrenamiento de Manejo en Idaho?",
     "answer": 14.5,
-    "unit": "años"
+    "unit": "years"
    },
    {
     "type": "mc",
@@ -9766,12 +9800,12 @@
    },
    {
     "type": "scenario",
-    "q": "Tiene 15 años y licencia. Su amigo le pide que maneje a casa solo a las 10:30 p.m. ¿Qué es cierto?",
+    "q": "Tiene 15 años y licencia. Su amigo le pide que maneje a casa solo a las 10:30 p.m. ¿Puede hacerlo?",
     "choices": [
-     "No puede manejar solo a esa hora porque es después de las 10:00 p.m.",
-     "Puede manejar porque tiene licencia",
-     "Puede manejar si lleva solo un pasajero",
-     "Puede manejar si las luces delanteras están encendidas"
+     "No, porque es después de las 10:00 p.m.",
+     "Sí, porque tiene licencia",
+     "Sí, si lleva solo un pasajero",
+     "Sí, si tiene las luces delanteras encendidas"
     ],
     "answer": 0
    }
@@ -9816,19 +9850,20 @@
   "fact": "Si es menor de 17 años, durante los primeros 6 meses después de recibir su licencia no puede llevar más de un pasajero menor de 17, a menos que los pasajeros sean sus parientes por sangre, adopción o matrimonio.",
   "why": "Los pasajeros jóvenes son una gran distracción para los conductores nuevos.",
   "hook": "Primeros 6 meses: máximo 1 amigo joven; la familia no cuenta.",
+  "example": "Es menor de 17 años y recibió su licencia hace menos de 6 meses. Un grupo de amigos de la escuela, todos menores de 17, quiere que los lleve. Solo uno de ellos puede ir con usted. Su hermano, su hermana o su primo no cuentan para este límite.",
   "weight": 3,
   "items": [
    {
     "type": "num",
     "q": "Durante sus primeros 6 meses con licencia (si es menor de 17), ¿cuántos pasajeros menores de 17 que no son sus parientes pueden ir con usted?",
     "answer": 1,
-    "unit": "pasajero"
+    "unit": "passenger"
    },
    {
     "type": "num",
     "q": "¿Durante cuántos meses después de recibir la licencia se aplica el límite de pasajeros para menores de 17?",
     "answer": 6,
-    "unit": "meses"
+    "unit": "months"
    },
    {
     "type": "scenario",
@@ -9946,15 +9981,16 @@
   "id": "lic-gdl-6-months",
   "topic": "licensing",
   "page": 19,
-  "fact": "Según el programa de Licencia de Manejo por Etapas (Graduated Driver's License, GDL), un conductor menor de 17 años debe terminar el entrenamiento de manejo y luego completar un periodo de instrucción supervisada de por lo menos 6 meses sin infracciones.",
+  "fact": "Según el programa de Licencia de Manejo por Etapas (Graduated Driver's License, GDL), cualquier persona menor de 17 años que nunca haya tenido una licencia de Idaho debe terminar el entrenamiento de manejo y luego completar un periodo de instrucción supervisada (practicar el manejo con un conductor con licencia a su lado) de por lo menos 6 meses sin infracciones.",
   "why": "Meses de práctica supervisada le dan experiencia antes de manejar solo.",
+  "example": "Es menor de 17 años y acaba de terminar su clase de entrenamiento de manejo. Luego viene el periodo supervisado: durante por lo menos 6 meses, practica con un conductor con licencia a su lado y no comete ninguna infracción de tránsito. Después de eso, hace el examen de conocimientos y el examen de habilidades para obtener su licencia.",
   "weight": 3,
   "items": [
    {
     "type": "num",
     "q": "¿Cuántos meses dura, como mínimo, el periodo de instrucción supervisada de GDL (licencia de manejo por etapas)?",
     "answer": 6,
-    "unit": "meses"
+    "unit": "months"
    },
    {
     "type": "mc",
@@ -10007,6 +10043,7 @@
   "page": 19,
   "fact": "Si lo condenan por una infracción de tránsito durante el periodo supervisado de GDL (licencia de manejo por etapas), su permiso se cancela. Debe obtener un permiso nuevo, y el periodo de 6 meses empieza de nuevo.",
   "why": "El periodo supervisado debe ser sin infracciones para demostrar que está listo para manejar con seguridad.",
+  "example": "Ya lleva una parte de su periodo de 6 meses de manejo supervisado. Le ponen una multa por exceso de velocidad y lo condenan. Su permiso se cancela, así que debe obtener un permiso nuevo, y sus 6 meses empiezan de nuevo. Los meses que ya manejó no cuentan.",
   "weight": 3,
   "items": [
    {
@@ -10033,13 +10070,14 @@
   "page": 26,
   "fact": "Si es menor de 18 años, uno de sus padres o su tutor legal debe firmar para aceptar la responsabilidad legal por su manejo (si está casado, puede firmar su cónyuge si tiene por lo menos 18 años). Hasta que usted cumpla 18, la persona que firmó puede retirar su consentimiento en cualquier momento, y su licencia se cancelará.",
   "why": "Como la persona que firma es legalmente responsable de usted como conductor, conserva el poder de terminar esa responsabilidad.",
+  "example": "Es menor de 18 años y quiere una licencia. Su mamá firma un formulario donde dice que acepta la responsabilidad legal por su manejo. Ahora ella es la persona que firmó como responsable (liability signer). Si retira su consentimiento antes de que usted cumpla 18, su licencia se cancela.",
   "weight": 2,
   "items": [
    {
     "type": "scenario",
-    "q": "Tiene 16 años y licencia. Su mamá, que firmó como responsable, retira su consentimiento. ¿Qué pasa?",
+    "q": "Tiene 16 años y licencia. Su mamá firmó para aceptar la responsabilidad legal por su manejo (es la persona que firmó como responsable). Ahora retira su consentimiento. ¿Qué pasa?",
     "choices": [
-     "Su licencia o permiso de manejo se cancela",
+     "Su licencia se cancela",
      "Nada cambia hasta que cumpla 18",
      "Solo debe volver a hacer el examen de conocimientos",
      "Puede seguir manejando hasta que se venza su licencia"
@@ -10048,9 +10086,9 @@
    },
    {
     "type": "num",
-    "q": "¿Los solicitantes menores de qué edad necesitan una persona que firme como responsable para obtener una licencia de Idaho?",
+    "q": "¿Los solicitantes menores de qué edad necesitan que uno de sus padres o su tutor firme y acepte la responsabilidad legal por su manejo?",
     "answer": 18,
-    "unit": "años"
+    "unit": "years"
    }
   ]
  },
@@ -10119,6 +10157,7 @@
   "page": 30,
   "fact": "No deje que una persona sin licencia maneje su vehículo. Si choca, tanto el conductor como el dueño que le dio permiso son responsables por los daños, las lesiones o la muerte.",
   "why": "El dueño decidió darle el vehículo a alguien que no está calificado para manejarlo.",
+  "example": "Su amigo no tiene licencia de manejo y le pide prestado su carro. Usted le dice que sí, y su amigo choca con otro carro. Usted y su amigo son responsables por los daños y por cualquier persona que resulte herida.",
   "weight": 2,
   "items": [
    {
@@ -10184,14 +10223,15 @@
   "page": 32,
   "fact": "Si usa lentes o lentes de contacto en el examen de la vista, su licencia lleva una restricción de lentes, y debe usarlos siempre que maneje.",
   "why": "Solo cumplió con el estándar de la vista con lentes correctivos, así que los necesita para ver con seguridad.",
+  "example": "Usa sus lentes en el examen de la vista y lo pasa. Ahora su licencia tiene una restricción de lentes. Cada vez que maneje, aunque sea un viaje corto, debe usar sus lentes o lentes de contacto, o pueden multarlo.",
   "weight": 2,
   "items": [
    {
     "type": "scenario",
     "q": "Su licencia tiene una restricción de lentes. Se le olvidaron los lentes y necesita manejar una distancia corta. ¿Qué es cierto?",
     "choices": [
-     "Pueden multarlo y puede perder sus privilegios de manejo si maneja sin ellos",
-     "Se permiten viajes cortos de menos de 5 millas sin lentes",
+     "Pueden multarlo por manejar sin ellos",
+     "Se permiten viajes de menos de 5 millas sin ellos",
      "Está bien durante el día",
      "Está bien si lo acompaña un adulto con licencia"
     ],
@@ -10209,7 +10249,7 @@
   "topic": "licensing",
   "page": 32,
   "fact": "Debe tener por lo menos 15 años para hacer los exámenes de conocimientos y de habilidades para una licencia.",
-  "why": "Idaho fija una edad mínima antes de que alguien pueda hacer los exámenes para una licencia.",
+  "why": "Los adolescentes más jóvenes pueden empezar a aprender en el entrenamiento de manejo, pero usted debe tener 15 años antes de que el estado evalúe si está listo para manejar.",
   "weight": 3,
   "items": [
    {
@@ -10227,7 +10267,7 @@
     "type": "num",
     "q": "¿Cuál es la edad mínima para hacer los exámenes de conocimientos y de habilidades de Idaho?",
     "answer": 15,
-    "unit": "años"
+    "unit": "years"
    },
    {
     "type": "tf",
@@ -10353,6 +10393,7 @@
   "page": 37,
   "fact": "Un error de manejo crítico en el examen de habilidades, como ir a exceso de velocidad, no obedecer un letrero o semáforo, o golpear un objeto, es un reprobado automático y el examen termina de inmediato.",
   "why": "Estos errores podrían causar un choque, lesiones o la muerte, así que muestran que todavía no está listo para manejar solo.",
+  "example": "Durante su examen de habilidades, maneja un poco por encima del límite de velocidad. Eso es un error de manejo crítico, porque el exceso de velocidad podría causar un choque. Reprueba de inmediato y el examinador termina el examen. No importa qué tan bien haya manejado antes.",
   "weight": 2,
   "items": [
    {
@@ -10963,7 +11004,7 @@
   "id": "lic-equip-headlights",
   "topic": "equipment",
   "page": 38,
-  "fact": "Los vehículos necesitan dos luces delanteras con luces altas y bajas. Las luces altas deben permitirle ver personas y vehículos a por lo menos 350 pies adelante; las luces bajas deben iluminar el camino a por lo menos 100 pies adelante.",
+  "fact": "Los vehículos necesitan dos luces delanteras con luces altas y bajas, dirigidas para iluminar el camino sin deslumbrar a los conductores que vienen de frente. Las luces altas deben permitirle ver personas y vehículos a por lo menos 350 pies adelante; las luces bajas deben iluminar el camino a por lo menos 100 pies adelante. Las luces delanteras no deben estar cubiertas con material que no deje pasar la luz.",
   "why": "Necesita ver lo bastante lejos de noche para reaccionar a tiempo a los peligros.",
   "weight": 2,
   "items": [
@@ -10982,13 +11023,13 @@
     "type": "num",
     "q": "Las luces altas deben permitirle ver personas y vehículos a por lo menos ¿cuántos pies?",
     "answer": 350,
-    "unit": "pies"
+    "unit": "feet"
    },
    {
     "type": "num",
     "q": "Las luces bajas deben iluminar el camino a por lo menos ¿cuántos pies adelante?",
     "answer": 100,
-    "unit": "pies"
+    "unit": "feet"
    },
    {
     "type": "tf",
@@ -11012,7 +11053,7 @@
    },
    {
     "type": "mc",
-    "q": "¿Quién es responsable de arreglar un vehículo al que le falta equipo esencial?",
+    "q": "A un vehículo le falta equipo que exige la ley. ¿Quién es responsable de arreglarlo?",
     "choices": [
      "La persona que lo maneja",
      "La estación de inspección del estado",

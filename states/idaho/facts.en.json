@@ -404,10 +404,10 @@
     "type": "scenario",
     "q": "The SPEED LIMIT sign says 50, but heavy rain is making it hard to see. What is true?",
     "choices": [
-     "50 is the top speed for ideal conditions; you may need to go slower",
-     "You must drive exactly 50",
+     "50 is the top speed; you may need to go slower",
+     "You must drive exactly 50 the whole time",
      "You may drive 55 to keep up with traffic",
-     "The limit no longer applies in rain"
+     "The speed limit no longer applies in rain"
     ],
     "answer": 0
    },
@@ -869,8 +869,8 @@
   "id": "sig-t-intersection",
   "topic": "signs",
   "page": 49,
-  "fact": "A T-shaped warning sign means the road ends ahead at a T intersection, and you will have to turn right or left. Be ready to stop and yield to drivers coming from the other two directions.",
-  "why": "The road does not continue straight, so you must be ready to stop and turn.",
+  "fact": "A T-shaped warning sign means the road ends ahead at a T intersection, and you will have to turn right or left. You must stop and yield to drivers coming from the other two directions.",
+  "why": "Traffic on the road you are meeting keeps going, so you must wait for a safe gap before you turn.",
   "weight": 3,
   "sign": "W2-4",
   "signDesc": "Yellow diamond with black T symbol",
@@ -1377,7 +1377,7 @@
     "q": "What does this sign mean?",
     "choices": [
      "Railroad crossing ahead; be ready to stop",
-     "Road crossing ahead",
+     "Crossroad ahead",
      "Do not enter",
      "Roundabout ahead"
     ],
@@ -1641,9 +1641,9 @@
     "q": "You see a MAY USE FULL LANE sign and a bicyclist riding in the center of your lane. What should you do?",
     "choices": [
      "Stay behind and pass only when it is safe to change lanes",
-     "Honk so the cyclist moves right",
-     "Squeeze past in the same lane",
-     "Drive on the shoulder to pass"
+     "Honk so the bicyclist moves over to the right side",
+     "Squeeze past the bicyclist without leaving your lane",
+     "Drive on the shoulder to get around the bicyclist"
     ],
     "answer": 0
    }
@@ -1889,6 +1889,7 @@
   "page": 56,
   "fact": "A flashing yellow arrow means you may turn, but you must first yield to oncoming traffic and to pedestrians in crosswalks.",
   "why": "The turn is allowed but not protected, so oncoming traffic still has the right-of-way.",
+  "example": "You are in the left-turn lane and the arrow is flashing yellow. Cars are coming toward you, and a person is walking in the crosswalk you would turn across. Wait. Turn only after the oncoming cars have passed and the person has finished crossing.",
   "weight": 3,
   "items": [
    {
@@ -1956,7 +1957,7 @@
    },
    {
     "type": "tf",
-    "q": "When a HAWK (High-Intensity Activated crossWalk) beacon is installed, side streets with stop signs no longer have to stop.",
+    "q": "When a HAWK pedestrian beacon is installed, side streets with stop signs no longer have to stop.",
     "answer": false
    }
   ]
@@ -1992,13 +1993,13 @@
   "id": "sig-hawk-dark-yellow",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "A HAWK (High-Intensity Activated crossWalk) beacon is dark until a pedestrian pushes the button. It then flashes yellow (slow down), then shows solid yellow (prepare to stop).",
+  "fact": "A HAWK pedestrian beacon is dark until a pedestrian pushes the button. It then flashes yellow (slow down), then shows solid yellow (prepare to stop).",
   "why": "The warning lights give drivers time to slow before the red.",
   "weight": 2,
   "items": [
    {
     "type": "mc",
-    "q": "What does it mean when a HAWK (High-Intensity Activated crossWalk) beacon is dark (not lit)?",
+    "q": "What does it mean when a HAWK pedestrian beacon is dark (not lit)?",
     "choices": [
      "Drive normally, but watch for pedestrians",
      "Stop and wait",
@@ -2009,7 +2010,7 @@
    },
    {
     "type": "mc",
-    "q": "After a pedestrian pushes the button, what does a HAWK (High-Intensity Activated crossWalk) beacon show first?",
+    "q": "After a pedestrian pushes the button, what does a HAWK pedestrian beacon show first?",
     "choices": [
      "Flashing yellow",
      "Solid red",
@@ -2024,13 +2025,14 @@
   "id": "sig-hawk-red",
   "topic": "signals-markings",
   "page": 57,
-  "fact": "When a HAWK (High-Intensity Activated crossWalk) beacon shows two solid red lights, stop completely at the stop line. When the red lights flash back and forth, stop, yield to pedestrians in the crosswalk, and go when it is clear.",
+  "fact": "When a HAWK pedestrian beacon shows two solid red lights, stop completely at the stop line. When the red lights flash back and forth, stop, yield to pedestrians in the crosswalk, and go when it is clear.",
   "why": "Solid red is the time for people to cross; alternating flashing red lets drivers go once the crosswalk is empty.",
+  "example": "You are driving toward a crosswalk with a HAWK pedestrian beacon. A person pushes the button, the lights flash yellow, then turn solid yellow, and then two solid red lights come on. You stop at the stop line while the person crosses. When the red lights start flashing back and forth, stop, and go once the crosswalk is empty.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "At a HAWK (High-Intensity Activated crossWalk) beacon, the two red lights are flashing back and forth. The crosswalk is now empty. What should you do?",
+    "q": "At a HAWK pedestrian beacon, the two red lights are flashing back and forth. The crosswalk is now empty. What should you do?",
     "choices": [
      "Stop, then proceed since the crosswalk is clear",
      "Stay stopped until the beacon goes dark",
@@ -2041,7 +2043,7 @@
    },
    {
     "type": "tf",
-    "q": "You must stop completely when a HAWK (High-Intensity Activated crossWalk) beacon shows steady red lights.",
+    "q": "You must stop completely when a HAWK pedestrian beacon shows steady red lights.",
     "answer": true
    }
   ]
@@ -2052,6 +2054,7 @@
   "page": 58,
   "fact": "A shared center turn lane is marked on both sides by a solid yellow line and a dashed yellow line. It is only for left turns (or U-turns where allowed) from either direction. Do not drive in it for travel.",
   "why": "Drivers from both directions use the same lane, so traveling in it risks a head-on crash.",
+  "example": "You are driving on a road with a center lane that has a solid yellow line and a dashed yellow line on each side. You want to turn left into a store parking lot ahead. Move into the center lane, wait there for a gap in oncoming traffic, then turn. Do not drive in that lane to go farther down the road, because drivers from the other direction use it to turn too.",
   "weight": 3,
   "items": [
    {
@@ -2132,6 +2135,7 @@
   "fact": "When a solid yellow line and a dashed yellow line are side by side, only drivers on the dashed-line side may cross to pass.",
   "why": "The line closest to you tells you whether you can pass.",
   "hook": "Read the line nearest you: dashed = may pass, solid = no passing.",
+  "example": "You are behind a slow truck on a two-lane road. In the center there is a solid yellow line next to a dashed yellow line. If the dashed line is the one closer to your lane, you may pass when it is safe. If the solid line is closer to you, stay behind the truck.",
   "weight": 3,
   "items": [
    {
@@ -2236,7 +2240,7 @@
   "topic": "signals-markings",
   "page": 59,
   "fact": "Solid white edge lines show where the edge of the road is. They help you stay on the road at night or in bad weather.",
-  "why": "When it is hard to see, the edge line guides you.",
+  "why": "In the dark, rain, or snow, the edge of the pavement is hard to see, and drifting off the road can cause a crash.",
   "weight": 1,
   "items": [
    {
@@ -2364,7 +2368,7 @@
     "q": "What does a large X with the letters RR (railroad) painted on the road mean?",
     "choices": [
      "A railroad crossing is ahead",
-     "A road crossing is ahead",
+     "A school crossing is ahead",
      "Do not enter this lane",
      "A rest area is ahead"
     ],
@@ -2521,8 +2525,8 @@
  {
   "id": "law-interchange-stop-lines",
   "topic": "signals-markings",
-  "page": 64,
-  "fact": "At single point (SPUI) and diverging diamond (DDI) interchanges, stop at the stop lines and follow the signs, signals, islands, and pavement markings. A DDI (diverging diamond interchange) briefly moves traffic to the left side of the road.",
+  "page": 65,
+  "fact": "At a single point urban interchange (SPUI) or a diverging diamond interchange (DDI), stop at the stop lines and follow the signs, signals, raised islands, and pavement markings. A DDI briefly moves traffic to the left side of the road.",
   "why": "Stopping past the line puts you in the path of cross-traffic, pedestrians, or bicyclists.",
   "weight": 1,
   "items": [
@@ -2706,6 +2710,7 @@
   "page": 100,
   "fact": "A dashed bike lane line means merging is allowed. When turning right, you may move into the bike lane where the line is dashed, after checking for bicyclists.",
   "why": "Moving over keeps bicyclists from coming up on your right side as you turn.",
+  "example": "You want to turn right at an intersection, and a bike lane runs along the right side of your lane. Where the bike lane line becomes dashed, check your mirror and look over your shoulder for bicyclists. If no bicyclist is there, move into the bike lane and turn from it. If a bicyclist is already there, let them go first.",
   "weight": 2,
   "items": [
    {
@@ -2885,7 +2890,7 @@
     "type": "scenario",
     "q": "You are pulling out of a parking garage onto a street. A sidewalk crosses the exit. What must you do?",
     "choices": [
-     "Stop before the sidewalk and yield to pedestrians and traffic",
+     "Stop before the sidewalk, then yield",
      "Stop only at the edge of the street",
      "Drive slowly onto the street without stopping",
      "Honk and pull out"
@@ -2911,7 +2916,7 @@
     "type": "scenario",
     "q": "You are in the middle of an intersection when you hear a siren and see flashing lights behind you. What should you do?",
     "choices": [
-     "Continue through the intersection, then pull to the right and stop",
+     "Clear the intersection, then pull right and stop",
      "Stop in the middle of the intersection",
      "Pull to the left side and stop",
      "Speed up to stay ahead of it"
@@ -2959,7 +2964,7 @@
     "type": "scenario",
     "q": "On a two-lane road, a deer is standing in your lane. Oncoming traffic is clear. May you briefly use the left lane to go around it?",
     "choices": [
-     "Yes, entering the left lane briefly to avoid an animal is allowed",
+     "Yes, to avoid the animal",
      "No, you must always stay right",
      "Only if you honk first",
      "Only at speeds under 15 mph"
@@ -3032,6 +3037,7 @@
   "fact": "If two vehicles arrive at a four-way stop at the same time, the vehicle on the left yields to the vehicle on the right.",
   "why": "A simple tie-breaker rule prevents both drivers from going at once.",
   "hook": "Tie? Right goes first.",
+  "example": "You stop at a four-way stop at the same moment as a car on the cross street to your right. Because you arrived together, you are the car on the left, so you let that car go first. If you had stopped before it, you would go first.",
   "weight": 3,
   "items": [
    {
@@ -3067,8 +3073,9 @@
   "id": "law-t-intersection",
   "topic": "right-of-way",
   "page": 75,
-  "fact": "At an uncontrolled T intersection where your road ends and you must turn left or right, you must stop or yield to drivers coming from both other directions.",
+  "fact": "At a T intersection with no signs or signals, where your road ends and you must turn left or right, you must stop or yield to drivers coming from both other directions.",
   "why": "The through road continues, so its traffic expects to keep going.",
+  "example": "Your street ends at a T intersection with no signs or signals, so you must turn left or right. Cars on the cross street can keep going straight. You stop or slow down and let cars coming from both the left and the right go first, then make your turn.",
   "weight": 3,
   "items": [
    {
@@ -3084,7 +3091,7 @@
    },
    {
     "type": "tf",
-    "q": "At an uncontrolled T intersection, the driver on the road that ends must yield to traffic from both directions on the through road.",
+    "q": "At a T intersection with no signs or signals, the driver on the road that ends must yield to traffic from both directions on the through road.",
     "answer": true
    }
   ]
@@ -3136,7 +3143,7 @@
    },
    {
     "type": "tf",
-    "q": "At an uncontrolled intersection, when two cars arrive at the same time, the car on the left goes first.",
+    "q": "At an intersection with no signs or signals, when two cars arrive at the same time, the car on the left goes first.",
     "answer": false
    }
   ]
@@ -3255,7 +3262,7 @@
   "topic": "right-of-way",
   "page": 78,
   "fact": "Do not enter an intersection while a funeral procession is going through it, even if your light is green, unless you can do so without crossing its path.",
-  "why": "The procession is allowed to stay together through the intersection.",
+  "why": "The procession keeps moving through the intersection as one group, even after the light changes, so crossing its path could cause a crash.",
   "weight": 2,
   "items": [
    {
@@ -3280,8 +3287,9 @@
   "id": "drv-move-over-lane",
   "topic": "right-of-way",
   "page": 95,
-  "fact": "On a road with two or more lanes going your direction, also move to a lane not next to the stopped emergency vehicle, as soon as it is safe.",
+  "fact": "When you pass a stopped emergency vehicle with flashing lights on a road with two or more lanes going your direction, you must also move to a lane that is not next to it, as soon as it is safe.",
   "why": "An empty lane gives a buffer between your car and the workers.",
+  "example": "You are driving in the right lane of a road with two lanes going your way. A police car is stopped on the right shoulder with its lights flashing. You slow down, and if it is safe, you move into the left lane so there is an empty lane between you and the police car.",
   "weight": 3,
   "items": [
    {
@@ -3333,7 +3341,7 @@
   "topic": "right-of-way",
   "page": 96,
   "fact": "If a pedestrian is still in the crosswalk when your light turns green, wait for them to finish crossing before you go.",
-  "why": "A pedestrian already in the crosswalk needs time to get across safely.",
+  "why": "A person who has started across cannot quickly get out of your way, and a green light never makes it safe to drive into someone.",
   "weight": 2,
   "items": [
    {
@@ -3396,7 +3404,7 @@
   "topic": "right-of-way",
   "page": 96,
   "fact": "Drivers must yield to pedestrians in a marked or unmarked crosswalk at an intersection, and when entering a street from an alley or driveway.",
-  "why": "Pedestrians are unprotected and have the right to cross at crosswalks and sidewalks.",
+  "why": "People walking have no protection in a crash, and drivers coming out of an alley or driveway often cannot see them until late.",
   "weight": 3,
   "items": [
    {
@@ -3404,9 +3412,9 @@
     "q": "When must a driver yield to a pedestrian?",
     "choices": [
      "When the pedestrian is in a crosswalk at an intersection",
-     "Only when there is a painted crosswalk",
-     "Only when a police officer is present",
-     "Only at a red light"
+     "Only when the crosswalk has painted lines",
+     "Only when a police officer is directing traffic",
+     "Only when your own light is red"
     ],
     "answer": 0
    },
@@ -3446,6 +3454,7 @@
   "fact": "A roundabout is one-way. You always turn right to enter and travel counter-clockwise, even to go left or make a U-turn.",
   "why": "Everyone moving the same direction removes head-on and left-turn crashes.",
   "hook": "Roundabout: in right, go around, out right.",
+  "example": "You come to a roundabout and want to go left. You slow down, let cars already in the circle coming from your left go by, and then turn right to enter. You drive around the circle counter-clockwise and turn on your right turn signal as you come up to your exit.",
   "weight": 3,
   "items": [
    {
@@ -3509,6 +3518,7 @@
   "page": 63,
   "fact": "At a thru-turn intersection, direct left turns are not allowed. Go straight through, make a U-turn at the next signal, come back, and turn right.",
   "why": "Removing direct left turns keeps traffic moving and avoids left-turn crashes.",
+  "example": "You want to turn left at a thru-turn intersection, but left turns are not allowed there. You drive straight through the intersection and follow the lane markings to make a U-turn at the next traffic signal. Then you drive back toward the intersection and turn right onto the street you wanted.",
   "weight": 1,
   "items": [
    {
@@ -3516,9 +3526,9 @@
     "q": "You want to go left at a thru-turn intersection. What should you do?",
     "choices": [
      "Go straight, U-turn at the next signal, come back and turn right",
-     "Turn left from the right lane",
-     "Turn left when the light is yellow",
-     "Turn right, then make a U-turn in the median"
+     "Turn left from the left lane when the arrow turns green",
+     "Wait inside the intersection and turn left on yellow",
+     "Turn right, then make a U-turn in the median right away"
     ],
     "answer": 0
    },
@@ -3533,7 +3543,7 @@
   "id": "law-basic-rule-too-slow",
   "topic": "speed-turns",
   "page": 68,
-  "fact": "Driving too slowly for conditions and blocking the safe flow of traffic also breaks the basic rule, even if you are under the speed limit.",
+  "fact": "Driving too slowly for conditions and blocking the safe flow of traffic also breaks Idaho's basic speed rule (always drive at a safe speed for conditions), even if you are under the speed limit.",
   "why": "Very slow drivers make others brake suddenly or pass in risky places.",
   "weight": 3,
   "items": [
@@ -3559,8 +3569,9 @@
   "id": "law-basic-speed-rule",
   "topic": "speed-turns",
   "page": 68,
-  "fact": "Idaho's basic rule says you must always drive at a speed that is reasonable and prudent for conditions, such as weather, road surface, traffic, and visibility.",
+  "fact": "Idaho's basic rule says you must always drive at a speed that is reasonable and prudent (sensible and safe) for conditions, such as weather, road surface, traffic, and visibility.",
   "why": "A speed limit is the most you may go in good conditions; ice, rain, or heavy traffic can make that speed unsafe.",
+  "example": "The posted speed limit is the most you may drive, but tonight the road is icy and snow makes it hard to see. Under the basic rule, you must slow to a speed that is safe for these conditions, even though it is below the limit. Driving at the limit here could break the law.",
   "weight": 3,
   "items": [
    {
@@ -3752,7 +3763,7 @@
     "type": "mc",
     "q": "What can happen if you break the speed limit in a marked work zone?",
     "choices": [
-     "You can get an enhanced, fixed penalty",
+     "You can get a higher, fixed fine",
      "Nothing extra if no workers are present",
      "Only a warning",
      "Your car is towed"
@@ -3841,6 +3852,7 @@
   "page": 72,
   "fact": "If you plan to turn just past an intersection, signal only after you have passed through the intersection.",
   "why": "Signaling earlier could make drivers think you are turning at the intersection itself.",
+  "example": "You want to turn right into a store driveway that is just past a cross street. If you signal before the cross street, drivers may think you are turning onto that street. So you drive through the intersection first, and then turn on your signal.",
   "weight": 2,
   "items": [
    {
@@ -3859,9 +3871,9 @@
     "q": "Why wait to signal when turning just beyond an intersection?",
     "choices": [
      "So other drivers do not think you are turning at the intersection",
-     "So you save battery power",
-     "Because signals are not needed for driveways",
-     "So you can turn faster"
+     "So you save power in your car's battery",
+     "Because signals are not needed for driveways at all",
+     "So drivers behind you have a chance to pass you first"
     ],
     "answer": 0
    }
@@ -3899,6 +3911,7 @@
   "page": 73,
   "fact": "When two lanes can turn left, the left lane must turn left, while the right lane may turn left or go straight. Stay in your own lane until the turn is finished.",
   "why": "Staying in your lane through the turn keeps you from hitting a car turning beside you.",
+  "example": "At a traffic light, the left lane on your side may only turn left, and the lane next to it may turn left or go straight. You are in that right lane and turn left while another car turns left beside you. You stay in your own lane through the whole turn so you do not drift into that car.",
   "weight": 2,
   "items": [
    {
@@ -3914,7 +3927,7 @@
    },
    {
     "type": "tf",
-    "q": "Vehicles in the left lane may go straight instead of turning left.",
+    "q": "When two lanes can turn left, vehicles in the left lane may go straight instead of turning left.",
     "answer": false
    }
   ]
@@ -3925,6 +3938,7 @@
   "page": 73,
   "fact": "When turning left from a one-way street onto another one-way street, you may turn on a steady red light after stopping and yielding to cross-traffic, unless a sign says not to.",
   "why": "Like a right on red, this turn does not cross any oncoming lanes.",
+  "example": "You are stopped at a red light on a one-way street. The cross street is also one-way, and its traffic moves to your left. After a full stop, you let cross traffic go first, and then you may turn left, unless a sign says you may not.",
   "weight": 3,
   "items": [
    {
@@ -4058,7 +4072,7 @@
     "type": "scenario",
     "q": "You missed your turn and are near the top of a hill. Drivers coming over the hill could only see you about 200 feet away. May you make a U-turn here?",
     "choices": [
-     "No, drivers must be able to see you within 500 feet",
+     "No, it is not allowed here",
      "Yes, if you signal first",
      "Yes, if no cars are in sight right now",
      "Yes, if you turn quickly"
@@ -4101,7 +4115,7 @@
  {
   "id": "law-u-turn-where-not",
   "topic": "speed-turns",
-  "page": 74,
+  "page": 73,
   "fact": "U-turns are not allowed where No U-turn signs are posted, in a no-passing zone, or where solid lines are painted in the center of the road. Stop and yield to all traffic before finishing a U-turn.",
   "why": "These are places where a car turning across the road is especially dangerous.",
   "weight": 2,
@@ -4138,9 +4152,9 @@
     "q": "You stop behind a car at a red light. How much space should you leave?",
     "choices": [
      "Enough to see its rear tires touching the ground",
-     "About one foot",
-     "Enough to see its roof only",
-     "At least 100 feet"
+     "About one foot, almost bumper to bumper",
+     "Enough to see only the top of its roof",
+     "At least 100 feet behind it"
     ],
     "answer": 0
    },
@@ -4169,7 +4183,7 @@
     "type": "scenario",
     "q": "You are behind a slow tractor on a two-lane road, going up a hill. You cannot see over the top. What should you do?",
     "choices": [
-     "Wait until you can see far enough ahead to pass safely",
+     "Wait until you can see far ahead",
      "Pass quickly before the top",
      "Pass if the tractor waves you by",
      "Pass using the right shoulder"
@@ -4202,7 +4216,7 @@
     "type": "scenario",
     "q": "On a two-lane road, you are 80 feet from a railroad crossing behind a slow car. May you pass?",
     "choices": [
-     "No, passing is not allowed within 100 feet of a crossing",
+     "No, it is too close to the tracks",
      "Yes, if no train is coming",
      "Yes, if you finish before the tracks",
      "Yes, if you honk first"
@@ -4254,7 +4268,7 @@
     "type": "scenario",
     "q": "On a two-lane road, you are 60 feet from a narrow bridge and a hill blocks your view of the far side. A slow car is ahead. May you pass?",
     "choices": [
-     "No, wait until you are past the bridge and can see",
+     "No, you are too close to the bridge",
      "Yes, if you finish before the bridge",
      "Yes, if you honk first",
      "Yes, if the slow car moves right"
@@ -4332,6 +4346,7 @@
   "page": 77,
   "fact": "You may pass on the right only when the vehicle ahead on a two-lane road is signaling a left turn, or on a one-way or multi-lane road with two or more lanes going your way. Never leave the roadway to do it.",
   "why": "Drivers do not expect to be passed on the right, so it is allowed only where there is a proper lane for it.",
+  "example": "You are on a two-lane road, and the car ahead is signaling a left turn. If there is enough paved road on its right, you may carefully pass it on the right. You may not drive onto the shoulder or off the road to do it.",
   "weight": 3,
   "items": [
    {
@@ -4339,9 +4354,9 @@
     "q": "On a two-lane, two-way road, the car ahead is stopped and signaling a left turn. There is a full lane-width of pavement to its right. May you pass on the right?",
     "choices": [
      "Yes, if you can do it safely without leaving the roadway",
-     "No, passing on the right is never allowed",
-     "Only by using the shoulder",
-     "Only if you honk first"
+     "No, passing on the right is never allowed here",
+     "Only by driving onto the right shoulder",
+     "Only if you honk and wait a moment first"
     ],
     "answer": 0
    },
@@ -4350,9 +4365,9 @@
     "q": "When is passing on the right allowed?",
     "choices": [
      "On a road with two or more lanes going your direction",
-     "Whenever the car ahead is slow",
-     "On any two-lane road",
-     "When the right shoulder is paved"
+     "Whenever the car ahead is going below the limit",
+     "On any two-lane road when traffic is light",
+     "When the right shoulder is paved and wide"
     ],
     "answer": 0
    }
@@ -4446,13 +4461,14 @@
   "id": "law-passing-speed-limits",
   "topic": "passing-following",
   "page": 77,
-  "fact": "The 15 mph passing exception applies only where the posted limit is 55 mph or higher, never in work zones, and you must return to your lane and slow to the limit as soon as you can.",
+  "fact": "You may go up to 15 mph over the limit while passing only where the posted limit is 55 mph or higher, and never in work zones. After passing, return to the right lane and slow to the limit as soon as you can.",
   "why": "Lower-speed roads and work zones have more hazards close to the road, so extra speed is not allowed there.",
+  "example": "You are driving a car on a two-lane highway posted at 55 mph, behind a truck going below the limit. While you pass it, you may go up to 15 mph over the limit, and then you must move back to the right lane and slow to the limit as soon as you can. In a work zone, you may not speed up to pass.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "The passing speed exception only applies where the posted speed limit is at least how many mph?",
+    "q": "The rule that lets you go over the limit while passing only applies where the posted speed limit is at least how many mph?",
     "answer": 55,
     "unit": "mph"
    },
@@ -4469,7 +4485,7 @@
    },
    {
     "type": "tf",
-    "q": "The passing speed exception also applies in work zones.",
+    "q": "In a work zone, you may go over the speed limit while passing a slow vehicle.",
     "answer": false
    }
   ]
@@ -4486,8 +4502,8 @@
     "type": "scenario",
     "q": "A car starts to pass you on a two-lane road. What should you do?",
     "choices": [
-     "Keep a steady speed or slow down and move to the right of your lane",
-     "Speed up so it can't pass",
+     "Hold your speed or slow down, and move right in your lane",
+     "Speed up so it cannot get past you",
      "Move to the left side of your lane",
      "Brake hard right away"
     ],
@@ -4791,9 +4807,10 @@
   "id": "law-hill-uphill-curb",
   "topic": "parking",
   "page": 81,
-  "fact": "When parking facing uphill next to a curb, turn your front wheels sharply away from the curb and against it.",
+  "fact": "When parking facing uphill next to a curb, turn your front wheels sharply away from the curb, so the tire rests against the curb.",
   "why": "If the car rolls backward, the tire catches against the curb.",
   "hook": "Uphill with a curb: Up and away.",
+  "example": "You park facing uphill next to a curb. You turn your front wheels sharply away from the curb, so the front tire rests against the curb. If the car starts to roll backward, the curb stops the tire and the car does not roll into traffic.",
   "weight": 3,
   "items": [
    {
@@ -5083,7 +5100,7 @@
   "id": "drv-unattended-traveled",
   "topic": "parking",
   "page": 93,
-  "fact": "A vehicle left unattended on the traveled part of a highway may be towed away immediately, at any time.",
+  "fact": "A vehicle left unattended in a traffic lane of a highway (the part where cars drive) may be towed away immediately, at any time.",
   "why": "A stopped car in a traffic lane is a serious danger to other drivers.",
   "weight": 2,
   "items": [
@@ -5094,7 +5111,7 @@
    },
    {
     "type": "mc",
-    "q": "What can happen to an unattended car left on the traveled part of a highway?",
+    "q": "What can happen to an unattended car left in a traffic lane of a highway?",
     "choices": [
      "It can be towed immediately",
      "It can stay for 24 hours",
@@ -5219,7 +5236,7 @@
   "id": "law-freeway-travel-plan",
   "topic": "freeway",
   "page": 83,
-  "fact": "Before a long freeway trip, make a travel plan with stops for food, rest, and fuel, and tell someone your route and when you expect to arrive. On short trips, know your route and your entrance and exit numbers.",
+  "fact": "Before a long freeway trip, make a travel plan with stops for food, rest, and fuel, and tell someone your route, how long you will be gone, and when to expect you back. On short trips, know your route and your entrance and exit numbers.",
   "why": "Planning ahead prevents last-second decisions and helps people find you if something goes wrong.",
   "weight": 1,
   "items": [
@@ -5247,6 +5264,7 @@
   "page": 84,
   "fact": "When entering a freeway, signal, look over your left shoulder for a gap, and yield to traffic already on the freeway.",
   "why": "Freeway traffic is moving fast and has the right-of-way; you must fit into it.",
+  "example": "You drive down the ramp onto the freeway and turn on your signal. You look over your left shoulder for a space in traffic big enough for your car, and you speed up to match the freeway traffic. Cars already on the freeway go first, so you fit into a gap instead of making them move for you.",
   "weight": 3,
   "items": [
    {
@@ -5413,8 +5431,9 @@
   "id": "law-freeway-deceleration-lane",
   "topic": "freeway",
   "page": 86,
-  "fact": "When exiting a freeway, signal and move into the deceleration lane, then slow down there, not in the main freeway lanes. If an exit speed is posted, adjust your speed to it on the ramp.",
+  "fact": "When exiting a freeway, signal and move into the deceleration lane (the lane next to the exit where you slow down), then slow down there, not in the main freeway lanes. If an exit speed is posted, adjust your speed to it on the ramp.",
   "why": "Slowing in the deceleration lane lets you lose speed without slowing the traffic behind you.",
+  "example": "Your exit is coming up on the right. You signal and move into the deceleration lane before you brake, so cars behind you on the freeway do not have to slow down. If a sign on the ramp shows an exit speed, you slow to that speed.",
   "weight": 2,
   "items": [
    {
@@ -5964,7 +5983,7 @@
   "id": "drv-ipde",
   "topic": "safe-driving",
   "page": 90,
-  "fact": "Defensive driving steps: identify hazards, predict what could happen (assume the worst), decide what to do ahead of time, and execute smoothly.",
+  "fact": "Defensive driving steps: identify hazards, predict what could happen (assume the worst), decide what to do ahead of time, and execute (carry out) your decision smoothly.",
   "why": "Making a decision early is safer than reacting at the last second.",
   "hook": "Identify, Predict, Decide, Execute.",
   "weight": 2,
@@ -6003,7 +6022,7 @@
   "topic": "safe-driving",
   "page": 90,
   "fact": "Check the traffic behind you several times a minute. Most rear-end collisions are caused by vehicles following too closely.",
-  "why": "Knowing what is behind you tells you if someone is tailgating or coming up too fast.",
+  "why": "Knowing what is behind you tells you if someone is following too closely or coming up too fast.",
   "weight": 2,
   "items": [
    {
@@ -6042,10 +6061,10 @@
     "type": "scenario",
     "q": "You notice you have been driving just behind and to the side of another car for a while. What should you do?",
     "choices": [
-     "Speed up or drop back so you are not in its blind spot",
-     "Stay there because it is a safe spot",
+     "Speed up or slow down to get out of its blind spot",
+     "Stay there because it is a safe place to drive",
      "Honk so the driver knows you are there",
-     "Move closer to the car"
+     "Move closer to the side of the car"
     ],
     "answer": 0
    },
@@ -6144,7 +6163,7 @@
   "id": "drv-texting-illegal",
   "topic": "safe-driving",
   "page": 92,
-  "fact": "In Idaho, reading, writing, or sending text messages while driving is illegal and is an infraction. Hands-free use with neither hand is not covered by this law.",
+  "fact": "In Idaho, reading, writing, or sending text messages while driving is illegal. It is an infraction (an offense punished with a fine). The law does not apply to hands-free devices that you use without either hand.",
   "why": "Texting takes your eyes, hands, and mind off driving.",
   "weight": 3,
   "items": [
@@ -6181,8 +6200,8 @@
   "id": "drv-texting-penalty",
   "topic": "safe-driving",
   "page": 92,
-  "fact": "A texting-while-driving conviction brings a fine but no points on your driving record. It counts as a moving violation only when driving a commercial motor vehicle.",
-  "why": "The law sets the penalty as a fine for regular drivers, with stricter treatment for commercial drivers.",
+  "fact": "If you are convicted (found guilty) of texting while driving, you pay a fine, but no points are added to your driving record. It counts as a moving violation only if you were driving a commercial motor vehicle.",
+  "why": "Commercial drivers handle large vehicles for work, so the law treats their texting more seriously.",
   "weight": 2,
   "items": [
    {
@@ -6233,7 +6252,7 @@
   "id": "drv-highway-hypnosis",
   "topic": "safe-driving",
   "page": 93,
-  "fact": "Highway hypnosis is drowsiness caused by monotony and the steady sound of wind and tires. Prevent it by shifting your eyes often to objects near and far, left and right.",
+  "fact": "Highway hypnosis is drowsiness caused by a long, boring drive and the steady sound of wind and tires. Prevent it by moving your eyes often to objects near and far, left and right.",
   "why": "Moving your eyes keeps your brain active on long, boring stretches of road.",
   "weight": 2,
   "items": [
@@ -6241,7 +6260,7 @@
     "type": "mc",
     "q": "What is highway hypnosis?",
     "choices": [
-     "Drowsiness caused by monotony and road noise",
+     "Drowsiness from a long, boring drive",
      "Dizziness from driving on curves",
      "Blindness from headlight glare",
      "Anger at slow drivers"
@@ -6265,14 +6284,14 @@
   "id": "drv-texting-six-times",
   "topic": "safe-driving",
   "page": 93,
-  "fact": "Texting while driving is six times more dangerous than driving impaired. If you must use a phone, park in a safe place first.",
+  "fact": "Texting while driving is six times more dangerous than driving impaired (affected by alcohol or drugs). If you must use a phone, park in a safe place first.",
   "why": "Texting takes your eyes and attention off the road for long stretches.",
   "hook": "Text = 6x worse than impaired.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Texting while driving is how many times more dangerous than driving impaired?",
+    "q": "Texting while driving is how many times more dangerous than driving impaired (affected by alcohol or drugs)?",
     "answer": 6,
     "unit": "times"
    },
@@ -6371,7 +6390,7 @@
   "id": "alc-ticket-signature",
   "topic": "safe-driving",
   "page": 133,
-  "fact": "Signing a traffic ticket is not an admission of guilt, but refusing to sign it may lead to your arrest. You can contest the ticket in court.",
+  "fact": "Signing a traffic ticket does not mean you admit you are guilty, but refusing to sign it may lead to your arrest. If you disagree with the ticket, you can explain your side in court.",
   "why": "Your signature only shows you received the ticket; the court decides guilt.",
   "weight": 2,
   "items": [
@@ -6523,6 +6542,7 @@
   "page": 70,
   "fact": "You do not have to stop for a school bus going the opposite direction on a highway with four or more lanes, with two lanes going each way.",
   "why": "On a road with two lanes going each way, you are far from the side of the road where children get on and off the bus.",
+  "example": "You are on a highway with two lanes going your way and two lanes going the other way. A school bus on the other side stops with its red lights flashing. You do not have to stop, but drive with care. If the bus were on your side of the road, you would have to stop.",
   "weight": 3,
   "items": [
    {
@@ -6555,6 +6575,7 @@
   "page": 70,
   "fact": "You must stop for a school bus that has its red lights flashing or its stop arm out. Stay stopped until the lights stop, and all children are clear of the road and the bus. Never pass a stopped school bus that is loading or unloading.",
   "why": "Children may run across the road without looking, often in front of the bus where they are hard to see.",
+  "example": "You are on a two-lane road, and a school bus coming toward you stops with its red lights flashing. Even though the bus is in the other lane, you must stop too. Stay stopped until the red lights stop flashing and all the children are off the road and away from the bus.",
   "weight": 3,
   "items": [
    {
@@ -6683,10 +6704,10 @@
     "type": "scenario",
     "q": "A bicyclist is riding in the center of a narrow lane where a car cannot safely pass. What should you do?",
     "choices": [
-     "Stay back patiently and do not follow too closely",
-     "Honk so they move right",
-     "Squeeze past them",
-     "Tailgate to show you want to pass"
+     "Stay back and do not follow too closely",
+     "Honk so the bicyclist moves to the right",
+     "Squeeze past in the same lane",
+     "Follow close behind to show you want to pass"
     ],
     "answer": 0
    }
@@ -6699,6 +6720,7 @@
   "fact": "When passing a bicyclist, move into the left lane if you can. If not, leave at least 3 feet of space. Higher speeds need more space.",
   "why": "Bicyclists may need room to avoid debris or swerve, and they have little protection.",
   "hook": "3 feet minimum for a bike.",
+  "example": "You are on a road with two lanes going your way, and a bicyclist is riding near the right edge. If you can, move into the left lane to pass. If you cannot change lanes, leave at least 3 feet between your car and the bicyclist, even if you must wait for a break in traffic. At higher speeds, leave even more space.",
   "weight": 3,
   "items": [
    {
@@ -6742,10 +6764,10 @@
     "type": "mc",
     "q": "What must an Idaho bicyclist do before going straight through a red light?",
     "choices": [
-     "Stop and yield to vehicles in or near the intersection",
+     "Stop, then yield to nearby vehicles",
      "Wait for the light to turn green",
      "Only slow down; no stop is needed",
-     "Ring a bell"
+     "Ring a bell and keep going"
     ],
     "answer": 0
    }
@@ -6782,7 +6804,8 @@
   "topic": "sharing",
   "page": 98,
   "fact": "In Idaho, bicyclists do not have to come to a full stop at stop signs, but they must yield to vehicles in or near the intersection and then go with caution.",
-  "why": "Idaho law treats a stop sign as a yield for bicyclists, so do not be surprised when a cyclist rolls through.",
+  "why": "Idaho law treats a stop sign like a yield sign for bicyclists, so do not be surprised when a bicyclist goes through without a full stop.",
+  "example": "You are driving toward an intersection with stop signs, still far away. A bicyclist reaches a stop sign there, slows down, sees no vehicles in or near the intersection, and rides through without a full stop. In Idaho this is legal. If you were already at the intersection, the bicyclist would have to yield to you first.",
   "weight": 2,
   "items": [
    {
@@ -6794,7 +6817,7 @@
     "type": "mc",
     "q": "What must an Idaho bicyclist do at a stop sign?",
     "choices": [
-     "Yield to vehicles at or near the intersection, then proceed with caution",
+     "Yield to nearby vehicles, then go with care",
      "Come to a full stop and wait 3 seconds",
      "Get off and walk the bike across",
      "Nothing; bicycles may ignore stop signs"
@@ -6815,10 +6838,10 @@
     "type": "scenario",
     "q": "You come up behind a person riding a horse on a rural road. What should you do?",
     "choices": [
-     "Slow down and pass with plenty of room, without honking",
+     "Slow down, leave lots of room, and do not honk",
      "Honk to let the rider know you are there",
-     "Pass quickly to get by",
-     "Flash your lights and pass close"
+     "Pass quickly so you are near the horse less",
+     "Flash your lights and pass close to the horse"
     ],
     "answer": 0
    },
@@ -6861,16 +6884,17 @@
   "page": 99,
   "fact": "If a bicyclist is ahead of you when you plan to turn right, slow down and stay behind them until they pass your turn. Do not try to beat them.",
   "why": "Turning across a bicyclist causes a 'right hook' crash.",
+  "example": "You plan to turn right at the next corner. A bicyclist is riding ahead of you on the right side of the road, going the same way. Do not speed up to pass the bicyclist and turn in front of them. Slow down, stay behind, and turn after the bicyclist has gone past the corner.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
     "q": "You plan to turn right at the next corner, and a bicyclist is riding just ahead of you on the right. What should you do?",
     "choices": [
-     "Slow down and stay behind the bicyclist until they pass the corner",
+     "Slow down and stay behind the bicyclist",
      "Speed up and turn in front of the bicyclist",
-     "Honk and turn",
-     "Turn quickly while the bicyclist is still beside you"
+     "Honk and turn before the bicyclist gets there",
+     "Turn while the bicyclist is still beside you"
     ],
     "answer": 0
    },
@@ -6945,6 +6969,7 @@
   "page": 101,
   "fact": "After parallel parking, open the driver's door with your far hand (the right hand). This turns your body so you look in the mirror and over your shoulder for bicyclists.",
   "why": "The handbook says this habit helps prevent the most common type of crash involving bicyclists: a door opened into a passing rider.",
+  "example": "You parallel park on a street and want to get out. Open the driver's door with your right hand. Reaching across your body turns you toward the side mirror, so you look back over your shoulder for a bicyclist before the door opens.",
   "weight": 2,
   "items": [
    {
@@ -7132,7 +7157,7 @@
   "id": "drv-snowplow",
   "topic": "sharing",
   "page": 105,
-  "fact": "Use extra caution around snowplows. The blade throws snow up and off the road, which can cause blizzard-like conditions for drivers following too closely.",
+  "fact": "Use extra caution around snowplows. The blade throws snow up and off the road, which can make a thick cloud of snow that blocks the view of drivers following too closely.",
   "why": "Following closely puts you in a cloud of snow where you cannot see.",
   "weight": 2,
   "items": [
@@ -7194,7 +7219,7 @@
     "type": "scenario",
     "q": "You are following a large truck and cannot see the road ahead of it. What should you do?",
     "choices": [
-     "Drop back so you can see more of the road",
+     "Leave more space so you can see ahead",
      "Move closer so the truck blocks the wind",
      "Pass immediately",
      "Drive on the shoulder to see ahead"
@@ -7239,8 +7264,9 @@
   "id": "drv-truck-passing",
   "topic": "sharing",
   "page": 105,
-  "fact": "When passing a large vehicle, keep a steady speed. Do not move back in front of it until you can see its cab in your rear-view mirror.",
+  "fact": "When passing a large vehicle, keep a steady speed. Do not move back in front of it until you can see its cab (the front part where the driver sits) in your rear-view mirror.",
   "why": "Cutting in too soon and slowing down leaves the truck driver no time or room to stop.",
+  "example": "You are passing a large truck on the highway. Keep a steady speed as you go by. Before you move back into the truck's lane, look in your rear-view mirror. When you can see the front of the truck there, move back, and do not slow down right after.",
   "weight": 3,
   "items": [
    {
@@ -7265,13 +7291,13 @@
   "id": "drv-hazmat-rr",
   "topic": "sharing",
   "page": 106,
-  "fact": "Vehicles carrying hazardous materials have placards and must stop at all railroad crossings. Be ready to stop if you are following one.",
+  "fact": "Vehicles carrying hazardous (dangerous) materials have placards, which are signs that show what they carry. These vehicles must stop at all railroad crossings, so be ready to stop if you are following one.",
   "why": "Knowing they must stop keeps you from rear-ending them at a crossing.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
-    "q": "You are following a truck with a hazardous materials placard toward a railroad crossing. What should you expect?",
+    "q": "You are following a truck with a sign showing it carries hazardous (dangerous) materials. It is coming to a railroad crossing. What should you expect?",
     "choices": [
      "The truck will stop at the crossing",
      "The truck will speed up over the tracks",
@@ -7282,7 +7308,7 @@
    },
    {
     "type": "tf",
-    "q": "Vehicles carrying hazardous materials must stop at all railroad crossings.",
+    "q": "Vehicles carrying hazardous (dangerous) materials must stop at all railroad crossings.",
     "answer": true
    }
   ]
@@ -7291,7 +7317,7 @@
   "id": "drv-pilot-vehicle",
   "topic": "sharing",
   "page": 106,
-  "fact": "Pilot vehicles have amber lights and warn of oversized loads. When one comes toward you, slow down and move as far right as you can. If following one, increase your following distance.",
+  "fact": "Pilot vehicles are marked vehicles with amber (yellow-orange) lights that warn other drivers of a very large load. When one comes toward you, slow down and move as far right as you can. If following one, increase your following distance.",
   "why": "An oversized load may take up more than its own lane, especially on bridges and curves.",
   "weight": 2,
   "items": [
@@ -7325,6 +7351,7 @@
   "page": 106,
   "fact": "Large vehicles may swing left before turning right. Never try to squeeze by on the right side of a large vehicle that is turning right.",
   "why": "Squeezing past on the right is a frequent cause of crashes with large vehicles.",
+  "example": "You are behind a large truck at a corner. Its right turn signal is on, but it first moves a little to the left, leaving an open space on its right side. Do not drive into that space. The truck needs the room to make its turn, so wait until it has finished.",
   "weight": 3,
   "items": [
    {
@@ -7498,11 +7525,11 @@
    },
    {
     "type": "scenario",
-    "q": "You are driving down a long, steep mountain grade. You want to save fuel. What should you do?",
+    "q": "You are driving down a long, steep mountain road. You want to save fuel. What should you do?",
     "choices": [
      "Stay in a lower gear and keep the car in gear",
      "Shift into neutral and let the car coast",
-     "Hold the clutch down and ride the brakes",
+     "Hold the clutch down and keep braking",
      "Speed up so you spend less time on the hill"
     ],
     "answer": 0
@@ -7570,7 +7597,7 @@
   "id": "cnd-livestock-right-of-way",
   "topic": "conditions",
   "page": 108,
-  "fact": "In Idaho, horses, cattle, sheep, goats, and other livestock being moved across a road under control have the right-of-way. Be careful and work with the people moving them.",
+  "fact": "In Idaho, horses, cattle, sheep, goats, and other livestock that people are moving across a road have the right-of-way. Be careful and work with the people moving them.",
   "why": "Herds are slow and unpredictable, and the people moving them need drivers to wait.",
   "weight": 3,
   "items": [
@@ -7603,7 +7630,7 @@
   "topic": "conditions",
   "page": 108,
   "fact": "About 90% of driving choices are based on what you see, and your vision is reduced at night. At night, always drive slowly enough that you can stop within the distance you can see ahead.",
-  "why": "Your vision is reduced at night, and you need time to react to anything that appears in your headlights.",
+  "why": "If you drive faster than you can see, a person or animal can appear in your headlights too late for you to stop.",
   "weight": 2,
   "items": [
    {
@@ -7631,6 +7658,7 @@
   "page": 108,
   "fact": "If you hit livestock on open range or being moved under control, the animal's owner does not have to pay for damage to you or your vehicle. If you were careless, you may have to pay for the injured or killed animal.",
   "why": "On open range the animals are allowed to be there, so drivers are responsible for watching for them.",
+  "example": "You are driving at night outside a city in open range, and you hit a cow standing on the road. Your car is damaged. The cow's owner does not have to pay for your car. If you were driving carelessly, you may have to pay the owner for the cow.",
   "weight": 2,
   "items": [
    {
@@ -7858,7 +7886,7 @@
   "id": "cnd-twilight-dangerous",
   "topic": "conditions",
   "page": 109,
-  "fact": "The gray hours of twilight and dawn are the most dangerous times of day to drive.",
+  "fact": "The gray hours of twilight (just after sunset) and dawn (just before sunrise) are the most dangerous times of day to drive.",
   "why": "In the gray, low light it is hard to see other vehicles, people, and animals.",
   "weight": 2,
   "items": [
@@ -7884,7 +7912,7 @@
   "id": "cnd-bad-weather-pull-off",
   "topic": "conditions",
   "page": 110,
-  "fact": "It is safest not to drive in fog, dust storms, or heavy rain. If you must, slow down, and if it gets too bad, pull off the road and stop instead of creeping along.",
+  "fact": "It is safest not to drive in fog, dust storms, or heavy rain. If you must, slow down. If it gets too bad, pull off the road and stop instead of driving on very slowly.",
   "why": "A car moving very slowly in low visibility can be hit by drivers who cannot see it.",
   "weight": 2,
   "items": [
@@ -7893,7 +7921,7 @@
     "q": "You are driving in fog that keeps getting thicker until you can barely see. What should you do?",
     "choices": [
      "Pull off the road and stop",
-     "Creep along in your lane at 5 mph",
+     "Keep driving in your lane at 5 mph",
      "Turn on your high beams and keep going",
      "Follow the taillights ahead very closely"
     ],
@@ -8048,8 +8076,9 @@
   "id": "cnd-hydroplane-response",
   "topic": "conditions",
   "page": 111,
-  "fact": "If your car starts to hydroplane, keep a steady speed in a straight line and slowly ease off the gas. Do not stop or turn quickly until the tires grip again.",
+  "fact": "If your car starts to hydroplane (ride on top of water on the road), keep a steady speed in a straight line and slowly take your foot off the gas. Do not stop or turn quickly until the tires grip the road again.",
   "why": "Sudden braking or steering while the tires are on water can cause a skid.",
+  "example": "You are driving in heavy rain and feel your car start to ride on top of the water. Keep the wheel straight, hold a steady speed, and slowly lift your foot off the gas. Do not brake hard or turn quickly until you feel the tires grip the road again.",
   "weight": 3,
   "items": [
    {
@@ -8065,7 +8094,7 @@
    },
    {
     "type": "tf",
-    "q": "If your car hydroplanes, you should slam on the brakes.",
+    "q": "If your car hydroplanes, you should brake hard right away.",
     "answer": false
    }
   ]
@@ -8206,9 +8235,9 @@
     "type": "mc",
     "q": "Why do bridges ice over sooner than other roads?",
     "choices": [
-     "Cold air reaches them from below and they get no ground warmth",
-     "They are made of metal",
-     "Plows never clear them",
+     "They are open to cold air underneath",
+     "They get more traffic than other roads",
+     "Snowplows do not clear them",
      "They are always in the shade"
     ],
     "answer": 0
@@ -8576,10 +8605,10 @@
     "type": "scenario",
     "q": "A car suddenly stops ahead and you know you cannot stop in time. There is an open lane beside you. What is the best choice?",
     "choices": [
-     "Steer into the open lane, staying off the brakes while turning",
-     "Brake as hard as possible while turning sharply",
-     "Close your eyes and brace",
-     "Speed up and hit the car"
+     "Steer into the open lane without braking",
+     "Brake hard and turn the wheel sharply",
+     "Stay in your lane and brace yourself",
+     "Honk and keep driving straight ahead"
     ],
     "answer": 0
    },
@@ -8594,8 +8623,8 @@
   "id": "cnd-protect-in-crash",
   "topic": "emergencies",
   "page": 118,
-  "fact": "If you are about to be hit from the rear, press your head against the headrest. If hit from the side, be ready to steer. If hit from the front while wearing a seat belt, protect your face with your arms and hands.",
-  "why": "Each position lowers injury from the direction of impact.",
+  "fact": "The best protection in any crash is a seat belt buckled before the trip starts. If you are about to be hit from the rear, press the back of your head against the headrest. If hit from the side, be ready to steer. If hit from the front while wearing a seat belt, protect your face with your arms and hands.",
+  "why": "Pressing against the headrest keeps your head from snapping back, being ready to steer helps you get control back after a side hit, and your arms can shield your face.",
   "weight": 2,
   "items": [
    {
@@ -8635,10 +8664,10 @@
     "type": "scenario",
     "q": "A car is coming toward you in your lane on a two-lane road. What should you do?",
     "choices": [
-     "Slow down, honk, and move as far right as possible",
-     "Swerve into the left lane",
+     "Slow down, honk, and pull to the right",
+     "Swerve left into the other lane",
      "Stop in the middle of your lane",
-     "Speed up to get past quickly"
+     "Speed up to get past it quickly"
     ],
     "answer": 0
    },
@@ -8655,16 +8684,17 @@
   "page": 119,
   "fact": "If you hit an unattended vehicle or other property, make a reasonable effort to find the owner. If you cannot, leave a note with your name, phone number, and what happened.",
   "why": "The owner has a right to know who damaged their property.",
+  "example": "You back into a parked car in a parking lot and dent it. No one is in the car. You must make a real effort to find the owner. If you cannot find them, leave a note on the car that says what happened, with your name and phone number.",
   "weight": 3,
   "items": [
    {
     "type": "scenario",
     "q": "You back into a parked car in a lot and dent it. No one is around. What must you do?",
     "choices": [
-     "Try to find the owner, and if you cannot, leave a note with your name and phone number",
-     "Drive away since no one saw it",
-     "Wait one minute and then leave",
-     "Leave a note with only your license plate number"
+     "Find the owner, or leave a note with your name and phone number",
+     "Drive away, because no one saw it happen and the dent is small",
+     "Wait a few minutes for the owner, and then drive away",
+     "Leave a note with only your license plate number on it"
     ],
     "answer": 0
    },
@@ -8714,9 +8744,9 @@
     "q": "Your right wheels drift off the pavement onto the shoulder. There are no obstacles ahead. What should you do?",
     "choices": [
      "Steer straight, slow down, then return when safe",
-     "Jerk the wheel left right away",
-     "Brake hard immediately",
-     "Speed up to climb back onto the road"
+     "Jerk the wheel left to get back on right away",
+     "Brake hard right away to stop on the shoulder",
+     "Speed up so you can climb back onto the road"
     ],
     "answer": 0
    },
@@ -8766,6 +8796,7 @@
   "fact": "You must report a crash to police if anyone is injured or if property damage is more than $1,500.",
   "why": "Serious crashes need an official record for safety, insurance, and legal reasons.",
   "hook": "Hurt or over $1,500 = report.",
+  "example": "You are in a crash. No one is hurt, but the damage will cost more than $1,500 to fix. You must report the crash to police. You must also report any crash where someone is hurt, even if the damage is very small.",
   "weight": 3,
   "items": [
    {
@@ -8796,8 +8827,9 @@
   "id": "cnd-crash-stop-exchange-info",
   "topic": "emergencies",
   "page": 121,
-  "fact": "If you are in a crash, you must stop as close to the scene as you can without blocking traffic and exchange names, addresses, license numbers, and insurance information. Giving false information can be a misdemeanor.",
+  "fact": "If you are in a crash, you must stop as close to the scene as you can without blocking traffic and exchange names, addresses, license numbers, and insurance information. Giving false information can be a misdemeanor (a minor crime).",
   "why": "The people involved need correct information for insurance and legal follow-up.",
+  "example": "You are in a crash with another car. You stop as close to the crash as you can without blocking traffic. You and the other driver share your names, addresses, driver's license numbers, and insurance information. If you give a false name or address, you could be charged with a misdemeanor (a minor crime).",
   "weight": 3,
   "items": [
    {
@@ -8805,15 +8837,15 @@
     "q": "Which information should you exchange with other drivers after a crash?",
     "choices": [
      "Names, addresses, and insurance information",
-     "Only phone numbers",
-     "Only license plate numbers",
-     "Nothing until police arrive"
+     "Only phone numbers and email addresses",
+     "Only license plate numbers and car colors",
+     "Nothing at all until the police arrive"
     ],
     "answer": 0
    },
    {
     "type": "tf",
-    "q": "Giving false information after a crash can be a misdemeanor.",
+    "q": "Giving false information after a crash can be a misdemeanor (a minor crime).",
     "answer": true
    }
   ]
@@ -8822,8 +8854,9 @@
   "id": "cnd-good-samaritan",
   "topic": "emergencies",
   "page": 121,
-  "fact": "Idaho's Good Samaritan Law protects you from civil liability when you help an injured person in good faith. Do not move an injured person from a wrecked vehicle unless you have medical training or there is immediate danger such as fire.",
+  "fact": "Idaho's Good Samaritan Law protects you from civil liability (being sued for damages) when you help an injured person in good faith (honestly trying to help). Do not move an injured person from a wrecked vehicle unless you have medical training or there is immediate danger such as fire.",
   "why": "Moving an injured person the wrong way can make injuries worse.",
+  "example": "You stop at a crash, call for help, and stay with an injured driver to keep them calm. Because you are honestly trying to help, Idaho's Good Samaritan Law protects you from being sued for damages. Do not pull the driver out of the car unless you have medical training or there is an immediate danger, such as a fire.",
   "weight": 2,
   "items": [
    {
@@ -8839,7 +8872,7 @@
    },
    {
     "type": "tf",
-    "q": "Idaho's Good Samaritan Law protects people who help crash victims in good faith.",
+    "q": "Idaho's Good Samaritan Law protects people who honestly try to help crash victims.",
     "answer": true
    }
   ]
@@ -8848,8 +8881,9 @@
   "id": "cnd-quick-clearance",
   "topic": "emergencies",
   "page": 121,
-  "fact": "Under Idaho's Quick Clearance law, if you are in a crash on an interstate or major divided highway with no death or injury, you must safely move your vehicle to the shoulder, median, or emergency lane.",
+  "fact": "Under Idaho's Quick Clearance law, if you are in a crash on an interstate or major divided highway (a highway where the two directions of traffic are separated) with no death or injury, you must safely move your vehicle to the shoulder, median (the area between the two directions of traffic), or emergency lane.",
   "why": "Moving cars out of traffic lanes prevents more crashes and traffic jams.",
+  "example": "You have a small crash on the interstate. No one is hurt, and your car can still be driven. Do not leave it in the traffic lane while you wait for police. Carefully move it to the shoulder, the median, or an emergency lane.",
   "weight": 3,
   "items": [
    {
@@ -9602,7 +9636,7 @@
   "id": "lic-carry-license",
   "topic": "licensing",
   "page": 13,
-  "fact": "You must have your driver's license with you whenever you drive. Misusing or damaging a license, permit, or ID (identification) card on purpose is a misdemeanor.",
+  "fact": "You must have your driver's license with you whenever you drive. Misusing or damaging a license, permit, or ID (identification) card on purpose is a misdemeanor (a minor crime).",
   "why": "Police need to confirm quickly that the person driving is allowed to drive.",
   "weight": 2,
   "items": [
@@ -9629,7 +9663,7 @@
   "topic": "licensing",
   "page": 15,
   "fact": "A Driver Training Permit lets a person who is at least 14 1/2 and under 17 years old take a public or private driver training program.",
-  "why": "Young drivers start with formal training before they practice on their own with a parent.",
+  "why": "Formal training with an instructor comes first, so young drivers learn the basics before they practice with a parent or other licensed adult.",
   "hook": "14 1/2 = earliest age to start driver training.",
   "weight": 3,
   "items": [
@@ -9766,12 +9800,12 @@
    },
    {
     "type": "scenario",
-    "q": "You are 15 with a license. Your friend asks you to drive home alone at 10:30 p.m. What is true?",
+    "q": "You are 15 and have a license. Your friend asks you to drive home alone at 10:30 p.m. May you?",
     "choices": [
-     "You may not drive alone then because it is after 10:00 p.m.",
-     "You may drive because you have a license",
-     "You may drive if you have only one passenger",
-     "You may drive if the headlights are on"
+     "No, because it is after 10:00 p.m.",
+     "Yes, because you have a license",
+     "Yes, if you have only one passenger",
+     "Yes, if your headlights are on"
     ],
     "answer": 0
    }
@@ -9816,6 +9850,7 @@
   "fact": "If you are under 17, for the first 6 months after your license is issued you may carry no more than one passenger under 17, unless the passengers are related to you by blood, adoption, or marriage.",
   "why": "Young passengers are a major distraction for new drivers.",
   "hook": "First 6 months: 1 young friend max; family does not count.",
+  "example": "You are under 17 and got your license less than 6 months ago. A group of friends from school, all under 17, want a ride. Only one of them may ride with you. Your brother, sister, or cousin does not count toward this limit.",
   "weight": 3,
   "items": [
    {
@@ -9946,8 +9981,9 @@
   "id": "lic-gdl-6-months",
   "topic": "licensing",
   "page": 19,
-  "fact": "Under the Graduated Driver's License (GDL) program, a driver under 17 must finish driver training and then complete a supervised instruction period of at least 6 months with no violations.",
+  "fact": "Under the Graduated Driver's License (GDL) program, anyone under 17 who has never had an Idaho license must finish driver training and then complete a supervised instruction period (practice driving with a licensed driver beside you) of at least 6 months with no violations.",
   "why": "Months of supervised practice build experience before you drive alone.",
+  "example": "You are under 17 and have just finished your driver training class. Next comes the supervised period: for at least 6 months, you practice with a licensed driver beside you and get no traffic violations. After that, you take the knowledge and skills tests for your license.",
   "weight": 3,
   "items": [
    {
@@ -10007,6 +10043,7 @@
   "page": 19,
   "fact": "If you are convicted of a traffic violation during the GDL (Graduated Driver's License) supervised period, your permit is canceled. You must get a new permit, and the 6-month period starts over.",
   "why": "The supervised period must be violation-free to show you are ready to drive safely.",
+  "example": "You are partway through your 6-month supervised driving period. You get a speeding ticket and are convicted. Your permit is canceled, so you must get a new permit, and your 6 months start over. The months you already drove do not count.",
   "weight": 3,
   "items": [
    {
@@ -10033,13 +10070,14 @@
   "page": 26,
   "fact": "If you are under 18, a parent or legal guardian must sign to accept legal responsibility for your driving (if you are married, your spouse who is at least 18 may sign). Until you turn 18, the signer can take back consent at any time, and your license will be canceled.",
   "why": "Because the signer is legally responsible for you as a driver, they keep the power to stop that responsibility.",
+  "example": "You are under 18 and want a license. Your mother signs a form saying she accepts legal responsibility for your driving. She is now your liability signer. If she takes back her consent before you turn 18, your license is canceled.",
   "weight": 2,
   "items": [
    {
     "type": "scenario",
-    "q": "You are 16 and licensed. Your mother, who signed as your liability signer, withdraws her consent. What happens?",
+    "q": "You are 16 and licensed. Your mother signed to accept legal responsibility for your driving (she is your liability signer). Now she takes back her consent. What happens?",
     "choices": [
-     "Your driving credential is canceled",
+     "Your license is canceled",
      "Nothing changes until you turn 18",
      "You must retake only the knowledge test",
      "You may keep driving until your license expires"
@@ -10048,7 +10086,7 @@
    },
    {
     "type": "num",
-    "q": "Applicants younger than what age need a liability signer to get an Idaho license?",
+    "q": "Applicants younger than what age need a parent or guardian to sign and accept legal responsibility for their driving?",
     "answer": 18,
     "unit": "years"
    }
@@ -10119,6 +10157,7 @@
   "page": 30,
   "fact": "Do not let an unlicensed person drive your vehicle. If they crash, both the driver and the owner who gave permission are responsible for damage, injury, or death.",
   "why": "The owner chose to hand the vehicle to someone not qualified to drive it.",
+  "example": "Your friend has no driver's license and asks to borrow your car. You say yes, and your friend crashes into another car. You and your friend are both responsible for the damage and for anyone who is hurt.",
   "weight": 2,
   "items": [
    {
@@ -10184,16 +10223,17 @@
   "page": 32,
   "fact": "If you wear glasses or contacts for the vision screening, your license gets a lens restriction, and you must always wear them when you drive.",
   "why": "You only met the vision standard with corrective lenses, so you need them to see safely.",
+  "example": "You wear your glasses for the vision screening, and you pass. Your license now has a lens restriction. Every time you drive, even for a short trip, you must wear your glasses or contacts, or you can be cited.",
   "weight": 2,
   "items": [
    {
     "type": "scenario",
     "q": "Your license has a lens restriction. You forgot your glasses and need to drive a short distance. What is true?",
     "choices": [
-     "You may be cited and lose your driving privileges if you drive without them",
-     "Short trips under 5 miles are allowed without glasses",
+     "You could be cited for driving without them",
+     "Trips under 5 miles are allowed without them",
      "It is fine during daylight hours",
-     "It is fine if a licensed adult rides with you"
+     "It is fine if a licensed adult rides along"
     ],
     "answer": 0
    },
@@ -10209,7 +10249,7 @@
   "topic": "licensing",
   "page": 32,
   "fact": "You must be at least 15 years old to take the knowledge and skills tests for a license.",
-  "why": "Idaho sets a minimum age before anyone can be tested for a license.",
+  "why": "Younger teens can start learning in driver training, but you must be 15 before the state tests whether you are ready to drive.",
   "weight": 3,
   "items": [
    {
@@ -10353,6 +10393,7 @@
   "page": 37,
   "fact": "A critical driving error on the skills test, such as speeding, disobeying a sign or signal, or hitting an object, is an automatic fail and the test ends right away.",
   "why": "These errors could cause a crash, injury, or death, so they show you are not yet ready to drive alone.",
+  "example": "During your skills test, you drive a little over the speed limit. That is a critical driving error, because speeding could cause a crash. You fail right away and the examiner ends the test. It does not matter how well you drove before that.",
   "weight": 2,
   "items": [
    {
@@ -10963,7 +11004,7 @@
   "id": "lic-equip-headlights",
   "topic": "equipment",
   "page": 38,
-  "fact": "Vehicles need two headlights with high and low beams. High beams must let you see people and vehicles at least 350 feet ahead; low beams must light the road at least 100 feet ahead.",
+  "fact": "Vehicles need two headlights with high and low beams, aimed to light the road without blinding oncoming drivers. High beams must let you see people and vehicles at least 350 feet ahead; low beams must light the road at least 100 feet ahead. Headlights must not be covered with material that light cannot pass through.",
   "why": "You need to see far enough ahead at night to react to hazards in time.",
   "weight": 2,
   "items": [
@@ -11012,7 +11053,7 @@
    },
    {
     "type": "mc",
-    "q": "Who is responsible for fixing a vehicle that lacks vital equipment?",
+    "q": "A vehicle is missing equipment that the law requires. Who is responsible for fixing it?",
     "choices": [
      "The person driving it",
      "The state inspection station",
