@@ -29,6 +29,12 @@ for (const st of readdirSync(join(root, 'states'))) {
     if (![1, 2, 3].includes(f.weight)) err(`${st}/${f.id}: bad weight`);
     if (f.sign && !existsSync(join(root, dir, 'signs', `${f.sign}.svg`))) err(`${st}/${f.id}: missing sign image ${f.sign}.svg`);
     if (!f.items?.length) err(`${st}/${f.id}: no items`);
+    // An example may illustrate the fact but must not bring in numbers the fact doesn't state.
+    if (f.example) {
+      const nums = s => (s.match(/\d[\d,]*(?:\.\d+)?|\.\d+/g) || []).map(n => parseFloat(n.replaceAll(',', '')));
+      const known = new Set(nums(f.fact));
+      for (const n of nums(f.example)) if (!known.has(n)) err(`${st}/${f.id}: example has number ${n} that the fact doesn't state`);
+    }
     for (const it of f.items || []) {
       if (['mc', 'scenario', 'sign'].includes(it.type) && (it.choices?.length !== 4 || !(it.answer >= 0 && it.answer < 4))) err(`${st}/${f.id}: bad choices`);
       if (it.type === 'sign' && !f.sign) err(`${st}/${f.id}: sign item without sign`);
@@ -51,6 +57,7 @@ for (const st of readdirSync(join(root, 'states'))) {
           err(`${p}/${f.id}: item ${i} doesn't match English`);
       });
       for (const k of ['topic', 'page', 'weight', 'sign']) if (g[k] !== f[k]) err(`${p}/${f.id}: ${k} differs`);
+      if (!!f.example !== !!g.example) err(`${p}/${f.id}: example ${f.example ? 'missing' : 'not in English'}`);
     }
     if (tr.size !== base.length) err(`${p}: ${tr.size} facts vs ${base.length} in English`);
   }

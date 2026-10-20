@@ -8874,19 +8874,20 @@
   "id": "alc-als-notice",
   "topic": "alcohol",
   "page": 125,
-  "fact": "If you are arrested for DUI (driving under the influence) and fail an evidentiary test, the officer gives you a Notice of Suspension. This is an Administrative License Suspension (ALS), and you have 7 days from the notice date to request a hearing.",
+  "fact": "If you are arrested for DUI (driving under the influence) and fail an evidentiary test (an official breath, blood, or urine test), the officer gives you a Notice of Suspension. This is an Administrative License Suspension (ALS), and you have 7 days from the notice date to request a hearing.",
   "why": "The quick deadline keeps the process moving while still giving you a fair chance to challenge it.",
+  "example": "You are arrested for DUI (driving under the influence), and your breath test shows alcohol over the legal limit. The officer gives you a Notice of Suspension right away. If you think it is wrong, you have 7 days from the date on the notice to ask for a hearing.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Within how many days of the notice date can you request a hearing on an Administrative License Suspension?",
+    "q": "You got a Notice of Suspension after failing an alcohol test. Within how many days of the date on the notice can you ask for a hearing?",
     "answer": 7,
     "unit": "days"
    },
    {
     "type": "mc",
-    "q": "What does an officer give you right away when you fail an evidentiary alcohol test after a DUI (driving under the influence) arrest?",
+    "q": "After a DUI (driving under the influence) arrest, your breath test shows alcohol over the legal limit. What does the officer give you right away?",
     "choices": [
      "A Notice of Suspension",
      "A restricted driving permit",
@@ -8903,22 +8904,23 @@
   "page": 126,
   "fact": "The ALS (administrative license suspension) Notice of Suspension takes effect 30 days after the day you receive it.",
   "why": "The waiting period gives time to request a hearing before the suspension starts.",
+  "example": "You fail an alcohol test and the officer gives you a Notice of Suspension. Your suspension does not start that day. It starts 30 days after the day you received the notice, which gives you time to ask for a hearing first.",
   "weight": 2,
   "items": [
    {
     "type": "num",
-    "q": "How many days after you receive it does an ALS (administrative license suspension) Notice of Suspension take effect?",
+    "q": "After a failed alcohol test, an officer gives you a Notice of Suspension (an ALS, administrative license suspension). How many days after you receive it does the suspension start?",
     "answer": 30,
     "unit": "days"
    },
    {
     "type": "tf",
-    "q": "An ALS (administrative license suspension) Notice of Suspension takes effect 30 days after the day you receive it.",
+    "q": "After a failed alcohol test, your license suspension (ALS, administrative license suspension) starts 30 days after the day you receive the Notice of Suspension.",
     "answer": true
    },
    {
     "type": "mc",
-    "q": "When does an ALS (administrative license suspension) Notice of Suspension take effect?",
+    "q": "After a failed alcohol test, when does the license suspension (ALS, administrative license suspension) start?",
     "choices": [
      "30 days after you receive it",
      "The day you receive it",
@@ -8933,25 +8935,26 @@
   "id": "alc-als-first-failure",
   "topic": "alcohol",
   "page": 126,
-  "fact": "For a first failed evidentiary test, your license is suspended for 90 days, with no driving at all for the first 30 days. After the suspension, you must use an ignition interlock on any vehicle you drive for 1 year.",
+  "fact": "If you fail an evidentiary test (an official alcohol test) for the first time, your license is suspended for 90 days, with no driving at all for the first 30 days. After the suspension, you must use an ignition interlock on any vehicle you drive for 1 year.",
   "why": "The penalty removes you from the road and then checks for alcohol before you can drive again.",
+  "example": "You are arrested for DUI (driving under the influence), and your breath test shows alcohol over the legal limit. It is your first time. Your license is suspended for 90 days, and for the first 30 of those days you cannot drive at all. When the suspension ends, for the next 1 year any vehicle you drive must have an ignition interlock: a breath tester connected to the ignition that will not let the vehicle start if it finds alcohol.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "How many days is the ALS (administrative license suspension) for a first failed evidentiary test?",
+    "q": "You fail an official alcohol test for the first time after a DUI (driving under the influence) arrest. How many days is your license suspended?",
     "answer": 90,
     "unit": "days"
    },
    {
     "type": "num",
-    "q": "During a first-failure ALS (administrative license suspension), for how many days do you have absolutely no driving privileges?",
+    "q": "You fail an official alcohol test for the first time and your license is suspended. At the start of the suspension, for how many days can you not drive at all?",
     "answer": 30,
     "unit": "days"
    },
    {
     "type": "mc",
-    "q": "After a first-failure ALS (administrative license suspension) ends, what must be on any vehicle you drive for 1 year?",
+    "q": "You failed an alcohol test after a DUI (driving under the influence) arrest, and your license was suspended. After that suspension ends, what must be on any vehicle you drive for 1 year?",
     "choices": [
      "An ignition interlock device",
      "A GPS (Global Positioning System) tracker",
@@ -8966,19 +8969,20 @@
   "id": "alc-als-second-failure",
   "topic": "alcohol",
   "page": 126,
-  "fact": "A second failed evidentiary test within 5 years brings a 1-year suspension with no driving privileges of any kind.",
+  "fact": "A second failed evidentiary test (an official alcohol test) within 5 years brings a 1-year suspension with no driving privileges of any kind.",
   "why": "Repeat offenders are a greater danger, so the penalty is much stronger.",
+  "example": "You failed an alcohol test once before, less than 5 years ago. Now you are arrested again and fail again. Your license is suspended for 1 year, and you cannot drive at all during that year, not even to work.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "A second failed test within how many years brings a 1-year absolute ALS (administrative license suspension)?",
+    "q": "A second failed alcohol test within how many years brings a 1-year suspension with no driving at all?",
     "answer": 5,
     "unit": "years"
    },
    {
     "type": "mc",
-    "q": "What is the ALS (administrative license suspension) penalty for a second failed evidentiary test within 5 years?",
+    "q": "You fail an official alcohol test for the second time in 5 years. What happens to your license?",
     "choices": [
      "1-year suspension with no driving at all",
      "90-day suspension",
@@ -8995,16 +8999,17 @@
   "page": 126,
   "fact": "An ALS (administrative license suspension) is a civil penalty that is separate from the criminal DUI (driving under the influence) case. You must follow the ALS rules and also go to court for the DUI charge.",
   "why": "The license penalty and the criminal case are two different processes, so one does not replace the other.",
+  "example": "You failed an alcohol test, so the Idaho Transportation Department suspends your license. That is one process. You also have a court date for the DUI (driving under the influence) charge. You must follow the suspension rules and still go to court. One does not cancel the other.",
   "weight": 2,
   "items": [
    {
     "type": "tf",
-    "q": "If you receive an Administrative License Suspension, you no longer have to appear in court for the DUI (driving under the influence) charge.",
+    "q": "Your license was suspended for failing an alcohol test (an ALS, administrative license suspension). This means you no longer have to go to court for the DUI (driving under the influence) charge.",
     "answer": false
    },
    {
     "type": "mc",
-    "q": "What kind of penalty is an Administrative License Suspension?",
+    "q": "What kind of penalty is a license suspension for failing an alcohol test (an ALS, administrative license suspension)?",
     "choices": [
      "A civil penalty separate from the criminal case",
      "A criminal penalty that replaces the court case",
@@ -9019,13 +9024,14 @@
   "id": "alc-implied-consent",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Under Idaho's implied consent law, anyone who drives or is in physical control of a vehicle has agreed to take a BAC (blood alcohol concentration) or drug test if suspected of DUI (driving under the influence). Refusing brings a license suspension and a $250 civil penalty.",
+  "fact": "Under Idaho's implied consent law, anyone who drives or is in physical control of a vehicle has agreed to take a BAC (blood alcohol concentration) or drug test if suspected of DUI (driving under the influence). Refusing brings a license suspension and a $250 civil penalty (a fine that is separate from any criminal charge).",
   "why": "By choosing to drive, you accept testing so that impaired drivers can be found and stopped.",
+  "example": "An officer stops you, thinks you may be under the influence, and asks you to take a breath test. By driving in Idaho, you already agreed to this test. If you say no, your license is suspended and you owe a $250 civil penalty, even if you had not been drinking.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "How many dollars is the civil penalty for refusing an evidentiary test in Idaho?",
+    "q": "How many dollars is the civil penalty (fine) for refusing an official alcohol or drug test in Idaho?",
     "answer": 250,
     "unit": "dollars"
    },
@@ -9051,13 +9057,14 @@
   "id": "alc-refusal-first",
   "topic": "alcohol",
   "page": 126,
-  "fact": "If you refuse an evidentiary test and the court upholds the officer, a first offense means a 1-year suspension with no driving privileges of any kind.",
+  "fact": "If you refuse an evidentiary test (an official alcohol or drug test) and the court upholds the officer (agrees with the officer), a first offense means a 1-year suspension with no driving privileges of any kind.",
   "why": "Refusing a test is punished heavily so drivers do not refuse to hide their impairment.",
+  "example": "An officer asks you to take a breath test, and you refuse. The officer gives you a Notice of Suspension. If the court agrees with the officer and this is your first refusal, you lose your license for 1 year and cannot drive at all. That is longer than the suspension for failing the test the first time, so refusing does not help you.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "How many years is the license suspension for a first test refusal?",
+    "q": "You refuse an official alcohol test for the first time, and the court agrees with the officer. How many years is your license suspended?",
     "answer": 1,
     "unit": "years"
    },
@@ -9080,6 +9087,7 @@
   "page": 127,
   "fact": "An ignition interlock device needs a breath sample before the vehicle will start. If the sample shows alcohol at or above a preset level, the vehicle will not start. The driver pays all costs, and the device is required on every administrative license suspension, starting when the suspension ends.",
   "why": "It stops a person who has been drinking from starting the vehicle at all.",
+  "example": "Your suspension has ended, and a device is now installed in your car. Each time you want to start the car, you blow into it. If it finds alcohol at or above its set level, the engine will not start. You pay for the installation, the upkeep, and the monthly fees.",
   "weight": 2,
   "items": [
    {
@@ -9100,7 +9108,7 @@
    },
    {
     "type": "tf",
-    "q": "An ignition interlock device is required on all administrative license suspensions, starting after the suspension ends.",
+    "q": "When your license is suspended for an alcohol test (an administrative license suspension), you must have an ignition interlock device after the suspension ends.",
     "answer": true
    }
   ]
@@ -9111,11 +9119,12 @@
   "page": 127,
   "fact": "A second test refusal within 10 years brings a 2-year absolute suspension. This is in addition to any court penalty for a DUI (driving under the influence) conviction.",
   "why": "Repeated refusals show a driver trying to avoid responsibility, so the penalty doubles.",
+  "example": "You refused an alcohol test once before, less than 10 years ago. Now you refuse again. Your license is suspended for 2 years with no driving at all. If you are also convicted of DUI (driving under the influence), the court penalties come on top of that.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "A second test refusal within how many years leads to a 2-year absolute suspension?",
+    "q": "A second refusal of an official alcohol test within how many years leads to a 2-year suspension with no driving at all?",
     "answer": 10,
     "unit": "years"
    },
@@ -9428,6 +9437,7 @@
   "page": 131,
   "fact": "Even with a BAC (blood alcohol concentration) below .08, you can still be convicted of driving under the influence of other intoxicating substances. A BAC of .20 or more brings even stiffer penalties.",
   "why": "The law targets impaired driving, not just a number on a test.",
+  "example": "Your BAC (blood alcohol concentration) is under the .08 limit, but you also took a medicine that makes you very drowsy, and you are weaving between lanes. You can still be convicted of DUI (driving under the influence), because the law is about being impaired, not only about the alcohol number.",
   "weight": 3,
   "items": [
    {
@@ -9488,6 +9498,7 @@
   "page": 132,
   "fact": "A first DUI (driving under the influence) conviction can bring up to 6 months in jail, up to a $1,000 fine, and a license suspension of 90 to 180 days (1 year if under 21), with no driving at all for the first 30 days.",
   "why": "Even one DUI (driving under the influence) puts lives at risk, so the penalties are serious from the start.",
+  "example": "You are over 21 and are convicted of DUI (driving under the influence) for the first time. The judge can give you up to 6 months in jail and a fine of up to $1,000. Your license is suspended for 90 to 180 days, and for the first 30 days you cannot drive at all. If you were under 21, the suspension would be 1 year.",
   "weight": 3,
   "items": [
    {
@@ -9558,7 +9569,7 @@
   "id": "alc-dui-third-felony",
   "topic": "alcohol",
   "page": 132,
-  "fact": "Three or more DUI (driving under the influence) convictions within 10 years is a felony. For a driver 21 or older, penalties include mandatory jail, up to a $5,000 fine, and a license suspension of 1 to 5 years. Drivers under 21 face up to a $2,000 fine and a suspension of at least 1 year or until age 21, whichever is longer.",
+  "fact": "Three or more DUI (driving under the influence) convictions within 10 years is a felony (a serious crime). For a driver 21 or older, penalties include mandatory jail, up to a $5,000 fine, and a license suspension of 1 to 5 years. Drivers under 21 face up to a $2,000 fine and a suspension of at least 1 year or until age 21, whichever is longer.",
   "why": "Drivers who keep driving impaired are treated as serious criminals because of the danger they pose.",
   "weight": 3,
   "items": [
@@ -9581,7 +9592,7 @@
    },
    {
     "type": "num",
-    "q": "What is the longest license suspension, in years, for three or more DUIs within 10 years (age 21 or older)?",
+    "q": "What is the longest license suspension, in years, for three or more DUI (driving under the influence) convictions within 10 years (age 21 or older)?",
     "answer": 5,
     "unit": "years"
    }

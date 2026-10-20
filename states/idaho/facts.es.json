@@ -8874,19 +8874,20 @@
   "id": "alc-als-notice",
   "topic": "alcohol",
   "page": 125,
-  "fact": "Si lo arrestan por DUI (manejar bajo los efectos del alcohol o drogas) y no pasa una prueba de evidencia, el agente le da un Aviso de Suspensión (Notice of Suspension). Esto es una Suspensión Administrativa de la Licencia (ALS), y tiene 7 días desde la fecha del aviso para pedir una audiencia.",
+  "fact": "Si lo arrestan por DUI (manejar bajo los efectos del alcohol o drogas) y no pasa una prueba de evidencia (una prueba oficial de aliento, sangre u orina), el agente le da un Aviso de Suspensión (Notice of Suspension). Esto es una Suspensión Administrativa de la Licencia (ALS), y tiene 7 días desde la fecha del aviso para pedir una audiencia.",
   "why": "El plazo corto hace que el proceso avance y aun así le da una oportunidad justa de impugnarlo.",
+  "example": "Lo arrestan por DUI (manejar bajo los efectos del alcohol o drogas), y su prueba de aliento muestra alcohol por encima del límite legal. El agente le da un Aviso de Suspensión (Notice of Suspension) de inmediato. Si usted cree que es un error, tiene 7 días desde la fecha del aviso para pedir una audiencia.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "¿Dentro de cuántos días desde la fecha del aviso puede pedir una audiencia sobre una Suspensión Administrativa de la Licencia?",
+    "q": "Recibió un Aviso de Suspensión (Notice of Suspension) después de no pasar una prueba de alcohol. ¿Dentro de cuántos días desde la fecha del aviso puede pedir una audiencia?",
     "answer": 7,
     "unit": "días"
    },
    {
     "type": "mc",
-    "q": "¿Qué le da un agente de inmediato cuando no pasa una prueba de evidencia de alcohol después de un arresto por DUI (manejar bajo los efectos del alcohol o drogas)?",
+    "q": "Después de un arresto por DUI (manejar bajo los efectos del alcohol o drogas), su prueba de aliento muestra alcohol por encima del límite legal. ¿Qué le da el agente de inmediato?",
     "choices": [
      "Un Aviso de Suspensión",
      "Un permiso de manejo restringido",
@@ -8903,22 +8904,23 @@
   "page": 126,
   "fact": "El Aviso de Suspensión de ALS (suspensión administrativa de la licencia) entra en vigor 30 días después del día en que lo recibe.",
   "why": "El tiempo de espera da tiempo para pedir una audiencia antes de que empiece la suspensión.",
+  "example": "No pasa una prueba de alcohol y el agente le da un Aviso de Suspensión. Su suspensión no empieza ese día. Empieza 30 días después del día en que recibió el aviso, y así tiene tiempo para pedir una audiencia antes.",
   "weight": 2,
   "items": [
    {
     "type": "num",
-    "q": "¿Cuántos días después de recibirlo entra en vigor un Aviso de Suspensión de ALS (suspensión administrativa de la licencia)?",
+    "q": "Después de no pasar una prueba de alcohol, un agente le da un Aviso de Suspensión (una ALS, suspensión administrativa de la licencia). ¿Cuántos días después de recibirlo empieza la suspensión?",
     "answer": 30,
     "unit": "días"
    },
    {
     "type": "tf",
-    "q": "Un Aviso de Suspensión de ALS (suspensión administrativa de la licencia) entra en vigor 30 días después del día en que lo recibe.",
+    "q": "Después de no pasar una prueba de alcohol, la suspensión de su licencia (ALS, suspensión administrativa de la licencia) empieza 30 días después del día en que recibe el Aviso de Suspensión.",
     "answer": true
    },
    {
     "type": "mc",
-    "q": "¿Cuándo entra en vigor un Aviso de Suspensión de ALS (suspensión administrativa de la licencia)?",
+    "q": "Después de no pasar una prueba de alcohol, ¿cuándo empieza la suspensión de la licencia (ALS, suspensión administrativa de la licencia)?",
     "choices": [
      "30 días después de recibirlo",
      "El mismo día en que lo recibe",
@@ -8933,25 +8935,26 @@
   "id": "alc-als-first-failure",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Si no pasa una prueba de evidencia por primera vez, su licencia se suspende por 90 días, sin poder manejar nada durante los primeros 30 días. Después de la suspensión, debe usar un dispositivo de bloqueo de encendido (ignition interlock) en cualquier vehículo que maneje durante 1 año.",
+  "fact": "Si no pasa una prueba de evidencia (una prueba oficial de alcohol) por primera vez, su licencia se suspende por 90 días, sin poder manejar nada durante los primeros 30 días. Después de la suspensión, debe usar un dispositivo de bloqueo de encendido (ignition interlock) en cualquier vehículo que maneje durante 1 año.",
   "why": "El castigo lo saca del camino y luego revisa que no haya alcohol antes de que pueda volver a manejar.",
+  "example": "Lo arrestan por DUI (manejar bajo los efectos del alcohol o drogas), y su prueba de aliento muestra alcohol por encima del límite legal. Es su primera vez. Su licencia se suspende por 90 días, y durante los primeros 30 de esos días no puede manejar nada. Cuando termina la suspensión, durante el siguiente 1 año cualquier vehículo que maneje debe tener un dispositivo de bloqueo de encendido (ignition interlock): un aparato que mide el alcohol en el aliento, conectado al encendido, que no deja arrancar el vehículo si detecta alcohol.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "¿De cuántos días es la suspensión ALS (suspensión administrativa de la licencia) la primera vez que no pasa una prueba de evidencia?",
+    "q": "No pasa una prueba oficial de alcohol por primera vez después de un arresto por DUI (manejar bajo los efectos del alcohol o drogas). ¿Por cuántos días se suspende su licencia?",
     "answer": 90,
     "unit": "días"
    },
    {
     "type": "num",
-    "q": "Durante una ALS (suspensión administrativa de la licencia) por primera vez, ¿por cuántos días no tiene absolutamente ningún privilegio de manejo?",
+    "q": "No pasa una prueba oficial de alcohol por primera vez y su licencia se suspende. Al principio de la suspensión, ¿por cuántos días no puede manejar nada?",
     "answer": 30,
     "unit": "días"
    },
    {
     "type": "mc",
-    "q": "Después de que termina una ALS (suspensión administrativa de la licencia) por primera vez, ¿qué debe tener cualquier vehículo que maneje durante 1 año?",
+    "q": "No pasó una prueba de alcohol después de un arresto por DUI (manejar bajo los efectos del alcohol o drogas), y su licencia fue suspendida. Después de que termina esa suspensión, ¿qué debe tener cualquier vehículo que maneje durante 1 año?",
     "choices": [
      "Un dispositivo de bloqueo de encendido (ignition interlock)",
      "Un rastreador GPS (sistema de posicionamiento global)",
@@ -8966,19 +8969,20 @@
   "id": "alc-als-second-failure",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Si no pasa una prueba de evidencia por segunda vez en 5 años, recibe una suspensión de 1 año sin ningún tipo de privilegio de manejo.",
+  "fact": "Si no pasa una prueba de evidencia (una prueba oficial de alcohol) por segunda vez en 5 años, recibe una suspensión de 1 año sin ningún tipo de privilegio de manejo.",
   "why": "Los que repiten la falta son un peligro mayor, así que el castigo es mucho más fuerte.",
+  "example": "Ya no pasó una prueba de alcohol una vez, hace menos de 5 años. Ahora lo arrestan otra vez y otra vez no pasa la prueba. Su licencia se suspende por 1 año, y no puede manejar nada durante ese año, ni siquiera para ir al trabajo.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "No pasar la prueba por segunda vez dentro de ¿cuántos años trae una suspensión ALS (suspensión administrativa de la licencia) absoluta de 1 año?",
+    "q": "No pasar una prueba de alcohol por segunda vez dentro de ¿cuántos años trae una suspensión de 1 año sin poder manejar nada?",
     "answer": 5,
     "unit": "años"
    },
    {
     "type": "mc",
-    "q": "¿Cuál es el castigo ALS (suspensión administrativa de la licencia) por no pasar una prueba de evidencia por segunda vez en 5 años?",
+    "q": "No pasa una prueba oficial de alcohol por segunda vez en 5 años. ¿Qué pasa con su licencia?",
     "choices": [
      "Suspensión de 1 año sin poder manejar nada",
      "Suspensión de 90 días",
@@ -8995,16 +8999,17 @@
   "page": 126,
   "fact": "La ALS (suspensión administrativa de la licencia) es un castigo civil, separado del caso penal por DUI (manejar bajo los efectos del alcohol o drogas). Debe cumplir las reglas de la ALS y también presentarse en la corte por el cargo de DUI.",
   "why": "El castigo a la licencia y el caso penal son dos procesos diferentes, así que uno no reemplaza al otro.",
+  "example": "No pasó una prueba de alcohol, así que el Idaho Transportation Department (Departamento de Transporte de Idaho) suspende su licencia. Ese es un proceso. Usted también tiene una fecha en la corte por el cargo de DUI (manejar bajo los efectos del alcohol o drogas). Debe cumplir las reglas de la suspensión y aun así presentarse en la corte. Uno no cancela al otro.",
   "weight": 2,
   "items": [
    {
     "type": "tf",
-    "q": "Si recibe una Suspensión Administrativa de la Licencia, ya no tiene que presentarse en la corte por el cargo de DUI (manejar bajo los efectos del alcohol o drogas).",
+    "q": "Su licencia fue suspendida por no pasar una prueba de alcohol (una ALS, suspensión administrativa de la licencia). Esto significa que ya no tiene que presentarse en la corte por el cargo de DUI (manejar bajo los efectos del alcohol o drogas).",
     "answer": false
    },
    {
     "type": "mc",
-    "q": "¿Qué tipo de castigo es una Suspensión Administrativa de la Licencia?",
+    "q": "¿Qué tipo de castigo es una suspensión de la licencia por no pasar una prueba de alcohol (una ALS, suspensión administrativa de la licencia)?",
     "choices": [
      "Un castigo civil separado del caso penal",
      "Un castigo penal que reemplaza el caso en la corte",
@@ -9019,13 +9024,14 @@
   "id": "alc-implied-consent",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Según la ley de consentimiento implícito (implied consent) de Idaho, toda persona que maneja o tiene el control físico de un vehículo ya aceptó hacerse una prueba de BAC (nivel de alcohol en la sangre) o de drogas si se sospecha que maneja bajo los efectos (DUI). Negarse trae una suspensión de la licencia y una multa civil de $250.",
+  "fact": "Según la ley de consentimiento implícito (implied consent) de Idaho, toda persona que maneja o tiene el control físico de un vehículo ya aceptó hacerse una prueba de BAC (nivel de alcohol en la sangre) o de drogas si se sospecha que maneja bajo los efectos (DUI, manejar bajo los efectos del alcohol o drogas). Negarse trae una suspensión de la licencia y una multa civil de $250 (una multa separada de cualquier cargo penal).",
   "why": "Al decidir manejar, usted acepta las pruebas para que se pueda encontrar y detener a los conductores intoxicados.",
+  "example": "Un agente lo detiene, cree que usted puede estar bajo los efectos del alcohol o drogas y le pide hacerse una prueba de aliento. Al manejar en Idaho, usted ya aceptó esta prueba. Si dice que no, su licencia se suspende y debe pagar una multa civil de $250, aunque no haya tomado alcohol.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "¿De cuántos dólares es la multa civil por negarse a una prueba de evidencia en Idaho?",
+    "q": "¿De cuántos dólares es la multa civil por negarse a una prueba oficial de alcohol o de drogas en Idaho?",
     "answer": 250,
     "unit": "dólares"
    },
@@ -9051,19 +9057,20 @@
   "id": "alc-refusal-first",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Si se niega a una prueba de evidencia y la corte le da la razón al agente, la primera vez significa una suspensión de 1 año sin ningún tipo de privilegio de manejo.",
+  "fact": "Si se niega a una prueba de evidencia (una prueba oficial de alcohol o de drogas) y la corte le da la razón al agente, la primera vez significa una suspensión de 1 año sin ningún tipo de privilegio de manejo.",
   "why": "Negarse a una prueba se castiga fuerte para que los conductores no se nieguen para ocultar que están intoxicados.",
+  "example": "Un agente le pide hacerse una prueba de aliento, y usted se niega. El agente le da un Aviso de Suspensión (Notice of Suspension). Si la corte le da la razón al agente y es la primera vez que se niega, pierde su licencia por 1 año y no puede manejar nada. Eso es más tiempo que la suspensión por no pasar la prueba la primera vez, así que negarse no le ayuda.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "¿De cuántos años es la suspensión de la licencia la primera vez que se niega a una prueba?",
+    "q": "Se niega a una prueba oficial de alcohol por primera vez, y la corte le da la razón al agente. ¿Por cuántos años se suspende su licencia?",
     "answer": 1,
     "unit": "años"
    },
    {
     "type": "scenario",
-    "q": "Un agente sospecha que usted maneja bajo los efectos (DUI) y le pide hacerse una prueba de aliento. Usted se niega por primera vez, y la corte le da la razón al agente. ¿Qué pasa con su licencia?",
+    "q": "Un agente sospecha que usted maneja bajo los efectos (DUI, manejar bajo los efectos del alcohol o drogas) y le pide hacerse una prueba de aliento. Usted se niega por primera vez, y la corte le da la razón al agente. ¿Qué pasa con su licencia?",
     "choices": [
      "Se suspende 1 año sin poder manejar nada",
      "Se suspende 30 días",
@@ -9080,6 +9087,7 @@
   "page": 127,
   "fact": "Un dispositivo de bloqueo de encendido (ignition interlock) pide una muestra de aliento antes de que el vehículo arranque. Si la muestra muestra alcohol igual o mayor a un nivel fijado, el vehículo no arranca. El conductor paga todos los costos, y el dispositivo es obligatorio en toda suspensión administrativa de la licencia, a partir de que termina la suspensión.",
   "why": "Impide que una persona que ha tomado alcohol pueda siquiera arrancar el vehículo.",
+  "example": "Su suspensión ya terminó, y ahora tiene un dispositivo instalado en su carro. Cada vez que quiere arrancar el carro, sopla en el dispositivo. Si detecta alcohol igual o mayor a su nivel fijado, el motor no arranca. Usted paga la instalación, el mantenimiento y las cuotas mensuales.",
   "weight": 2,
   "items": [
    {
@@ -9100,7 +9108,7 @@
    },
    {
     "type": "tf",
-    "q": "El dispositivo de bloqueo de encendido es obligatorio en todas las suspensiones administrativas de la licencia, a partir de que termina la suspensión.",
+    "q": "Cuando su licencia se suspende por una prueba de alcohol (una suspensión administrativa de la licencia), debe tener un dispositivo de bloqueo de encendido después de que termina la suspensión.",
     "answer": true
    }
   ]
@@ -9111,11 +9119,12 @@
   "page": 127,
   "fact": "Negarse a la prueba por segunda vez en 10 años trae una suspensión absoluta de 2 años. Esto es además de cualquier castigo de la corte por una condena de DUI (manejar bajo los efectos del alcohol o drogas).",
   "why": "Negarse varias veces muestra que el conductor trata de evitar su responsabilidad, así que el castigo se duplica.",
+  "example": "Ya se negó a una prueba de alcohol una vez, hace menos de 10 años. Ahora se niega otra vez. Su licencia se suspende por 2 años sin poder manejar nada. Si además lo condenan por DUI (manejar bajo los efectos del alcohol o drogas), los castigos de la corte se suman a eso.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Negarse a la prueba por segunda vez dentro de ¿cuántos años lleva a una suspensión absoluta de 2 años?",
+    "q": "Negarse a una prueba oficial de alcohol por segunda vez dentro de ¿cuántos años lleva a una suspensión de 2 años sin poder manejar nada?",
     "answer": 10,
     "unit": "años"
    },
@@ -9428,6 +9437,7 @@
   "page": 131,
   "fact": "Aunque su BAC (nivel de alcohol en la sangre) esté por debajo de .08, todavía lo pueden condenar por manejar bajo los efectos de otras sustancias intoxicantes. Un BAC de .20 o más trae castigos aún más duros.",
   "why": "La ley castiga el manejo con las capacidades afectadas, no solo un número en una prueba.",
+  "example": "Su BAC (nivel de alcohol en la sangre) está por debajo del límite de .08, pero también tomó una medicina que le da mucho sueño, y va zigzagueando entre los carriles. Todavía lo pueden condenar por DUI (manejar bajo los efectos del alcohol o drogas), porque la ley se trata de tener las capacidades afectadas, no solo del número de alcohol.",
   "weight": 3,
   "items": [
    {
@@ -9446,7 +9456,7 @@
     "q": "Tiene 30 años, tomó una droga que lo afecta y su BAC (nivel de alcohol en la sangre) es .03. ¿Lo pueden condenar por DUI (manejar bajo los efectos del alcohol o drogas)?",
     "choices": [
      "Sí, por manejar bajo los efectos de otras sustancias",
-     "No, porque su BAC (nivel de alcohol en la sangre) es menor de .08",
+     "No, porque su BAC es menor de .08",
      "No, porque es mayor de 21",
      "Solo si choca"
     ],
@@ -9488,6 +9498,7 @@
   "page": 132,
   "fact": "Una primera condena por DUI (manejar bajo los efectos del alcohol o drogas) puede traer hasta 6 meses de cárcel, una multa de hasta $1,000 y una suspensión de la licencia de 90 a 180 días (1 año si es menor de 21), sin poder manejar nada durante los primeros 30 días.",
   "why": "Aunque sea un solo DUI (manejar bajo los efectos del alcohol o drogas), pone vidas en riesgo, así que los castigos son serios desde el principio.",
+  "example": "Usted es mayor de 21 años y lo condenan por DUI (manejar bajo los efectos del alcohol o drogas) por primera vez. El juez le puede dar hasta 6 meses de cárcel y una multa de hasta $1,000. Su licencia se suspende por 90 a 180 días, y durante los primeros 30 días no puede manejar nada. Si fuera menor de 21, la suspensión sería de 1 año.",
   "weight": 3,
   "items": [
    {
@@ -9498,7 +9509,7 @@
    },
    {
     "type": "num",
-    "q": "¿Cuál es la suspensión mínima de la licencia, en días, por una primera condena por DUI (21 años o más)?",
+    "q": "¿Cuál es la suspensión mínima de la licencia, en días, por una primera condena por DUI (manejar bajo los efectos del alcohol o drogas) (21 años o más)?",
     "answer": 90,
     "unit": "días"
    },

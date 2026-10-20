@@ -6,7 +6,7 @@ Source text: pages/pNNN.txt (3-digit zero-padded, printed page = PDF page). PDF:
 facts/index.txt lists EVERY fact in the project (all groups) as one line each, for duplicate spotting.
 
 Your job, for every fact in your input file:
-1. Open the cited page (and neighbors if needed) and verify the fact, "why", "hook", and EVERY item's correct answer
+1. Open the cited page (and neighbors if needed) and verify the fact, "why", "hook", "example", and EVERY item's correct answer
    against the handbook. Fix anything wrong, overstated, or not supported. Fix the page number if wrong.
    If a fact can't be supported, delete it.
 2. Check each item: the marked answer must be unambiguously correct, every distractor must be unambiguously wrong
@@ -14,6 +14,9 @@ Your job, for every fact in your input file:
    clearly true or clearly false. "num" answers must be the single number the question asks for, unit given.
 3. Delete duplicates within your file (keep the better one; merge good items into it). For duplicates of facts in
    OTHER groups (see index.txt), don't delete — list them in your report.
+3b. Examples: every claim must be on the cited page, no numbers beyond the fact's own, and nothing implied that the page
+   doesn't say (e.g. don't hint that limited driving is allowed when the page is silent). Add an example where a learner
+   couldn't picture the rule (see 1-extract.md rule 8); remove one that only repeats the fact.
 4. Wording: plain, ~8th grade, no idioms (it will be translated). No verbatim handbook sentences.
 5. Keep the correct answer at index 0 is NOT required; any index is fine (the app shuffles).
 6. Don't add new facts unless a clearly test-worthy rule on your pages is missing — then add it (same id prefix rules).

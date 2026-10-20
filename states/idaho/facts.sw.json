@@ -8874,19 +8874,20 @@
   "id": "alc-als-notice",
   "topic": "alcohol",
   "page": 125,
-  "fact": "Ukikamatwa kwa DUI (kuendesha ukiwa umelewa) na ukashindwa kipimo cha ushahidi, afisa anakupa Notisi ya Kusimamishwa (Notice of Suspension). Huku ni Kusimamishwa kwa Leseni kwa Utawala (Administrative License Suspension, ALS), na una siku 7 kuanzia tarehe ya notisi kuomba usikilizwaji.",
+  "fact": "Ukikamatwa kwa DUI (kuendesha ukiwa umelewa) na ukashindwa kipimo cha ushahidi (kipimo rasmi cha pumzi, damu, au mkojo), afisa anakupa Notisi ya Kusimamishwa (Notice of Suspension). Huku ni Kusimamishwa kwa Leseni kwa Utawala (Administrative License Suspension, ALS), na una siku 7 kuanzia tarehe ya notisi kuomba usikilizwaji.",
   "why": "Muda mfupi wa mwisho unafanya mchakato uendelee huku bado ukikupa nafasi ya haki ya kuupinga.",
+  "example": "Unakamatwa kwa DUI (kuendesha ukiwa umelewa), na kipimo chako cha pumzi kinaonyesha pombe juu ya kikomo cha kisheria. Afisa anakupa Notisi ya Kusimamishwa (Notice of Suspension) mara moja. Ikiwa unafikiri si sahihi, una siku 7 kuanzia tarehe iliyo kwenye notisi kuomba usikilizwaji.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Ndani ya siku ngapi kuanzia tarehe ya notisi unaweza kuomba usikilizwaji kuhusu Kusimamishwa kwa Leseni kwa Utawala (ALS)?",
+    "q": "Ulipewa Notisi ya Kusimamishwa (Notice of Suspension) baada ya kushindwa kipimo cha pombe. Ndani ya siku ngapi kuanzia tarehe iliyo kwenye notisi unaweza kuomba usikilizwaji?",
     "answer": 7,
     "unit": "siku"
    },
    {
     "type": "mc",
-    "q": "Afisa anakupa nini mara moja unaposhindwa kipimo cha ushahidi cha pombe baada ya kukamatwa kwa DUI (kuendesha ukiwa umelewa)?",
+    "q": "Baada ya kukamatwa kwa DUI (kuendesha ukiwa umelewa), kipimo chako cha pumzi kinaonyesha pombe juu ya kikomo cha kisheria. Afisa anakupa nini mara moja?",
     "choices": [
      "Notisi ya Kusimamishwa (Notice of Suspension)",
      "Kibali cha kuendesha chenye masharti",
@@ -8903,22 +8904,23 @@
   "page": 126,
   "fact": "Notisi ya Kusimamishwa ya ALS (Kusimamishwa kwa Leseni kwa Utawala) inaanza kutumika siku 30 baada ya siku unayoipokea.",
   "why": "Kipindi cha kusubiri kinatoa muda wa kuomba usikilizwaji kabla ya kusimamishwa kuanza.",
+  "example": "Unashindwa kipimo cha pombe na afisa anakupa Notisi ya Kusimamishwa (Notice of Suspension). Kusimamishwa kwako hakuanzi siku hiyo. Kunaanza siku 30 baada ya siku uliyopokea notisi, na hilo linakupa muda wa kuomba usikilizwaji kwanza.",
   "weight": 2,
   "items": [
    {
     "type": "num",
-    "q": "Notisi ya Kusimamishwa ya ALS (Kusimamishwa kwa Leseni kwa Utawala) inaanza kutumika siku ngapi baada ya kuipokea?",
+    "q": "Baada ya kushindwa kipimo cha pombe, afisa anakupa Notisi ya Kusimamishwa (Notice of Suspension) (ALS, Kusimamishwa kwa Leseni kwa Utawala). Kusimamishwa kunaanza siku ngapi baada ya kuipokea?",
     "answer": 30,
     "unit": "siku"
    },
    {
     "type": "tf",
-    "q": "Notisi ya Kusimamishwa ya ALS (Kusimamishwa kwa Leseni kwa Utawala) inaanza kutumika siku 30 baada ya siku unayoipokea.",
+    "q": "Baada ya kushindwa kipimo cha pombe, kusimamishwa kwa leseni yako (ALS, Kusimamishwa kwa Leseni kwa Utawala) kunaanza siku 30 baada ya siku unayopokea Notisi ya Kusimamishwa.",
     "answer": true
    },
    {
     "type": "mc",
-    "q": "Notisi ya Kusimamishwa ya ALS (Kusimamishwa kwa Leseni kwa Utawala) inaanza kutumika lini?",
+    "q": "Baada ya kushindwa kipimo cha pombe, kusimamishwa kwa leseni (ALS, Kusimamishwa kwa Leseni kwa Utawala) kunaanza lini?",
     "choices": [
      "Siku 30 baada ya kuipokea",
      "Siku unayoipokea",
@@ -8933,25 +8935,26 @@
   "id": "alc-als-first-failure",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Kwa kushindwa kipimo cha ushahidi mara ya kwanza, leseni yako inasimamishwa kwa siku 90, bila kuendesha kabisa kwa siku 30 za kwanza. Baada ya kusimamishwa, lazima utumie kifaa cha kuzuia kuwasha gari (ignition interlock) kwenye gari lolote unaloendesha kwa mwaka 1.",
+  "fact": "Ukishindwa kipimo cha ushahidi (kipimo rasmi cha pombe) kwa mara ya kwanza, leseni yako inasimamishwa kwa siku 90, bila kuendesha kabisa kwa siku 30 za kwanza. Baada ya kusimamishwa, lazima utumie kifaa cha kuzuia kuwasha gari (ignition interlock) kwenye gari lolote unaloendesha kwa mwaka 1.",
   "why": "Adhabu inakuondoa barabarani kisha inakagua pombe kabla hujaweza kuendesha tena.",
+  "example": "Unakamatwa kwa DUI (kuendesha ukiwa umelewa), na kipimo chako cha pumzi kinaonyesha pombe juu ya kikomo cha kisheria. Ni mara yako ya kwanza. Leseni yako inasimamishwa kwa siku 90, na kwa siku 30 za kwanza kati ya hizo huwezi kuendesha kabisa. Kusimamishwa kunapoisha, kwa mwaka 1 unaofuata, gari lolote unaloendesha lazima liwe na kifaa cha kuzuia kuwasha gari (ignition interlock): kipimaji cha pumzi kilichounganishwa na swichi ya kuwasha gari, ambacho hakiruhusu gari kuwaka kikigundua pombe.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Kusimamishwa kwa ALS (Kusimamishwa kwa Leseni kwa Utawala) kwa kushindwa kipimo cha ushahidi mara ya kwanza ni kwa siku ngapi?",
+    "q": "Unashindwa kipimo rasmi cha pombe kwa mara ya kwanza baada ya kukamatwa kwa DUI (kuendesha ukiwa umelewa). Leseni yako inasimamishwa kwa siku ngapi?",
     "answer": 90,
     "unit": "siku"
    },
    {
     "type": "num",
-    "q": "Wakati wa ALS (Kusimamishwa kwa Leseni kwa Utawala) ya kushindwa mara ya kwanza, kwa siku ngapi huna haki yoyote kabisa ya kuendesha?",
+    "q": "Unashindwa kipimo rasmi cha pombe kwa mara ya kwanza na leseni yako inasimamishwa. Mwanzoni mwa kusimamishwa, kwa siku ngapi huwezi kuendesha kabisa?",
     "answer": 30,
     "unit": "siku"
    },
    {
     "type": "mc",
-    "q": "Baada ya ALS (Kusimamishwa kwa Leseni kwa Utawala) ya kushindwa mara ya kwanza kuisha, ni nini lazima kiwe kwenye gari lolote unaloendesha kwa mwaka 1?",
+    "q": "Ulishindwa kipimo cha pombe baada ya kukamatwa kwa DUI (kuendesha ukiwa umelewa), na leseni yako ilisimamishwa. Baada ya kusimamishwa huko kuisha, ni nini lazima kiwe kwenye gari lolote unaloendesha kwa mwaka 1?",
     "choices": [
      "Kifaa cha kuzuia kuwasha gari (ignition interlock)",
      "Kifaa cha kufuatilia GPS (mfumo wa kutambua mahali kwa satelaiti)",
@@ -8966,19 +8969,20 @@
   "id": "alc-als-second-failure",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Kushindwa kipimo cha ushahidi mara ya pili ndani ya miaka 5 huleta kusimamishwa kwa mwaka 1 bila haki yoyote ya kuendesha ya aina yoyote.",
+  "fact": "Kushindwa kipimo cha ushahidi (kipimo rasmi cha pombe) mara ya pili ndani ya miaka 5 huleta kusimamishwa kwa mwaka 1 bila haki yoyote ya kuendesha ya aina yoyote.",
   "why": "Wanaorudia makosa ni hatari kubwa zaidi, kwa hivyo adhabu ni kali zaidi sana.",
+  "example": "Ulishindwa kipimo cha pombe mara moja hapo awali, chini ya miaka 5 iliyopita. Sasa unakamatwa tena na unashindwa tena. Leseni yako inasimamishwa kwa mwaka 1, na huwezi kuendesha kabisa katika mwaka huo, hata kwenda kazini.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Kushindwa kipimo mara ya pili ndani ya miaka mingapi huleta kusimamishwa kamili kwa ALS (Kusimamishwa kwa Leseni kwa Utawala) kwa mwaka 1?",
+    "q": "Kushindwa kipimo cha pombe mara ya pili ndani ya miaka mingapi huleta kusimamishwa kwa mwaka 1 bila kuendesha kabisa?",
     "answer": 5,
     "unit": "miaka"
    },
    {
     "type": "mc",
-    "q": "Adhabu ya ALS (Kusimamishwa kwa Leseni kwa Utawala) kwa kushindwa kipimo cha ushahidi mara ya pili ndani ya miaka 5 ni ipi?",
+    "q": "Unashindwa kipimo rasmi cha pombe kwa mara ya pili ndani ya miaka 5. Nini kinatokea kwa leseni yako?",
     "choices": [
      "Kusimamishwa kwa mwaka 1 bila kuendesha kabisa",
      "Kusimamishwa kwa siku 90",
@@ -8995,16 +8999,17 @@
   "page": 126,
   "fact": "ALS (Kusimamishwa kwa Leseni kwa Utawala) ni adhabu ya kiraia iliyo tofauti na kesi ya jinai ya DUI (kuendesha ukiwa umelewa). Lazima ufuate sheria za ALS na pia uende mahakamani kwa shtaka la DUI.",
   "why": "Adhabu ya leseni na kesi ya jinai ni michakato miwili tofauti, kwa hivyo mmoja haubadilishi mwingine.",
+  "example": "Ulishindwa kipimo cha pombe, kwa hivyo Idaho Transportation Department (Idara ya Uchukuzi ya Idaho) inasimamisha leseni yako. Huo ni mchakato mmoja. Pia una tarehe ya kufika mahakamani kwa shtaka la DUI (kuendesha ukiwa umelewa). Lazima ufuate sheria za kusimamishwa na bado uende mahakamani. Mmoja haufuti mwingine.",
   "weight": 2,
   "items": [
    {
     "type": "tf",
-    "q": "Ukipokea Kusimamishwa kwa Leseni kwa Utawala (ALS), huhitaji tena kufika mahakamani kwa shtaka la DUI (kuendesha ukiwa umelewa).",
+    "q": "Leseni yako ilisimamishwa kwa kushindwa kipimo cha pombe (ALS, Kusimamishwa kwa Leseni kwa Utawala). Hii inamaanisha huhitaji tena kufika mahakamani kwa shtaka la DUI (kuendesha ukiwa umelewa).",
     "answer": false
    },
    {
     "type": "mc",
-    "q": "Kusimamishwa kwa Leseni kwa Utawala (ALS) ni adhabu ya aina gani?",
+    "q": "Kusimamishwa kwa leseni kwa kushindwa kipimo cha pombe (ALS, Kusimamishwa kwa Leseni kwa Utawala) ni adhabu ya aina gani?",
     "choices": [
      "Adhabu ya kiraia iliyo tofauti na kesi ya jinai",
      "Adhabu ya jinai inayochukua nafasi ya kesi mahakamani",
@@ -9019,13 +9024,14 @@
   "id": "alc-implied-consent",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Chini ya sheria ya Idaho ya ridhaa inayodhaniwa (implied consent), mtu yeyote anayeendesha au aliye na udhibiti wa kimwili wa gari amekubali kufanyiwa kipimo cha BAC (kiwango cha pombe kwenye damu) au cha dawa za kulevya akishukiwa kwa DUI (kuendesha ukiwa umelewa). Kukataa huleta kusimamishwa kwa leseni na adhabu ya kiraia ya $250.",
+  "fact": "Chini ya sheria ya Idaho ya ridhaa inayodhaniwa (implied consent), mtu yeyote anayeendesha au aliye na udhibiti wa kimwili wa gari amekubali kufanyiwa kipimo cha BAC (kiwango cha pombe kwenye damu) au cha dawa za kulevya akishukiwa kwa DUI (kuendesha ukiwa umelewa). Kukataa huleta kusimamishwa kwa leseni na adhabu ya kiraia ya $250 (faini iliyo tofauti na shtaka lolote la jinai).",
   "why": "Kwa kuchagua kuendesha, unakubali kupimwa ili madereva walio chini ya ushawishi waweze kugunduliwa na kuzuiwa.",
+  "example": "Afisa anakusimamisha, anafikiri huenda uko chini ya ushawishi wa pombe au dawa, na anakuomba ufanye kipimo cha pumzi. Kwa kuendesha huko Idaho, tayari ulikubali kipimo hiki. Ukikataa, leseni yako inasimamishwa na unadaiwa adhabu ya kiraia ya $250, hata kama hukuwa umekunywa pombe.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Adhabu ya kiraia kwa kukataa kipimo cha ushahidi huko Idaho ni dola ngapi?",
+    "q": "Adhabu ya kiraia (faini) kwa kukataa kipimo rasmi cha pombe au cha dawa za kulevya huko Idaho ni dola ngapi?",
     "answer": 250,
     "unit": "dola"
    },
@@ -9051,13 +9057,14 @@
   "id": "alc-refusal-first",
   "topic": "alcohol",
   "page": 126,
-  "fact": "Ukikataa kipimo cha ushahidi na mahakama ikaunga mkono uamuzi wa afisa, kosa la kwanza linamaanisha kusimamishwa kwa mwaka 1 bila haki yoyote ya kuendesha ya aina yoyote.",
+  "fact": "Ukikataa kipimo cha ushahidi (kipimo rasmi cha pombe au cha dawa za kulevya) na mahakama ikaunga mkono uamuzi wa afisa (ikakubaliana na afisa), kosa la kwanza linamaanisha kusimamishwa kwa mwaka 1 bila haki yoyote ya kuendesha ya aina yoyote.",
   "why": "Kukataa kipimo kunaadhibiwa vikali ili madereva wasikatae ili kuficha kwamba wako chini ya ushawishi.",
+  "example": "Afisa anakuomba ufanye kipimo cha pumzi, na unakataa. Afisa anakupa Notisi ya Kusimamishwa (Notice of Suspension). Mahakama ikikubaliana na afisa na hii ni mara yako ya kwanza kukataa, unapoteza leseni yako kwa mwaka 1 na huwezi kuendesha kabisa. Huo ni muda mrefu kuliko kusimamishwa kwa kushindwa kipimo mara ya kwanza, kwa hivyo kukataa hakukusaidii.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Kusimamishwa kwa leseni kwa kukataa kipimo mara ya kwanza ni kwa miaka mingapi?",
+    "q": "Unakataa kipimo rasmi cha pombe kwa mara ya kwanza, na mahakama inakubaliana na afisa. Leseni yako inasimamishwa kwa miaka mingapi?",
     "answer": 1,
     "unit": "miaka"
    },
@@ -9080,6 +9087,7 @@
   "page": 127,
   "fact": "Kifaa cha kuzuia kuwasha gari (ignition interlock) kinahitaji sampuli ya pumzi kabla gari halijawaka. Ikiwa sampuli inaonyesha pombe katika kiwango kilichowekwa au zaidi, gari halitawaka. Dereva hulipa gharama zote, na kifaa hiki kinahitajika kwa kila kusimamishwa kwa leseni kwa utawala, kuanzia kusimamishwa kunapoisha.",
   "why": "Kinamzuia mtu aliyekunywa pombe kuwasha gari kabisa.",
+  "example": "Kusimamishwa kwako kumeisha, na sasa kifaa kimefungwa kwenye gari lako. Kila mara unapotaka kuwasha gari, unapuliza ndani yake. Kikigundua pombe katika kiwango chake kilichowekwa au zaidi, injini haitawaka. Unalipia kufunga, kutunza, na ada za kila mwezi.",
   "weight": 2,
   "items": [
    {
@@ -9100,7 +9108,7 @@
    },
    {
     "type": "tf",
-    "q": "Kifaa cha kuzuia kuwasha gari kinahitajika kwa kusimamishwa kwa leseni kwa utawala kote, kuanzia baada ya kusimamishwa kuisha.",
+    "q": "Leseni yako ikisimamishwa kwa sababu ya kipimo cha pombe (kusimamishwa kwa leseni kwa utawala), lazima uwe na kifaa cha kuzuia kuwasha gari baada ya kusimamishwa kuisha.",
     "answer": true
    }
   ]
@@ -9111,11 +9119,12 @@
   "page": 127,
   "fact": "Kukataa kipimo mara ya pili ndani ya miaka 10 huleta kusimamishwa kamili kwa miaka 2. Hii ni pamoja na adhabu yoyote ya mahakama kwa kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa).",
   "why": "Kukataa mara kwa mara kunaonyesha dereva anayejaribu kukwepa wajibu, kwa hivyo adhabu inaongezeka mara mbili.",
+  "example": "Ulikataa kipimo cha pombe mara moja hapo awali, chini ya miaka 10 iliyopita. Sasa unakataa tena. Leseni yako inasimamishwa kwa miaka 2 bila kuendesha kabisa. Ukitiwa hatiani pia kwa DUI (kuendesha ukiwa umelewa), adhabu za mahakama zinaongezwa juu ya hiyo.",
   "weight": 3,
   "items": [
    {
     "type": "num",
-    "q": "Kukataa kipimo mara ya pili ndani ya miaka mingapi kunaleta kusimamishwa kamili kwa miaka 2?",
+    "q": "Kukataa kipimo rasmi cha pombe mara ya pili ndani ya miaka mingapi kunaleta kusimamishwa kwa miaka 2 bila kuendesha kabisa?",
     "answer": 10,
     "unit": "miaka"
    },
@@ -9428,6 +9437,7 @@
   "page": 131,
   "fact": "Hata ukiwa na BAC (kiwango cha pombe kwenye damu) chini ya .08, bado unaweza kutiwa hatiani kwa kuendesha ukiwa chini ya ushawishi wa vitu vingine vinavyolevya. BAC ya .20 au zaidi huleta adhabu kali zaidi.",
   "why": "Sheria inalenga uendeshaji ulioathirika, si nambari tu kwenye kipimo.",
+  "example": "BAC (kiwango cha pombe kwenye damu) yako iko chini ya kikomo cha .08, lakini pia ulitumia dawa inayokuletea usingizi mwingi, na unayumba kati ya njia za barabara. Bado unaweza kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa), kwa sababu sheria inahusu kuathirika, si nambari ya pombe tu.",
   "weight": 3,
   "items": [
    {
@@ -9488,6 +9498,7 @@
   "page": 132,
   "fact": "Kutiwa hatiani kwa DUI (kuendesha ukiwa umelewa) mara ya kwanza kunaweza kuleta hadi miezi 6 jela, faini ya hadi $1,000, na kusimamishwa kwa leseni kwa siku 90 hadi 180 (mwaka 1 ikiwa uko chini ya miaka 21), bila kuendesha kabisa kwa siku 30 za kwanza.",
   "why": "Hata DUI (kuendesha ukiwa umelewa) moja inahatarisha maisha, kwa hivyo adhabu ni kali tangu mwanzo.",
+  "example": "Una zaidi ya miaka 21 na unatiwa hatiani kwa DUI (kuendesha ukiwa umelewa) kwa mara ya kwanza. Jaji anaweza kukupa hadi miezi 6 jela na faini ya hadi $1,000. Leseni yako inasimamishwa kwa siku 90 hadi 180, na kwa siku 30 za kwanza huwezi kuendesha kabisa. Kama ungekuwa chini ya miaka 21, kusimamishwa kungekuwa kwa mwaka 1.",
   "weight": 3,
   "items": [
    {

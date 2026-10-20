@@ -55,6 +55,7 @@
   "fb.sureWrong": "意外！你很确定，但这题不一样。这种错误最值得现在发现，而不是在车管局（DMV）。",
   "fb.answer": "正确答案：",
   "fb.why": "原因：",
+  "fb.example": "举例：",
   "fb.page": "手册第 {p} 页",
 
   "study.focus": "重点：{topic}",

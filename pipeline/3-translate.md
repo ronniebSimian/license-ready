@@ -15,4 +15,5 @@ Rules:
   and add the meaning in the target language, e.g. Spanish: «el letrero "YIELD" (Ceda el paso)». The real signs are in English.
 - Multiple-choice: translate each choice; do NOT reorder choices (the "answer" index must stay valid).
 - Never translate or alter: id, topic, page, weight, sign, type, answer, unit-less numbers.
+- Translate "example" like the other text fields. If the English fact has one, the translation must too (the build checks).
 - Output must be valid JSON (UTF-8, not escaped). Validate with python3 -I -c "import json,sys;json.load(open(sys.argv[1]))" FILE

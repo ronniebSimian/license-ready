@@ -300,6 +300,7 @@ function explainHTML(fact) {
   return `
     <div class="explain">
       <p class="fact">${esc(fact.fact)}</p>
+      ${fact.example ? `<p class="example"><b>${esc(t('fb.example'))}</b> ${esc(fact.example)}</p>` : ''}
       ${fact.why ? `<p class="why"><b>${esc(t('fb.why'))}</b> ${esc(fact.why)}</p>` : ''}
       ${fact.hook ? `<p class="hook">💡 ${esc(fact.hook)}</p>` : ''}
       <a class="src" href="${esc(handbookLink(fact.page))}" target="_blank" rel="noopener">📘 ${esc(t('fb.page', { p: fact.page }))}</a>

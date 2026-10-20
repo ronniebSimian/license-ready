@@ -16,6 +16,7 @@ Each fact:
   "fact": "One or two plain sentences stating the rule.",
   "why": "One sentence on the reason behind the rule, so it makes sense instead of being memorized. Only use reasoning that is consistent with the handbook; keep it common-sense.",
   "hook": "Optional short memory aid, ONLY if genuinely useful (e.g. 'Red + octagon = full stop; only STOP signs have 8 sides'). Omit the key otherwise.",
+  "example": "Optional 2-3 sentence illustration in second person ('You are arrested for DUI ... The officer gives you ...'), ONLY for facts that are hard to picture: legal or penalty processes, jargon, multi-step situations. Omit it for simple rules. See rule 8.",
   "weight": 1|2|3,                              // 3 = very likely on the test (numbers, right-of-way, signs, alcohol, GDL); 1 = minor
   "sign": "R1-1",                               // OPTIONAL: MUTCD sign code if the fact is about a specific standard sign
   "signDesc": "Red octagon, white STOP text",  // REQUIRED when "sign" is present
@@ -49,4 +50,10 @@ freeway, safe-driving, sharing, conditions, emergencies, alcohol
    handbook's own expansion: "DUI (driving under the influence)", "BAC (blood alcohol concentration)". Learners may be
    new to the US. Don't expand English sign text (STOP, ROAD CLOSED) or units (mph). Never expand an acronym only in the
    correct choice — that makes it the longest option and gives the answer away. (tools/expand-acronyms.py can do a first pass.)
-7. When done, reply with: count of facts, count by topic, and any handbook passages you found ambiguous or contradictory.
+8. EXAMPLES. Spelling out an acronym doesn't make a legal term meaningful ("ALS (administrative license suspension)" still
+   means nothing to most learners). When a fact describes a process, a penalty, or a situation with several steps, add an
+   "example" that walks through what it looks like for "you". Rules: use only what the cited page says; use NO number the
+   "fact" doesn't already state (tools/build.mjs fails the build otherwise); no names, no idioms; expand acronyms at first use.
+   Expect roughly 10-20% of facts to need one. Also prefer plain words in question stems ("a failed alcohol test")
+   over the legal term ("an evidentiary test"), as long as the stem doesn't give away the answer.
+9. When done, reply with: count of facts, count by topic, and any handbook passages you found ambiguous or contradictory.
