@@ -650,11 +650,11 @@
   "id": "sig-flagger-ahead",
   "topic": "signs",
   "page": 47,
-  "fact": "Una señal naranja de abanderado (las palabras \"FLAGGER AHEAD\" (Abanderado adelante) o el dibujo de una persona con una bandera) significa que debe disminuir la velocidad y estar listo para detenerse por obras en la carretera más adelante.",
+  "fact": "Una señal naranja en forma de rombo con la figura de una persona que sostiene una bandera significa que hay un abanderado (un trabajador que dirige el tráfico) más adelante. Reduzca la velocidad y prepárese para detenerse por trabajos en la vía.",
   "why": "Un abanderado puede detener el tráfico de repente para dejar cruzar equipo o trabajadores.",
   "weight": 3,
-  "sign": "W20-7a",
-  "signDesc": "Rombo naranja con el texto negro \"FLAGGER AHEAD\" (Abanderado adelante)",
+  "sign": "W20-7",
+  "signDesc": "Rombo naranja con la figura negra de una persona que sostiene una bandera",
   "items": [
    {
     "type": "sign",
@@ -669,7 +669,7 @@
    },
    {
     "type": "scenario",
-    "q": "Pasa una señal naranja en forma de rombo que dice \"FLAGGER AHEAD\" (Abanderado adelante). ¿Qué debe hacer después?",
+    "q": "Pasa una señal naranja en forma de rombo con la figura de una persona que sostiene una bandera. ¿Qué debe hacer después?",
     "choices": [
      "Disminuir la velocidad y estar listo para detenerse",
      "Acelerar para pasar la zona de obras",

@@ -650,11 +650,11 @@
   "id": "sig-flagger-ahead",
   "topic": "signs",
   "page": 47,
-  "fact": "Alama ya rangi ya chungwa ya mwongoza bendera (maneno \"FLAGGER AHEAD\" (Mwongoza bendera mbele), au picha ya mtu aliyeshika bendera) inamaanisha punguza mwendo na uwe tayari kusimama kwa ajili ya kazi za barabara zilizo mbele.",
+  "fact": "Alama ya almasi ya rangi ya chungwa yenye picha ya mtu aliyeshika bendera inamaanisha kuna mwongoza bendera (mfanyakazi anayeongoza magari) mbele. Punguza mwendo na uwe tayari kusimama kwa sababu ya kazi za barabarani.",
   "why": "Mwongoza bendera anaweza kusimamisha magari ghafla ili mitambo au wafanyakazi wavuke.",
   "weight": 3,
-  "sign": "W20-7a",
-  "signDesc": "Almasi ya rangi ya chungwa yenye maandishi meusi \"FLAGGER AHEAD\" (Mwongoza bendera mbele)",
+  "sign": "W20-7",
+  "signDesc": "Almasi ya rangi ya chungwa yenye picha nyeusi ya mtu aliyeshika bendera",
   "items": [
    {
     "type": "sign",
@@ -669,7 +669,7 @@
    },
    {
     "type": "scenario",
-    "q": "Unapita alama ya almasi ya rangi ya chungwa inayosema \"FLAGGER AHEAD\" (Mwongoza bendera mbele). Unapaswa kufanya nini baadaye?",
+    "q": "Unapita alama ya almasi ya rangi ya chungwa yenye picha ya mtu aliyeshika bendera. Unapaswa kufanya nini baadaye?",
     "choices": [
      "Punguza mwendo na uwe tayari kusimama",
      "Ongeza mwendo upite eneo la kazi",

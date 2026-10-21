@@ -650,11 +650,11 @@
   "id": "sig-flagger-ahead",
   "topic": "signs",
   "page": 47,
-  "fact": "An orange flagger sign (the words FLAGGER AHEAD, or a picture of a person holding a flag) means slow down and be prepared to stop for road work ahead.",
+  "fact": "An orange diamond sign with a picture of a person holding a flag means a flagger (a worker who directs traffic) is ahead. Slow down and be prepared to stop for road work.",
   "why": "A flagger may stop traffic suddenly to let equipment or workers cross.",
   "weight": 3,
-  "sign": "W20-7a",
-  "signDesc": "Orange diamond with black text FLAGGER AHEAD",
+  "sign": "W20-7",
+  "signDesc": "Orange diamond with a black figure of a person holding a flag",
   "items": [
    {
     "type": "sign",
@@ -669,7 +669,7 @@
    },
    {
     "type": "scenario",
-    "q": "You pass an orange diamond sign that says FLAGGER AHEAD. What should you do next?",
+    "q": "You pass an orange diamond sign showing a person holding a flag. What should you do next?",
     "choices": [
      "Slow down and be ready to stop",
      "Speed up to get through the work zone",
