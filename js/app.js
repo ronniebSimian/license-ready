@@ -29,6 +29,7 @@ const topicName = id => t(`topic.${id}`);
 const save = () => store.save(S.stateId, S.progress);
 const handbookLink = page => `${S.state.handbook.url}#page=${page + (S.state.handbook.pageOffset || 0)}`;
 const signSrc = code => `states/${S.stateId}/signs/${code}.svg`;
+const diagramSrc = name => `states/${S.stateId}/diagrams/${name}.svg`;
 const $ = sel => app.querySelector(sel);
 // Running screens remember fact ids and item positions rather than text, so a language
 // switch can look the same question up again (translations line up item-for-item).
@@ -300,6 +301,7 @@ function explainHTML(fact) {
   return `
     <div class="explain">
       <p class="fact">${esc(fact.fact)}</p>
+      ${fact.diagram ? `<img class="diagram" src="${diagramSrc(fact.diagram)}" alt="${esc(fact.diagramDesc || '')}" loading="lazy">` : ''}
       ${fact.example ? `<p class="example"><b>${esc(t('fb.example'))}</b> ${esc(fact.example)}</p>` : ''}
       ${fact.why ? `<p class="why"><b>${esc(t('fb.why'))}</b> ${esc(fact.why)}</p>` : ''}
       ${fact.hook ? `<p class="hook">💡 ${esc(fact.hook)}</p>` : ''}

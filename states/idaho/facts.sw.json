@@ -2056,6 +2056,8 @@
   "why": "Madereva kutoka pande zote mbili wanatumia njia ile ile, kwa hiyo kusafiri ndani yake kunahatarisha kugongana uso kwa uso.",
   "example": "Unaendesha kwenye barabara yenye njia ya katikati ambayo ina mstari wa njano ulionyooka na mstari wa njano wa vipande kila upande. Unataka kugeuka kushoto kuingia eneo la maegesho la duka lililo mbele. Hamia kwenye njia ya katikati, subiri hapo hadi kuwe na nafasi kati ya magari yanayokuja, kisha ugeuke. Usiendeshe kwenye njia hiyo ili kwenda mbele zaidi barabarani, kwa sababu madereva kutoka upande mwingine pia wanaitumia kugeuka.",
   "weight": 3,
+  "diagram": "center-turn-lane",
+  "diagramDesc": "Barabara yenye njia ya katikati ya pamoja ya kugeuka. Kila upande wa njia ya katikati una mstari wa njano ulionyooka kwa nje na mstari wa njano wa vipande kwa ndani, na mishale ya kugeuka inaelekeza pande zote mbili. Gari linalokuja linaenda kwanza (1); kisha gari lako la kijani linageuka kushoto kutoka njia ya katikati kuingia eneo la maegesho (2).",
   "items": [
    {
     "type": "mc",
@@ -2137,6 +2139,8 @@
   "hook": "Soma mstari ulio karibu nawe: vipande = unaweza kupita, ulionyooka = hakuna kupita.",
   "example": "Uko nyuma ya lori linaloenda polepole kwenye barabara ya njia mbili. Katikati kuna mstari wa njano ulionyooka kando ya mstari wa njano wa vipande. Ikiwa mstari wa vipande ndio ulio karibu zaidi na njia yako, unaweza kupita ikiwa ni salama. Ikiwa mstari ulionyooka ndio ulio karibu nawe zaidi, baki nyuma ya lori.",
   "weight": 3,
+  "diagram": "solid-dashed-yellow",
+  "diagramDesc": "Picha mbili za barabara. Kushoto: mstari wa njano wa vipande uko upande wako, kwa hiyo gari lako la kijani linaweza kupita lori. Kulia: mstari wa njano ulionyooka uko upande wako, kwa hiyo huruhusiwi kupita (X nyekundu).",
   "items": [
    {
     "type": "scenario",
@@ -2607,6 +2611,8 @@
   "fact": "Ishara ya mkono ya kugeuka kushoto ni mkono na kiganja chako kunyooshwa moja kwa moja nje ya dirisha.",
   "why": "Kuelekeza moja kwa moja upande wa kushoto ni rahisi kueleweka na madereva walio nyuma yako.",
   "weight": 3,
+  "diagram": "arm-signals",
+  "diagramDesc": "Ishara za mkono za dereva, zikionekana kutoka nyuma ya gari. Kugeuka kushoto: mkono umenyooshwa moja kwa moja nje. Kugeuka kulia: mkono uko nje na umekunjwa kuelekea juu. Kupunguza mwendo au kusimama: mkono uko nje na umekunjwa kuelekea chini.",
   "items": [
    {
     "type": "mc",
@@ -2633,6 +2639,8 @@
   "fact": "Ishara ya mkono ya kugeuka kulia ni mkono na kiganja chako kunyooshwa kuelekea juu nje ya dirisha.",
   "why": "Kwa kuwa huwezi kunyoosha mkono nje upande wa kulia, mkono ulioelekezwa juu unawakilisha kugeuka kulia.",
   "weight": 3,
+  "diagram": "arm-signals",
+  "diagramDesc": "Ishara za mkono za dereva, zikionekana kutoka nyuma ya gari. Kugeuka kushoto: mkono umenyooshwa moja kwa moja nje. Kugeuka kulia: mkono uko nje na umekunjwa kuelekea juu. Kupunguza mwendo au kusimama: mkono uko nje na umekunjwa kuelekea chini.",
   "items": [
    {
     "type": "scenario",
@@ -2659,6 +2667,8 @@
   "fact": "Ishara ya mkono ya kupunguza mwendo au kusimama ni mkono na kiganja chako kunyooshwa kuelekea chini nje ya dirisha.",
   "why": "Mkono ulioelekezwa chini unaashiria kushusha au kupunguza mwendo, kwa hiyo madereva walio nyuma wanajua kubreki.",
   "weight": 3,
+  "diagram": "arm-signals",
+  "diagramDesc": "Ishara za mkono za dereva, zikionekana kutoka nyuma ya gari. Kugeuka kushoto: mkono umenyooshwa moja kwa moja nje. Kugeuka kulia: mkono uko nje na umekunjwa kuelekea juu. Kupunguza mwendo au kusimama: mkono uko nje na umekunjwa kuelekea chini.",
   "items": [
    {
     "type": "mc",
@@ -2712,6 +2722,8 @@
   "why": "Kusogea kunazuia waendesha baiskeli wasije upande wako wa kulia unapogeuka.",
   "example": "Unataka kugeuka kulia kwenye makutano, na njia ya baiskeli iko kando ya upande wa kulia wa njia yako. Mahali mstari wa njia ya baiskeli unapokuwa wa vipande, angalia kioo chako na uangalie juu ya bega lako kutafuta waendesha baiskeli. Ikiwa hakuna mwendesha baiskeli, hamia kwenye njia ya baiskeli na ugeuke kutoka hapo. Ikiwa mwendesha baiskeli tayari yuko hapo, mwache aende kwanza.",
   "weight": 2,
+  "diagram": "bike-lane-dashed",
+  "diagramDesc": "Kabla ya kugeuka kulia, mstari wa njia ya baiskeli unabadilika kutoka mstari usiokatika kuwa mstari wa vipande. Gari lako la kijani linaingia kwenye njia ya baiskeli mahali mstari ulipo wa vipande, kisha linageuka kulia. Mwendesha baiskeli yuko nyuma zaidi.",
   "items": [
    {
     "type": "mc",
@@ -2848,6 +2860,8 @@
   "fact": "Unapoingia kwenye kizunguko, wapishe magari ambayo tayari yako kwenye mzunguko, yanayokuja kutoka upande wako wa kushoto.",
   "why": "Magari yaliyo kwenye mzunguko tayari yanaenda na hayana mahali salama pa kusimama, kwa hiyo magari yanayoingia lazima yasubiri nafasi.",
   "weight": 3,
+  "diagram": "roundabout",
+  "diagramDesc": "Kizunguko kikionekana kutoka juu. Gari la buluu ambalo tayari liko kwenye mzunguko, likija kutoka upande wako wa kushoto, linaenda kwanza (1). Gari lako la kijani linaingia kwa kugeuka kulia, linazunguka kinyume na mwelekeo wa saa, na linatoka upande wa kushoto (2).",
   "items": [
    {
     "type": "scenario",
@@ -3039,6 +3053,8 @@
   "hook": "Mmefika pamoja? Wa kulia huenda kwanza.",
   "example": "Unasimama kwenye kusimama kwa pande nne wakati uleule gari lililo kwenye barabara inayokatiza upande wako wa kulia linasimama. Kwa sababu mlifika pamoja, wewe ndiye gari lililo kushoto, kwa hivyo unaliacha gari hilo liende kwanza. Kama ungesimama kabla yake, ungeenda kwanza.",
   "weight": 3,
+  "diagram": "four-way-same-time",
+  "diagramDesc": "Kusimama kwa pande nne. Gari lako la kijani na gari la buluu lililo upande wako wa kulia yanasimama kwa wakati mmoja. Gari la buluu lililo kulia linaenda kwanza (1); wewe unaenda wa pili (2).",
   "items": [
    {
     "type": "scenario",
@@ -3077,6 +3093,8 @@
   "why": "Barabara inayoendelea inaendelea, kwa hiyo magari yake yanatarajia kuendelea kwenda.",
   "example": "Barabara yako inaishia kwenye makutano ya T yasiyo na alama wala taa, kwa hivyo lazima ugeuke kushoto au kulia. Magari kwenye barabara inayokatiza yanaweza kuendelea moja kwa moja. Unasimama au unapunguza mwendo na kuacha magari yanayotoka kushoto na kulia yapite kwanza, kisha unageuka.",
   "weight": 3,
+  "diagram": "t-intersection",
+  "diagramDesc": "Barabara yako inaishia kwenye makutano ya T yasiyo na alama. Magari yaliyo kwenye barabara inayoendelea, yanayotoka kushoto na kulia, yanaenda kwanza (1). Kisha gari lako la kijani linageuka kushoto au kulia (2).",
   "items": [
    {
     "type": "scenario",
@@ -3291,6 +3309,8 @@
   "why": "Njia iliyo tupu inaweka umbali wa usalama kati ya gari lako na wafanyakazi.",
   "example": "Unaendesha kwenye njia ya kulia ya barabara yenye njia mbili zinazoenda upande wako. Gari la polisi limesimama kwenye bega la kulia likiwa na taa zinazowaka na kuzima. Unapunguza mwendo, na ikiwa ni salama, unahamia njia ya kushoto ili kuwe na njia tupu kati yako na gari la polisi.",
   "weight": 3,
+  "diagram": "move-over",
+  "diagramDesc": "Barabara yenye njia mbili zinazoenda upande wako, na gari la polisi limesimama kwenye bega la barabara upande wa kulia likiwa na taa zinazowaka na kuzima. Gari lako la kijani linahamia njia ya kushoto, mbali na gari la polisi, kabla ya kulipita.",
   "items": [
    {
     "type": "scenario",
@@ -3456,6 +3476,8 @@
   "hook": "Kizunguko: ingia kulia, zunguka, toka kulia.",
   "example": "Unafika kwenye kizunguko na unataka kwenda kushoto. Unapunguza mwendo, unaacha magari ambayo tayari yako ndani ya kizunguko yanayotoka upande wako wa kushoto yapite, kisha unageuka kulia kuingia. Unaendesha kuzunguka kinyume na mzunguko wa saa na unawasha ishara ya kugeuka kulia unapokaribia njia yako ya kutokea.",
   "weight": 3,
+  "diagram": "roundabout",
+  "diagramDesc": "Kizunguko kikionekana kutoka juu. Gari la buluu ambalo tayari liko kwenye mzunguko, likija kutoka upande wako wa kushoto, linaenda kwanza (1). Gari lako la kijani linaingia kwa kugeuka kulia, linazunguka kinyume na mwelekeo wa saa, na linatoka upande wa kushoto (2).",
   "items": [
    {
     "type": "scenario",
@@ -3520,6 +3542,8 @@
   "why": "Kuondoa kugeuka kushoto moja kwa moja kunafanya magari yaendelee kwenda na kuepuka ajali za kugeuka kushoto.",
   "example": "Unataka kugeuka kushoto kwenye makutano ya \"thru-turn\", lakini kugeuka kushoto hakuruhusiwi hapo. Unapita moja kwa moja kwenye makutano na kufuata michoro ya njia ili kugeuka U kwenye taa ya trafiki inayofuata. Kisha unaendesha kurudi kuelekea makutano na kugeuka kulia kuingia barabara uliyotaka.",
   "weight": 1,
+  "diagram": "thru-turn",
+  "diagramDesc": "Makutano ya \"thru-turn\" (kupita kisha kugeuka). Kugeuka kushoto moja kwa moja hakuruhusiwi (X nyekundu). Gari lako la kijani linapita moja kwa moja, linageuka U kwenye taa za barabarani zinazofuata, linarudi, na linageuka kulia.",
   "items": [
    {
     "type": "scenario",
@@ -4758,6 +4782,8 @@
   "why": "Gari likijiviringisha, magurudumu yataliongoza kwenye ukingo au nje ya barabara badala ya kwenye magari.",
   "hook": "Ukishuka = magurudumu kuelekea ukingo.",
   "weight": 3,
+  "diagram": "hill-downhill-curb",
+  "diagramDesc": "Gari lako la kijani limeegeshwa likielekea mteremko (chini ya mlima) karibu na ukingo wa barabara, likionekana kutoka juu. Magurudumu ya mbele yamegeuzwa kwa nguvu kuelekea ukingo. Picha ndogo ya pembeni inaonyesha gari likielekea chini ya mlima.",
   "items": [
    {
     "type": "scenario",
@@ -4784,6 +4810,8 @@
   "fact": "Unapoegesha mlimani pasipo na ukingo wa barabara, ukielekea juu au chini, geuza magurudumu yako ya mbele kwa nguvu kuelekea pembe ya barabara.",
   "why": "Gari likijiviringisha, litatoka nje ya barabara badala ya kuingia kwenye magari.",
   "weight": 3,
+  "diagram": "hill-no-curb",
+  "diagramDesc": "Gari lako la kijani limeegeshwa mlimani pasipo na ukingo wa barabara, likionekana kutoka juu. Magurudumu ya mbele yamegeuzwa kwa nguvu kuelekea pembe ya barabara. Picha ndogo ya pembeni inaonyesha kuwa sheria ni ile ile, ukielekea juu au chini ya mlima.",
   "items": [
    {
     "type": "scenario",
@@ -4812,6 +4840,8 @@
   "hook": "Ukipanda na kuna ukingo: juu na mbali.",
   "example": "Unaegesha ukielekea mlima juu karibu na ukingo wa barabara. Unageuza magurudumu yako ya mbele kwa nguvu mbali na ukingo, ili tairi la mbele liegemee ukingo. Gari likianza kujiviringisha kurudi nyuma, ukingo unazuia tairi na gari halijiviringishi kuingia kwenye magari.",
   "weight": 3,
+  "diagram": "hill-uphill-curb",
+  "diagramDesc": "Gari lako la kijani limeegeshwa likielekea mlima juu karibu na ukingo wa barabara, likionekana kutoka juu. Magurudumu ya mbele yamegeuzwa kwa nguvu mbali na ukingo, ili tairi liegemee ukingo. Picha ndogo ya pembeni inaonyesha gari likielekea mlima juu.",
   "items": [
    {
     "type": "scenario",
@@ -5181,6 +5211,8 @@
   "fact": "Mlango wa kuingia barabara kuu ya mwendo kasi kwa kawaida una sehemu tatu: njia ya kuingilia, njia ya kuongeza mwendo, na eneo la kuungana. Tumia njia ya kuongeza mwendo kufikia mwendo wa magari ya barabara kuu.",
   "why": "Kwenda mwendo sawa na wa barabara kuu kunakuwezesha kuungana kwa ulaini bila kuwalazimisha wengine kubreki.",
   "weight": 2,
+  "diagram": "freeway-entrance",
+  "diagramDesc": "Mlango wa kuingia barabara kuu ya mwendo kasi: (1) njia ya kuingilia, (2) njia ya kuongeza mwendo, ambapo gari lako la kijani linaongeza mwendo, na (3) eneo la kuungana, ambapo linaingia kwenye nafasi kati ya magari ya barabara kuu.",
   "items": [
    {
     "type": "mc",
@@ -5266,6 +5298,8 @@
   "why": "Magari ya barabara kuu yanaenda kwa kasi na yana haki ya njia; lazima ujipenyeze ndani yake.",
   "example": "Unaendesha kwenye njia ya kuingilia kuelekea barabara kuu ya mwendo kasi na kuwasha ishara yako. Unaangalia juu ya bega lako la kushoto kutafuta nafasi kati ya magari inayotosha gari lako, na unaongeza mwendo ulingane na magari ya barabara kuu. Magari ambayo tayari yako kwenye barabara kuu yanaenda kwanza, kwa hivyo unaingia kwenye nafasi badala ya kuyalazimisha yakupishe.",
   "weight": 3,
+  "diagram": "freeway-entrance",
+  "diagramDesc": "Mlango wa kuingia barabara kuu ya mwendo kasi: (1) njia ya kuingilia, (2) njia ya kuongeza mwendo, ambapo gari lako la kijani linaongeza mwendo, na (3) eneo la kuungana, ambapo linaingia kwenye nafasi kati ya magari ya barabara kuu.",
   "items": [
    {
     "type": "scenario",
@@ -5949,6 +5983,8 @@
   "fact": "Maeneo yasiyoonekana (blind spots) ni sehemu zilizo karibu na pembe za nyuma kushoto na kulia za gari lako ambazo vioo havionyeshi. Kabla ya kuhamia pembeni, geuza kichwa chako haraka kuziangalia.",
   "why": "Gari linaweza kujificha kando yako hata wakati vioo vyako vinaonekana wazi.",
   "weight": 3,
+  "diagram": "blind-spots",
+  "diagramDesc": "Gari lako la kijani kwenye barabara yenye njia tatu. Maeneo ya buluu yanaonyesha kile vioo vyako vinaweza kuona. Maeneo ya chungwa kando ya pembe zako za nyuma ni maeneo yasiyoonekana (blind spots), na gari la kijivu limejificha ndani ya moja yao.",
   "items": [
    {
     "type": "mc",
@@ -6056,6 +6092,8 @@
   "fact": "Epuka kuendesha ndani ya eneo lisiloonekana (blind spot) la dereva mwingine.",
   "why": "Ni muhimu madereva wengine wakuone, sawa na ilivyo muhimu wewe uwaone.",
   "weight": 2,
+  "diagram": "blind-spots",
+  "diagramDesc": "Gari lako la kijani kwenye barabara yenye njia tatu. Maeneo ya buluu yanaonyesha kile vioo vyako vinaweza kuona. Maeneo ya chungwa kando ya pembe zako za nyuma ni maeneo yasiyoonekana (blind spots), na gari la kijivu limejificha ndani ya moja yao.",
   "items": [
    {
     "type": "scenario",
@@ -6544,6 +6582,8 @@
   "why": "Kwenye barabara yenye njia mbili kila upande, uko mbali na upande wa barabara ambapo watoto hupanda na kushuka basi.",
   "example": "Uko kwenye barabara kuu yenye njia mbili zinazoenda upande wako na njia mbili zinazoenda upande mwingine. Basi la shule upande wa pili linasimama huku taa zake nyekundu zikiwaka na kuzima. Huhitaji kusimama, lakini endesha kwa uangalifu. Kama basi lingekuwa upande wako wa barabara, ungelazimika kusimama.",
   "weight": 3,
+  "diagram": "school-bus-four-lane",
+  "diagramDesc": "Barabara kuu yenye njia mbili kila upande. Basi la shule lenye taa nyekundu zinazowaka na kuzima na kibao chake cha kusimama (stop arm) kimetolewa nje limesimama upande mmoja, na magari yaliyo nyuma yake yamesimama. Gari lako la kijani, linaloenda upande wa pili, linaendelea.",
   "items": [
    {
     "type": "scenario",
@@ -6577,6 +6617,8 @@
   "why": "Watoto wanaweza kukimbia kuvuka barabara bila kuangalia, mara nyingi mbele ya basi ambapo ni vigumu kuwaona.",
   "example": "Uko kwenye barabara ya njia mbili, na basi la shule linalokuja kuelekea kwako linasimama huku taa zake nyekundu zikiwaka na kuzima. Ingawa basi liko kwenye njia nyingine, lazima nawe usimame. Baki umesimama hadi taa nyekundu ziache kuwaka na watoto wote wawe wametoka barabarani na mbali na basi.",
   "weight": 3,
+  "diagram": "school-bus-two-lane",
+  "diagramDesc": "Barabara ya njia mbili yenye basi la shule lililosimama, taa nyekundu zinawaka na kuzima na kibao cha kusimama (stop arm) kimetolewa nje, wakati watoto wanavuka. Gari lililo nyuma ya basi limesimama, na gari lako la kijani, linalokuja kutoka upande mwingine, limesimama pia.",
   "items": [
    {
     "type": "scenario",
@@ -7353,6 +7395,8 @@
   "why": "Kupenya upande wa kulia ni sababu ya mara kwa mara ya ajali na magari makubwa.",
   "example": "Uko nyuma ya lori kubwa kwenye kona. Ishara yake ya kugeuka kulia imewashwa, lakini kwanza linasogea kidogo kushoto, likiacha nafasi wazi upande wake wa kulia. Usiendeshe kuingia kwenye nafasi hiyo. Lori linahitaji nafasi hiyo ili kugeuka, kwa hivyo subiri hadi limalize.",
   "weight": 3,
+  "diagram": "truck-wide-right-turn",
+  "diagramDesc": "Lori lenye ishara ya kugeuka kulia inayowaka linazunguka kushoto kabla ya kugeuka kulia, na kuacha nafasi wazi upande wake wa kulia. Gari lako la kijani linabaki nyuma na haliingii kwenye nafasi hiyo (X nyekundu).",
   "items": [
    {
     "type": "scenario",

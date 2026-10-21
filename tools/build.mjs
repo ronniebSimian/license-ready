@@ -28,6 +28,8 @@ for (const st of readdirSync(join(root, 'states'))) {
     if (!state.topics.includes(f.topic)) err(`${st}/${f.id}: unknown topic ${f.topic}`);
     if (![1, 2, 3].includes(f.weight)) err(`${st}/${f.id}: bad weight`);
     if (f.sign && !existsSync(join(root, dir, 'signs', `${f.sign}.svg`))) err(`${st}/${f.id}: missing sign image ${f.sign}.svg`);
+    if (f.diagram && !existsSync(join(root, dir, 'diagrams', `${f.diagram}.svg`))) err(`${st}/${f.id}: missing diagram ${f.diagram}.svg`);
+    if (!!f.diagram !== !!f.diagramDesc) err(`${st}/${f.id}: diagram and diagramDesc go together`);
     if (!f.items?.length) err(`${st}/${f.id}: no items`);
     // An example may illustrate the fact but must not bring in numbers the fact doesn't state.
     if (f.example) {
@@ -56,7 +58,8 @@ for (const st of readdirSync(join(root, 'states'))) {
         if (gi.type !== it.type || JSON.stringify(gi.answer) !== JSON.stringify(it.answer) || (it.choices && gi.choices?.length !== it.choices.length))
           err(`${p}/${f.id}: item ${i} doesn't match English`);
       });
-      for (const k of ['topic', 'page', 'weight', 'sign']) if (g[k] !== f[k]) err(`${p}/${f.id}: ${k} differs`);
+      for (const k of ['topic', 'page', 'weight', 'sign', 'diagram']) if (g[k] !== f[k]) err(`${p}/${f.id}: ${k} differs`);
+      if (!!f.diagramDesc !== !!g.diagramDesc) err(`${p}/${f.id}: diagramDesc ${f.diagramDesc ? 'missing' : 'not in English'}`);
       if (!!f.example !== !!g.example) err(`${p}/${f.id}: example ${f.example ? 'missing' : 'not in English'}`);
     }
     if (tr.size !== base.length) err(`${p}: ${tr.size} facts vs ${base.length} in English`);

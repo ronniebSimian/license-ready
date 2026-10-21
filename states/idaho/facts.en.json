@@ -2056,6 +2056,8 @@
   "why": "Drivers from both directions use the same lane, so traveling in it risks a head-on crash.",
   "example": "You are driving on a road with a center lane that has a solid yellow line and a dashed yellow line on each side. You want to turn left into a store parking lot ahead. Move into the center lane, wait there for a gap in oncoming traffic, then turn. Do not drive in that lane to go farther down the road, because drivers from the other direction use it to turn too.",
   "weight": 3,
+  "diagram": "center-turn-lane",
+  "diagramDesc": "A road with a center turn lane. Each side of the center lane has a solid yellow line on the outside and a dashed yellow line on the inside, and turn arrows point both ways. An oncoming car goes first (1); then your green car turns left from the center lane into a parking lot (2).",
   "items": [
    {
     "type": "mc",
@@ -2137,6 +2139,8 @@
   "hook": "Read the line nearest you: dashed = may pass, solid = no passing.",
   "example": "You are behind a slow truck on a two-lane road. In the center there is a solid yellow line next to a dashed yellow line. If the dashed line is the one closer to your lane, you may pass when it is safe. If the solid line is closer to you, stay behind the truck.",
   "weight": 3,
+  "diagram": "solid-dashed-yellow",
+  "diagramDesc": "Two road views. Left: the dashed yellow line is on your side, so your green car may pass the truck. Right: the solid yellow line is on your side, so you may not pass (red X).",
   "items": [
    {
     "type": "scenario",
@@ -2607,6 +2611,8 @@
   "fact": "The arm signal for a left turn is your arm and hand held straight out the window.",
   "why": "Pointing straight out to the left is easy for drivers behind you to understand.",
   "weight": 3,
+  "diagram": "arm-signals",
+  "diagramDesc": "A driver's arm signals, seen from behind the car. Left turn: arm straight out. Right turn: arm out and bent upward. Slow down or stop: arm out and bent downward.",
   "items": [
    {
     "type": "mc",
@@ -2633,6 +2639,8 @@
   "fact": "The arm signal for a right turn is your arm and hand extended upward out the window.",
   "why": "Since you cannot reach out the right side, the upward arm stands for a right turn.",
   "weight": 3,
+  "diagram": "arm-signals",
+  "diagramDesc": "A driver's arm signals, seen from behind the car. Left turn: arm straight out. Right turn: arm out and bent upward. Slow down or stop: arm out and bent downward.",
   "items": [
    {
     "type": "scenario",
@@ -2659,6 +2667,8 @@
   "fact": "The arm signal to slow down or stop is your arm and hand extended downward out the window.",
   "why": "A downward arm suggests pushing down or slowing, so drivers behind know to brake.",
   "weight": 3,
+  "diagram": "arm-signals",
+  "diagramDesc": "A driver's arm signals, seen from behind the car. Left turn: arm straight out. Right turn: arm out and bent upward. Slow down or stop: arm out and bent downward.",
   "items": [
    {
     "type": "mc",
@@ -2712,6 +2722,8 @@
   "why": "Moving over keeps bicyclists from coming up on your right side as you turn.",
   "example": "You want to turn right at an intersection, and a bike lane runs along the right side of your lane. Where the bike lane line becomes dashed, check your mirror and look over your shoulder for bicyclists. If no bicyclist is there, move into the bike lane and turn from it. If a bicyclist is already there, let them go first.",
   "weight": 2,
+  "diagram": "bike-lane-dashed",
+  "diagramDesc": "Before a right turn, the bike lane line changes from solid to dashed. Your green car moves into the bike lane where the line is dashed, then turns right. A bicyclist is farther back.",
   "items": [
    {
     "type": "mc",
@@ -2848,6 +2860,8 @@
   "fact": "When entering a roundabout, yield to vehicles already in the circle, which come from your left.",
   "why": "Traffic in the circle is already moving and has nowhere to stop safely, so entering traffic must wait for a gap.",
   "weight": 3,
+  "diagram": "roundabout",
+  "diagramDesc": "A roundabout seen from above. A blue car already in the circle, coming from your left, goes first (1). Your green car enters by turning right, drives counter-clockwise around the circle, and exits to the left (2).",
   "items": [
    {
     "type": "scenario",
@@ -3039,6 +3053,8 @@
   "hook": "Tie? Right goes first.",
   "example": "You stop at a four-way stop at the same moment as a car on the cross street to your right. Because you arrived together, you are the car on the left, so you let that car go first. If you had stopped before it, you would go first.",
   "weight": 3,
+  "diagram": "four-way-same-time",
+  "diagramDesc": "A four-way stop. Your green car and a blue car on your right stop at the same time. The blue car on the right goes first (1); you go second (2).",
   "items": [
    {
     "type": "scenario",
@@ -3077,6 +3093,8 @@
   "why": "The through road continues, so its traffic expects to keep going.",
   "example": "Your street ends at a T intersection with no signs or signals, so you must turn left or right. Cars on the cross street can keep going straight. You stop or slow down and let cars coming from both the left and the right go first, then make your turn.",
   "weight": 3,
+  "diagram": "t-intersection",
+  "diagramDesc": "Your road ends at a T intersection with no signs. Cars on the through road, from the left and from the right, go first (1). Then your green car turns left or right (2).",
   "items": [
    {
     "type": "scenario",
@@ -3291,6 +3309,8 @@
   "why": "An empty lane gives a buffer between your car and the workers.",
   "example": "You are driving in the right lane of a road with two lanes going your way. A police car is stopped on the right shoulder with its lights flashing. You slow down, and if it is safe, you move into the left lane so there is an empty lane between you and the police car.",
   "weight": 3,
+  "diagram": "move-over",
+  "diagramDesc": "A road with two lanes going your way and a police car stopped on the right shoulder with flashing lights. Your green car moves to the left lane, away from the police car, before passing it.",
   "items": [
    {
     "type": "scenario",
@@ -3456,6 +3476,8 @@
   "hook": "Roundabout: in right, go around, out right.",
   "example": "You come to a roundabout and want to go left. You slow down, let cars already in the circle coming from your left go by, and then turn right to enter. You drive around the circle counter-clockwise and turn on your right turn signal as you come up to your exit.",
   "weight": 3,
+  "diagram": "roundabout",
+  "diagramDesc": "A roundabout seen from above. A blue car already in the circle, coming from your left, goes first (1). Your green car enters by turning right, drives counter-clockwise around the circle, and exits to the left (2).",
   "items": [
    {
     "type": "scenario",
@@ -3520,6 +3542,8 @@
   "why": "Removing direct left turns keeps traffic moving and avoids left-turn crashes.",
   "example": "You want to turn left at a thru-turn intersection, but left turns are not allowed there. You drive straight through the intersection and follow the lane markings to make a U-turn at the next traffic signal. Then you drive back toward the intersection and turn right onto the street you wanted.",
   "weight": 1,
+  "diagram": "thru-turn",
+  "diagramDesc": "A thru-turn intersection. A direct left turn is not allowed (red X). Your green car goes straight, makes a U-turn at the next traffic signal, comes back, and turns right.",
   "items": [
    {
     "type": "scenario",
@@ -4758,6 +4782,8 @@
   "why": "If the car rolls, the wheels steer it into the curb or off the road instead of into traffic.",
   "hook": "Downhill = Down to the curb.",
   "weight": 3,
+  "diagram": "hill-downhill-curb",
+  "diagramDesc": "Your green car parked facing downhill next to a curb, seen from above. The front wheels are turned sharply toward the curb. A small side view shows the car facing downhill.",
   "items": [
    {
     "type": "scenario",
@@ -4784,6 +4810,8 @@
   "fact": "When parking on a hill with no curb, uphill or downhill, turn your front wheels sharply toward the edge of the road.",
   "why": "If the car rolls, it will go off the road instead of into traffic.",
   "weight": 3,
+  "diagram": "hill-no-curb",
+  "diagramDesc": "Your green car parked on a hill with no curb, seen from above. The front wheels are turned sharply toward the edge of the road. A small side view shows that the rule is the same uphill or downhill.",
   "items": [
    {
     "type": "scenario",
@@ -4812,6 +4840,8 @@
   "hook": "Uphill with a curb: Up and away.",
   "example": "You park facing uphill next to a curb. You turn your front wheels sharply away from the curb, so the front tire rests against the curb. If the car starts to roll backward, the curb stops the tire and the car does not roll into traffic.",
   "weight": 3,
+  "diagram": "hill-uphill-curb",
+  "diagramDesc": "Your green car parked facing uphill next to a curb, seen from above. The front wheels are turned sharply away from the curb, so the tire rests against it. A small side view shows the car facing uphill.",
   "items": [
    {
     "type": "scenario",
@@ -5181,6 +5211,8 @@
   "fact": "A freeway entrance usually has three parts: an entrance ramp, an acceleration lane, and a merging area. Use the acceleration lane to reach the speed of freeway traffic.",
   "why": "Matching freeway speed lets you blend in smoothly without forcing others to brake.",
   "weight": 2,
+  "diagram": "freeway-entrance",
+  "diagramDesc": "A freeway entrance: (1) the entrance ramp, (2) the acceleration lane, where your green car speeds up, and (3) the merging area, where it moves into a gap between freeway cars.",
   "items": [
    {
     "type": "mc",
@@ -5266,6 +5298,8 @@
   "why": "Freeway traffic is moving fast and has the right-of-way; you must fit into it.",
   "example": "You drive down the ramp onto the freeway and turn on your signal. You look over your left shoulder for a space in traffic big enough for your car, and you speed up to match the freeway traffic. Cars already on the freeway go first, so you fit into a gap instead of making them move for you.",
   "weight": 3,
+  "diagram": "freeway-entrance",
+  "diagramDesc": "A freeway entrance: (1) the entrance ramp, (2) the acceleration lane, where your green car speeds up, and (3) the merging area, where it moves into a gap between freeway cars.",
   "items": [
    {
     "type": "scenario",
@@ -5949,6 +5983,8 @@
   "fact": "Blind spots are areas near the left and right rear corners of your car that mirrors do not show. Before moving sideways, quickly turn your head to check them.",
   "why": "A car can be hidden next to you even when your mirrors look clear.",
   "weight": 3,
+  "diagram": "blind-spots",
+  "diagramDesc": "Your green car on a three-lane road. The blue areas show what your mirrors can see. The orange areas beside your rear corners are blind spots, and a gray car is hidden in one of them.",
   "items": [
    {
     "type": "mc",
@@ -6056,6 +6092,8 @@
   "fact": "Avoid driving in another driver's blind spot.",
   "why": "It is as important for other drivers to see you as it is for you to see them.",
   "weight": 2,
+  "diagram": "blind-spots",
+  "diagramDesc": "Your green car on a three-lane road. The blue areas show what your mirrors can see. The orange areas beside your rear corners are blind spots, and a gray car is hidden in one of them.",
   "items": [
    {
     "type": "scenario",
@@ -6544,6 +6582,8 @@
   "why": "On a road with two lanes going each way, you are far from the side of the road where children get on and off the bus.",
   "example": "You are on a highway with two lanes going your way and two lanes going the other way. A school bus on the other side stops with its red lights flashing. You do not have to stop, but drive with care. If the bus were on your side of the road, you would have to stop.",
   "weight": 3,
+  "diagram": "school-bus-four-lane",
+  "diagramDesc": "A highway with two lanes going each way. A school bus with flashing red lights and its stop arm out is stopped on one side, and the cars behind it are stopped. Your green car, going the opposite way on the other side, keeps going.",
   "items": [
    {
     "type": "scenario",
@@ -6577,6 +6617,8 @@
   "why": "Children may run across the road without looking, often in front of the bus where they are hard to see.",
   "example": "You are on a two-lane road, and a school bus coming toward you stops with its red lights flashing. Even though the bus is in the other lane, you must stop too. Stay stopped until the red lights stop flashing and all the children are off the road and away from the bus.",
   "weight": 3,
+  "diagram": "school-bus-two-lane",
+  "diagramDesc": "A two-lane road with a school bus stopped, red lights flashing and stop arm out, while children cross. The car behind the bus is stopped, and your green car, coming from the other direction, is stopped too.",
   "items": [
    {
     "type": "scenario",
@@ -7353,6 +7395,8 @@
   "why": "Squeezing past on the right is a frequent cause of crashes with large vehicles.",
   "example": "You are behind a large truck at a corner. Its right turn signal is on, but it first moves a little to the left, leaving an open space on its right side. Do not drive into that space. The truck needs the room to make its turn, so wait until it has finished.",
   "weight": 3,
+  "diagram": "truck-wide-right-turn",
+  "diagramDesc": "A truck with its right turn signal on swings left before turning right, leaving an open space on its right. Your green car stays behind and does not drive into that space (red X).",
   "items": [
    {
     "type": "scenario",

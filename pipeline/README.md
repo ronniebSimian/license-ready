@@ -48,6 +48,17 @@ curl -L -o states/<state>/signs/R1-1.svg "https://commons.wikimedia.org/wiki/Spe
 
 Go slowly (Commons rate-limits), and check each file is really an SVG.
 
+## 5b. Situation diagrams (optional)
+
+A few rules are about space: which way the wheels point, which line is dashed, who goes first. For those, a fact can
+carry `"diagram": "<name>"` and `"diagramDesc"` (the words for screen readers, translated like any other text). The
+image is shown only after the learner answers, so it never gives the answer away.
+
+Draw them in code (`tools/diagrams.py`), not with an image generator: we tested one, and the pictures looked polished but
+got the one detail that mattered wrong (straight wheels in a hill-parking picture, lanes going both ways). Don't copy the
+handbook's own drawings either; draw from the rule. Keep the shared visual language: your car green, red octagon = must
+stop, numbers = order, red X = don't, and no words in the picture.
+
 ## 6. Configure and build
 
 Copy `states/idaho/state.json`, edit the name, agency, handbook URL, exam size and pass mark

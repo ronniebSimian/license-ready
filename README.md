@@ -48,6 +48,7 @@ i18n/<lang>.json             interface strings
 states/<state>/state.json    exam format, handbook link, topics, languages
 states/<state>/facts.<lang>.json
 states/<state>/signs/        MUTCD sign SVGs (public domain, via Wikimedia Commons)
+states/<state>/diagrams/     situation diagrams, drawn by tools/diagrams.py (CC BY 4.0)
 pipeline/                    how to build a new state with AI
 ```
 

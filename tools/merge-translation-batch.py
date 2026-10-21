@@ -10,7 +10,7 @@ facts = json.load(open(path))
 pos = {f['id']: i for i, f in enumerate(facts)}
 for g in json.load(open(batch_path)):
     f = en[g['id']]
-    for k in ('topic', 'page', 'weight', 'sign'):
+    for k in ('topic', 'page', 'weight', 'sign', 'diagram'):
         if g.get(k) != f.get(k): sys.exit(f"{lang}/{g['id']}: {k} differs from English")
     if bool(g.get('example')) != bool(f.get('example')): sys.exit(f"{lang}/{g['id']}: example presence differs")
     if len(g['items']) != len(f['items']): sys.exit(f"{lang}/{g['id']}: item count differs")

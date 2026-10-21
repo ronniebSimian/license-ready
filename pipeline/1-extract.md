@@ -18,6 +18,7 @@ Each fact:
   "hook": "Optional short memory aid, ONLY if genuinely useful (e.g. 'Red + octagon = full stop; only STOP signs have 8 sides'). Omit the key otherwise.",
   "example": "Optional 2-3 sentence illustration in second person ('You are arrested for DUI ... The officer gives you ...'), ONLY for facts that are hard to picture: legal or penalty processes, jargon, multi-step situations. Omit it for simple rules. See rule 8.",
   "weight": 1|2|3,                              // 3 = very likely on the test (numbers, right-of-way, signs, alcohol, GDL); 1 = minor
+  "diagram": "roundabout",                     // OPTIONAL: a drawing in states/<state>/diagrams/ (see README 5b); needs "diagramDesc"
   "sign": "R1-1",                               // OPTIONAL: MUTCD sign code if the fact is about a specific standard sign
   "signDesc": "Red octagon, white STOP text",  // REQUIRED when "sign" is present
   "items": [ ...2 to 4 question items... ]

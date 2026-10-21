@@ -12,3 +12,6 @@ by page. The handbooks themselves are not included in this repository.
 
 Road sign images in `states/*/signs/` are reproductions of US MUTCD standard signs, which are in the public
 domain, sourced from Wikimedia Commons.
+
+Situation diagrams in `states/*/diagrams/` are original drawings made for this project by `tools/diagrams.py`
+(not copied from any handbook), licensed CC BY 4.0 like the rest of the content.

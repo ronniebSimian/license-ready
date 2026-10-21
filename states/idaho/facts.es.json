@@ -2056,6 +2056,8 @@
   "why": "Los conductores de ambas direcciones usan el mismo carril, así que viajar por él puede causar un choque de frente.",
   "example": "Va por una calle con un carril central que tiene una línea amarilla continua y una línea amarilla discontinua en cada lado. Quiere girar a la izquierda para entrar al estacionamiento de una tienda más adelante. Pásese al carril central, espere ahí un espacio en el tráfico que viene de frente y luego gire. No maneje por ese carril para avanzar más por la calle, porque los conductores de la otra dirección también lo usan para girar.",
   "weight": 3,
+  "diagram": "center-turn-lane",
+  "diagramDesc": "Una calle con un carril central para girar. Cada lado del carril central tiene una línea amarilla continua por fuera y una línea amarilla discontinua por dentro, y hay flechas de giro que apuntan en las dos direcciones. Un carro que viene de frente pasa primero (1); luego su carro verde gira a la izquierda desde el carril central para entrar a un estacionamiento (2).",
   "items": [
    {
     "type": "mc",
@@ -2137,6 +2139,8 @@
   "hook": "Lea la línea más cercana a usted: discontinua = puede rebasar, continua = no rebase.",
   "example": "Va detrás de un camión lento en un camino de dos carriles. En el centro hay una línea amarilla continua junto a una línea amarilla discontinua. Si la línea discontinua es la más cercana a su carril, puede rebasar cuando sea seguro. Si la línea continua es la más cercana a usted, quédese detrás del camión.",
   "weight": 3,
+  "diagram": "solid-dashed-yellow",
+  "diagramDesc": "Dos vistas de un camino. Izquierda: la línea amarilla discontinua está de su lado, así que su carro verde puede rebasar al camión. Derecha: la línea amarilla continua está de su lado, así que no puede rebasar (X roja).",
   "items": [
    {
     "type": "scenario",
@@ -2607,6 +2611,8 @@
   "fact": "La señal de brazo para girar a la izquierda es el brazo y la mano extendidos rectos por la ventana.",
   "why": "Apuntar recto hacia la izquierda es fácil de entender para los conductores que van detrás.",
   "weight": 3,
+  "diagram": "arm-signals",
+  "diagramDesc": "Las señales de brazo de un conductor, vistas desde atrás del carro. Girar a la izquierda: brazo extendido recto. Girar a la derecha: brazo extendido y doblado hacia arriba. Disminuir la velocidad o detenerse: brazo extendido y doblado hacia abajo.",
   "items": [
    {
     "type": "mc",
@@ -2633,6 +2639,8 @@
   "fact": "La señal de brazo para girar a la derecha es el brazo y la mano extendidos hacia arriba por la ventana.",
   "why": "Como no puede sacar el brazo por el lado derecho, el brazo hacia arriba representa un giro a la derecha.",
   "weight": 3,
+  "diagram": "arm-signals",
+  "diagramDesc": "Las señales de brazo de un conductor, vistas desde atrás del carro. Girar a la izquierda: brazo extendido recto. Girar a la derecha: brazo extendido y doblado hacia arriba. Disminuir la velocidad o detenerse: brazo extendido y doblado hacia abajo.",
   "items": [
    {
     "type": "scenario",
@@ -2659,6 +2667,8 @@
   "fact": "La señal de brazo para disminuir la velocidad o detenerse es el brazo y la mano extendidos hacia abajo por la ventana.",
   "why": "Un brazo hacia abajo sugiere empujar hacia abajo o frenar, así que los conductores detrás saben que deben frenar.",
   "weight": 3,
+  "diagram": "arm-signals",
+  "diagramDesc": "Las señales de brazo de un conductor, vistas desde atrás del carro. Girar a la izquierda: brazo extendido recto. Girar a la derecha: brazo extendido y doblado hacia arriba. Disminuir la velocidad o detenerse: brazo extendido y doblado hacia abajo.",
   "items": [
    {
     "type": "mc",
@@ -2712,6 +2722,8 @@
   "why": "Pasarse evita que los ciclistas se acerquen por su lado derecho mientras usted gira.",
   "example": "Quiere girar a la derecha en una intersección, y hay un carril para bicicletas a la derecha de su carril. Donde la línea del carril para bicicletas se vuelve discontinua, revise el espejo y mire por encima del hombro para ver si hay ciclistas. Si no hay ningún ciclista, pásese al carril para bicicletas y gire desde ahí. Si ya hay un ciclista ahí, déjelo pasar primero.",
   "weight": 2,
+  "diagram": "bike-lane-dashed",
+  "diagramDesc": "Antes de un giro a la derecha, la línea del carril para bicicletas cambia de continua a discontinua. Su carro verde se pasa al carril para bicicletas donde la línea es discontinua y luego gira a la derecha. Un ciclista viene más atrás.",
   "items": [
    {
     "type": "mc",
@@ -2848,6 +2860,8 @@
   "fact": "Al entrar en una glorieta, ceda el paso a los vehículos que ya están en el círculo, que vienen por su izquierda.",
   "why": "El tráfico dentro del círculo ya está en movimiento y no tiene dónde detenerse con seguridad, así que el tráfico que entra debe esperar un espacio.",
   "weight": 3,
+  "diagram": "roundabout",
+  "diagramDesc": "Una glorieta vista desde arriba. Un carro azul que ya está en el círculo y viene por su izquierda pasa primero (1). Su carro verde gira a la derecha para entrar, circula en sentido contrario a las manecillas del reloj y sale hacia la izquierda (2).",
   "items": [
    {
     "type": "scenario",
@@ -3039,6 +3053,8 @@
   "hook": "¿Empate? El de la derecha va primero.",
   "example": "Se detiene en un alto de cuatro vías al mismo tiempo que un carro en la calle que cruza, a su derecha. Como llegaron juntos y usted es el carro de la izquierda, deja que ese carro pase primero. Si usted se hubiera detenido antes, usted pasaría primero.",
   "weight": 3,
+  "diagram": "four-way-same-time",
+  "diagramDesc": "Un alto de cuatro vías. Su carro verde y un carro azul a su derecha se detienen al mismo tiempo. El carro azul de la derecha pasa primero (1); usted pasa segundo (2).",
   "items": [
    {
     "type": "scenario",
@@ -3077,6 +3093,8 @@
   "why": "La calle que sigue continúa, así que su tráfico espera seguir avanzando.",
   "example": "Su calle termina en una intersección en T sin letreros ni semáforos, así que debe girar a la izquierda o a la derecha. Los carros de la calle que cruza pueden seguir derecho. Usted se detiene o baja la velocidad, deja pasar primero a los carros que vienen tanto de la izquierda como de la derecha, y luego hace su giro.",
   "weight": 3,
+  "diagram": "t-intersection",
+  "diagramDesc": "Su calle termina en una intersección en T sin letreros. Los carros de la calle que cruza, que vienen de la izquierda y de la derecha, pasan primero (1). Luego su carro verde gira a la izquierda o a la derecha (2).",
   "items": [
    {
     "type": "scenario",
@@ -3291,6 +3309,8 @@
   "why": "Un carril vacío deja un espacio de protección entre su auto y los trabajadores.",
   "example": "Va por el carril derecho de una carretera con dos carriles en su dirección. Una patrulla de policía está detenida en el acotamiento derecho con las luces intermitentes encendidas. Baja la velocidad y, si es seguro, se cambia al carril izquierdo para que quede un carril vacío entre usted y la patrulla.",
   "weight": 3,
+  "diagram": "move-over",
+  "diagramDesc": "Una carretera con dos carriles en su dirección y una patrulla de policía detenida en el acotamiento derecho con las luces intermitentes encendidas. Su carro verde se cambia al carril izquierdo, lejos de la patrulla, antes de pasar junto a ella.",
   "items": [
    {
     "type": "scenario",
@@ -3456,6 +3476,8 @@
   "hook": "Glorieta: entre a la derecha, dé la vuelta, salga a la derecha.",
   "example": "Llega a una glorieta y quiere ir a la izquierda. Baja la velocidad, deja pasar a los carros que ya están en el círculo y vienen de su izquierda, y luego gira a la derecha para entrar. Circula en sentido contrario a las manecillas del reloj y pone la direccional derecha al acercarse a su salida.",
   "weight": 3,
+  "diagram": "roundabout",
+  "diagramDesc": "Una glorieta vista desde arriba. Un carro azul que ya está en el círculo y viene por su izquierda pasa primero (1). Su carro verde gira a la derecha para entrar, circula en sentido contrario a las manecillas del reloj y sale hacia la izquierda (2).",
   "items": [
    {
     "type": "scenario",
@@ -3520,6 +3542,8 @@
   "why": "Eliminar los giros directos a la izquierda mantiene el tráfico en movimiento y evita choques al girar a la izquierda.",
   "example": "Quiere girar a la izquierda en una intersección tipo \"thru-turn\", pero ahí no se permiten los giros a la izquierda. Sigue derecho por la intersección y sigue las marcas del carril para dar vuelta en U en el siguiente semáforo. Luego regresa hacia la intersección y gira a la derecha en la calle que quería.",
   "weight": 1,
+  "diagram": "thru-turn",
+  "diagramDesc": "Una intersección tipo \"thru-turn\". No se permite girar directamente a la izquierda (X roja). Su carro verde sigue derecho, da vuelta en U en el siguiente semáforo, regresa y gira a la derecha.",
   "items": [
    {
     "type": "scenario",
@@ -4758,6 +4782,8 @@
   "why": "Si el auto rueda, las llantas lo dirigen hacia la banqueta o fuera de la calle en lugar de hacia el tráfico.",
   "hook": "Cuesta abajo = hacia la banqueta.",
   "weight": 3,
+  "diagram": "hill-downhill-curb",
+  "diagramDesc": "Su carro verde estacionado mirando cuesta abajo junto a una banqueta, visto desde arriba. Las llantas delanteras están bien giradas hacia la banqueta. Una pequeña vista de lado muestra el carro mirando cuesta abajo.",
   "items": [
    {
     "type": "scenario",
@@ -4784,6 +4810,8 @@
   "fact": "Al estacionarse en una pendiente sin banqueta, cuesta arriba o cuesta abajo, gire bien las llantas delanteras hacia la orilla de la calle.",
   "why": "Si el auto rueda, se saldrá de la calle en lugar de ir hacia el tráfico.",
   "weight": 3,
+  "diagram": "hill-no-curb",
+  "diagramDesc": "Su carro verde estacionado en una pendiente sin banqueta, visto desde arriba. Las llantas delanteras están bien giradas hacia la orilla de la calle. Una pequeña vista de lado muestra que la regla es la misma cuesta arriba o cuesta abajo.",
   "items": [
    {
     "type": "scenario",
@@ -4812,6 +4840,8 @@
   "hook": "Cuesta arriba con banqueta: arriba y lejos.",
   "example": "Se estaciona mirando cuesta arriba junto a una banqueta. Gira bien las llantas delanteras lejos de la banqueta, de modo que la llanta delantera quede apoyada contra ella. Si el carro empieza a rodar hacia atrás, la banqueta detiene la llanta y el carro no rueda hacia el tráfico.",
   "weight": 3,
+  "diagram": "hill-uphill-curb",
+  "diagramDesc": "Su carro verde estacionado mirando cuesta arriba junto a una banqueta, visto desde arriba. Las llantas delanteras están bien giradas lejos de la banqueta, así que la llanta queda apoyada contra ella. Una pequeña vista de lado muestra el carro mirando cuesta arriba.",
   "items": [
    {
     "type": "scenario",
@@ -5181,6 +5211,8 @@
   "fact": "La entrada a una autopista normalmente tiene tres partes: una rampa de entrada, un carril de aceleración y una zona de incorporación. Use el carril de aceleración para alcanzar la velocidad del tráfico de la autopista.",
   "why": "Igualar la velocidad de la autopista le permite incorporarse sin problemas sin obligar a otros a frenar.",
   "weight": 2,
+  "diagram": "freeway-entrance",
+  "diagramDesc": "La entrada a una autopista: (1) la rampa de entrada, (2) el carril de aceleración, donde su carro verde aumenta la velocidad, y (3) la zona de incorporación, donde se mete en un espacio entre los carros de la autopista.",
   "items": [
    {
     "type": "mc",
@@ -5266,6 +5298,8 @@
   "why": "El tráfico de la autopista va rápido y tiene el derecho de paso; usted debe acomodarse en él.",
   "example": "Baja por la rampa hacia la autopista y pone la direccional. Mira por encima de su hombro izquierdo para buscar un espacio en el tráfico lo bastante grande para su carro, y acelera hasta igualar la velocidad del tráfico de la autopista. Los carros que ya están en la autopista van primero, así que usted se acomoda en un espacio en vez de obligarlos a moverse por usted.",
   "weight": 3,
+  "diagram": "freeway-entrance",
+  "diagramDesc": "La entrada a una autopista: (1) la rampa de entrada, (2) el carril de aceleración, donde su carro verde aumenta la velocidad, y (3) la zona de incorporación, donde se mete en un espacio entre los carros de la autopista.",
   "items": [
    {
     "type": "scenario",
@@ -5949,6 +5983,8 @@
   "fact": "Los puntos ciegos son áreas cerca de las esquinas traseras izquierda y derecha de su carro que los espejos no muestran. Antes de moverse hacia un lado, gire la cabeza rápidamente para revisarlos.",
   "why": "Puede haber un carro escondido a su lado aunque sus espejos se vean despejados.",
   "weight": 3,
+  "diagram": "blind-spots",
+  "diagramDesc": "Su carro verde en una carretera de tres carriles. Las áreas azules muestran lo que pueden ver sus espejos. Las áreas anaranjadas junto a las esquinas traseras de su carro son los puntos ciegos, y hay un carro gris escondido en uno de ellos.",
   "items": [
    {
     "type": "mc",
@@ -6056,6 +6092,8 @@
   "fact": "Evite manejar en el punto ciego de otro conductor.",
   "why": "Es tan importante que los otros conductores lo vean a usted como que usted los vea a ellos.",
   "weight": 2,
+  "diagram": "blind-spots",
+  "diagramDesc": "Su carro verde en una carretera de tres carriles. Las áreas azules muestran lo que pueden ver sus espejos. Las áreas anaranjadas junto a las esquinas traseras de su carro son los puntos ciegos, y hay un carro gris escondido en uno de ellos.",
   "items": [
    {
     "type": "scenario",
@@ -6544,6 +6582,8 @@
   "why": "En un camino con dos carriles en cada dirección, usted está lejos del lado del camino donde los niños suben y bajan del autobús.",
   "example": "Va por una carretera con dos carriles en su dirección y dos carriles en la dirección contraria. Un autobús escolar del otro lado se detiene con las luces rojas intermitentes encendidas. No tiene que detenerse, pero maneje con cuidado. Si el autobús estuviera de su lado de la carretera, tendría que detenerse.",
   "weight": 3,
+  "diagram": "school-bus-four-lane",
+  "diagramDesc": "Una carretera con dos carriles en cada dirección. Un autobús escolar con las luces rojas intermitentes encendidas y el brazo de alto extendido está detenido de un lado, y los carros detrás de él están detenidos. Su carro verde va en la dirección contraria, del otro lado, y sigue adelante.",
   "items": [
    {
     "type": "scenario",
@@ -6577,6 +6617,8 @@
   "why": "Los niños pueden cruzar corriendo sin mirar, muchas veces por enfrente del autobús, donde es difícil verlos.",
   "example": "Va por un camino de dos carriles, y un autobús escolar que viene hacia usted se detiene con las luces rojas intermitentes encendidas. Aunque el autobús está en el otro carril, usted también debe detenerse. Quédese detenido hasta que las luces rojas dejen de parpadear y todos los niños estén fuera del camino y lejos del autobús.",
   "weight": 3,
+  "diagram": "school-bus-two-lane",
+  "diagramDesc": "Un camino de dos carriles con un autobús escolar detenido, con las luces rojas intermitentes y el brazo de alto extendido, mientras cruzan niños. El carro detrás del autobús está detenido, y su carro verde, que viene de la otra dirección, también está detenido.",
   "items": [
    {
     "type": "scenario",
@@ -7353,6 +7395,8 @@
   "why": "Meterse por la derecha es una causa frecuente de choques con vehículos grandes.",
   "example": "Va detrás de un camión grande en una esquina. Tiene puesta la direccional derecha, pero primero se mueve un poco a la izquierda y deja un espacio libre a su lado derecho. No se meta en ese espacio. El camión necesita ese lugar para dar la vuelta, así que espere hasta que termine.",
   "weight": 3,
+  "diagram": "truck-wide-right-turn",
+  "diagramDesc": "Un camión con la direccional derecha encendida se abre hacia la izquierda antes de girar a la derecha y deja un espacio libre a su lado derecho. Su carro verde se queda atrás y no se mete en ese espacio (X roja).",
   "items": [
    {
     "type": "scenario",
